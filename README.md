@@ -11,18 +11,18 @@ Browse reddit while looking like your doing work
 
 
 ### 📕 Features
-[x] Add subreddits
-[x] View comments
-[x] Responsive layout (somewhat)
-[] Sorting posts
-[] infinite scroll
-[] View all comments under any post as a tree
-[] View picture posts
-[] Light mode
-[] Collapsable side menu
-[] Help getting users
-[] Resizeable post area
-[] Removing Subreddits
+- [x] Add subreddits
+- [x] View comments
+- [x] Responsive layout (somewhat)
+- [] Sorting posts
+- [] infinite scroll
+- [] View all comments under any post as a tree
+- [] View picture posts
+- [] Light mode
+- [] Collapsable side menu
+- [] Help getting users
+- [] Resizeable post area
+- [] Removing Subreddits
 
 
 ### 💙 Contributing
