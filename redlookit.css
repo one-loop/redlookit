@@ -2,12 +2,11 @@ body {
     color: #ffffdb;
     font-family: Calibri;
     background-color: #333333;
-    background: url(outlook.png);
     background: #212121;
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     overflow-x: hidden; /* prevent side scrolling */
-    overflow-y: hidden; /*prevent vertical scrolling on main body*/
+    overflow-y: hidden; prevent vertical scrolling on main body
 }
 
 .new-msg:hover {
@@ -82,7 +81,7 @@ body {
 }
 
 .main-content {
-    width: 95vw;
+    /* width: 95vw; */
     height: 86vh;
     display: flex;
     flex-direction: row;
@@ -98,14 +97,15 @@ body {
         border-left: 1px solid black;
         /* top: 13.5%; */
         /* left: 43.5%; */
-        width: 60%;
+        width: 50%;
         height: 86vh;
         /* height: 100%; */
         /* width: 100%; */
         margin: 0;
         padding: 20px;
-        z-index: -1;
-        overflow-y: visible;
+        z-index: 1;
+        flex-grow: 1;
+        /* overflow-y: scroll; */
     }
 }
 
@@ -479,4 +479,8 @@ aside {
 
 .menu-buttons button:hover {
     background-color: #5733e1;
+}
+
+.menu-buttons {
+    margin-
 }
