@@ -6,7 +6,7 @@ body {
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     overflow-x: hidden; /* prevent side scrolling */
-    overflow-y: hidden; prevent vertical scrolling on main body
+    overflow-y: hidden; /* prevent vertical scrolling on main body */
 }
 
 .new-msg:hover {
