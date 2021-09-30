@@ -15,7 +15,7 @@ function getPosts(subreddit) {
     axios.get(`https://www.reddit.com/r/${subreddit}.json?limit=75`)
         .then(function  (response) {
             responseData = response.data.data.children;
-            console.log(responseData);
+            // console.log(responseData);
             displayPosts(responseData);
         })
         .catch(function (error) {
@@ -30,18 +30,14 @@ function displayPosts(responses) {
         // console.log(response.data.ups);
         // console.log(response.data.title);
         // console.log('**********')
-        let section = document.createElement('section');
+        let section = document.createElement('button');
         section.classList.add('post');
+
         let title = document.createElement('span');
         let titleText = response.data.title;
-        // if (titleText.length > 30) {
-        //     let postTitle = titleText.slice(0, 30) + '...'
-        //     title.append(postTitle)
-        // } else {
-        //     title.append(titleText);
-        // }
         title.append(titleText);
         title.classList.add('title');
+
         let subreddit = document.createElement('span');
         subreddit.append(response.data.subreddit_name_prefixed);
         subreddit.classList.add('subreddit');
@@ -58,8 +54,8 @@ function displayPosts(responses) {
         // section.id = response.data.url;
 
         section.addEventListener('click', () => {
-            console.log(`${response.data.url}.json?limit=75`)
-            axios.get(`${response.data.url}.json?limit=75`)
+            console.log(`GETTING: https://www.reddit.com${response.data.permalink}.json?limit=75`)
+            axios.get(`https://www.reddit.com${response.data.permalink}.json?limit=75`)
                 .then((response) => {
                     console.log(response);
                     // console.log(response.data[1].children[])
@@ -84,25 +80,52 @@ getPosts('popular');
 
 function expandPost(response) {
     comments = response.data[1].data.children;
-    console.log(comments)
+    // console.log(comments)
     let title = document.createElement('h5');
-    
     title.append(response.data[0].data.children[0].data.title);
     title.classList.add('post-section-title');
     postSection.append(title);
+    if (response.data[0].data.children[0].data.post_hint === 'image') {
+        let image = document.createElement('img');
+        image.src = response.data[0].data.children[0].data.url_overridden_by_dest;
+        image.classList.add('post-image');
+        postSection.append(image);
+    } 
+    try { 
+        if (response.data[0].data.children[0].data.secure_media.reddit_video !== 'null') {
+            let video = document.createElement('video');
+            video.classList.add('post-video');
+            video.setAttribute('controls', '')
+            let source = document.createElement('source');
+            source.src = response.data[0].data.children[0].data.secure_media.reddit_video.fallback_url;
+            video.appendChild(source);
+            postSection.append(video);
+        }
+    } catch (e) {
+        
+    }
+    postSection.append(document.createElement('hr'))
     // console.log(comments);
+    displayComments(comments);
+}
+
+function displayComments(comments) {
     for (let comment of comments) {
         try {
             let author = document.createElement('span');
-            let score = document.createElement('score');
-            let commentBody = document.createElement('p');
+            let score = document.createElement('span');
+            let commentBody = document.createElement('div');
             author.append(`u/${comment.data.author}`);
-            commentBody.append(comment.data.body);
-            commentBody.innerHTML += '<br>'
-            score.append(`+ ${comment.data.score}\n`);
+            commentBody.insertAdjacentHTML('beforeend', decodeHtml(comment.data.body_html));
+            // commentBody.insertAdjacentHTML("beforeend", comment.data.body_html);
+            score.append(`👆 ${comment.data.score}\n`);
             postSection.append(score, author, commentBody);
             postSection.classList.add('post-selected');
             postSection.classList.remove('deselected');
+            if (!comment.data.replies) {
+                displayComments(comment.data.replies.data.children)
+            }
+            postSection.append(document.createElement('hr'))
         }
         catch (e) {
             console.log(e);
@@ -110,9 +133,11 @@ function expandPost(response) {
     }
 }
 
-function getReplies(comment) {
-    return undefined;
-} 
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
 
 function clearPost() {
     postSection.innerHTML = '';
@@ -137,7 +162,7 @@ searchForm.addEventListener('submit', async (event) => {
         clearPostsList();
         let posts = await getPosts(subredditBtn.id);
     })
-    subredditBtn.append(subreddit.value);
+    subredditBtn.append('r/' + subreddit.value);
     subredditSection.append(subredditBtn);
     subreddit.value = ''; 
 })
