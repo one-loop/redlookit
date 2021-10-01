@@ -42,9 +42,10 @@ function displayPosts(responses) {
         subreddit.append(response.data.subreddit_name_prefixed);
         subreddit.classList.add('subreddit');
         let upvotes = document.createElement('span');
-        upvotes.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" style="margin-bottom: 5px" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86.20156,11.25391c-1.4663,0 -2.93278,0.57002 -4.05364,1.69089l-40.53646,40.53646c-1.09507,1.09507 -1.67969,2.56298 -1.67969,4.05364c0,0.7396 0.12739,1.48386 0.42552,2.19479c0.88293,2.14427 2.99155,3.53854 5.30781,3.53854h23.33646v86c0,6.33533 5.13133,11.46667 11.46667,11.46667h11.46667c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-86h23.33646c2.31627,0 4.41368,-1.39427 5.29661,-3.53854c0.8944,-2.14427 0.39676,-4.60297 -1.24297,-6.24844l-40.53646,-40.53646c-1.12087,-1.12087 -2.58735,-1.69089 -4.05365,-1.69089z"></path></g></g></svg>'
+
+        upvotes.innerHTML = '<svg width="18" height="18" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
         upvotes.append(`${response.data.score.toLocaleString()}`);
-        upvotes.innerHTML += '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" style="margin-bottom: 5px; transform: rotate(180deg)" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86.20156,11.25391c-1.4663,0 -2.93278,0.57002 -4.05364,1.69089l-40.53646,40.53646c-1.09507,1.09507 -1.67969,2.56298 -1.67969,4.05364c0,0.7396 0.12739,1.48386 0.42552,2.19479c0.88293,2.14427 2.99155,3.53854 5.30781,3.53854h23.33646v86c0,6.33533 5.13133,11.46667 11.46667,11.46667h11.46667c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-86h23.33646c2.31627,0 4.41368,-1.39427 5.29661,-3.53854c0.8944,-2.14427 0.39676,-4.60297 -1.24297,-6.24844l-40.53646,-40.53646c-1.12087,-1.12087 -2.58735,-1.69089 -4.05365,-1.69089z"></path></g></g></svg>'
+        upvotes.innerHTML += '<svg width="18" height="18" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
         upvotes.classList.add('post-data');
         let profile = document.createElement('span');
         profile.classList.add('profile');
@@ -83,6 +84,10 @@ getPosts('popular');
 function expandPost(response) {
     comments = response.data[1].data.children;
     // console.log(comments)
+    let author = document.createElement('span');
+    author.append(`Posted by u/${response.data[0].data.children[0].data.author}`);
+    author.classList.add('post-author')
+    postSection.append(author);
     let title = document.createElement('h4');
     let titleText = response.data[0].data.children[0].data.title
     title.append(titleText);
@@ -124,22 +129,49 @@ function expandPost(response) {
     } catch (e) {
         
     }
+    let postDetails = getPostDetails(response)
+    postSection.append(...postDetails)
     postSection.append(document.createElement('hr'))
     // console.log(comments);
     displayComments(comments);
 }
 
+function getPostDetails(response) {
+    let upvotes = document.createElement('span');
+    upvotes.innerHTML = '<svg width="18px" height="18px" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
+    upvotes.append(`${response.data[0].data.children[0].data.ups.toLocaleString()}`);
+    upvotes.innerHTML += '<svg width="18px" height="18px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
+    upvotes.classList.add('post-detail-info')
+    let subreddit = document.createElement('span');
+    subreddit.classList.add('post-detail-info')
+    subreddit.append(response.data[0].data.children[0].data.subreddit_name_prefixed);
+    let numComments = document.createElement('span');
+    numComments.append(`${response.data[0].data.children[0].data.num_comments.toLocaleString()} Comments`);
+    numComments.classList.add('post-detail-info')
+    return [upvotes, subreddit, numComments];
+}
+
+
 function displayComments(comments) {
     for (let comment of comments) {
         try {
+            // let profile = document.createElement('span');
+            // profile.classList.add('profile');
+            let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
+            let ppColor = colors[Math.floor(Math.random() * colors.length)];
+            let profilePic = `<span style="background-color: ${ppColor}; width: 35px; height: 35px; padding: 5px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">${ppInitials}</span>`;
             let author = document.createElement('span');
             let score = document.createElement('span');
             let commentBody = document.createElement('div');
+            // author.append(profile)
+            author.innerHTML = profilePic;
             author.append(`u/${comment.data.author}`);
             commentBody.insertAdjacentHTML('beforeend', decodeHtml(comment.data.body_html));
             // commentBody.insertAdjacentHTML("beforeend", comment.data.body_html);
-            score.append(`👆 ${comment.data.score}\n`);
-            postSection.append(score, author, commentBody);
+            score.innerHTML = '<svg width="18px" height="18px" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
+            score.append(`${comment.data.score.toLocaleString()}`);
+            score.innerHTML += '<svg width="18px" height="18px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
+            postSection.append(author, commentBody, score);
             postSection.classList.add('post-selected');
             postSection.classList.remove('deselected');
             if (!comment.data.replies) {
