@@ -1,6 +1,7 @@
 const postsList = document.querySelector("#posts");
 const postSection = document.querySelector('.reddit-post');
-let colors = ['#3d5a80', '#98c1d9', '#e0fbfc', '#ee6c4d', '#293241'];
+// let colors = ['#3d5a80', '#98c1d9', '#e0fbfc', '#ee6c4d', '#293241'];
+let colors = ['#c24332', '#2e303f', '#63948c', '#ebe6d1', '#517c63', '#4c525f', '#371d31', '#f95950', '#023246', '#2e77ae', '#0d2137', '#ff8e2b'];
 let initials = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 const menuButton = document.querySelector('.menu');
@@ -52,6 +53,9 @@ function displayPosts(responses) {
         profile.classList.add('profile');
         let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
         let ppColor = colors[Math.floor(Math.random() * colors.length)];
+        if (ppColor === '#ebe6d1' || ppColor === '#ebe6d1') {
+            profile.style.color = 'black';
+        }
         profile.style.backgroundColor = ppColor;
         profile.append(ppInitials);
         section.append(profile, title, subreddit, upvotes);
@@ -119,7 +123,6 @@ function expandPost(response) {
         thumbnail.src = response.data[0].data.children[0].data.thumbnail;
         link.href = response.data[0].data.children[0].data.url_overridden_by_dest;
         link.innerText = titleText;
-        link.innerText += '\n' + response.data[0].data.children[0].data.url_overridden_by_dest;
         link.target = "_blank";
         link.classList.add('post-link');
         div.append(thumbnail);
@@ -169,7 +172,10 @@ function displayComments(comments, isReply=false) {
             let commentDiv = document.createElement('div')
             let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
             let ppColor = colors[Math.floor(Math.random() * colors.length)];
-            let profilePic = `<span style="background-color: ${ppColor}; width: 35px; height: 35px; padding: 5px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">${ppInitials}</span>`;
+            let profilePic = `<span style="background-color: ${ppColor}; width: 25px; height: 25px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+            if (ppColor === '#ebe6d1' || ppColor === '#ebe6d1') {
+                profilePic = `<span style="background-color: ${ppColor}; color: black; width: 25px; height: 25px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+            }
             let author = document.createElement('span');
             let score = document.createElement('span');
             let commentBody = document.createElement('div');
@@ -286,7 +292,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 const BORDER_SIZE = 4;
-const panel = document.getElementById(".post-sidebar");
+const panel = document.querySelector(".post-sidebar");
 
 let m_pos;
 function resize(e){
