@@ -12,6 +12,10 @@ body {
     user-select: none;
 }
 
+button {
+    outline: none;
+}
+
 .new-msg:hover {
     background-color: #eaa8ff;
 }
@@ -27,17 +31,14 @@ body {
     background-color: #333333;
     height: 84px;
     padding: 7px 15px 18px 50px;
+    border: none;
     border-bottom: 1px solid #212121;
     width: 100%;
     text-align: left;
     /* color: white; */
     color: #D7DADC;
-    border: none;
 }
 
-.post-selected {
-    border-left: 6px solid #eaa8ff;
-}
 
 .post:hover {
     background-color: #212121;
@@ -46,6 +47,7 @@ body {
 
 .post:focus {
     border-left: 4px solid #eaa8ff;
+    background-color: #55576b;
 }
 
 .scrollable {
@@ -120,6 +122,7 @@ body {
         height: 86vh;
         /* height: 100%; */
         /* width: 100%; */
+        /* font-family: Verdana, Arial, helvetica, sans-serif; */
         margin: 0;
         padding: 20px;
         z-index: 1;
@@ -230,6 +233,13 @@ body {
 .post-detail-info {
     margin-top: 10px;
     padding: 10px 20px 0px 0px;
+}
+
+.replied-comment {
+    /* text-indent: 1.3em; */
+    margin-left: 1.5rem;
+    border-left: 1px solid #646464;
+    padding-left: 10px;
 }
 
 button .menu {
