@@ -16,11 +16,11 @@ Browse reddit while looking like your doing work
 - [x] View image posts
 - [x] View video posts
 - [x] View comments
+- [x] Collapsable side menu
+- [ ] View comment reply tree
 - [ ] Sorting posts
 - [ ] infinite scroll
-- [ ] View all comments under any post as a tree
 - [ ] Light mode
-- [ ] Collapsable side menu
 - [ ] Help getting users
 - [ ] Resizeable post area
 - [ ] Removing Subreddits
