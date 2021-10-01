@@ -3,9 +3,7 @@ body {
     font-family: Calibri;
     background-color: #333333;
     background: #212121;
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    overflow-x: hidden; /* prevent side scrolling */
+    overflow-x: hidden; /* prevent side scrolling on main body*/
     overflow-y: hidden; /* hidden; prevent vertical scrolling on main body */
 }
 
@@ -169,11 +167,48 @@ body {
     font-weight: bold;
 }
 
-post-section-title {
-    font-size: 17px;
+.post-section-title {
+    font-size: 20px;
     padding: 17px 0px 12px;
     display: block;
     font-weight: 600;
+}
+
+.post-link-container {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 15px 15px;
+    width: 98%;
+    background-color: #333333;
+    border-radius: 5px;
+    border: 1px solid #646464;
+    transition: 0.16s ease;
+    margin: 5px auto;
+}
+
+.post-link-container>img {
+    width: 75px;
+    height: 75px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+.post-link-container>a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.16s ease;
+}
+
+.post-link-container>a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.post-link-container:hover {
+    background-color: #33333370;
+    width: 100%;
 }
 
 button .menu {
@@ -238,8 +273,20 @@ button .menu {
     padding: 5px 160px 5px 48px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:#eabfee;
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    outline: none;
+    color: white !important;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    /* padding: 0 18px; */
+    display: none;
+    overflow: hidden;
 }
 
 nav span button {
@@ -288,6 +335,11 @@ header {
     border-bottom: 1px solid black;
     /* width: 25.3%; */
     width: 350px;
+    /* resize: horizontal; */
+}
+
+.post-sidebar:after {
+    cursor: ew-resize;
 }
 
 .header-buttons {
@@ -440,7 +492,7 @@ aside {
 .menu-selector button {
     background-color: #21212130;
     color: white;
-    height: 40px;
+    min-height: 40px;
     text-align: left;
     /* padding-left: 55px; */
     border: none;
@@ -481,7 +533,7 @@ aside {
 .subreddits-section {
     padding: 0;
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
 }
