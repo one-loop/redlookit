@@ -36,6 +36,7 @@ function displayPosts(responses) {
         let title = document.createElement('span');
         let titleText = response.data.title;
         title.append(titleText);
+        section.title = response.data.title;
         title.classList.add('title');
 
         let subreddit = document.createElement('span');
@@ -82,6 +83,12 @@ getPosts('popular');
 
 
 function expandPost(response) {
+    try {
+        // reset scroll position when user clicks on a new post
+        let redditPost = document.querySelector('.reddit-post');
+        redditPost.scrollTop = 0;
+    } catch (e) { console.log(e) }
+    
     comments = response.data[1].data.children;
     // console.log(comments)
     let author = document.createElement('span');
@@ -99,7 +106,11 @@ function expandPost(response) {
         image.classList.add('post-image');
         postSection.append(image);
     } 
-    // if (response.data[0].data.children[0].data.url_overridden_by_dest !== '') {
+    if (response.data[0].data.children[0].data.selftext !== '' && !response.data[0].data.children[0].data.selftext.includes('preview')) {
+        let selftext = document.createElement('div');
+        selftext.innerHTML = decodeHtml(response.data[0].data.children[0].data.selftext_html);
+        postSection.append(selftext);
+    }
     if (response.data[0].data.children[0].data.is_reddit_media_domain === false) {
         let div = document.createElement('div');
         let thumbnail = document.createElement('img');
@@ -133,7 +144,7 @@ function expandPost(response) {
     postSection.append(...postDetails)
     postSection.append(document.createElement('hr'))
     // console.log(comments);
-    displayComments(comments);
+    displayComments(comments, false);
 }
 
 function getPostDetails(response) {
@@ -152,32 +163,43 @@ function getPostDetails(response) {
 }
 
 
-function displayComments(comments) {
+function displayComments(comments, isReply=false) {
     for (let comment of comments) {
         try {
-            // let profile = document.createElement('span');
-            // profile.classList.add('profile');
+            let commentDiv = document.createElement('div')
             let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
             let ppColor = colors[Math.floor(Math.random() * colors.length)];
             let profilePic = `<span style="background-color: ${ppColor}; width: 35px; height: 35px; padding: 5px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">${ppInitials}</span>`;
             let author = document.createElement('span');
             let score = document.createElement('span');
             let commentBody = document.createElement('div');
-            // author.append(profile)
+            
             author.innerHTML = profilePic;
             author.append(`u/${comment.data.author}`);
             commentBody.insertAdjacentHTML('beforeend', decodeHtml(comment.data.body_html));
-            // commentBody.insertAdjacentHTML("beforeend", comment.data.body_html);
             score.innerHTML = '<svg width="18px" height="18px" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
             score.append(`${comment.data.score.toLocaleString()}`);
             score.innerHTML += '<svg width="18px" height="18px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
-            postSection.append(author, commentBody, score);
-            postSection.classList.add('post-selected');
-            postSection.classList.remove('deselected');
-            if (!comment.data.replies) {
-                displayComments(comment.data.replies.data.children)
+            
+            commentDiv.append(author, commentBody, score);
+
+            if (isReply) {
+                commentDiv.classList.add('replied-comment')
+                postSection.append(commentDiv);
+                postSection.classList.add('post-selected');
+                postSection.classList.remove('deselected');
+                if (comment.data.replies) {
+                    displayComments(comment.data.replies.data.children, isReply=true)
+                }
+            } else {
+                postSection.append(commentDiv);
+                postSection.classList.add('post-selected');
+                postSection.classList.remove('deselected');
+                if (comment.data.replies) {
+                    displayComments(comment.data.replies.data.children, isReply=true)
+                }
+                postSection.append(document.createElement('hr'))
             }
-            postSection.append(document.createElement('hr'))
         }
         catch (e) {
             console.log(e);
