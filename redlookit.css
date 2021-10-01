@@ -5,6 +5,11 @@ body {
     background: #212121;
     overflow-x: hidden; /* prevent side scrolling on main body*/
     overflow-y: hidden; /* hidden; prevent vertical scrolling on main body */
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .new-msg:hover {
@@ -120,6 +125,10 @@ body {
         z-index: 1;
         flex-grow: 1;
         /* overflow-y: scroll; */
+        -webkit-user-select: text;  /* Chrome 49+ */
+        -moz-user-select: text;     /* Firefox 43+ */
+        -ms-user-select: text;      /* No support yet */
+        user-select: text;          /* Likely future */   
     }
 }
 
