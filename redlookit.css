@@ -25,7 +25,8 @@ body {
     border-bottom: 1px solid #212121;
     width: 100%;
     text-align: left;
-    color: white;
+    /* color: white; */
+    color: #D7DADC;
     border: none;
 }
 
@@ -107,6 +108,7 @@ body {
         background-color:#212121;
         padding: 0px 12px;   
         border-left: 1px solid black;
+        color: #D7DADC;
         /* top: 13.5%; */
         /* left: 43.5%; */
         width: 50%;
@@ -167,6 +169,11 @@ body {
     font-weight: bold;
 }
 
+.post-author {
+    font-size: 14px;
+    color: #646464;
+}
+
 .post-section-title {
     font-size: 20px;
     padding: 17px 0px 12px;
@@ -209,6 +216,11 @@ body {
 .post-link-container:hover {
     background-color: #33333370;
     width: 100%;
+}
+
+.post-detail-info {
+    margin-top: 10px;
+    padding: 10px 20px 0px 0px;
 }
 
 button .menu {
@@ -443,6 +455,11 @@ aside {
     position: absolute;
     top: 15px;
     left: 13px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .deselected {
