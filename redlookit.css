@@ -12,22 +12,6 @@ body {
     user-select: none;
 }
 
-/* h1 {
-color: #c24332;
-color: #2e303f; 
-color: #63948c; 
-color: #ebe6d1;
-color: #517c63;
-color: #4c525f; 
-color: #371d31; 
-color: #f95950; 
-color: #023246; 
-color: #e0eaf5; 
-color: #2e77ae; 
-color: #0d2137;
-color: #ff8e2b;
-} */
-
 button {
     outline: none;
 }
@@ -657,4 +641,190 @@ aside {
 
 .menu-buttons button:hover {
     background-color: #5733e1;
+}
+
+#preloadDiv {
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 100;
+}
+
+#loadingLogo {
+    position: fixed;
+    top: calc(50vh - 90px);
+    left: calc(50vw - 90px);
+    width: 180px;
+    height: 180px;
+}
+
+#MSLogo {
+    position: fixed;
+    bottom: 36px;
+    left: calc(50vw - 45px);
+}
+
+.dark #loadingScreen {
+    background-color: #333;
+}
+
+
+#loadingLogo2_ts {
+    animation: loadingLogo2_ts__ts 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+#loadingLogo2 {
+    animation: loadingLogo2_c_o 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+#loadingLogo3_to {
+    animation: loadingLogo3_to__to 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+#loadingLogo6_ts {
+    animation: loadingLogo6_ts__ts 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+#loadingLogo8_ts {
+    animation: loadingLogo8_ts__ts 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+#loadingLogo9_to {
+    animation: loadingLogo9_to__to 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+#loadingLogo29_ts {
+    animation: loadingLogo29_ts__ts 3000ms linear 1 normal forwards;
+    animation-iteration-count: 1000;
+}
+
+@keyframes loadingLogo2_ts__ts {
+    0% {
+        transform: translate(108.894430px,155.715127px) scale(0.668963,0.668963);
+        animation-timing-function: cubic-bezier(0.420000,0,0.580000,1)
+    }
+    26.666667% {
+        transform: translate(108.894430px,155.715127px) scale(1,1)
+    }
+    100% {
+        transform: translate(108.894430px,155.715127px) scale(1,1)
+        }
+    }
+
+
+@keyframes loadingLogo2_c_o {
+    0% {
+        opacity: 0
+        }
+    18.333333% {
+        opacity: 1
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes loadingLogo3_to__to {
+    0% {
+        transform: translate(101.000155px,195.970703px)
+    }
+    13.333333% {
+        transform: translate(101.000155px,195.970703px);
+        animation-timing-function: cubic-bezier(0,0,1,0.025000)
+    }
+    31% {
+        transform: translate(101.000155px,206px);
+        animation-timing-function: cubic-bezier(0.135000,0.710000,0.030000,0.985000)
+    }
+    50% {
+        transform: translate(101.000155px,195.970703px)
+    }
+    100% {
+        transform: translate(101.000155px,195.970703px)
+        }
+    }
+
+@keyframes loadingLogo6_ts__ts {
+    0% {
+        transform: translate(101.000708px,97.499588px) scale(1,-0.001720)
+    }
+    23.333333% {
+        transform: translate(101.000708px,97.499588px) scale(1,-0.001720);
+        animation-timing-function: cubic-bezier(0.135000,0.710000,0.030000,0.985000)
+    }
+    40% {
+        transform: translate(101.000708px,97.499588px) scale(1,1)
+        }
+    100% {
+        transform: translate(101.000708px,97.499588px) scale(1,1)
+        }
+    }
+
+@keyframes loadingLogo8_ts__ts {
+    0% {
+        transform: translate(101.000699px,159.914723px) scale(1,1)
+    }
+    39.666667% {
+        transform: translate(101.000699px,159.914723px) scale(1,1)
+    }
+    50% {
+        transform: translate(101.000699px,159.914723px) scale(1,1.050360)
+    }
+    52.333333% {
+        transform: translate(101.000699px,159.914723px) scale(1,0.959233)
+    }
+    57.666667% {
+        transform: translate(101.000699px,159.914723px) scale(1,1)
+    }
+    100% {
+        transform: translate(101.000699px,159.914723px) scale(1,1)
+    }
+}
+
+@keyframes loadingLogo9_to__to {
+    0% {
+        transform: translate(101px,205.753765px)
+    }
+    26.666667% {
+        transform: translate(101px,205.753765px);
+        animation-timing-function: cubic-bezier(0.175000,0.885000,0.320000,1.275000)
+    }
+    50% {
+        transform: translate(101px,81px)
+    }
+    100% {
+        transform: translate(101px,81px)
+    }
+}
+
+@keyframes loadingLogo29_ts__ts {
+    0% {
+        transform: translate(101.000699px,97.499573px) scale(1,1)
+    }
+    13.333333% {
+        transform: translate(101.000699px,97.499573px) scale(1,1);
+        animation-timing-function: cubic-bezier(0,0,1,0.025000)
+    }
+    23.333333% {
+        transform: translate(101.000699px,97.499573px) scale(1,0.001723)
+    }
+    100% {
+        transform: translate(101.000699px,97.499573px) scale(1,0.001723)
+    }
 }
