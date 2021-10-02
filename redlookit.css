@@ -23,7 +23,6 @@ button {
 .mark-as-read-btn:hover {
     background-color: black;
     border-radius: 3px;
-    padding: 5px 5px;
 }
 
 .post {
@@ -389,6 +388,7 @@ header {
     padding: 4px 17px;
     color: #212121;
     border: none;
+    margin-right: 60px;
     border-radius: 2px;
     transition: background-color .156s ease;
     /* position: absolute;
@@ -463,7 +463,7 @@ header .menu {
     background: transparent;
     color: #eaa8ff;
     border: none;
-    margin: 0 40px;
+    padding: 5px 5px;
 }
 
 aside {
@@ -640,7 +640,7 @@ aside {
 }
 
 .menu-buttons button:hover {
-    background-color: #5733e1;
+    background-color: #6b3fff;
 }
 
 #preloadDiv {
