@@ -4,71 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email - RedMail</title>
+    <title>Email</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="redlookit.css">
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/outlook-5-1174817.png">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
 </head>
 <body>
     <nav class="navbar">
-        <button class="dot-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667z"></path></g></g></svg>
-        </button>
+        <span class="dot-menu-button">
+            <button class="dot-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667z"></path></g></g></svg>
+            </button>
+        </span>
         <span class="logo">Outlook</span>
-        <form action="">
-            <input type="text" class="search" placeholder="Enter Subreddit Name">
-        </form>
+        <span class="search-bar">
+            <form action="">
+                <input type="text" class="search" placeholder="Enter Subreddit Name">
+            </form>
+        </span>
         <span class="menu-buttons">
             <button class="meet-now">
-                <svg style="display: inline" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M21.5,35.83333c-7.83362,0 -14.33333,6.49972 -14.33333,14.33333v71.66667c0,7.83362 6.49972,14.33333 14.33333,14.33333h93.16667c7.83362,0 14.33333,-6.49972 14.33333,-14.33333v-20.92611l35.83333,28.66667v-87.14779l-35.83333,28.66667v-20.92611c0,-7.83362 -6.49972,-14.33333 -14.33333,-14.33333zM21.5,50.16667h93.16667v71.66667h-93.16667zM150.5,72.25456v27.49089l-17.18881,-13.74544z"></path></g></g></svg>
-                Meet Now
-            </button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,21.5c-7.88333,0 -14.33333,6.45 -14.33333,14.33333v86l21.5,-21.5h21.5v21.5c0,7.88333 6.45,14.33333 14.33333,14.33333h64.5l21.5,21.5v-86c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333h-28.66667v-21.5c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333zM28.66667,35.83333h71.66667v50.16667h-71.66667zM114.66667,71.66667h28.66667v50.16667h-71.66667v-21.5h28.66667c7.88333,0 14.33333,-6.45 14.33333,-14.33333z"></path></g></g></svg></button>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="20" height="20"
-                    viewBox="0 0 172 172"
-                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M35.83333,21.5c-7.83362,0 -14.33333,6.49972 -14.33333,14.33333v100.33333c0,7.83362 6.49972,14.33333 14.33333,14.33333h100.33333c7.83362,0 14.33333,-6.49972 14.33333,-14.33333v-100.33333c0,-7.83362 -6.49972,-14.33333 -14.33333,-14.33333zM35.83333,35.83333h100.33333v28.66667h-100.33333zM50.16667,43c-3.95804,0 -7.16667,3.20863 -7.16667,7.16667c0,3.95804 3.20863,7.16667 7.16667,7.16667c3.95804,0 7.16667,-3.20863 7.16667,-7.16667c0,-3.95804 -3.20863,-7.16667 -7.16667,-7.16667zM71.66667,43c-3.95804,0 -7.16667,3.20863 -7.16667,7.16667c0,3.95804 3.20863,7.16667 7.16667,7.16667c3.95804,0 7.16667,-3.20863 7.16667,-7.16667c0,-3.95804 -3.20863,-7.16667 -7.16667,-7.16667zM93.16667,43v14.33333h28.66667v-14.33333zM35.83333,78.83333h21.5v57.33333h-21.5zM71.66667,78.83333h64.5v57.33333h-64.5zM86,86v14.33333h35.83333v-14.33333zM86,107.5v14.33333h35.83333v-14.33333z"></path></g></g></svg>    
+                <i class="ms-Icon ms-Icon--Video" aria-hidden="true"></i>
+                <span style="margin-left: 10px; position: relative; top: -3px;">Teams call</span>
             </button>
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M43,7.16667v14.33333h-7.16667c-7.88333,0 -14.33333,6.45 -14.33333,14.33333v100.33333c0,7.88333 6.45,14.33333 14.33333,14.33333h100.33333c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-100.33333c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333h-7.16667v-14.33333h-14.33333v14.33333h-57.33333v-14.33333zM35.83333,35.83333h7.16667h14.33333h57.33333h14.33333h7.16667v14.33333h-100.33333zM35.83333,64.5h100.33333v71.66667h-100.33333z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--OfficeChat" aria-hidden="true"></i>
             </button>
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,16.125c-5.9419,0 -10.75,4.8081 -10.75,10.75c0,0.46192 0.10498,0.90283 0.16797,1.34375c-18.58154,4.74512 -32.41797,21.62598 -32.41797,41.65625v48.375c0,3.04443 -2.33057,5.375 -5.375,5.375h-5.375v10.75h38.63281c-0.60889,1.70068 -1.00781,3.48535 -1.00781,5.375c0,8.83935 7.28565,16.125 16.125,16.125c8.83935,0 16.125,-7.28565 16.125,-16.125c0,-1.88965 -0.39893,-3.67432 -1.00781,-5.375h38.63281v-10.75h-5.375c-3.04443,0 -5.375,-2.33057 -5.375,-5.375v-46.86328c0,-20.19824 -13.50049,-38.21289 -32.41797,-43.16797c0.06299,-0.44092 0.16797,-0.88183 0.16797,-1.34375c0,-5.9419 -4.8081,-10.75 -10.75,-10.75zM83.64844,37.625c0.77685,-0.06299 1.55371,0 2.35156,0c0.33594,0 0.67188,0 1.00781,0c17.55273,0.5249 31.24219,15.91504 31.24219,33.76172v46.86328c0,1.88965 0.39893,3.67432 1.00781,5.375h-66.51562c0.60889,-1.70068 1.00781,-3.48535 1.00781,-5.375v-48.375c0,-17.06982 13.14356,-31.03222 29.89844,-32.25zM86,134.375c3.02344,0 5.375,2.35156 5.375,5.375c0,3.02344 -2.35156,5.375 -5.375,5.375c-3.02344,0 -5.375,-2.35156 -5.375,-5.375c0,-3.02344 2.35156,-5.375 5.375,-5.375z"></path></g></g></svg>
-            </button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M69.27311,14.33333l-3.51335,18.08464c-5.90653,2.22752 -11.33046,5.34987 -16.08301,9.25228l-17.37077,-5.99089l-16.74089,28.97461l13.91341,12.09375c-0.53487,3.28395 -0.81185,6.32717 -0.81185,9.25228c0,2.9295 0.28528,5.96715 0.81185,9.25228v0.014l-13.91341,12.09375l16.74089,28.96061l17.35677,-5.97689c4.75299,3.90454 10.18919,7.00948 16.097,9.23828l3.51335,18.08464h33.45377l3.51335,-18.08464c5.91039,-2.22897 11.32824,-5.34628 16.083,-9.25227l17.37077,5.99088l16.72689,-28.96061l-13.89941,-12.10775c0.53486,-3.28395 0.81185,-6.32717 0.81185,-9.25228c0,-2.92072 -0.27857,-5.95999 -0.81185,-9.23828v-0.014l13.91341,-12.10775l-16.74088,-28.96061l-17.35678,5.97689c-4.75298,-3.90453 -10.18919,-7.00948 -16.097,-9.23828l-3.51335,-18.08464zM81.08691,28.66667h9.82617l2.78548,14.33333l7.47461,2.82747c4.50543,1.69806 8.5533,4.02927 12.06575,6.91471l6.18685,5.06706l13.77344,-4.73112l4.91308,8.49642l-11.00195,9.57422l1.25976,7.88054v0.014c0.43823,2.68706 0.62989,4.94121 0.62989,6.9567c0,2.0155 -0.19164,4.26931 -0.62989,6.9567l-1.27376,7.88053l11.00195,9.57422l-4.91309,8.51042l-13.75944,-4.74511l-6.20084,5.08105c-3.51245,2.88544 -7.54633,5.21665 -12.05175,6.91472h-0.014l-7.4746,2.82747l-2.78548,14.33333h-9.81218l-2.78548,-14.33333l-7.47461,-2.82747c-4.50544,-1.69806 -8.5533,-4.02927 -12.06575,-6.91472l-6.18685,-5.06706l-13.77344,4.73112l-4.91309,-8.49642l11.01595,-9.58822l-1.27376,-7.85254v-0.014c-0.43195,-2.69874 -0.62988,-4.95921 -0.62988,-6.9707c0,-2.0155 0.19165,-4.26931 0.62988,-6.9567l1.27376,-7.88053l-11.01595,-9.57422l4.91309,-8.51042l13.77344,4.74512l6.18685,-5.08105c3.51245,-2.88545 7.56032,-5.21665 12.06575,-6.91471l7.47461,-2.82747zM86,57.33333c-15.74175,0 -28.66667,12.92492 -28.66667,28.66667c0,15.74175 12.92492,28.66667 28.66667,28.66667c15.74175,0 28.66667,-12.92492 28.66667,-28.66667c0,-15.74175 -12.92492,-28.66667 -28.66667,-28.66667zM86,71.66667c7.96559,0 14.33333,6.36775 14.33333,14.33333c0,7.96559 -6.36775,14.33333 -14.33333,14.33333c-7.96559,0 -14.33333,-6.36775 -14.33333,-14.33333c0,-7.96559 6.36775,-14.33333 14.33333,-14.33333z"></path></g></g></svg></button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.49552,0 -71.66667,32.17115 -71.66667,71.66667c0,39.49552 32.17115,71.66667 71.66667,71.66667c39.49552,0 71.66667,-32.17115 71.66667,-71.66667c0,-39.49552 -32.17115,-71.66667 -71.66667,-71.66667zM86,28.66667c31.74921,0 57.33333,25.58412 57.33333,57.33333c0,31.74921 -25.58412,57.33333 -57.33333,57.33333c-31.74921,0 -57.33333,-25.58412 -57.33333,-57.33333c0,-31.74921 25.58412,-57.33333 57.33333,-57.33333zM86,43c-15.83833,0 -28.66667,12.82833 -28.66667,28.66667h14.33333c0,-7.88333 6.45,-14.33333 14.33333,-14.33333c7.88333,0 14.33333,6.45 14.33333,14.33333c0,14.33333 -21.5,16.9635 -21.5,35.83333h14.33333c0,-11.83217 21.5,-17.91667 21.5,-35.83333c0,-15.83833 -12.82833,-28.66667 -28.66667,-28.66667zM78.83333,114.66667v14.33333h14.33333v-14.33333z"></path></g></g></svg></button>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M136.16667,21.5l-7.16667,14.33333l-64.5,21.5h-28.66667c-7.88333,0 -14.33333,6.45 -14.33333,14.33333v28.66667c0,7.88333 6.45,14.33333 14.33333,14.33333h14.33333v35.83333h14.33333v-35.83333l64.5,21.5l7.16667,14.33333h14.33333v-52.1543c4.26871,-2.48159 7.16667,-7.04992 7.16667,-12.3457c0,-5.29578 -2.89796,-9.86411 -7.16667,-12.3457v-52.1543zM136.16667,48.55697v74.88607l-2.63151,-0.88184l-54.70182,-18.2246v-36.67318l54.70182,-18.22461zM35.83333,71.66667h28.66667v28.66667h-14.33333h-14.33333z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--OneNoteLogoInverse" aria-hidden="true"></i>
             </button>
             <button>
+                <i class="ms-Icon ms-Icon--EventToDoLogo" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--Ringer" aria-hidden="true"></i>
+            </button>
+            <button class="settings-button">
+                <i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
+            </button>
+            <button dir="ltr">
+                <i class="ms-Icon ms-Icon--Help" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--Megaphone" aria-hidden="true"></i>
+            </button>
+            <button class="profile-pic">
                 <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 35px" alt="">
             </button>
         </span>
     </nav>
     
+    <div class="settings-panel">
+        <div class="settings-header">
+            <h4 class="settings">Settings</h4>
+            <button class="close-settings">
+                <!-- <i class="ms-Icon--ChromeClose" role="presentation" style="display: inline-block; font-size: 12px;"></i> -->
+                <i class="ms-Icon ms-font-s ms-Icon--ChromeClose" style="color: white"></i>
+            </button>
+        </div>
+        <h6>Theme</h6>
+        <div class="form-check form-switch">
+            <label for="flexSwitchCheckChecked">Dark Mode</label>
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        </div>
+    </div>
+
     <div id="loadingScreen">
         <svg id="loadingLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 220" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="220" height="220"><g id="loadingLogo2_ts" transform="translate(108.894430,155.715127) scale(0.668963,0.668963)"><g id="loadingLogo2" transform="translate(-100.998749,-141)" opacity="0"><g id="loadingLogo3_to" transform="translate(101.000155,195.970703)"><g id="loadingLogo3" style="filter:drop-shadow(0px 4px 0px rgba(0,0,0,0))" transform="translate(-101.000155,-195.970703)"><g id="loadingLogo4"><path id="loadingLogo5" d="M20.933784,97.210600C20.933784,97.210600,20.178271,92.940053,20.024003,93L182.019255,93C182.019255,93,182.014000,95.531900,181.999000,97.210600C182.023000,98.906600,181.177000,100.496000,179.759000,101.421000L106.684000,145.998000L105.732000,146.559000C104.337000,147.306000,102.778000,147.691000,101.197000,147.682000C99.633300,147.689000,98.093100,147.303000,96.716900,146.559000L95.709000,145.998000L22.410100,101.421000C20.902100,100.535000,22.381585,98.916937,20.933784,97.210600Z" transform="matrix(1 0 0 1 -0.02180297631334 3.99999999659653)" fill="rgb(18,59,109)" stroke="none" stroke-width="1"/><g id="loadingLogo6_ts" transform="translate(101.000708,97.499588) scale(1,-0.001720)"><path id="loadingLogo6" d="M179.759000,93.373200L106.572000,48.740400L105.620000,48.122800C104.215000,47.403400,102.663000,47.019100,101.085000,47C99.524600,47.019600,97.990700,47.404100,96.604900,48.122800L95.597000,48.740400L22.298100,93.317000C20.875500,94.218100,20.009900,95.804917,20.002200,97.491917C19.983300,99.244317,20.902100,100.852000,22.410100,101.738000L95.709000,146.315000L96.716900,146.876000C98.093100,147.620000,99.633300,148.006000,101.197000,147.999000C102.778000,148.009000,104.337000,147.623000,105.732000,146.876000L106.684000,146.315000L179.759000,101.738000C181.177000,100.813000,182.023000,99.223700,181.999000,97.527700C182.014000,95.849000,181.168000,94.280100,179.759000,93.373200Z" transform="translate(-101.000708,-97.499588)" fill="rgb(18,59,109)" stroke="none" stroke-width="1"/></g></g><g id="loadingLogo7" clip-path="url(#loadingLogo22)"><g id="loadingLogo8_ts" transform="translate(101.000699,159.914723) scale(1,1)"><g id="loadingLogo8" transform="translate(-101.000699,-159.914723)"><g id="loadingLogo9_to" transform="translate(101,205.753765)"><g id="loadingLogo9" transform="translate(-101,-81)"><path id="loadingLogo10" d="M28,10C28,4.477150,32.477200,0,38,0L164,0C169.523000,0,174,4.477150,174,10C174,10,173.999301,28.355009,173.999301,28.355009L28,51.060529L28,10Z" transform="matrix(1 0 0 1 0.00069904000000 0)" fill="rgb(3,88,167)" stroke="none" stroke-width="1"/><g id="loadingLogo11"><rect id="loadingLogo12" width="54.063866" height="50.118118" rx="0" ry="0" transform="matrix(1 0 0 1 28 24.00000000069796)" fill="rgb(0,120,212)" stroke="none" stroke-width="1"/><rect id="loadingLogo13" width="46" height="50.118118" rx="0" ry="0" transform="matrix(1.04381524897098 0 0 1 125.98449854733477 24)" fill="rgb(80,217,255)" stroke="none" stroke-width="1"/><rect id="loadingLogo14" width="50" height="50.118118" rx="0" ry="0" transform="matrix(1 0 0 1 78 24)" fill="rgb(40,168,234)" stroke="none" stroke-width="1"/></g><g id="loadingLogo15"><rect id="loadingLogo16" width="54.063866" height="50.659265" rx="0" ry="0" transform="matrix(1 0 0 1 28 70)" fill="rgb(3,100,184)" stroke="none" stroke-width="1"/><rect id="loadingLogo17" width="46" height="50.659265" rx="0" ry="0" transform="matrix(1.05111776899004 0 0 1 125.64858262645808 70)" fill="rgb(40,168,234)" stroke="none" stroke-width="1"/><rect id="loadingLogo18" width="50" height="50.659265" rx="0" ry="0" transform="matrix(1 0 0 1 78 70)" fill="rgb(0,120,212)" stroke="none" stroke-width="1"/></g><rect id="loadingLogo19" width="46" height="46" rx="0" ry="0" transform="matrix(1.05885006553074 0 0 1 125.29289698558608 116)" fill="rgb(0,120,212)" stroke="none" stroke-width="1"/><rect id="loadingLogo20" width="54.063866" height="46" rx="0" ry="0" transform="matrix(1 0 0 1 28 116)" fill="rgb(20,68,125)" stroke="none" stroke-width="1"/><rect id="loadingLogo21" width="50" height="46" rx="0" ry="0" transform="matrix(1 0 0 1 78 116)" fill="rgb(3,100,184)" stroke="none" stroke-width="1"/></g></g></g></g><clipPath id="loadingLogo22"><path id="loadingLogo23" d="M20.002200,91.603067C20.009900,89.730718,20.875500,87.992107,22.298100,86.992115L179.759000,87.054379C181.168000,88.060919,182.014000,89.802193,181.999000,91.665331C182.023000,93.547669,181.177000,95.311695,179.759000,96.338325L106.684000,145.812969L105.732000,146.435605C104.337000,147.264678,102.778000,147.691977,101.197000,147.681988C99.633300,147.689758,98.093100,147.261348,96.716900,146.435605L95.709000,145.812969L22.410100,96.338325C20.902100,95.354980,19.983300,93.548002,20.002200,91.603067Z" transform="matrix(2.23434089273892 0 0 3.43311766004244 -124.66929302028908 -322.01007244420919)" fill="rgb(18,59,109)" stroke="none" stroke-width="1"/></clipPath></g><g id="loadingLogo24" mask="url(#loadingLogo30)"><g id="loadingLogo25"><path id="loadingLogo26" d="M172,185L20,185L182,97L182,175C182,180.523000,177.523000,185,172,185Z" fill="rgb(20,144,223)" stroke="none" stroke-width="1"/><g id="loadingLogo27"><path id="loadingLogo28" d="M30,185L182,185L20,97L20,175C20,180.523000,24.477200,185,30,185Z" fill="rgb(40,168,234)" stroke="none" stroke-width="1"/></g></g><g id="loadingLogo29_ts" transform="translate(101.000699,97.499573) scale(1,1)"><path id="loadingLogo29" style="filter:drop-shadow(0px 0px 0px rgba(0,0,0,0.09))" d="M22.408100,101.421000C20.900200,100.535000,19.981300,98.906900,20.000300,97.154500C20.007700,95.502000,20.838500,93.965200,22.209500,93.056100L179.757000,93.056100C181.166000,93.963000,182.012000,95.531900,181.997000,97.210600C182.021000,98.906600,181.175000,100.496000,179.757000,101.421000L106.682000,145.998000L105.730000,146.559000C104.335000,147.306000,102.776000,147.691000,101.195000,147.682000C99.631300,147.689000,98.091100,147.303000,96.715000,146.559000L95.707100,145.998000L22.408100,101.421000Z" transform="translate(-101.000699,-97.499573)" fill="rgb(80,217,255)" stroke="none" stroke-width="1"/></g><mask id="loadingLogo30" mask-type="alpha"><path id="loadingLogo31" d="M20,97L182,97L182,175C182,180.523000,177.523000,185,172,185L30,185C24.477200,185,20,180.523000,20,175L20,97Z" fill="rgb(196,196,196)" stroke="none" stroke-width="1"/></mask></g></g></g></g></g></svg>
          <svg id="MSLogo" width="99" height="22" xmlns="http://www.w3.org/2000/svg">
@@ -88,8 +90,7 @@
         </svg>
     </div>
 
-
-    <header>
+    <header class="header">
         <button class="menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="margin-bottom: 3px;">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -97,13 +98,11 @@
         </button>
         <button class="new-msg" aria-label="Add New Subreddit">New message</button>
         <button class="mark-as-read-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-bottom: 5px; margin-right: 5px" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
-                <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z"/>
-            </svg>
+            <i class="ms-Icon ms-Icon--Read" aria-hidden="true"></i>
             Mark all as read
         </button>
         <button class="mark-as-read-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000; margin-bottom: 2px; margin-right: 5px;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#eaa8ff"><path d="M100.99821,21.53499c-11.76231,0 -23.52421,4.47375 -32.46696,13.4165l-32.69792,32.69792v-37.19108c0.02085,-1.45347 -0.54782,-2.85342 -1.57634,-3.88062c-1.02852,-1.0272 -2.4292,-1.59408 -3.88264,-1.57136c-2.96578,0.04633 -5.33356,2.48614 -5.29102,5.45199v49.36882c-0.27873,1.70624 0.28019,3.4424 1.50198,4.66558c1.22179,1.22318 2.95732,1.78407 4.66387,1.50727h49.37581c1.93842,0.02741 3.74144,-0.99102 4.71865,-2.66532c0.97721,-1.6743 0.97721,-3.74507 0,-5.41937c-0.97721,-1.6743 -2.78023,-2.69273 -4.71865,-2.66532h-37.19108l32.69792,-32.69792c13.77683,-13.77683 35.95592,-13.77683 49.73275,0c13.77683,13.77683 13.77683,35.95592 0,49.73275l-52.62321,52.62321c-1.40412,1.34815 -1.96971,3.35005 -1.47866,5.23364c0.49105,1.88359 1.96202,3.35456 3.84561,3.84561c1.88359,0.49105 3.88549,-0.07455 5.23364,-1.47866l52.62321,-52.62321c17.88551,-17.88551 17.88551,-47.04841 0,-64.93392c-8.94275,-8.94275 -20.70465,-13.4165 -32.46696,-13.4165z"></path></g></g></svg>
+            <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
             Undo
         </button>
     </header>
@@ -182,41 +181,34 @@
     style=" fill:#000000;"><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1" x1="12" x2="44" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c965eb"></stop><stop offset="1" stop-color="#c767e5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v32c0,1.105,0.895,2,2,2h21V15.003h9V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2" x1="39.5" x2="39.5" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7819a2"></stop><stop offset="1" stop-color="#771aa9"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2)" d="M35,33.054V42h7c1.105,0,2-0.895,2-2v-6.945L35,33.054L35,33.054z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3" x1="35" x2="44" y1="19.504" y2="19.504" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#ac4ad5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3)" d="M35,15.003h9v9.002h-9V15.003z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4" x1="35" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#912fbd"></stop><stop offset="1" stop-color="#9332bf"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4)" d="M35,24.005h9v9.05h-9V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5" x1="4.586" x2="23.414" y1="14.586" y2="33.414" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8521b0"></stop><stop offset="1" stop-color="#64129a"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M16.501,19v7.393L11.779,19H9.59v10h1.909v-7.45L16.258,29h2.152V19H16.501z"></path></svg>
             </button>
             </form>
+                </form>
         </aside>
 
         <aside class="menu-selector">
-            <span class="favorites">Favorites</span>
+            <span class="favorites" style="width: 100%">
+                <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                Favorites</span>
             <button class="inbox-button">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="20" height="20"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M41.20833,21.5c-3.43151,-0.00284 -6.3836,2.42691 -7.04069,5.79492l-12.54167,64.5c-0.08594,0.45214 -0.12812,0.91151 -0.12598,1.37174v43c0,7.83362 6.49972,14.33333 14.33333,14.33333h100.33333c7.83362,0 14.33333,-6.49972 14.33333,-14.33333v-43c0.00215,-0.46023 -0.04004,-0.9196 -0.12598,-1.37174l-12.54167,-64.5c-0.65709,-3.36801 -3.60918,-5.79777 -7.04069,-5.79492zM47.11523,35.83333h77.76953l11.14193,57.33333h-28.52669c-2.71467,-0.00019 -5.19648,1.53333 -6.41081,3.96126l-5.17904,10.37207h-19.82031l-5.17904,-10.37207c-1.21433,-2.42793 -3.69614,-3.96145 -6.41081,-3.96126h-28.52669zM35.83333,107.5h24.24349l5.17904,10.37207c1.21433,2.42793 3.69614,3.96145 6.41081,3.96126h28.66667c2.71467,0.00019 5.19648,-1.53333 6.41081,-3.96126l5.17904,-10.37207h24.24349v28.66667h-100.33333z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
                 Inbox
             </button>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M14.33333,21.5v129l143.33333,-64.5zM28.66667,43.67188l94.0765,42.32813l-94.0765,42.32813v-33.53776l64.5,-8.79036l-64.5,-8.79036z"></path></g></g></svg>
+            <button dir="ltr">
+                <i class="ms-Icon ms-Icon--Send" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
                 Sent Items
             </button>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M129,17.95166c-6.431,0 -12.86133,2.438 -17.7347,7.31364l-13.68945,13.68945c-0.48957,0.34632 -0.91773,0.77212 -1.26677,1.25976l-64.36003,64.36003c-1.50492,1.50492 -2.60708,3.37642 -3.19141,5.43099l-10.63102,37.22607c-0.5339,1.87578 -0.00994,3.89359 1.36911,5.27265c1.37906,1.37906 3.39687,1.90301 5.27265,1.36911l37.23307,-10.63102c0.00234,-0.00233 0.00467,-0.00466 0.007,-0.007c2.04079,-0.58665 3.9077,-1.67512 5.41699,-3.18441l64.22705,-64.23405c0.60004,-0.39761 1.11411,-0.91168 1.51172,-1.51172l13.57048,-13.57047c9.7507,-9.7507 9.7507,-25.7187 0,-35.4694c-4.87337,-4.87564 -11.3037,-7.31364 -17.7347,-7.31364zM129,28.63867c3.65787,0 7.31065,1.40944 10.12712,4.22721c0.00233,0 0.00467,0 0.007,0c5.6433,5.6433 5.6433,14.62493 0,20.26823l-10.53304,10.53304l-20.26823,-20.26823l10.53304,-10.53304c2.81646,-2.81778 6.47624,-4.22721 10.13411,-4.22721zM100.73226,50.99951l20.26823,20.26823l-61.18262,61.18262c-0.21009,0.20866 -0.47618,0.36848 -0.77686,0.45491l-3.52734,1.00781l-17.42676,-17.42676l1.00781,-3.53434c0,-0.00233 0,-0.00467 0,-0.007c0.08217,-0.28892 0.23267,-0.54761 0.45491,-0.76985zM34.70654,128.30713l8.98633,8.98633l-12.57666,3.59033z"></path></g></g></svg>
+            <button dir="ltr">
+                <i class="ms-Icon ms-Icon--Edit" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
                 Drafts
             </button>
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M71.66667,14.33333l-7.16667,7.16667h-35.83333v14.33333h7.16667v107.5c0,3.74259 1.37119,7.55804 4.07324,10.26009c2.70205,2.70205 6.5175,4.07324 10.26009,4.07324h71.66667c3.74259,0 7.55804,-1.37119 10.26009,-4.07324c2.70205,-2.70206 4.07324,-6.5175 4.07324,-10.26009v-107.5h7.16667v-14.33333h-35.83333l-7.16667,-7.16667zM50.16667,35.83333h71.66667v107.5h-71.66667zM64.5,50.16667v78.83333h14.33333v-78.83333zM93.16667,50.16667v78.83333h14.33333v-78.83333z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
                 Deleted Items
             </button>
             <button style="color: #eaa8ff; padding-left: 55px">Add Favorite</button>
             <span class="subreddits-section">
-                <button type="button" class="collapsible">Popular Subreddits</button>
+                <button type="button" class="collapsible">
+                    <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                    Popular Subreddits</button>
                 <div class="popular-subreddits">
                     <button id="askreddit" class="subreddit button">r/AskReddit</button>
                     <button id="gaming" class="subreddit button">r/gaming</button>
@@ -231,7 +223,9 @@
                 </div>
             </span>
             <span class="subreddits-section">
-                <button type="button" class="collapsible">Your Subreddits</button>
+                <button type="button" class="collapsible">
+                    <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                    Your Subreddits</button>
                 <div class="your-subreddits">
 
                 </div>
