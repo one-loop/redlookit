@@ -1,8 +1,21 @@
+:root {
+    --navbar-color: #6f40ff;
+    --background-color: #212121;
+    --background-color-2: #333333;
+    --pink: #eaa8ff;
+    --button-focus: #55576b;
+    --post-color: #d7dadc;
+    --subreddit-button: #ffcdff;
+    --border-color: #646464;
+    --text-color-1: #eabfee;
+    --link-color: #0074d9;
+}
+
+
 body {
     color: #ffffdb;
     font-family: Calibri;
-    background-color: #333333;
-    background: #212121;
+    background: var(--background-color);
     overflow-x: hidden; /* prevent side scrolling on main body*/
     overflow-y: hidden; /* hidden; prevent vertical scrolling on main body */
     -webkit-touch-callout: none; 
@@ -10,6 +23,10 @@ body {
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -17,7 +34,7 @@ button {
 }
 
 .new-msg:hover {
-    background-color: #eaa8ff;
+    background-color: var(--pink);
 }
 
 .mark-as-read-btn:hover {
@@ -27,26 +44,26 @@ button {
 
 .post {
     position: relative; 
-    background-color: #333333;
+    background-color: var(--background-color-2);
     height: 84px;
     padding: 7px 15px 18px 50px;
     border: none;
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid var(--background-color);
     width: 100%;
     text-align: left;
     /* color: white; */
-    color: #D7DADC;
+    color: var(--post-color);
 }
 
 
 .post:hover {
-    background-color: #212121;
+    background-color: var(--background-color);
     cursor: pointer;
 }
 
 .post:focus {
-    border-left: 4px solid #eaa8ff;
-    background-color: #55576b;
+    border-left: 4px solid var(--pink);
+    background-color: var(--button-focus);
 }
 
 .scrollable {
@@ -86,7 +103,7 @@ button {
     border: 0;
     font: inherit;
     display: block;
-    color: #ffcdff;
+    color: var(--subreddit-button);
 }
 
 .main-content {
@@ -100,20 +117,22 @@ button {
     width: 70%;
     margin: auto;
     display: block;
+    margin-bottom: 20px;
 }
 .post-video {
     width: 70%;
     margin: auto;
     display: block;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 700px) {
     .reddit-post {
         /* position: absolute; */
-        background-color:#212121;
+        background-color: var(--background-color);
         padding: 0px 12px;   
         border-left: 1px solid black;
-        color: #D7DADC;
+        color: var(--post-color);
         /* top: 13.5%; */
         /* left: 43.5%; */
         width: 50%;
@@ -126,7 +145,6 @@ button {
         padding: 20px;
         z-index: 1;
         flex-grow: 1;
-        /* overflow-y: scroll; */
         -webkit-user-select: text;  /* Chrome 49+ */
         -moz-user-select: text;     /* Firefox 43+ */
         -ms-user-select: text;      /* No support yet */
@@ -135,43 +153,103 @@ button {
 }
 
 @media (max-width: 700px) {
-    .reddit-post {
+    .reddit-post.scrollable.deselected, .reddit-post.scrollable {
+        /*still need to work on styling for mobile*/
+        position: absolute;
         display: none;
-    }
-    .toolbar {
-        display:none;
     }
     .post-sidebar {
         width: 100vw;
         /* margin-left: 48px; */
+        height: 100vh !important;
     }
     .header-buttons {
         width: 100vw;
     }
     .scrollable {
         width: 100vw;
+        height: 86vh;
     }
-    .menu-buttons {
-        display: none;
-    }
-    .dot-menu {
-        display: none;
+    .navbar {
+        justify-content: space-around !important;
     }
     .search {
-        /* background-color: #; */
-        /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACx0lEQVRYhe2UwWsUZxiHn3cmGxHMYWImERUttgdBe5GA192AetMkoH+AHoJtIaXozUOOwVDEo7T+AwupJqeAuhO9KcmlzUERD7al7c7YWWgu6e7O/DxkIjbdxJmtTQ/1dxr43vd7nvnemQ8+5D+OdduoqnqjgXhU2KgZJ4CD2dLPMpYt1Zz/qv+uXbDmexeo1xrj5mgGceQdpS9kdnWo7N3ZqsApAtaUnKgWXzfTLOIIxvfIJt1Ex9Jmc0/abO5JpONgXwI/AB+b9F0YxNOaUiFWx0S1+HoYxAqDeC0K4ontNtWUnPpifDkM4rWsZ7pTXe4R1GuNcTPNAn+a7Iw/4j3MJR00ykILwC5hY0MV7+7b67mORVX1mqOZzHgyLxzAr3iLEl+t92pGSyoVFogG4tGNmQ889L7JC9/I4CvvFrACfBKtxucKC2A2lj18a1OWFhWwC5YYdhtA2Gg3AicA3Hb6oCh8I22l9wAMhosLSPsBEjf5sVuBnt50o/dAcYF/cGO+Af3hWLbTX0aYcwTUAdzEPdStQGu3rfeKXwsLKOUxQOI6p7oVcKXTACaeFBZwjPlM5VI3V6qqcjG7CCDTfGGBgT5v1uAl8GlYbkwUFYj8xmXBMdBzv69/rrCADVsrkU0CmLgRBY1ybvhioyLja0Am54oNW6uwAIBjrcfA78AuoYV6Lf5MVblb1asqNwziL1K0YKIXMe2PePOb63L9XmEQ7oOeADiaSezNllYMu91Wes+15CVASs9HrukUskvrx44Q0/4j71qnW/SdApvgT6FdSVU66ZpuCg5v363nJudKpzfPJdAJPlgZ/A1ASypFq/G4zM6aOAnsAwT8ZLAsNOf39c9tnnlugfr9+pDjlh5kx/jMWsmIf9r/ZbvNuklHgZ2CdxTYSfjfBHYaDpvuAXNL5zP4U2iX/214x4RB/Pn61/8h/5O8BslWSjT8JpfTAAAAAElFTkSuQmCC');        color: #; */
-        /* background-color: #382963; */
         border: none;
-        color: #eabfee00;
         border-radius: 3px;
         font-size: 16px;
-        display: inline-block;
-        margin: 5px 0px 5px 20px !important;
+        margin: 0 !important;
+        /* margin: 5px 2.5vh; */
         transition: 0.16s ease-in;
     }
     .new-msg {
         padding: 0px;
         margin: 4px 0px;
+    }
+    .mark-as-read-btn, .dot-menu, .toolbar {
+        display: none !important;
+    }
+    .header-buttons  {
+        padding-left: 0 !important;
+        max-height: 40px;
+    }
+    .post-header-button {
+        margin-top: 5px !important;
+    }
+    header {
+        padding: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .logo {
+        display: none;
+    }
+    .search {
+        margin-left: 5% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-buttons {
+        display: none !important;
+    }
+    .navbar {
+        padding: 5px 5px !important;
+    }
+    .search {
+        width: 95vw !important;
+        margin: auto !important;
+        padding: auto !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* .menu-buttons>button {
+        display: none;
+    }
+    .profile-pic, .settings-button {
+        display: inline !important;
+    } */
+}
+
+@media (max-width: 940px) {
+    .navbar {
+        /* justify-content: flex-start !important; */
+        justify-content: space-around;
+    }
+    .menu-buttons>button {
+        display: none;
+    }
+    .profile-pic, .settings-button {
+        display: inline !important;
+    }
+    .search {
+        margin-left: 10%;
+    }
+    .logo {
+        position: static !important;
+        margin-right: 10px;
+        /* z-index: -1; */
     }
 }
 
@@ -182,7 +260,7 @@ button {
 
 .post-author {
     font-size: 14px;
-    color: #646464;
+    color: var(--border-color);
 }
 
 .post-section-title {
@@ -199,13 +277,14 @@ button {
     text-decoration: none;
     padding: 15px 15px;
     /* width: 98%; */
-    background-color: #333333;
+    background-color: var(--background-color-2);
     border-radius: 5px;
-    border: 1px solid #646464;
+    border: 1px solid var(--border-color);
     transition: 0.16s ease;
     margin: 5px auto;
-    color: #D7DADC;
+    color: var(--post-color);
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .post-link-container>img {
@@ -221,7 +300,7 @@ button {
     /* color: #D7DADC;
     font-weight: bold; */
     transition: 0.16s ease;
-    color: #0074D9;
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -252,7 +331,7 @@ button {
     right: 0;
     width: 0;
     height: 2px;
-    color: #D7DADC;
+    color: var(--post-color);
     background-color: #0074D9;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -278,7 +357,7 @@ button {
 .replied-comment {
     /* text-indent: 1.3em; */
     margin-left: 1.5rem;
-    border-left: 1px solid #646464;
+    border-left: 1px solid var(--border-color);
     padding-left: 10px;
 }
 
@@ -295,9 +374,26 @@ button .menu {
 }
 
 .navbar {
-    background-color: #6f40ff;
+    background-color: var(--navbar-color);
     padding: 0;
     margin-right: auto !important;
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-around !important; */
+    justify-content: flex-start;
+    flex-direction: row !important;
+    align-items: center;
+    /* width: 100vw !important; */
+}
+
+
+.menu-buttons {
+    display: flex;
+    /* justify-self: flex-start !important; */
+    align-items: center;
+    justify-content: flex-end;
+    /* width: 100%; */
+    flex: 1;
 }
 
 .logo {
@@ -305,16 +401,16 @@ button .menu {
     font-size: 16px;
     padding: 0px 0px 0px 8px;
     color: white;
-    position: absolute;
+    /* position: absolute;
     top: 26%;
-    left: 4%;
+    left: 4%; */
     /* align-content: flex-start !important;
     flex-grow: 1; */
     /* margin: 0 auto 0 0 !important; */
     /* margin-right: 50px !important; */
     /* width: 10px !important; */
     font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 .search {
@@ -324,24 +420,30 @@ button .menu {
     background-position: 16px 7px;
     background-size: 22px 22px;
     background-color: #382963;
+    color: var(--post-color);
     background-repeat: no-repeat;
     border: none;
-    color: #eabfee00;
     border-radius: 3px;
     font-size: 16px;
     display: inline;
-    padding: 5px 140px 5px 48px;
-    /* position: absolute;
-    top: 7px;
-    left: 245px; */
+    max-width: 350px;
+    width: 350px;
+    padding: 5px 0 5px 50px;
+    /* padding: 5px 150px 5px 48px; */
+    margin-left: 180px;
     transition: 0.16s ease-in;
+}
+
+.search::placeholder {
+    color: var(--pink)
 }
 
 .search:focus, input:focus{
     outline: none;
     background-color: #38296399;
-    color: #eabfee;
-    padding: 5px 160px 5px 48px;
+    color: var(--text-color-1);
+    /* color: white; */
+    /* padding: 5px 140px 5px 48px; */
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -351,6 +453,13 @@ button .menu {
     text-align: left;
     outline: none;
     color: white !important;
+    /* margin: 0 !important; */
+    padding: 0 !important;
+    font-weight: bold;
+}
+
+.collapsible>.ms-Icon {
+    margin: 5px 20px 0 15px;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -360,9 +469,10 @@ button .menu {
     overflow: hidden;
 }
 
+
 nav span button {
     display: inline-block;
-    background-color: #6f40ff;
+    background-color: var(--navbar-color);
     color: white;
     border: none;
     width: 48px;
@@ -374,7 +484,7 @@ nav span button:focus {
 }
 
 header {
-    background-color: #212121;
+    background-color: var(--background-color);
     width: 100%;
     height: 45px;
     border-bottom: 1px solid black;
@@ -383,7 +493,7 @@ header {
 }
 
 .new-msg {
-    background-color: #ffcdff;
+    background-color: var(--subreddit-button);
     font-weight: 400;
     padding: 4px 17px;
     color: #212121;
@@ -417,7 +527,7 @@ header {
 .header-buttons {
     padding-left: 50px;
     height: 55px;
-    background-color: #333333;
+    background-color: var(--background-color-2);
     border-bottom: 1px solid black;
 }
 
@@ -432,14 +542,12 @@ header {
 }
 
 .post-header-button:focus {
-    border-bottom: 3px solid #eaa8ff;
-    /* box-shadow: inset 0 0 3px #eaa8ff; */
-    /* border-style: inset; */
+    border-bottom: 3px solid  var(--pink);
     padding-bottom: 2px;
 }
 .post-header-button:hover {
     border-radius: 5px;
-    background-color: #212121;
+    background-color: var(--background-color);
 }
 
 header {
@@ -451,7 +559,7 @@ header {
 header .menu {
     background-color: transparent;
     border: none;
-    color: #ffcdff;
+    color: var(--subreddit-button);
     width: 42px;
     height: 30px;
     margin: 0 5px;
@@ -461,7 +569,7 @@ header .menu {
 
 .mark-as-read-btn {
     background: transparent;
-    color: #eaa8ff;
+    color:  var(--pink);
     border: none;
     padding: 5px 5px;
 }
@@ -486,12 +594,12 @@ aside {
 }
 
 .toolbar button:hover {
-    background-color: #212121;
+    background-color: var(--background-color);
     margin: 10% 0;
 }
 
 .toolbar button:focus {
-    border-left: 2px solid #eaa8ff;
+    border-left: 2px solid var(--pink);
     height: 9%;
 }
 
@@ -539,7 +647,7 @@ aside {
 ::-webkit-scrollbar-track {
     border-radius: 5px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-    background-color: #212121;
+    background-color: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -549,13 +657,9 @@ aside {
 
 @media (min-width: 920px) {
     .menu-selector {
-        background-color: #212121;
-        /* border-left: 1px solid black; */
-        /* border: 2px solid white; */
+        background-color: var(--background-color);
         width: 250px;
         height: 86vh;
-        /* position: relative;
-        left: 48px; */
         overflow-y: auto;
     }
 }
@@ -589,12 +693,18 @@ aside {
 
 .menu-selector button:focus {
     background-color: #4b4d61;
-    color: #eaa8ff;
+    color: var(--pink);
 }
 
 .favorites {
-    padding: 15px 75px 15px 55px;
+    /* padding: 15px 75px 15px 55px; */
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-weight: bold;
+}
+
+.favorites>.ms-Icon {
+    margin: 5px 20px 0 15px !important;
 }
 
 .menu-selector button:focus {
@@ -619,7 +729,7 @@ aside {
     width: 100%;
     padding-left: 55px;
     background-color: #21212130;
-    color: #eabfee;
+    color: var(--text-color-1);
     height: 40px;
     text-align: left;
     /* padding-left: 55px; */
@@ -632,7 +742,7 @@ aside {
 
 .subreddits-section button:focus {
     background-color: #4b4d61;
-    color: #eaa8ff;
+    color: var(--pink);
 }
 
 .meet-now {
@@ -656,7 +766,7 @@ aside {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: var(--background-color-2);
     z-index: 100;
 }
 
@@ -675,9 +785,8 @@ aside {
 }
 
 .dark #loadingScreen {
-    background-color: #333;
+    background-color: var(--background-color-2);
 }
-
 
 #loadingLogo2_ts {
     animation: loadingLogo2_ts__ts 3000ms linear 1 normal forwards;
@@ -827,4 +936,65 @@ aside {
     100% {
         transform: translate(101.000699px,97.499573px) scale(1,0.001723)
     }
+}
+
+.settings-button {
+    transition: 0.2s ease;
+}
+
+.settings-button:focus {
+    background-color: #3c3c3c;
+}
+
+.settings-panel {
+    position: absolute;
+    left: 100%;
+    top: 49px;
+    z-index: 100;
+    min-width: 150px;
+    width: 23%;
+    height: 95vh;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: var(--background-color);
+    border-left: 1px solid #999999;
+    font: 600 20px SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+    transition: left 0.16s ease-in;
+    /* display: none; */
+}
+
+.settings-panel-show {
+    left: 77%;
+    /* display: inline; */
+}
+
+.form-switch>label {
+    font-size: 16px !important;
+}
+
+.settings-header {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+.close-settings {
+    /* margin-left: 80%; */
+    /* border: none; */
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    min-width: 0;
+    top: 12px;
+    left: calc(100% - 44px);
+    padding: 5px;
+    border-width: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+}
+
+.close-settings:hover {
+    background-color: #555555;
 }
