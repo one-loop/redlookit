@@ -20,17 +20,12 @@ function getPosts(subreddit) {
             displayPosts(responseData);
         })
         .catch(function (error) {
-            console.log(error)
+            // console.log(error)
         })
 }
 
 function displayPosts(responses) {
     for (let response of responses) {
-        // console.log(response.data.subreddit);
-        // console.log(response.data.url);
-        // console.log(response.data.ups);
-        // console.log(response.data.title);
-        // console.log('**********')
         let section = document.createElement('button');
         section.classList.add('post');
 
@@ -65,17 +60,16 @@ function displayPosts(responses) {
             console.log(`GETTING: https://www.reddit.com${response.data.permalink}.json?limit=75`)
             axios.get(`https://www.reddit.com${response.data.permalink}.json?limit=75`)
                 .then((response) => {
-                    console.log(response);
                     // console.log(response.data[1].children[])
                     try {
                         clearPost();
                         expandPost(response);
                     } catch (e) {
-                        console.log(e)
+                        // console.log(e)
                     }
                 })
                 .catch((error) => {
-                    console.log(error);
+                    // console.log(error);
                 })
         })
         postsList.append(section);
@@ -91,7 +85,9 @@ function expandPost(response) {
         // reset scroll position when user clicks on a new post
         let redditPost = document.querySelector('.reddit-post');
         redditPost.scrollTop = 0;
-    } catch (e) { console.log(e) }
+    } catch (e) { 
+        // console.log(e) 
+    }
     
     comments = response.data[1].data.children;
     // console.log(comments)
@@ -119,7 +115,7 @@ function expandPost(response) {
         let div = document.createElement('div');
         let thumbnail = document.createElement('img');
         let link = document.createElement('a');
-        console.log(response.data[0].data.children[0].data.thumbnail)
+        // console.log(response.data[0].data.children[0].data.thumbnail)
         thumbnail.src = response.data[0].data.children[0].data.thumbnail;
         link.href = response.data[0].data.children[0].data.url_overridden_by_dest;
         link.innerText = titleText;
@@ -208,7 +204,7 @@ function displayComments(comments, isReply=false) {
             }
         }
         catch (e) {
-            console.log(e);
+            // console.log(e);
         }
     }
 }
@@ -276,17 +272,20 @@ inboxButton.addEventListener('click', async () => {
 })
 
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+let collapsible = document.querySelectorAll(".collapsible");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+for (let coll of collapsible) {
+  coll.addEventListener("click", function() {
+    // this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "none") {
+        this.firstChild.nextSibling.classList.remove('ms-Icon--ChevronRight')
+        this.firstChild.nextSibling.classList.add('ms-Icon--ChevronDownMed')
+        content.style.display = "block";
     } else {
-      content.style.display = "block";
+        this.firstChild.nextSibling.classList.remove('ms-Icon--ChevronDownMed')
+        this.firstChild.nextSibling.classList.add('ms-Icon--ChevronRight')
+        content.style.display = "none";
     }
   });
 }
@@ -311,3 +310,17 @@ panel.addEventListener("mousedown", function(e){
 document.addEventListener("mouseup", function(){
     document.removeEventListener("mousemove", resize, false);
 }, false);
+
+let settingsButton = document.querySelector('.settings-button');
+let settingsPanel = document.querySelector('.settings-panel');
+
+settingsButton.addEventListener('click', () => {
+    settingsPanel.classList.toggle('settings-panel-show');
+})
+
+let closeButton = document.querySelector('.close-settings');
+
+closeButton.addEventListener('click', () => {
+    console.log('clicked close button')
+    settingsPanel.classList.remove('settings-panel-show');
+})
