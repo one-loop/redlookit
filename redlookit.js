@@ -324,3 +324,17 @@ closeButton.addEventListener('click', () => {
     console.log('clicked close button')
     settingsPanel.classList.remove('settings-panel-show');
 })
+
+const checkbox = document.querySelector('#flexSwitchCheckChecked');
+
+checkbox.addEventListener('change', function() {
+    if (checkbox.checked) {
+        console.log(checkbox.checked)
+        document.querySelector('body').classList.remove('light')
+        document.querySelector('body').classList.add('dark')
+    } else {
+        document.querySelector('body').classList.remove('dark')
+        document.querySelector('body').classList.add('light')
+    }
+})
+
