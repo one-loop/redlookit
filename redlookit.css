@@ -1,5 +1,6 @@
-:root {
+.dark {
     --navbar-color: #6f40ff;
+    --text-color: #ffffdb;
     --background-color: #212121;
     --background-color-2: #333333;
     --pink: #eaa8ff;
@@ -7,13 +8,45 @@
     --post-color: #d7dadc;
     --subreddit-button: #ffcdff;
     --border-color: #646464;
+    --border-color-2: #000000;
     --text-color-1: #eabfee;
     --link-color: #0074d9;
+    --searchbar-unselected: #382963;
+    --searchbar-selected: #38296399;
+    --new-msg: #000000;
+    --menu-selector-button: #21212130;
+    --menu-selector-button-focus: #4b4d61;
+    --setting-button-hover: #555555;
+    --post-link-hover: #33333370;
+    --menu-buttons-hover: #6b3fff;
+}
+
+.light {
+    --navbar-color: #0001ff;
+    --text-color: #323130;
+    --background-color: #faf9f8;
+    --background-color-2: #ffffff;
+    --pink: #0001ff;
+    --button-focus: #55576b;
+    --post-color: #333333;
+    --subreddit-button: #0001ff;
+    --border-color: #646464;
+    --border-color-2: #edebe9;
+    --text-color-1: #605e5c;
+    --link-color: #0074d9;
+    --searchbar-unselected: #b3b3ff;
+    --searchbar-selected: #b3b3ff99;
+    --new-msg: #ffffff;
+    --menu-selector-button: #f3f2f1;
+    --menu-selector-button-focus: #e6e7ff;
+    --setting-button-hover: #e1dfdd;
+    --post-link-hover: #e6e7ff;
+    --menu-buttons-hover: #0000d7;
 }
 
 
 body {
-    color: #ffffdb;
+    color: var(--text-color);
     font-family: Calibri;
     background: var(--background-color);
     overflow-x: hidden; /* prevent side scrolling on main body*/
@@ -27,10 +60,15 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    transition: background-color 0.6s ease;
 }
 
 button {
     outline: none;
+}
+
+.new-msg {
+    color: var(--new-msg) !important;
 }
 
 .new-msg:hover {
@@ -38,7 +76,7 @@ button {
 }
 
 .mark-as-read-btn:hover {
-    background-color: black;
+    background-color: var(--border-color-2);
     border-radius: 3px;
 }
 
@@ -63,7 +101,7 @@ button {
 
 .post:focus {
     border-left: 4px solid var(--pink);
-    background-color: var(--button-focus);
+    background-color: var(--post-link-hover);
 }
 
 .scrollable {
@@ -131,7 +169,7 @@ button {
         /* position: absolute; */
         background-color: var(--background-color);
         padding: 0px 12px;   
-        border-left: 1px solid black;
+        border-left: 1px solid var(--border-color-2);
         color: var(--post-color);
         /* top: 13.5%; */
         /* left: 43.5%; */
@@ -297,8 +335,7 @@ button {
 .post-link-container>a {
     /* text-decoration: none; */
     font-size: 16px;
-    /* color: #D7DADC;
-    font-weight: bold; */
+    font-weight: bold;
     transition: 0.16s ease;
     color: var(--link-color);
     text-decoration: none;
@@ -345,7 +382,7 @@ button {
 }
 
 .post-link-container:hover {
-    background-color: #33333370;
+    background-color: var(--post-link-hover);
     cursor: pointer;
 }
 
@@ -366,11 +403,12 @@ button .menu {
     width: 32px !important;
     height: 32px !important;
 }
+
 .menu:active {
-    background-color: black;
+    background-color: var(--border-color-2);
 }
 .menu:hover {
-    background-color: black;
+    background-color: var(--border-color-2);
 }
 
 .navbar {
@@ -419,8 +457,8 @@ button .menu {
     background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2VhYmZlZSI+PHBhdGggZD0iTTEwMi4xMjUsMTYuMTI1Yy0yOS42MjU0OSwwIC01My43NSwyNC4xMjQ1MSAtNTMuNzUsNTMuNzVjMCwxMi44NzA2IDQuNTE0MTYsMjQuNjcwNDEgMTIuMDkzNzUsMzMuOTI5NjlsLTQyLjgzMjAzLDQyLjgzMjAzbDcuNzI2NTYsNy43MjY1Nmw0Mi44MzIwMywtNDIuODMyMDNjOS4yNTkyOCw3LjU3OTU5IDIxLjA1OTA4LDEyLjA5Mzc1IDMzLjkyOTY5LDEyLjA5Mzc1YzI5LjYyNTQ5LDAgNTMuNzUsLTI0LjEyNDUxIDUzLjc1LC01My43NWMwLC0yOS42MjU0OSAtMjQuMTI0NTEsLTUzLjc1IC01My43NSwtNTMuNzV6TTEwMi4xMjUsMjYuODc1YzIzLjgwOTU3LDAgNDMsMTkuMTkwNDMgNDMsNDNjMCwyMy44MDk1NyAtMTkuMTkwNDMsNDMgLTQzLDQzYy0yMy44MDk1NywwIC00MywtMTkuMTkwNDMgLTQzLC00M2MwLC0yMy44MDk1NyAxOS4xOTA0MywtNDMgNDMsLTQzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+');
     background-position: 16px 7px;
     background-size: 22px 22px;
-    background-color: #382963;
-    color: var(--post-color);
+    background-color: var(--searchbar-unselected);
+    color: var(--text-color);
     background-repeat: no-repeat;
     border: none;
     border-radius: 3px;
@@ -440,7 +478,7 @@ button .menu {
 
 .search:focus, input:focus{
     outline: none;
-    background-color: #38296399;
+    background-color: var(--searchbar-selected);
     color: var(--text-color-1);
     /* color: white; */
     /* padding: 5px 140px 5px 48px; */
@@ -452,7 +490,7 @@ button .menu {
     font-weight: bold;
     text-align: left;
     outline: none;
-    color: white !important;
+    color: var(--text-color) !important;
     /* margin: 0 !important; */
     padding: 0 !important;
     font-weight: bold;
@@ -487,7 +525,7 @@ header {
     background-color: var(--background-color);
     width: 100%;
     height: 45px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color-2);
     padding: 0px 0px 0px 48px;
     z-index: 1;
 }
@@ -513,8 +551,8 @@ header {
 .post-sidebar {
     display: flex;
     flex-direction: column;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid var(--border-color-2);
+    border-bottom: 1px solid var(--border-color-2);
     /* width: 25.3%; */
     width: 350px;
     /* resize: horizontal; */
@@ -528,7 +566,7 @@ header {
     padding-left: 50px;
     height: 55px;
     background-color: var(--background-color-2);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color-2);
 }
 
 .post-header-button {
@@ -582,11 +620,12 @@ aside {
     /* z-index: 0; */
     min-width: 48px;
     height: 86vh;
-    background-color: black;
+    background-color: var(--border-color-2);
 }
 
 .toolbar button {
-    background: black;
+    color: var(--text-color);
+    background: transparent;
     width: 48px;
     height: 48px;
     border: none;
@@ -600,7 +639,6 @@ aside {
 
 .toolbar button:focus {
     border-left: 2px solid var(--pink);
-    height: 9%;
 }
 
 .dot-menu {
@@ -646,7 +684,7 @@ aside {
 
 ::-webkit-scrollbar-track {
     border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 10px var(--border-color-2);
     background-color: var(--background-color);
 }
 
@@ -671,15 +709,15 @@ aside {
 }
 
 .menu-selector button {
-    background-color: #21212130;
-    color: white;
+    background-color: var(--menu-selector-button);
+    color: var(--text-color);
     min-height: 40px;
     text-align: left;
     /* padding-left: 55px; */
     border: none;
 }
 .menu-selector button:hover {
-    background-color: black;
+    background-color: var(--border-color-2);
     border-radius: 3px; 
 }
 
@@ -687,12 +725,8 @@ aside {
     margin: 0px 20px 0px 5px;
 }
 
-.menu-selector button:hover {
-    background-color: black;
-}
-
 .menu-selector button:focus {
-    background-color: #4b4d61;
+    background-color: var(--menu-selector-button-focus);
     color: var(--pink);
 }
 
@@ -702,6 +736,7 @@ aside {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 
 .favorites>.ms-Icon {
     margin: 5px 20px 0 15px !important;
@@ -728,8 +763,8 @@ aside {
 .subreddits-section button {
     width: 100%;
     padding-left: 55px;
-    background-color: #21212130;
-    color: var(--text-color-1);
+    background-color: var(--menu-selector-button);
+    color: var(--pink);
     height: 40px;
     text-align: left;
     /* padding-left: 55px; */
@@ -737,11 +772,11 @@ aside {
 }
 
 .subreddits-section button:hover {
-    background-color: black;
+    background-color: var(--border-color-2);
 }
 
 .subreddits-section button:focus {
-    background-color: #4b4d61;
+    background-color: var(--menu-selector-button-focus);
     color: var(--pink);
 }
 
@@ -750,7 +785,7 @@ aside {
 }
 
 .menu-buttons button:hover {
-    background-color: #6b3fff;
+    background-color: var(--menu-buttons-hover);
 }
 
 #preloadDiv {
@@ -787,6 +822,7 @@ aside {
 .dark #loadingScreen {
     background-color: var(--background-color-2);
 }
+
 
 #loadingLogo2_ts {
     animation: loadingLogo2_ts__ts 3000ms linear 1 normal forwards;
@@ -952,7 +988,7 @@ aside {
     top: 49px;
     z-index: 100;
     min-width: 150px;
-    width: 23%;
+    width: 250px;
     height: 95vh;
     padding-top: 20px;
     padding-left: 10px;
@@ -964,7 +1000,7 @@ aside {
 }
 
 .settings-panel-show {
-    left: 77%;
+    left: calc(100% - 250px);
     /* display: inline; */
 }
 
@@ -995,6 +1031,7 @@ aside {
     color: white;
 }
 
+
 .close-settings:hover {
-    background-color: #555555;
+    background-color: var(--setting-button-hover);
 }
