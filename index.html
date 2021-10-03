@@ -11,7 +11,7 @@
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/outlook-5-1174817.png">
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
 </head>
-<body>
+<body class="dark">
     <nav class="navbar">
         <span class="dot-menu-button">
             <button class="dot-menu">
@@ -61,7 +61,7 @@
             <h4 class="settings">Settings</h4>
             <button class="close-settings">
                 <!-- <i class="ms-Icon--ChromeClose" role="presentation" style="display: inline-block; font-size: 12px;"></i> -->
-                <i class="ms-Icon ms-font-s ms-Icon--ChromeClose" style="color: white"></i>
+                <i class="ms-Icon ms-font-s ms-Icon--ChromeClose" style="color: var(--text-color)"></i>
             </button>
         </div>
         <h6>Theme</h6>
@@ -92,9 +92,7 @@
 
     <header class="header">
         <button class="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="margin-bottom: 3px;">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
+            <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
         </button>
         <button class="new-msg" aria-label="Add New Subreddit">New message</button>
         <button class="mark-as-read-btn">
@@ -111,42 +109,27 @@
         <aside class="toolbar icons">
             <form action="https://outlook.office365.com/mail/inbox" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,28.66667c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v86c0,7.91917 6.41417,14.33333 14.33333,14.33333h114.66667c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-86c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM28.66667,43h114.66667v7.18066l-57.33333,35.81934l-57.33333,-35.81934zM28.66667,64.514l57.33333,35.81934l57.33333,-35.81934v64.486h-114.66667z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i>
             </button>
             </form>
             <form action="https://outlook.office365.com/calendar/" target="_blank">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M48.375,21.5v5.375h-21.5v118.25h118.25v-118.25h-21.5v-5.375h-10.75v5.375h-53.75v-5.375zM37.625,37.625h10.75v5.375h10.75v-5.375h53.75v5.375h10.75v-5.375h10.75v10.75h-96.75zM37.625,59.125h96.75v75.25h-96.75zM69.875,69.875v10.75h10.75v-10.75zM91.375,69.875v10.75h10.75v-10.75zM112.875,69.875v10.75h10.75v-10.75zM48.375,91.375v10.75h10.75v-10.75zM69.875,91.375v10.75h10.75v-10.75zM91.375,91.375v10.75h10.75v-10.75zM112.875,91.375v10.75h10.75v-10.75zM48.375,112.875v10.75h10.75v-10.75zM69.875,112.875v10.75h10.75v-10.75zM91.375,112.875v10.75h10.75v-10.75z"></path></g></g></svg>
+            <button dir="ltr">
+                <i class="ms-Icon ms-Icon--Calendar" aria-hidden="true"></i>
             </button>
             </form>
             <form action="https://outlook.office365.com/people/" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,43c-14.78125,0 -26.875,12.09375 -26.875,26.875c0,8.14648 3.80029,15.39014 9.57422,20.32422c-5.73193,3.00244 -10.75,7.5376 -14.27734,12.93359c-1.91065,-2.77148 -4.43018,-5.33301 -7.22266,-7.22266c3.98926,-3.90527 6.55078,-9.30127 6.55078,-15.28516c0,-11.8208 -9.6792,-21.5 -21.5,-21.5c-11.8208,0 -21.5,9.6792 -21.5,21.5c0,5.98389 2.56153,11.37989 6.55078,15.28516c-7.15967,4.8501 -11.92578,13.12256 -11.92578,22.33984h10.75c0,-8.90234 7.22266,-16.125 16.125,-16.125c8.90234,0 16.125,7.22266 16.125,16.125v5.375h10.75c0,-14.80224 12.07276,-26.875 26.875,-26.875c14.80224,0 26.875,12.07276 26.875,26.875h10.75v-5.375c0,-8.90234 7.22266,-16.125 16.125,-16.125c8.90234,0 16.125,7.22266 16.125,16.125h10.75c0,-9.21729 -4.76611,-17.48974 -11.92578,-22.33984c3.98926,-3.90527 6.55078,-9.30127 6.55078,-15.28516c0,-11.8208 -9.6792,-21.5 -21.5,-21.5c-11.8208,0 -21.5,9.6792 -21.5,21.5c0,5.98389 2.56153,11.37989 6.55078,15.28516c-2.79248,1.88965 -5.31201,4.45117 -7.22266,7.22266c-3.52734,-5.39599 -8.54541,-9.93115 -14.27734,-12.93359c5.77393,-4.93408 9.57422,-12.17773 9.57422,-20.32422c0,-14.78125 -12.09375,-26.875 -26.875,-26.875zM86,53.75c8.96533,0 16.125,7.15967 16.125,16.125c0,8.96533 -7.15967,16.125 -16.125,16.125c-8.96533,0 -16.125,-7.15967 -16.125,-16.125c0,-8.96533 7.15967,-16.125 16.125,-16.125zM32.25,69.875c6.00489,0 10.75,4.74512 10.75,10.75c0,6.00489 -4.74511,10.75 -10.75,10.75c-6.00488,0 -10.75,-4.74511 -10.75,-10.75c0,-6.00488 4.74512,-10.75 10.75,-10.75zM139.75,69.875c6.00489,0 10.75,4.74512 10.75,10.75c0,6.00489 -4.74511,10.75 -10.75,10.75c-6.00488,0 -10.75,-4.74511 -10.75,-10.75c0,-6.00488 4.74512,-10.75 10.75,-10.75z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--People" aria-hidden="true"></i>
             </button>
             </form>
             <form action="https://outlook.office365.com/files/" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M114.66667,50.16667v74.52617c0,11.96833 -8.09117,22.86167 -19.81583,25.2625c-16.11783,3.30383 -30.35083,-8.987 -30.35083,-24.53867v-88.7735c0,-7.138 4.859,-13.77433 11.90383,-14.9425c8.97267,-1.4835 16.76283,5.43233 16.76283,14.13267v75.25c0,1.978 -1.6125,3.58333 -3.58333,3.58333c-1.97083,0 -3.58333,-1.60533 -3.58333,-3.58333v-60.91667c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667v0c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v59.86317c0,9.374 6.7295,17.931 16.05333,18.877c10.71417,1.08933 19.78,-7.3315 19.78,-17.8235v-73.97433c0,-14.964 -10.91483,-28.35133 -25.80717,-29.799c-17.0925,-1.66267 -31.52617,11.77483 -31.52617,28.52333v87.8275c0,20.5755 14.99983,38.9795 35.46783,40.979c23.4995,2.3005 43.3655,-16.1895 43.3655,-39.22317v-75.25c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667v0c-3.956,0 -7.16667,3.21067 -7.16667,7.16667z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i>
             </button>
             </form>
             <form action="https://to-do.office.com/tasks/" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M131.46354,21.56999c-3.06761,0 -6.13364,1.16654 -8.38444,3.49935l-49.91472,51.81836l-24.24349,-25.18132c-2.2508,-2.33281 -5.31682,-3.49935 -8.38444,-3.49935c-3.06762,0 -6.13364,1.16654 -8.38444,3.49935h-0.014l-21.69596,22.52181c-4.33778,4.50251 -4.33778,11.77646 0,16.27897l54.33789,56.4235c1.6881,1.74961 3.841,2.83799 6.10286,3.27539c0.00437,0.00086 0.00963,-0.00085 0.014,0c1.37856,0.26492 2.78585,0.26432 4.17122,0.042c0.88353,-0.14179 1.75512,-0.35991 2.58952,-0.69987c1.43308,-0.58031 2.76223,-1.4538 3.89127,-2.61752c0.00718,-0.0074 0.02083,-0.00657 0.02799,-0.014l79.84115,-82.89258c0.01652,-0.01713 0.02559,-0.03879 0.04199,-0.05599l0.09798,-0.09798c4.33778,-4.50251 4.33778,-11.77646 0,-16.27897l-0.13997,-0.13997l-21.55599,-22.38184h-0.014c-2.25046,-2.33281 -5.31683,-3.49935 -8.38444,-3.49935zM131.46354,37.02311l18.01465,18.71452l-57.36133,59.57292l-18.93848,19.65234l-18.00065,-18.71452zM40.53646,63.66016l22.68978,23.55762l-18.04264,18.71452l-22.67578,-23.55761z"></path></g></g></svg>
+                <i class="ms-Icon ms-Icon--ToDoLogoOutline" aria-hidden="true"></i>
             </button>
             </form>
             <form action="https://www.office.com/launch/word" target="_blank">
@@ -204,7 +187,7 @@
                 <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
                 Deleted Items
             </button>
-            <button style="color: #eaa8ff; padding-left: 55px">Add Favorite</button>
+            <button style="color: var(--pink); padding-left: 55px">Add Favorite</button>
             <span class="subreddits-section">
                 <button type="button" class="collapsible">
                     <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
