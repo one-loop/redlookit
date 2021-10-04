@@ -10,7 +10,7 @@
     --border-color: #646464;
     --border-color-2: #000000;
     --text-color-1: #eabfee;
-    --link-color: #0074d9;
+    --link-color: #0088d6;
     --searchbar-unselected: #382963;
     --searchbar-selected: #38296399;
     --new-msg: #000000;
@@ -19,6 +19,7 @@
     --setting-button-hover: #555555;
     --post-link-hover: #33333370;
     --menu-buttons-hover: #6b3fff;
+    --profile-panel-background: #1a1a1a;
 }
 
 .light {
@@ -33,7 +34,7 @@
     --border-color: #646464;
     --border-color-2: #edebe9;
     --text-color-1: #605e5c;
-    --link-color: #0074d9;
+    --link-color: #0088d6;
     --searchbar-unselected: #b3b3ff;
     --searchbar-selected: #b3b3ff99;
     --new-msg: #ffffff;
@@ -42,6 +43,7 @@
     --setting-button-hover: #e1dfdd;
     --post-link-hover: #e6e7ff;
     --menu-buttons-hover: #0000d7;
+    --profile-panel-background: #fff;
 }
 
 
@@ -357,7 +359,7 @@ button {
     color: white;
 } */
 
-.post-link-container>a{
+/* .post-link-container>a{
     position: relative;
 }
   
@@ -384,7 +386,7 @@ button {
 .post-link-container:hover {
     background-color: var(--post-link-hover);
     cursor: pointer;
-}
+} */
 
 .post-detail-info {
     margin-top: 10px;
@@ -524,9 +526,9 @@ nav span button:focus {
 header {
     background-color: var(--background-color);
     width: 100%;
+    min-height: 45px;
     height: 45px;
     border-bottom: 1px solid var(--border-color-2);
-    padding: 0px 0px 0px 48px;
     z-index: 1;
 }
 
@@ -619,8 +621,15 @@ aside {
     overflow-x: hidden;
     /* z-index: 0; */
     min-width: 48px;
-    height: 86vh;
+    height: 100vh;
+    overflow-y: hidden;
     background-color: var(--border-color-2);
+}
+
+.light > .main-content .toolbar.icons {
+    box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.35) ; */
+    /* border-right: 2px solid rgba(0, 0, 0, 0.35) ; */
 }
 
 .toolbar button {
@@ -698,7 +707,11 @@ aside {
         background-color: var(--background-color);
         width: 250px;
         height: 86vh;
-        overflow-y: auto;
+        overflow-y: hidden;
+        transition: 0.16s ease;
+    }
+    .menu-selector:hover {
+        overflow-y: scroll;
     }
 }
 
@@ -738,8 +751,14 @@ aside {
 }
 
 
-.favorites>.ms-Icon {
+.favorites-buttons>.ms-Icon {
     margin: 5px 20px 0 15px !important;
+}
+
+
+.favorites-buttons > button {
+    display: block;
+    width: 100% !important;
 }
 
 .menu-selector button:focus {
@@ -1034,4 +1053,58 @@ aside {
 
 .close-settings:hover {
     background-color: var(--setting-button-hover);
+}
+
+.profile-button {
+    transition: 0.2s ease;
+}
+
+.profile-button:focus {
+    background-color: #3c3c3c;
+}
+
+.profile-panel {
+    position: absolute;
+    top: 49px;
+    z-index: 105;
+    min-width: 150px;
+    width: 300px;
+    height: 20vh;
+    padding-top: 20px;
+    padding-left: 10px;
+    font: 600 14px SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+    transition: all 0.16s ease-in;
+    left: calc(100% - 300px);
+    display: none;
+}
+
+.profile-panel-picture {
+    margin-right: 10px;
+}
+
+.profile-panel-show {
+    display: flex;
+    background-color: var(--profile-panel-background);
+    border-bottom: 1px solid #5e5e5e;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* display: inline; */
+}
+a {
+    color: var(--link-color) !important;
+    text-decoration: none !important;
+}
+a:hover {
+    color: var(--link-color) !important;
+    text-decoration: underline !important;
+}
+
+.menu-and-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: row;
 }
