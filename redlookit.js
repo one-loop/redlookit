@@ -223,6 +223,8 @@ function clearPostsList() {
     document.querySelector('#posts').innerHTML  = '';
 }
 
+
+
 const searchForm = document.querySelector('form');
 const subreddit = document.querySelector('input');
 const subredditSection = document.querySelector('.your-subreddits')
@@ -238,10 +240,25 @@ searchForm.addEventListener('submit', async (event) => {
         clearPostsList();
         let posts = await getPosts(subredditBtn.id);
     })
+    // document.cookie.subreddits.append(subreddit.value);
     subredditBtn.append('r/' + subreddit.value);
     subredditSection.append(subredditBtn);
     subreddit.value = ''; 
 })
+
+// function displaySubreddits() {
+//     // display saved subreddits in cookies
+//     for (let subreddit of document.cookie.subreddits) {
+//         let subredditBtn = document.createElement('button');
+//         subredditBtn.classList.add('subreddit', 'button');
+//         subredditBtn.id = subreddit;
+//         document.cookie.subreddits.append(subreddit);
+//         subredditBtn.append('r/' + subreddit);
+//         subredditSection.append(subredditBtn);
+//     }
+// }
+
+// displaySubreddits();
 
 const popularSubreddits = document.querySelectorAll('.popular-subreddits>button')
 
@@ -315,13 +332,13 @@ let settingsButton = document.querySelector('.settings-button');
 let settingsPanel = document.querySelector('.settings-panel');
 
 settingsButton.addEventListener('click', () => {
+    profilePanel.classList.remove('profile-panel-show');
     settingsPanel.classList.toggle('settings-panel-show');
 })
 
 let closeButton = document.querySelector('.close-settings');
 
 closeButton.addEventListener('click', () => {
-    console.log('clicked close button')
     settingsPanel.classList.remove('settings-panel-show');
 })
 
@@ -337,3 +354,14 @@ checkbox.addEventListener('change', function() {
         document.querySelector('body').classList.add('light')
     }
 })
+
+let profileButton = document.querySelector('.profile-button');
+let profilePanel = document.querySelector('.profile-panel');
+
+profileButton.addEventListener('click', () => {
+    console.log('button clicked')
+    settingsPanel.classList.remove('settings-panel-show');
+    profilePanel.classList.toggle('profile-panel-show');
+})
+
+
