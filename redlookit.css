@@ -170,7 +170,7 @@ button {
     .reddit-post {
         /* position: absolute; */
         background-color: var(--background-color);
-        padding: 0px 12px;   
+        padding: 10px 12px;   
         border-left: 1px solid var(--border-color-2);
         color: var(--post-color);
         /* top: 13.5%; */
@@ -395,9 +395,10 @@ button {
 
 .replied-comment {
     /* text-indent: 1.3em; */
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
     border-left: 1px solid var(--border-color);
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 button .menu {
@@ -1020,7 +1021,7 @@ aside {
 
 .settings-panel-show {
     left: calc(100% - 250px);
-    /* display: inline; */
+    display: inline;
 }
 
 .form-switch>label {
@@ -1066,6 +1067,7 @@ aside {
 .profile-panel {
     position: absolute;
     top: 49px;
+    left: 100vw;
     z-index: 105;
     min-width: 150px;
     width: 300px;
@@ -1074,7 +1076,6 @@ aside {
     padding-left: 10px;
     font: 600 14px SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
     transition: all 0.16s ease-in;
-    left: calc(100% - 300px);
     display: none;
 }
 
@@ -1084,6 +1085,7 @@ aside {
 
 .profile-panel-show {
     display: flex;
+    left: calc(100vw - 300px);
     background-color: var(--profile-panel-background);
     border-bottom: 1px solid #5e5e5e;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
