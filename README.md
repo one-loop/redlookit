@@ -2,7 +2,7 @@
 Browse reddit while looking like you're reading your email
 
 ## 📌 How to use?
-1. Go to https://one-loop.github.io/
+1. Go to https://one-loop.github.io/redlookit/
 2. You will automatically get the posts from /popular after a second or two in the main area.
 3. If you want to view posts from a specific subreddit, type the name of the subreddit in the search bar and hit enter. Then click on the subreddit button in the sidebar which will get the posts from that subreddit and display it in the email area
 4. Clicking on a post will expand it to the left where you can read comments
