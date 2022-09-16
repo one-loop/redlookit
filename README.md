@@ -1,5 +1,5 @@
 # 📪 Reddit Mailbox
-Browse reddit while looking like your doing work
+Browse reddit while looking like you're reading your email
 
 ## 📌 How to use?
 1. Go to https://one-loop.github.io/
