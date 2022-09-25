@@ -1,6 +1,9 @@
 # 📪 Reddit Mailbox
 Browse reddit while looking like you're reading your email
 
+Thanks for the immense support from reddit! We've received almost 30,000 visitors to the site in a day!
+Feel free to contribute if you can, there's still so much I can add
+
 ## 📌 How to use?
 1. Go to https://one-loop.github.io/redlookit/
 2. You will automatically get the posts from /popular after a second or two in the main area.
