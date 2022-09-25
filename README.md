@@ -17,11 +17,11 @@ Browse reddit while looking like you're reading your email
 - [x] View video posts
 - [x] View comments
 - [x] Collapsable side menu
+- [x] Light mode
+- [x] Help getting users
 - [ ] View comment reply tree
 - [ ] Sorting posts
 - [ ] infinite scroll
-- [ ] Light mode
-- [ ] Help getting users
 - [ ] Resizeable post area
 - [ ] Removing Subreddits
 
