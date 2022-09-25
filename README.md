@@ -1,7 +1,8 @@
 # 📪 Reddit Mailbox
 Browse reddit while looking like you're reading your email
 
-Thanks for the immense support from reddit! We've received over 30,000 visitors to the site in a day!
+Thanks for the immense support from reddit! This project became the most popular post on r/coding of 2022 in a day (somehow?)! We've also received over 45,000 visitors to the site!
+
 Feel free to contribute if you can, there's still so much I can add
 
 ## 📌 How to use?
