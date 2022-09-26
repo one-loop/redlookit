@@ -148,7 +148,7 @@ button {
 }
 
 .subreddit::after {
-    content: "@outlook.com";  
+/*     content: "@outlook.com";   */
 }
 
 .main-content {
