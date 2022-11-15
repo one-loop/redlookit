@@ -143,7 +143,7 @@ function expandPost(response) {
     postSection.append(...postDetails)
     postSection.append(document.createElement('hr'))
     // console.log(comments);
-    displayComments(comments, false);
+    displayComments(comments, 0);
 }
 
 function getPostDetails(response) {
@@ -161,52 +161,64 @@ function getPostDetails(response) {
     return [upvotes, subreddit, numComments];
 }
 
+function createComment(commentData) {
+    let commentDiv = document.createElement('div')
+    commentDiv.id = commentData.data.id;
 
-function displayComments(comments, isReply=false) {
-    for (let comment of comments) {
-        try {
-            let commentDiv = document.createElement('div')
-            let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
-            let ppColor = colors[Math.floor(Math.random() * colors.length)];
-            let profilePic = `<span style="background-color: ${ppColor}; width: 25px; height: 25px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
-            if (ppColor === '#ebe6d1' || ppColor === '#ebe6d1') {
-                profilePic = `<span style="background-color: ${ppColor}; color: black; width: 25px; height: 25px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
-            }
-            let author = document.createElement('span');
-            let score = document.createElement('span');
-            let commentBody = document.createElement('div');
-            
-            author.innerHTML = profilePic;
-            author.append(`u/${comment.data.author}`);
-            commentBody.insertAdjacentHTML('beforeend', decodeHtml(comment.data.body_html));
-            score.innerHTML = '<svg width="18px" height="18px" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
-            score.append(`${comment.data.score.toLocaleString()}`);
-            score.innerHTML += '<svg width="18px" height="18px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
-            
-            commentDiv.append(author, commentBody, score);
+    // Profile pic
+    let author = document.createElement('span');
+    let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
+    let ppColor = colors[Math.floor(Math.random() * colors.length)];
+    let profilePic = `<span style="background-color: ${ppColor}; width: 25px; height: 25px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+    if (ppColor === '#ebe6d1' || ppColor === '#ebe6d1') {
+        profilePic = `<span style="background-color: ${ppColor}; color: black; width: 25px; height: 25px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: 12px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+    }
+    author.innerHTML = profilePic;
+    author.append(`u/${commentData.data.author}`);
 
-            if (isReply) {
-                commentDiv.classList.add('replied-comment')
-                postSection.append(commentDiv);
-                postSection.classList.add('post-selected');
-                postSection.classList.remove('deselected');
-                if (comment.data.replies) {
-                    displayComments(comment.data.replies.data.children, isReply=true)
-                }
-            } else {
-                postSection.append(commentDiv);
-                postSection.classList.add('post-selected');
-                postSection.classList.remove('deselected');
-                if (comment.data.replies) {
-                    displayComments(comment.data.replies.data.children, isReply=true)
-                }
-                postSection.append(document.createElement('hr'))
-            }
+    let commentBody = document.createElement('div');
+    commentBody.insertAdjacentHTML('beforeend', decodeHtml(commentData.data.body_html));
+
+    let score = document.createElement('span');
+    score.innerHTML = '<svg width="18px" height="18px" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
+    score.append(`${commentData.data.score.toLocaleString()}`);
+    score.innerHTML += '<svg width="18px" height="18px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
+
+    commentDiv.append(author, commentBody, score);
+    
+    return commentDiv
+}
+
+displayCommentsRecursive = (parentElement, commentList, indent=0) => {
+    for (let comment of commentList) {
+        // At the end of the list reddit adds a "more" object
+        if (comment.kind === "more") {
+            continue;
         }
-        catch (e) {
-            // console.log(e);
+
+        let elem = createComment(comment)
+        
+        if (indent > 0) {
+            elem.style.paddingLeft = 10*indent;
+            elem.classList.add('replied-comment');
+        }
+        
+        parentElement.append(elem);
+
+        if (comment.data.replies) {
+            displayCommentsRecursive(elem, comment.data.replies.data.children, indent+1);
+        }
+
+        if (indent === 0) {
+            parentElement.appendChild(document.createElement('hr'));
         }
     }
+}
+
+displayComments = (commentsData) => {
+    postSection.classList.add('post-selected');
+    postSection.classList.remove('deselected');
+    displayCommentsRecursive(postSection, commentsData);
 }
 
 function decodeHtml(html) {
@@ -346,7 +358,6 @@ const checkbox = document.querySelector('#flexSwitchCheckChecked');
 
 checkbox.addEventListener('change', function() {
     if (checkbox.checked) {
-        console.log(checkbox.checked)
         document.querySelector('body').classList.remove('light')
         document.querySelector('body').classList.add('dark')
     } else {
@@ -359,7 +370,6 @@ let profileButton = document.querySelector('.profile-button');
 let profilePanel = document.querySelector('.profile-panel');
 
 profileButton.addEventListener('click', () => {
-    console.log('button clicked')
     settingsPanel.classList.remove('settings-panel-show');
     profilePanel.classList.toggle('profile-panel-show');
 })
