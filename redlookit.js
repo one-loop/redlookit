@@ -165,13 +165,25 @@ function getPostDetails(response) {
     return [upvotes, subreddit, numComments];
 }
 
-function uuid(format=[8,4,4,4,12]) {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz0123456789"
-    const letters = "abcdefghijklmnopqrstuvwxyz"
+function uuid(format=undefined) {
+    if (format === undefined) {
+        format = [
+            {n:8, charset:"alphanumerical"},
+            {n:4, charset:"alphanumerical"},
+            {n:4, charset:"alphanumerical"},
+            {n:4, charset:"alphanumerical"},
+            {n:12, charset:"alphanumerical"}
+        ];
+    }
+    // Generate uuids with format ehd0wgw2-g11e-xgiq-nc9m-h2kva3tmrzpl by default
+    const alphabets = {
+        alphanumerical: "abcdefghijklmnopqrstuvwxyz0123456789",
+        alpha: "abcdefghijklmnopqrstuvwxyz"
+    };
     let result = "";
     for (let i = 0; i < format.length; i++) {
-        const length = format[i];
-        const characters = i==0 ? letters : alphabet;
+        const length = format[i].n;
+        const characters = alphabets[format[i].charset];
         for (let j = 0; j < length; j++) {
             result += characters.charAt(Math.floor(Math.random() * characters.length));
         }
@@ -202,23 +214,32 @@ function createComment(commentData) {
     let authorText = document.createElement("div");
     authorText.style.display = "flex";
     authorText.style.flexDirection = "column";
-    
-    // Name
-    let authorName = document.createElement("span");
-    const scoreLength = (""+commentData.data.score).length
-    const domain = uuid().slice(scoreLength);
-    authorName.innerHTML = `${commentData.data.author} <${commentData.data.score}${domain}@securemail.org>`;
-    authorText.append(authorName);
-    
-    // Sent date
-    let d = new Date();
-    d.setUTCSeconds(commentData.data.created_utc);
-    const dateDiv = document.createElement("span");
-    dateDiv.innerHTML = d.toString().slice(0,21);
-    dateDiv.style.color = "#a2a2a2";
-    dateDiv.style.fontSize = "0.85em";
-    authorText.append(dateDiv);
-
+    {
+        // Name
+        let authorName = document.createElement("span");
+        const scoreLength = (""+commentData.data.score).length
+        
+        // We overwrite the 1st section with the comment's score
+        // First section is only letters to allow that
+        const domain = uuid([
+            {n:8, charset:"alpha"},
+            {n:4, charset:"alphanumerical"},
+            {n:4, charset:"alphanumerical"},
+            {n:4, charset:"alphanumerical"},
+            {n:12, charset:"alphanumerical"}
+        ]).slice(scoreLength);
+        authorName.innerHTML = `${commentData.data.author} <${commentData.data.score}${domain}@securemail.org>`;
+        authorText.append(authorName);
+        
+        // Sent date
+        let d = new Date();
+        d.setUTCSeconds(commentData.data.created_utc);
+        const dateDiv = document.createElement("span");
+        dateDiv.innerHTML = d.toString().slice(0,21);
+        dateDiv.style.color = "#a2a2a2";
+        dateDiv.style.fontSize = "0.85em";
+        authorText.append(dateDiv);
+    }
     author.append(authorText);
 
     let commentBody = document.createElement('div');
