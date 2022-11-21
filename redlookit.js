@@ -1,3 +1,4 @@
+const redditBaseURL = "https://www.reddit.com";
 const postsList = document.querySelector("#posts");
 const postSection = document.querySelector('.reddit-post');
 // let colors = ['#3d5a80', '#98c1d9', '#e0fbfc', '#ee6c4d', '#293241'];
@@ -13,14 +14,14 @@ menuButton.addEventListener('click', () => {
 function getPosts(subreddit) {
     let section = document.createElement('section');
     section.classList.add('post')
-    axios.get(`https://www.reddit.com/r/${subreddit}.json?limit=75`)
+    axios.get(`${redditBaseURL}/r/${subreddit}.json?limit=75`)
         .then(function  (response) {
             responseData = response.data.data.children;
             // console.log(responseData);
             displayPosts(responseData);
         })
-        .catch(function (error) {
-            // console.log(error)
+        .catch((e) => {
+            console.error(e);
         })
 }
 
@@ -57,19 +58,19 @@ function displayPosts(responses) {
         // section.id = response.data.url;
 
         section.addEventListener('click', () => {
-            console.log(`GETTING: https://www.reddit.com${response.data.permalink}.json?limit=75`)
-            axios.get(`https://www.reddit.com${response.data.permalink}.json?limit=75`)
+            console.log(`GETTING: ${redditBaseURL}${response.data.permalink}.json?limit=75`)
+            axios.get(`${redditBaseURL}${response.data.permalink}.json?limit=75`)
                 .then((response) => {
                     // console.log(response.data[1].children[])
                     try {
                         clearPost();
                         expandPost(response);
                     } catch (e) {
-                        // console.log(e)
+                        console.error(e)
                     }
                 })
-                .catch((error) => {
-                    // console.log(error);
+                .catch((e) => {
+                    console.error(e)
                 })
         })
         postsList.append(section);
@@ -86,7 +87,7 @@ function expandPost(response) {
         let redditPost = document.querySelector('.reddit-post');
         redditPost.scrollTop = 0;
     } catch (e) { 
-        // console.log(e) 
+        console.error(e);
     }
     
     comments = response.data[1].data.children;
@@ -95,9 +96,12 @@ function expandPost(response) {
     author.append(`Posted by u/${response.data[0].data.children[0].data.author}`);
     author.classList.add('post-author')
     postSection.append(author);
-    let title = document.createElement('h4');
+    let title = document.createElement('h4')
+    let titleLink = document.createElement('a');
+    title.appendChild(titleLink);
     let titleText = response.data[0].data.children[0].data.title
-    title.append(titleText);
+    titleLink.href = `${redditBaseURL}${response.data[0].data.children[0].data.permalink}`;
+    titleLink.append(titleText);
     title.classList.add('post-section-title');
     postSection.append(title);
     if (response.data[0].data.children[0].data.post_hint === 'image') {
@@ -346,7 +350,6 @@ const checkbox = document.querySelector('#flexSwitchCheckChecked');
 
 checkbox.addEventListener('change', function() {
     if (checkbox.checked) {
-        console.log(checkbox.checked)
         document.querySelector('body').classList.remove('light')
         document.querySelector('body').classList.add('dark')
     } else {
@@ -359,7 +362,6 @@ let profileButton = document.querySelector('.profile-button');
 let profilePanel = document.querySelector('.profile-panel');
 
 profileButton.addEventListener('click', () => {
-    console.log('button clicked')
     settingsPanel.classList.remove('settings-panel-show');
     profilePanel.classList.toggle('profile-panel-show');
 })
