@@ -23,7 +23,7 @@ I'll continue to add new features. Feel free to contribute if you can, there's s
 - [x] Collapsable side menu
 - [x] Light mode
 - [x] Help getting users
-- [ ] View comment reply tree
+- [x] View comment reply tree
 - [ ] Sorting posts
 - [ ] infinite scroll
 - [ ] Resizeable post area
