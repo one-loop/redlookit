@@ -24,6 +24,8 @@ I'll continue to add new features. Feel free to contribute if you can, there's s
 - [x] Light mode
 - [x] Help getting users
 - [x] View comment reply tree
+- [x] Added support for gnomes (thanks Yarillo4)
+- [x] Outlook Profile Pictures
 - [ ] Sorting posts
 - [ ] infinite scroll
 - [ ] Resizeable post area
