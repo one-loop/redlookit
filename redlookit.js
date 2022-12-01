@@ -192,6 +192,14 @@ function uuid(format=undefined) {
     return result.slice(0,-1);
 }
 
+function strToSumOfASCII(message) {
+    let sum = 0;
+    for (let i=0; i < message.length; i++) {
+        sum += message.charCodeAt(i);
+    }
+    return sum;
+}
+
 function createComment(commentData) {
     let commentDiv = document.createElement('div')
     commentDiv.id = commentData.data.id;
@@ -199,16 +207,37 @@ function createComment(commentData) {
 
     // Profile pic
     let author = document.createElement('div');
-    author.style.display = "flex";
-    let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
-    let ppColor = colors[Math.floor(Math.random() * colors.length)];
     let ppSize = 50;
-    let profilePic = `<span style="background-color: ${ppColor}; width: ${ppSize}px; height: ${ppSize}px; padding: ${Math.round(0.12*ppSize)}px 3px 3px 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: ${Math.round(ppSize/2.08)}px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
-    if (ppColor === '#ebe6d1' || ppColor === '#ebe6d1') {
-        let ppSize = 50;
-        profilePic = `<span style="background-color: ${ppColor}; color: black; width: ${ppSize}px; height: ${ppSize}px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: ${Math.round(ppSize/2.08)}px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+    author.style.display = "flex";
+
+    if (Math.random() < 0.3) {
+        let ppElem = document.createElement("div");
+        let ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
+        let ppColor = colors[Math.floor(Math.random() * colors.length)];
+        let innerHTML = `<span style="background-color: ${ppColor}; width: ${ppSize}px; height: ${ppSize}px; padding: ${Math.round(0.12*ppSize)}px 3px 3px 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: ${Math.round(ppSize/2.08)}px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+        if (ppColor === '#ebe6d1' || ppColor === '#ebe6d1') {
+            let ppSize = 50;
+            innerHTML = `<span style="background-color: ${ppColor}; color: black; width: ${ppSize}px; height: ${ppSize}px; padding: 3px; border-radius: 50%; font-weight: bold; text-align: center; font-size: ${Math.round(ppSize/2.08)}px; margin-right: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block">${ppInitials}</span>`;
+        }
+        ppElem.innerHTML = innerHTML;
+        author.appendChild(ppElem);
+    } else {
+        let ppElem = document.createElement("img");
+        ppElem.style.height = `${ppSize}px`;
+        ppElem.style.width = `${ppSize}px`;
+        ppElem.style.marginRight = "10px";
+        ppElem.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        ppElem.classList.add("avatar-circle");
+        author.appendChild(ppElem);
+        
+        // A delay is added because the random faces change every ~second on thispersondoesnotexist
+        const randomDelay = strToSumOfASCII(commentData.data.author) % 100; // calculate "hash" of name and make sure we don't query more than 100 different pictures
+        setTimeout(() => {
+            // ?cnh=... (cdn=clamped name hash) is added to avoid browser caching if pic is queried >100th of a second apart
+            // (otherwise you just bring up the same image over and over again regardless of whether it has changed or not on the back end)
+            ppElem.src = `https://thispersondoesnotexist.com/image?cnh=${randomDelay}`;
+        }, randomDelay*100); // delay is random(0,100) tenths of a second (100 values between 0 and 10s)
     }
-    author.innerHTML = profilePic;
 
     // Author's name and sent date
     let authorText = document.createElement("div");
@@ -434,5 +463,3 @@ profileButton.addEventListener('click', () => {
     settingsPanel.classList.remove('settings-panel-show');
     profilePanel.classList.toggle('profile-panel-show');
 })
-
-
