@@ -40,6 +40,8 @@ jobs:
           # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
           node-version: 17.9.x # optional
           # File containing the version Spec of the version to use.  Examples: .nvmrc, .node-version, .tool-versions.
+      - name: Run pwd & ls
+        run: pwd && ls -la
       - name: Install Typescript
         run: npm install -g typescript
       - name: Build
