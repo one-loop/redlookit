@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts"
+  ],
+  "files": [
+    "src/redlookit.ts",
+    "src/faces_sideloader.ts",
+    "src/@types/reddit-types.ts"
+  ]
+}
