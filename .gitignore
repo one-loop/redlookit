@@ -1,1 +1,5 @@
-dist/
+public/js/
+public/styles/
+node_modules/
+.jekyll-cache
+package-lock.json

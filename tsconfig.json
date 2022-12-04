@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-    "preserveConstEnums": true,
     "allowJs": true,
-    "allowUnusedLabels": false,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
+    "allowUnusedLabels": false,
     "strictNullChecks": true,
     "sourceMap": true,
-    "module": "commonjs",
+    "module": "es6",
     "target": "es6",
-    "outDir": "./dist"
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.spec.ts"
-  ],
   "files": [
     "src/redlookit.ts",
     "src/random.ts",

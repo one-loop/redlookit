@@ -12,18 +12,18 @@ function clamp(input: number, min: number, max: number): number {
 }
 
 
-type CharsetSequence = {
+export type CharsetSequence = {
     n: number,
     charset: "alpha" | "alphanumerical",
 }
-type UUIDFormat = CharsetSequence[];
-type UUID = string;
+export type UUIDFormat = CharsetSequence[];
+export type UUID = string;
 
 
 
 // Random Number Generator that always generates the same numbers in the same order for a given seed
 // Uses the browser's crypto lib. SHA-1 based. Limited to 8 bits of entropy (although could be fixable)
-class Random {
+export class Random {
     seed: string | undefined;
     hash: number[] | undefined;
     i: number = 0;

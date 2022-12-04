@@ -1,3 +1,7 @@
+import "../styles/redlookit.css"
+import "./@types/reddit-types.ts"
+import { HumanFacesSideloader } from "./faces_sideloader"
+import { Random, UUID, UUIDFormat } from "./random";
 declare var axios: any
 
 function isDebugMode(): boolean {
@@ -391,13 +395,14 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
         const scoreLength = (""+commentData.data.score).length
         
         // Email addresses are composed of uuids and hide the score within the first block
-        const prom = rng.randomUUID([
-            {n:8, charset:"alpha"}, // // First section is only letters to avoid ambiguity on the score
-            {n:4, charset:"alphanumerical"},
-            {n:4, charset:"alphanumerical"},
-            {n:4, charset:"alphanumerical"},
-            {n:12, charset:"alphanumerical"}
-        ]).then( (uuid) => {
+        const format: UUIDFormat = [
+            { n: 8, charset: "alpha" }, // // First section is only letters to avoid ambiguity on the score
+            { n: 4, charset: "alphanumerical" },
+            { n: 4, charset: "alphanumerical" },
+            { n: 4, charset: "alphanumerical" },
+            { n: 12, charset: "alphanumerical" }
+        ];
+        rng.randomUUID(format).then((uuid: UUID) => {
             const slicedUUID = uuid.slice(scoreLength); // Remove a bunch of letters from the start
 
             // We overwrite the 1st section with the comment's score

@@ -33,7 +33,7 @@ class TimedTask {
 //         The big strength is you can use sideload() in a loop and it'll space out the queries for you
 //     Provides: getFaces()
 //         Access to all currently cached faces
-class HumanFacesSideloader {
+export class HumanFacesSideloader {
     faces: HTMLImageElement[] = [];
     promises: Promise<HTMLImageElement>[] = [];
     lastTask: TimedTask | null = null;

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/outlook-5-1174817.png">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6705733956299645"
+crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MRXY5LSS9D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MRXY5LSS9D');
+</script>
+</head>
+<body class="dark">
+    <nav class="navbar">
+        <span class="dot-menu-button">
+            <button class="dot-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667z"></path></g></g></svg>
+            </button>
+        </span>
+        <span class="logo">Outlook</span>
+        <span class="search-bar">
+            <form action="">
+                <input type="text" class="search" placeholder="Enter Subreddit Name">
+            </form>
+        </span>
+        <span class="menu-buttons">
+            <button class="meet-now">
+                <i class="ms-Icon ms-Icon--Video" aria-hidden="true"></i>
+                <span style="margin-left: 10px; position: relative; top: -3px;">Teams call</span>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--OfficeChat" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--OneNoteLogoInverse" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--EventToDoLogo" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--Ringer" aria-hidden="true"></i>
+            </button>
+            <button class="settings-button">
+                <i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
+            </button>
+            <button dir="ltr">
+                <i class="ms-Icon ms-Icon--Help" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="ms-Icon ms-Icon--Megaphone" aria-hidden="true"></i>
+            </button>
+            <button class="profile-pic profile-button">
+                <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 35px" alt="">
+            </button>
+        </span>
+    </nav>
+
+    <div id="loadingScreen">
+        <svg id="loadingLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 220" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="220" height="220"><g id="loadingLogo2_ts" transform="translate(108.894430,155.715127) scale(0.668963,0.668963)"><g id="loadingLogo2" transform="translate(-100.998749,-141)" opacity="0"><g id="loadingLogo3_to" transform="translate(101.000155,195.970703)"><g id="loadingLogo3" style="filter:drop-shadow(0px 4px 0px rgba(0,0,0,0))" transform="translate(-101.000155,-195.970703)"><g id="loadingLogo4"><path id="loadingLogo5" d="M20.933784,97.210600C20.933784,97.210600,20.178271,92.940053,20.024003,93L182.019255,93C182.019255,93,182.014000,95.531900,181.999000,97.210600C182.023000,98.906600,181.177000,100.496000,179.759000,101.421000L106.684000,145.998000L105.732000,146.559000C104.337000,147.306000,102.778000,147.691000,101.197000,147.682000C99.633300,147.689000,98.093100,147.303000,96.716900,146.559000L95.709000,145.998000L22.410100,101.421000C20.902100,100.535000,22.381585,98.916937,20.933784,97.210600Z" transform="matrix(1 0 0 1 -0.02180297631334 3.99999999659653)" fill="rgb(18,59,109)" stroke="none" stroke-width="1"/><g id="loadingLogo6_ts" transform="translate(101.000708,97.499588) scale(1,-0.001720)"><path id="loadingLogo6" d="M179.759000,93.373200L106.572000,48.740400L105.620000,48.122800C104.215000,47.403400,102.663000,47.019100,101.085000,47C99.524600,47.019600,97.990700,47.404100,96.604900,48.122800L95.597000,48.740400L22.298100,93.317000C20.875500,94.218100,20.009900,95.804917,20.002200,97.491917C19.983300,99.244317,20.902100,100.852000,22.410100,101.738000L95.709000,146.315000L96.716900,146.876000C98.093100,147.620000,99.633300,148.006000,101.197000,147.999000C102.778000,148.009000,104.337000,147.623000,105.732000,146.876000L106.684000,146.315000L179.759000,101.738000C181.177000,100.813000,182.023000,99.223700,181.999000,97.527700C182.014000,95.849000,181.168000,94.280100,179.759000,93.373200Z" transform="translate(-101.000708,-97.499588)" fill="rgb(18,59,109)" stroke="none" stroke-width="1"/></g></g><g id="loadingLogo7" clip-path="url(#loadingLogo22)"><g id="loadingLogo8_ts" transform="translate(101.000699,159.914723) scale(1,1)"><g id="loadingLogo8" transform="translate(-101.000699,-159.914723)"><g id="loadingLogo9_to" transform="translate(101,205.753765)"><g id="loadingLogo9" transform="translate(-101,-81)"><path id="loadingLogo10" d="M28,10C28,4.477150,32.477200,0,38,0L164,0C169.523000,0,174,4.477150,174,10C174,10,173.999301,28.355009,173.999301,28.355009L28,51.060529L28,10Z" transform="matrix(1 0 0 1 0.00069904000000 0)" fill="rgb(3,88,167)" stroke="none" stroke-width="1"/><g id="loadingLogo11"><rect id="loadingLogo12" width="54.063866" height="50.118118" rx="0" ry="0" transform="matrix(1 0 0 1 28 24.00000000069796)" fill="rgb(0,120,212)" stroke="none" stroke-width="1"/><rect id="loadingLogo13" width="46" height="50.118118" rx="0" ry="0" transform="matrix(1.04381524897098 0 0 1 125.98449854733477 24)" fill="rgb(80,217,255)" stroke="none" stroke-width="1"/><rect id="loadingLogo14" width="50" height="50.118118" rx="0" ry="0" transform="matrix(1 0 0 1 78 24)" fill="rgb(40,168,234)" stroke="none" stroke-width="1"/></g><g id="loadingLogo15"><rect id="loadingLogo16" width="54.063866" height="50.659265" rx="0" ry="0" transform="matrix(1 0 0 1 28 70)" fill="rgb(3,100,184)" stroke="none" stroke-width="1"/><rect id="loadingLogo17" width="46" height="50.659265" rx="0" ry="0" transform="matrix(1.05111776899004 0 0 1 125.64858262645808 70)" fill="rgb(40,168,234)" stroke="none" stroke-width="1"/><rect id="loadingLogo18" width="50" height="50.659265" rx="0" ry="0" transform="matrix(1 0 0 1 78 70)" fill="rgb(0,120,212)" stroke="none" stroke-width="1"/></g><rect id="loadingLogo19" width="46" height="46" rx="0" ry="0" transform="matrix(1.05885006553074 0 0 1 125.29289698558608 116)" fill="rgb(0,120,212)" stroke="none" stroke-width="1"/><rect id="loadingLogo20" width="54.063866" height="46" rx="0" ry="0" transform="matrix(1 0 0 1 28 116)" fill="rgb(20,68,125)" stroke="none" stroke-width="1"/><rect id="loadingLogo21" width="50" height="46" rx="0" ry="0" transform="matrix(1 0 0 1 78 116)" fill="rgb(3,100,184)" stroke="none" stroke-width="1"/></g></g></g></g><clipPath id="loadingLogo22"><path id="loadingLogo23" d="M20.002200,91.603067C20.009900,89.730718,20.875500,87.992107,22.298100,86.992115L179.759000,87.054379C181.168000,88.060919,182.014000,89.802193,181.999000,91.665331C182.023000,93.547669,181.177000,95.311695,179.759000,96.338325L106.684000,145.812969L105.732000,146.435605C104.337000,147.264678,102.778000,147.691977,101.197000,147.681988C99.633300,147.689758,98.093100,147.261348,96.716900,146.435605L95.709000,145.812969L22.410100,96.338325C20.902100,95.354980,19.983300,93.548002,20.002200,91.603067Z" transform="matrix(2.23434089273892 0 0 3.43311766004244 -124.66929302028908 -322.01007244420919)" fill="rgb(18,59,109)" stroke="none" stroke-width="1"/></clipPath></g><g id="loadingLogo24" mask="url(#loadingLogo30)"><g id="loadingLogo25"><path id="loadingLogo26" d="M172,185L20,185L182,97L182,175C182,180.523000,177.523000,185,172,185Z" fill="rgb(20,144,223)" stroke="none" stroke-width="1"/><g id="loadingLogo27"><path id="loadingLogo28" d="M30,185L182,185L20,97L20,175C20,180.523000,24.477200,185,30,185Z" fill="rgb(40,168,234)" stroke="none" stroke-width="1"/></g></g><g id="loadingLogo29_ts" transform="translate(101.000699,97.499573) scale(1,1)"><path id="loadingLogo29" style="filter:drop-shadow(0px 0px 0px rgba(0,0,0,0.09))" d="M22.408100,101.421000C20.900200,100.535000,19.981300,98.906900,20.000300,97.154500C20.007700,95.502000,20.838500,93.965200,22.209500,93.056100L179.757000,93.056100C181.166000,93.963000,182.012000,95.531900,181.997000,97.210600C182.021000,98.906600,181.175000,100.496000,179.757000,101.421000L106.682000,145.998000L105.730000,146.559000C104.335000,147.306000,102.776000,147.691000,101.195000,147.682000C99.631300,147.689000,98.091100,147.303000,96.715000,146.559000L95.707100,145.998000L22.408100,101.421000Z" transform="translate(-101.000699,-97.499573)" fill="rgb(80,217,255)" stroke="none" stroke-width="1"/></g><mask id="loadingLogo30" mask-type="alpha"><path id="loadingLogo31" d="M20,97L182,97L182,175C182,180.523000,177.523000,185,172,185L30,185C24.477200,185,20,180.523000,20,175L20,97Z" fill="rgb(196,196,196)" stroke="none" stroke-width="1"/></mask></g></g></g></g></g></svg>
+         <svg id="MSLogo" width="99" height="22" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+                <path
+                    d="M34.643 12.075l-.588 1.647h-.034c-.105-.387-.28-.934-.556-1.63l-3.15-7.897h-3.077V16.75h2.03V9.032c0-.476-.01-1.052-.03-1.711-.01-.333-.049-.6-.058-.804h.045c.103.473.21.834.287 1.075l3.776 9.16h1.42l3.748-9.243c.085-.211.175-.622.257-.992h.044c-.048.915-.09 1.75-.095 2.256v7.978h2.165V4.195h-2.956l-3.228 7.88z"
+                    fill="#737474"></path>
+                <path d="M0 20.956h98.148V0H0z"></path>
+                <path fill="#737474"
+                    d="M42.866 16.751h2.118V7.752h-2.118zM43.947 3.929c-.349 0-.653.119-.902.353a1.166 1.166 0 00-.378.883c0 .344.126.636.374.865.247.23.552.345.906.345s.66-.115.91-.345c.25-.23.379-.52.379-.865 0-.339-.125-.632-.37-.873a1.262 1.262 0 00-.919-.363M52.477 7.663a5.892 5.892 0 00-1.182-.127c-.971 0-1.838.209-2.574.62-.739.41-1.31.998-1.699 1.745-.386.745-.583 1.615-.583 2.585 0 .85.19 1.631.567 2.318.377.69.91 1.23 1.585 1.602.673.373 1.452.563 2.313.563 1.006 0 1.866-.201 2.554-.597l.027-.017v-1.94l-.089.066c-.312.227-.66.408-1.035.538a3.121 3.121 0 01-1.014.197c-.83 0-1.497-.26-1.982-.772-.485-.513-.73-1.233-.73-2.14 0-.912.255-1.651.761-2.196.504-.544 1.173-.82 1.986-.82.695 0 1.374.236 2.014.702l.09.063V8.011l-.029-.017c-.241-.135-.571-.246-.98-.331M59.452 7.597a2.17 2.17 0 00-1.415.507c-.358.296-.616.7-.814 1.207H57.2V7.753h-2.116v8.999H57.2v-4.603c0-.784.178-1.426.528-1.912.346-.48.806-.723 1.369-.723.19 0 .404.031.636.093.23.063.396.129.493.2l.09.064V7.737l-.034-.014c-.197-.083-.477-.126-.83-.126M66.885 14.465c-.397.499-.996.751-1.779.751-.777 0-1.39-.256-1.823-.766-.435-.51-.655-1.238-.655-2.163 0-.954.22-1.701.655-2.22.433-.516 1.04-.778 1.806-.778.743 0 1.335.25 1.758.744.426.496.642 1.237.642 2.202 0 .977-.203 1.728-.604 2.23m-1.683-6.929c-1.484 0-2.663.435-3.503 1.293-.84.857-1.265 2.044-1.265 3.527 0 1.41.415 2.543 1.235 3.368.82.826 1.936 1.245 3.316 1.245 1.438 0 2.593-.441 3.434-1.31.84-.87 1.265-2.045 1.265-3.493 0-1.433-.4-2.573-1.187-3.394-.789-.82-1.897-1.236-3.295-1.236M74.378 11.471c-.667-.268-1.095-.49-1.27-.66-.17-.165-.257-.398-.257-.693 0-.262.108-.472.327-.642.219-.17.526-.257.911-.257.357 0 .723.056 1.085.166.363.111.682.26.949.44l.088.06V7.928l-.035-.015a4.715 4.715 0 00-.962-.268 5.932 5.932 0 00-1.056-.109c-1.01 0-1.845.258-2.483.767-.64.512-.967 1.184-.967 1.997 0 .422.07.798.209 1.116.14.32.355.6.641.837.283.233.722.478 1.302.728.488.2.852.37 1.083.505.227.13.387.263.477.39.088.127.133.299.133.512 0 .604-.452.897-1.384.897a3.8 3.8 0 01-1.172-.213 4.418 4.418 0 01-1.2-.609l-.089-.064v2.064l.033.015c.304.14.686.257 1.137.35.449.094.859.141 1.213.141 1.096 0 1.977-.26 2.62-.771.648-.515.976-1.204.976-2.045 0-.607-.176-1.127-.525-1.546-.345-.416-.946-.799-1.784-1.136M84.063 14.465c-.398.499-.997.751-1.78.751-.777 0-1.39-.256-1.822-.766-.435-.51-.655-1.238-.655-2.163 0-.954.22-1.701.655-2.22.432-.516 1.04-.778 1.806-.778.743 0 1.335.25 1.758.744.426.496.642 1.237.642 2.202 0 .977-.204 1.728-.604 2.23M82.38 7.536c-1.484 0-2.663.435-3.503 1.293-.84.857-1.266 2.044-1.266 3.527 0 1.41.415 2.543 1.235 3.368.82.826 1.936 1.245 3.317 1.245 1.438 0 2.593-.441 3.433-1.31.84-.87 1.266-2.045 1.266-3.493 0-1.433-.4-2.573-1.187-3.394-.789-.82-1.897-1.236-3.295-1.236M98.149 9.48V7.752h-2.144V5.069l-.072.022-2.015.616-.038.012v2.034h-3.177V6.62c0-.527.118-.931.351-1.2.23-.266.56-.402.982-.402.303 0 .616.072.931.213l.079.035V3.447l-.037-.013c-.294-.105-.695-.159-1.19-.159-.626 0-1.194.136-1.689.406-.495.27-.886.655-1.16 1.146-.272.489-.41 1.054-.41 1.68v1.246h-1.492v1.726h1.493v7.273h2.142V9.479h3.177v4.622c0 1.903.897 2.868 2.668 2.868.291 0 .597-.034.91-.101.319-.07.535-.137.662-.21l.029-.016v-1.743l-.087.058c-.117.078-.262.14-.432.188-.17.048-.312.072-.422.072-.416 0-.723-.112-.914-.332-.191-.223-.289-.612-.289-1.158V9.48h2.144z">
+                </path>
+                <path fill="#F05124" d="M0 9.958h9.958V.001H0z"></path>
+                <path fill="#7EBB42" d="M10.995 9.958h9.957V.001h-9.957z"></path>
+                <path fill="#32A0DA" d="M0 20.956h9.958V11H0z"></path>
+                <path fill="#FDB813" d="M10.995 20.956h9.957V11h-9.957z"></path>
+            </g>
+        </svg>
+    </div>
+    
+    <div class="settings-panel">
+        <div class="settings-header">
+            <h4 class="settings">Settings</h4>
+            <button class="close-settings">
+                <!-- <i class="ms-Icon--ChromeClose" role="presentation" style="display: inline-block; font-size: 12px;"></i> -->
+                <i class="ms-Icon ms-font-s ms-Icon--ChromeClose" style="color: var(--text-color)"></i>
+            </button>
+        </div>
+        <h6>Theme</h6>
+        <div class="form-check form-switch">
+            <label for="flexSwitchCheckChecked">Dark Mode</label>
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        </div>
+    </div>
+
+    <div class="profile-panel">
+        <div class="profile-panel-picture">
+            <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 75px" alt="">
+        </div>
+        <div class="profile-panel-content">
+            <h4>one-loop</h4>
+            <p>✋ I'm a beginner developer!</p>
+            <a href="https://github.com/one-loop" target="_blank">View Account</a>
+        </div>
+    </div>
+
+
+    
+    <main class="main-content">
+        <aside class="toolbar icons">
+            <form action="https://outlook.office365.com/mail/inbox" target="_blank">
+            <button>
+                <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i>
+            </button>
+            </form>
+            <form action="https://outlook.office365.com/calendar/" target="_blank">
+            <button dir="ltr">
+                <i class="ms-Icon ms-Icon--Calendar" aria-hidden="true"></i>
+            </button>
+            </form>
+            <form action="https://outlook.office365.com/people/" target="_blank">
+            <button>
+                <i class="ms-Icon ms-Icon--People" aria-hidden="true"></i>
+            </button>
+            </form>
+            <form action="https://outlook.office365.com/files/" target="_blank">
+            <button>
+                <i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i>
+            </button>
+            </form>
+            <form action="https://to-do.office.com/tasks/" target="_blank">
+            <button>
+                <i class="ms-Icon ms-Icon--ToDoLogoOutline" aria-hidden="true"></i>
+            </button>
+            </form>
+            <form action="https://www.office.com/launch/word" target="_blank">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="20" height="20"
+    viewBox="0 0 48 48"
+    style=" fill:#000000;"><linearGradient id="Q7XamDf1hnh~bz~vAO7C6a_pGHcje298xSl_gr1" x1="28" x2="28" y1="14.966" y2="6.45" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#42a3f2"></stop><stop offset="1" stop-color="#42a4eb"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6a_pGHcje298xSl_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v7.003h32V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6b_pGHcje298xSl_gr2" x1="28" x2="28" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#11408a"></stop><stop offset="1" stop-color="#103f8f"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6b_pGHcje298xSl_gr2)" d="M12,33.054V40c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2v-6.946H12z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6c_pGHcje298xSl_gr3" x1="28" x2="28" y1="-15.46" y2="-15.521" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3079d6"></stop><stop offset="1" stop-color="#297cd2"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6c_pGHcje298xSl_gr3)" d="M12,15.003h32v9.002H12V15.003z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6d_pGHcje298xSl_gr4" x1="12" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1d59b3"></stop><stop offset="1" stop-color="#195bbc"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6d_pGHcje298xSl_gr4)" d="M12,24.005h32v9.05H12V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6e_pGHcje298xSl_gr5" x1="4.744" x2="23.494" y1="14.744" y2="33.493" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#256ac2"></stop><stop offset="1" stop-color="#1247ad"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6e_pGHcje298xSl_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M18.403,19l-1.546,7.264L15.144,19h-2.187l-1.767,7.489L9.597,19H7.641l2.344,10h2.352l1.713-7.689	L15.764,29h2.251l2.344-10H18.403z"></path></svg>
+            </button>
+            </form>
+            <form action="https://www.office.com/launch/excel" target="_blank">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="20" height="20"
+    viewBox="0 0 48 48"
+    style=" fill:#000000;"><rect width="16" height="9" x="28" y="15" fill="#21a366"></rect><path fill="#185c37" d="M44,24H12v16c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2V24z"></path><rect width="16" height="9" x="28" y="24" fill="#107c42"></rect><rect width="16" height="9" x="12" y="15" fill="#3fa071"></rect><path fill="#33c481" d="M42,6H28v9h16V8C44,6.895,43.105,6,42,6z"></path><path fill="#21a366" d="M14,6h14v9H12V8C12,6.895,12.895,6,14,6z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="flEJnwg7q~uKUdkX0KCyBa_UECmBSgBOvPT_gr1" x1="4.725" x2="23.055" y1="14.725" y2="33.055" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18884f"></stop><stop offset="1" stop-color="#0b6731"></stop></linearGradient><path fill="url(#flEJnwg7q~uKUdkX0KCyBa_UECmBSgBOvPT_gr1)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M9.807,19h2.386l1.936,3.754L16.175,19h2.229l-3.071,5l3.141,5h-2.351l-2.11-3.93L11.912,29H9.526	l3.193-5.018L9.807,19z"></path></svg>
+            </button>
+            </form>
+            <form action="https://www.office.com/launch/powerpoint" target="_blank">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="20" height="20"
+    viewBox="0 0 48 48"
+    style=" fill:#000000;"><path fill="#d35230" d="M8,24c0,9.941,8.059,18,18,18s18-8.059,18-18H26H8z"></path><path fill="#ff8f6b" d="M26,6v18h18C44,14.059,35.941,6,26,6z"></path><path fill="#ed6c47" d="M26,6C16.059,6,8,14.059,8,24h18V6z"></path><path d="M26,16.681C26,14.648,24.352,13,22.319,13H11.774C9.417,16.044,8,19.852,8,24	c0,5.116,2.145,9.723,5.571,13h8.747C24.352,37,26,35.352,26,33.319V16.681z" opacity=".05"></path><path d="M22.213,13.333H11.525C9.32,16.321,8,20.002,8,24c0,4.617,1.753,8.814,4.611,12h9.602	c1.724,0,3.121-1.397,3.121-3.121V16.454C25.333,14.731,23.936,13.333,22.213,13.333z" opacity=".07"></path><path d="M22.106,13.667H11.276C9.218,16.593,8,20.151,8,24c0,4.148,1.417,7.956,3.774,11h10.332	c1.414,0,2.56-1.146,2.56-2.56V16.227C24.667,14.813,23.52,13.667,22.106,13.667z" opacity=".09"></path><linearGradient id="N~uyq1CljjkKMh72IFt0Fa_ifP93G7BXUhU_gr1" x1="4.586" x2="22.77" y1="14.586" y2="32.77" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ca4e2a"></stop><stop offset="1" stop-color="#b63016"></stop></linearGradient><path fill="url(#N~uyq1CljjkKMh72IFt0Fa_ifP93G7BXUhU_gr1)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M14.673,19.012H10v10h2.024v-3.521H14.3c1.876,0,3.397-1.521,3.397-3.397v-0.058	C17.697,20.366,16.343,19.012,14.673,19.012z M15.57,22.358c0,0.859-0.697,1.556-1.556,1.556h-1.99v-3.325h1.99	c0.859,0,1.556,0.697,1.556,1.556V22.358z"></path></svg>
+            </button>
+            </form>
+            <form action="https://www.office.com/launch/onenote" target="_blank">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="20" height="20"
+    viewBox="0 0 48 48"
+    style=" fill:#000000;"><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1" x1="12" x2="44" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c965eb"></stop><stop offset="1" stop-color="#c767e5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v32c0,1.105,0.895,2,2,2h21V15.003h9V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2" x1="39.5" x2="39.5" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7819a2"></stop><stop offset="1" stop-color="#771aa9"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2)" d="M35,33.054V42h7c1.105,0,2-0.895,2-2v-6.945L35,33.054L35,33.054z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3" x1="35" x2="44" y1="19.504" y2="19.504" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#ac4ad5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3)" d="M35,15.003h9v9.002h-9V15.003z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4" x1="35" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#912fbd"></stop><stop offset="1" stop-color="#9332bf"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4)" d="M35,24.005h9v9.05h-9V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5" x1="4.586" x2="23.414" y1="14.586" y2="33.414" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8521b0"></stop><stop offset="1" stop-color="#64129a"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M16.501,19v7.393L11.779,19H9.59v10h1.909v-7.45L16.258,29h2.152V19H16.501z"></path></svg>
+            </button>
+            </form>
+                </form>
+        </aside>
+
+        <div class="menu-and-content">
+            <header class="header">
+                <button class="menu">
+                    <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
+                </button>
+                <button class="new-msg" aria-label="Add New Subreddit">New message</button>
+                <button class="mark-as-read-btn">
+                    <i class="ms-Icon ms-Icon--Read" aria-hidden="true"></i>
+                    Mark all as read
+                </button>
+                <button class="mark-as-read-btn">
+                    <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
+                    Undo
+                </button>
+            </header>
+            
+            <div class="content-body">
+                <aside class="menu-selector">
+                    <button type="button" class="collapsible">
+                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                        Favorites
+                    </button>
+                    <section class="favorites-buttons">
+                        <button class="inbox-button">
+                            <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
+                            Inbox
+                        </button>
+                        <button dir="ltr">
+                            <i class="ms-Icon ms-Icon--Send" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
+                            Sent Items
+                        </button>
+                        <button dir="ltr">
+                            <i class="ms-Icon ms-Icon--Edit" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
+                            Drafts
+                        </button>
+                        <button>
+                            <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
+                            Deleted Items
+                        </button>
+                        <button style="color: var(--pink); padding-left: 55px">Add Favorite</button>
+                    </section>
+                    
+                    <span class="subreddits-section">
+                        <button type="button" class="collapsible">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                            Popular Subreddits</button>
+                        <div class="popular-subreddits">
+                            <button id="askreddit" class="subreddit button">r/AskReddit</button>
+                            <button id="gaming" class="subreddit button">r/gaming</button>
+                            <button id="aww" class="subreddit button">r/aww</button>
+                            <button id="pics" class="subreddit button">r/pics</button>
+                            <button id="art" class="subreddit button">r/art</button>
+                            <button id="worldnews" class="subreddit button">r/worldnews</button>
+                            <button id="memes" class="subreddit button">r/memes</button>
+                            <button id="dataisbeautiful" class="subreddit button">r/dataisbeautiful</button>
+                            <button id="technology" class="subreddit button">r/technology</button>
+                            <button id="science" class="subreddit button">r/science</button>
+                        </div>
+                    </span>
+                    <span class="subreddits-section">
+                        <button type="button" class="collapsible">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                            Your Subreddits</button>
+                        <div class="your-subreddits">
+        
+                        </div>
+                    </span>
+                </aside>
+                
+                <div class="post-sidebar">
+                    <div class="header-buttons">
+                        <button class="post-header-button">Focused</button>
+                        <button class="post-header-button">Other</button>
+                        <!-- <div class="dropdown post-header-button" style="float:right;">
+                            <button class="dropbtn">Filter</button>
+                            <div class="dropdown-content">
+                              <a href="#">All</a>
+                              <a href="#">Hot</a>
+                              <a href="#">Top</a>
+                              <a href="#">Rising</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="scrollable" id="posts">
+                    </div>
+                </div>
+        
+                <section class="reddit-post scrollable deselected">
+                    <img src="https://outlook-1.cdn.office.net/owamail/20210711001.05/resources/images/illustration_mail-1d0febde089f910786f330f638ffa7a1.svg" alt="">
+                    <p class="get-started"><b>Select a post to view</b></p>
+                    <p class="get-started">Nothing is selected</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- <section class="">
+    </section> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $( '.dropdown-toggle' ).on( 'click touchstart', function() {
+            $( '.dropdown-menu' ).toggleClass( 'dropdown-menu-open' );
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        $(window).on("load", function(){
+            setTimeout(function() {
+                $("#loadingScreen").fadeOut("fast");
+            }, 2500)
+        });
+    </script>
+    <script src="js/bundle.min.js"></script>
+</body>
+</html>
