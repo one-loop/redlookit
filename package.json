@@ -8,7 +8,8 @@
     "build": "webpack --mode=production --define-process-env-node-env=production",
     "dev": "webpack --mode=development",
     "prod": "webpack --mode=production --define-process-env-node-env=production",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@webpack-cli/generators": "^3.0.0",
     "css-loader": "^6.7.2",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.7.1",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.4.2",
@@ -30,5 +32,5 @@
   "bugs": {
     "url": "https://github.com/Yarillo4/redlookit/issues"
   },
-  "homepage": "https://github.com/Yarillo4/redlookit#readme"
+  "homepage": "https://yarillo4.github.io/redlookit/"
 }
