@@ -46,6 +46,8 @@ jobs:
         run: npm install -g typescript
       - name: Build
         run: tsc
+      - name: Move compiled files to _site
+        run: mv dist _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
