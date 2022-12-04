@@ -2,6 +2,7 @@
   "compilerOptions": {
     "preserveConstEnums": true,
     "allowJs": true,
+    "allowUnusedLabels": false,
     "noImplicitAny": false,
     "strictNullChecks": true,
     "sourceMap": true,
@@ -16,6 +17,7 @@
   ],
   "files": [
     "src/redlookit.ts",
+    "src/random.ts",
     "src/faces_sideloader.ts",
     "src/@types/reddit-types.ts"
   ]

@@ -34,6 +34,8 @@ menuButton!.addEventListener('click', () => {
 
 const facesSideloader = new HumanFacesSideloader(200); // Side-load 200 faces in the background
 
+const rng = new Random();
+
 function getPosts(subreddit) {
     let section = document.createElement('section');
     section.classList.add('post')
@@ -111,21 +113,23 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
         if (redditObj.kind === "t1") {
             // t1 is for comments
             const comment: SnooComment = redditObj as SnooComment;
-            let elem = createComment(comment, { ppBuffer: options.ppBuffer })
+            const prom = createComment(comment, { ppBuffer: options.ppBuffer })
 
-            if (options.indent > 0) {
-                elem.classList.add('replied-comment');
-            }
+            prom.then( (elem) => {
+                if (options.indent > 0) {
+                    elem.classList.add('replied-comment');
+                }
 
-            parentElement.append(elem);
+                parentElement.append(elem);
 
-            if (comment.data.replies) {
-                displayCommentsRecursive(elem, comment.data.replies.data.children, { indent: options.indent + 10, ppBuffer: options.ppBuffer });
-            }
+                if (comment.data.replies) {
+                    displayCommentsRecursive(elem, comment.data.replies.data.children, { indent: options.indent + 10, ppBuffer: options.ppBuffer });
+                }
 
-            if (options.indent === 0) {
-                parentElement.appendChild(document.createElement('hr'));
-            }
+                if (options.indent === 0) {
+                    parentElement.appendChild(document.createElement('hr'));
+                }
+            });
         }
     }
 }
@@ -219,63 +223,32 @@ function getPostDetails(response: any) {
     return [upvotes, subreddit, numComments];
 }
 
-type CharsetSequence = {
-    n: number,
-    charset: "alpha" | "alphanumerical",
-}
-type UUIDFormat = CharsetSequence[];
-type UUID = string;
-function uuid(format: (UUIDFormat | undefined) = undefined): UUID {
-    if (format === undefined) {
-        format = [
-            {n:8, charset:"alphanumerical"},
-            {n:4, charset:"alphanumerical"},
-            {n:4, charset:"alphanumerical"},
-            {n:4, charset:"alphanumerical"},
-            {n:12, charset: "alphanumerical" }
-        ];
-    }
-    // Generate uuids with format ehd0wgw2-g11e-xgiq-nc9m-h2kva3tmrzpl by default
-    const alphabets = {
-        alphanumerical: "abcdefghijklmnopqrstuvwxyz0123456789",
-        alpha: "abcdefghijklmnopqrstuvwxyz"
-    };
-    let result = "";
-    for (let i = 0; i < format.length; i++) {
-        const length = format[i].n;
-        const characters = alphabets[format[i].charset];
-        for (let j = 0; j < length; j++) {
-            result += characters.charAt(Math.floor(Math.random() * characters.length));
-        }
-        result += "-";
-    }
-    return result.slice(0,-1) as UUID;
-}
-
-function strToSumOfASCII(message: string): number {
-    let sum = 0;
-    for (let i=0; i < message.length; i++) {
-        sum += message.charCodeAt(i);
-    }
-    return 10000+sum;
-}
-
-function generateGnomePic() : HTMLImageElement {
+async function generateGnomePic(commentData: SnooComment): Promise<HTMLImageElement> {
     const gnome = document.createElement<"img">("img");
     gnome.classList.add("gnome");
     gnome.src = "resources/gnome.png";
+
     // Potential Hmirror 
-    const flip = Math.random() <= 0.5 ? "scaleX(-1) " : "";
+    const flipSeed = await rng.random();
+    const flip = flipSeed <= 0.5 ? "scaleX(-1) " : "";
+
     // +Random rotation between -20deg +20deg
-    const transforms = `${flip}rotate(${Math.round(Math.random() * 40 - 20)}deg) `;
+    const mirrorSeed = await rng.random();
+    const transforms = `${flip}rotate(${Math.round(mirrorSeed * 40 - 20)}deg) `;
     gnome.style.transform = transforms;
+    
+    const colorSeed = await rng.random();
+    gnome.style.backgroundColor = colors[Math.floor(colorSeed * colors.length)];
 
     return gnome;
 }
 
-function generateTextPic(size: number) : HTMLSpanElement {
+async function generateTextPic(commentData: SnooComment, size: number): Promise<HTMLSpanElement> {
     const textPic = document.createElement<"span">("span");
-    const ppInitials = initials[Math.floor(Math.random() * initials.length)] + initials[Math.floor(Math.random() * initials.length)];
+
+    const pseudoRand1 = await rng.random();
+    const pseudoRand2 = await rng.random();
+    const ppInitials = initials[Math.floor(pseudoRand1 * initials.length)] + initials[Math.floor(pseudoRand2 * initials.length)];
 
     textPic.style.padding = `${Math.round(0.12 * size)}px 3px 3px 3px`;
     textPic.style.fontSize = `${Math.round(size / 2.08)}px`;
@@ -284,17 +257,20 @@ function generateTextPic(size: number) : HTMLSpanElement {
     textPic.style.display = "inline-block";
     textPic.style.cssText += "-webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;";
 
+    const colorSeed = await rng.random();
+    textPic.style.backgroundColor = colors[Math.floor(colorSeed * colors.length)];
+    
     textPic.textContent = `${ppInitials}`;
     return textPic;
 }
 
 function copyImage2Canvas(origin: HTMLImageElement, newSize: number): HTMLCanvasElement | null {
     const canv: HTMLCanvasElement = document.createElement("canvas");
-    
+
     // canvas will sample 4 pixels per pixel displayed then be downsized via css
     // otherwise if 1px = 1px the picture looks pixelated & jagged
     // css seems to do a small cubic interpolation when downsizing and it makes a world of difference
-    canv.height = canv.width = newSize * 2; 
+    canv.height = canv.width = newSize * 2;
 
     canv.style.height = canv.style.width = newSize.toString();
     const ctx: CanvasRenderingContext2D | null = canv.getContext('2d');
@@ -302,17 +278,22 @@ function copyImage2Canvas(origin: HTMLImageElement, newSize: number): HTMLCanvas
     if (ctx !== null) {
         ctx.imageSmoothingEnabled = false;
         ctx.imageSmoothingQuality = "high";
-        ctx.drawImage(origin, 0, 0, newSize * 2, newSize * 2);
+        try {
+            ctx.drawImage(origin, 0, 0, newSize * 2, newSize * 2);
+        } catch (e) {
+            console.error(origin, e);
+        }
+        
         return canv;
     } else {
         return null;
     }
 }
 
-function generateFacePic(commentData: SnooComment, ppBuffer: HTMLImageElement[], displaySize: number = 50): HTMLCanvasElement {
-    const authorHash = strToSumOfASCII(commentData.data.author) % ppBuffer.length; // calculate "hash" of name and make it match to our array of pictures
-    const imageElement: HTMLImageElement = ppBuffer[authorHash];
-    
+async function generateFacePic(commentData: SnooComment, ppBuffer: HTMLImageElement[], displaySize: number = 50): Promise<HTMLCanvasElement> {
+    const imageSeed = Math.round(await rng.random(0, ppBuffer.length-1));
+    const imageElement: HTMLImageElement = ppBuffer[imageSeed];
+
     // Purpose of copying: A single <img> tag cannot be in multiple spots at the same time
     // I did not find a way to duplicate the reference to an img tag 
     // If you use Element.appendChild with the same reference multiple times, the method will move the element around
@@ -322,31 +303,50 @@ function generateFacePic(commentData: SnooComment, ppBuffer: HTMLImageElement[],
     //     hit the browser's cache. but we can't know that.
     // Solution: make a canvas and give it the single <img> reference. It makes a new one every time. It doesn't query the src.
     const canv = copyImage2Canvas(imageElement, displaySize);
-    assert(canv !== null, `generateFacePic couldn't get a canvas 2D context from image #${authorHash}, ${imageElement.src} (img.${Array.from(imageElement.classList).join(".")})`);
+    assert(canv !== null, `generateFacePic couldn't get a canvas 2D context from image #${imageSeed}, ${imageElement.src} (img.${Array.from(imageElement.classList).join(".")})`);
 
-    canv.classList.add(`human-${authorHash}`);
+    canv.classList.add(`human-${imageSeed}`);
     return canv;
 }
 
 type HTMLProfilePictureElement = HTMLCanvasElement | HTMLImageElement | HTMLSpanElement;
-function createProfilePicture(commentData: SnooComment, size: number = 50, ppBuffer: HTMLImageElement[] = []): HTMLProfilePictureElement {
-    function helper(): HTMLProfilePictureElement {
+async function createProfilePicture(commentData: SnooComment, size: number = 50, ppBuffer: HTMLImageElement[] = []): Promise<HTMLProfilePictureElement> {
+    async function helper(): Promise<HTMLProfilePictureElement> {
         if (commentData.data.subreddit === "gnometalk") {
-            return generateGnomePic();
+            return generateGnomePic(commentData);
         } else {
-            if (Math.random() < 0.3) {
-                return generateTextPic(size);
-            } else {
+            // 0-10  => 0
+            // 10-25 => Between 0 and 0.7
+            // 25+   => 0.7
+            // Don't replace this with a formula filled with Math.min(), 
+            //    divisions and substractions, this is meant to be readable for a beginner
+            const chanceForAFacePic = (() => {
+                if (ppBuffer.length < 10) {
+                    return 0;
+                } else {
+                    const baseValue = 0.7; // Max .7
+
+                    // What percentage of progress are you between 10 and 25
+                    if (ppBuffer.length >= 25) {
+                        return baseValue;
+                    } else {
+                        return ((ppBuffer.length - 10)/15)*baseValue;
+                    }
+                }
+            })();
+
+            if ((await rng.random()) < chanceForAFacePic) {
                 return generateFacePic(commentData, ppBuffer);
+            } else {
+                return generateTextPic(commentData, size);
             }
         }
     }
-    
-    const ppElem: HTMLProfilePictureElement = helper();
+
+    const ppElem: HTMLProfilePictureElement = await helper();
 
     ppElem.classList.add("avatar")
     ppElem.style.marginRight = "10px";
-    ppElem.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     if (!ppElem.classList.contains("avatar-circle")) {
         ppElem.classList.add("avatar-circle");
     }
@@ -356,7 +356,7 @@ function createProfilePicture(commentData: SnooComment, size: number = 50, ppBuf
 type CreateCommentOptions = {
     ppBuffer: HTMLImageElement[]
 };
-function createComment(commentData: SnooComment, options: CreateCommentOptions={ppBuffer: []}) {
+async function createComment(commentData: SnooComment, options: CreateCommentOptions={ppBuffer: []}) {
     const commentDiv: HTMLDivElement = document.createElement('div');
     commentDiv.id = commentData.data.id;
 
@@ -365,9 +365,18 @@ function createComment(commentData: SnooComment, options: CreateCommentOptions={
     author.classList.add("author")
     author.style.display = "flex";
 
-    // Profile pic
-    const authorPfp = createProfilePicture(commentData, 50, options.ppBuffer);
-    author.appendChild(authorPfp);
+    await rng.setSeed(commentData.data.author);
+    
+    // Placeholder pic
+    const ppSize = 50; //px
+    const placeHolder = document.createElement<"span">("span");
+    placeHolder.style.width = placeHolder.style.height = `${ppSize}px`;
+    author.appendChild(placeHolder);
+
+    // Real Profile pic
+    createProfilePicture(commentData, ppSize, options.ppBuffer).then( (authorPfp) => {
+        author.replaceChild(authorPfp, placeHolder);
+    });
 
     // Author's name and sent date
     let authorText = document.createElement("div");
@@ -381,18 +390,21 @@ function createComment(commentData: SnooComment, options: CreateCommentOptions={
         authorTextInfo.classList.add("email")
         const scoreLength = (""+commentData.data.score).length
         
-        // We overwrite the 1st section with the comment's score
-        // First section is only letters to allow that
-        const domain = uuid([
-            {n:8, charset:"alpha"},
+        // Email addresses are composed of uuids and hide the score within the first block
+        const prom = rng.randomUUID([
+            {n:8, charset:"alpha"}, // // First section is only letters to avoid ambiguity on the score
             {n:4, charset:"alphanumerical"},
             {n:4, charset:"alphanumerical"},
             {n:4, charset:"alphanumerical"},
             {n:12, charset:"alphanumerical"}
-        ]).slice(scoreLength);
-        authorTextInfo.innerHTML = `${commentData.data.author} <${commentData.data.score}${domain}@securemail.org>`;
+        ]).then( (uuid) => {
+            const slicedUUID = uuid.slice(scoreLength); // Remove a bunch of letters from the start
+
+            // We overwrite the 1st section with the comment's score
+            authorTextInfo.innerHTML = `${commentData.data.author} <${commentData.data.score}${slicedUUID}@securemail.org>`;
+        })
         authorText.append(authorTextInfo);
-        
+
         // Sent date
         let d = new Date();
         d.setUTCSeconds(commentData.data.created_utc);
