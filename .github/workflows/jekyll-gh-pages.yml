@@ -33,7 +33,17 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
-          destination: ./
+          destination: ./_site
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.5.1
+        with:
+          # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
+          node-version: 17.9.x # optional
+          # File containing the version Spec of the version to use.  Examples: .nvmrc, .node-version, .tool-versions.
+      - name: Install Typescript
+        run: npm install -g typescript
+      - name: Build
+        run: tsc
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
