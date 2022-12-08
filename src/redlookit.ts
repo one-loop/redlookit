@@ -250,9 +250,9 @@ async function generateGnomePic(commentData: SnooComment): Promise<HTMLImageElem
 async function generateTextPic(commentData: SnooComment, size: number): Promise<HTMLSpanElement> {
     const textPic = document.createElement<"span">("span");
 
-    const pseudoRand1 = await rng.random();
-    const pseudoRand2 = await rng.random();
-    const ppInitials = initials[Math.floor(pseudoRand1 * initials.length)] + initials[Math.floor(pseudoRand2 * initials.length)];
+    const pseudoRand1 = await rng.random(0, initials.length-1);
+    const pseudoRand2 = await rng.random(0, initials.length-1);
+    const ppInitials = initials[Math.round(pseudoRand1)] + initials[Math.round(pseudoRand2)];
 
     textPic.style.padding = `${Math.round(0.12 * size)}px 3px 3px 3px`;
     textPic.style.fontSize = `${Math.round(size / 2.08)}px`;
@@ -261,8 +261,8 @@ async function generateTextPic(commentData: SnooComment, size: number): Promise<
     textPic.style.display = "inline-block";
     textPic.style.cssText += "-webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;";
 
-    const colorSeed = await rng.random();
-    textPic.style.backgroundColor = colors[Math.floor(colorSeed * colors.length)];
+    const colorSeed = await rng.random(0, colors.length-1);
+    textPic.style.backgroundColor = colors[Math.round(colorSeed)];
     
     textPic.textContent = `${ppInitials}`;
     return textPic;
