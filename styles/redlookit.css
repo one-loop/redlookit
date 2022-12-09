@@ -308,6 +308,32 @@ button {
     color: var(--border-color);
 }
 
+.usertext h6 {
+    text-decoration: underline;
+}
+
+.usertext blockquote > *::before{
+    content: ">";
+}
+.usertext blockquote table > *::before, .usertext blockquote > table::before{
+    content: none;
+}
+.usertext blockquote table {
+    margin-left: 1em;
+}
+.usertext blockquote td:first-child::before, .usertext blockquote td:first-child::before {
+    content: "> ";
+    margin-left: -0.7em;
+}
+
+.usertext table {
+    border-color: var(--border-color);
+    margin: 3px;
+}
+.usertext tbody, .usertext td, .usertext tfoot, .usertext th, .usertext thead, .usertext tr {
+    border-width: 1px;
+}
+
 .post-section-title {
     font-size: 20px;
     padding: 17px 0px 12px;

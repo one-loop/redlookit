@@ -53,6 +53,19 @@ function getPosts(subreddit) {
         })
 }
 
+function getPost(url) {
+    return axios.get(url).then((response) => {
+        try {
+            clearPost();
+            expandPost(response);
+        } catch (e) {
+            console.error(e)
+        }
+    }).catch((e) => {
+        console.error(e)
+    });
+}
+
 function displayPosts(responses) {
     for (let response of responses) {
         let section = document.createElement('button');
@@ -89,18 +102,7 @@ function displayPosts(responses) {
             if (isDebugMode()) {
                 console.log(`GETTING: ${redditBaseURL}${response.data.permalink}.json?limit=75`)
             }
-            axios.get(`${redditBaseURL}${response.data.permalink}.json?limit=75`)
-                .then((response) => {
-                    try {
-                        clearPost();
-                        expandPost(response);
-                    } catch (e) {
-                        console.error(e)
-                    }
-                })
-                .catch((e) => {
-                    console.error(e)
-                })
+            getPost(`${redditBaseURL}${response.data.permalink}.json?limit=75`);
         })
         postsList.append(section);
     }
@@ -177,6 +179,7 @@ function expandPost(response: ApiObj) {
     if (response.data[0].data.children[0].data.selftext !== '' && !response.data[0].data.children[0].data.selftext.includes('preview')) {
         const selftext = document.createElement('div');
         selftext.innerHTML = decodeHtml(response.data[0].data.children[0].data.selftext_html);
+        selftext.classList.add("usertext");
         postSection.append(selftext);
     }
     if (response.data[0].data.children[0].data.is_reddit_media_domain === false) {
@@ -363,6 +366,7 @@ type CreateCommentOptions = {
 async function createComment(commentData: SnooComment, options: CreateCommentOptions={ppBuffer: []}) {
     const commentDiv: HTMLDivElement = document.createElement('div');
     commentDiv.id = commentData.data.id;
+    commentDiv.classList.add("usertext");
     commentDiv.classList.add("comment");
 
     // Author parent div
@@ -597,3 +601,13 @@ profileButton.addEventListener('click', () => {
     settingsPanel.classList.remove('settings-panel-show');
     profilePanel.classList.toggle('profile-panel-show');
 })
+
+if (isDebugMode()) {
+    const loadingScreen = document.getElementById("loadingScreen");
+    if (loadingScreen) {
+        loadingScreen.style.display = "none";
+    }
+    console.log(loadingScreen);
+
+    getPost(`${redditBaseURL}/r/test/comments/z0yiof/formatting_test/.json`);
+}
