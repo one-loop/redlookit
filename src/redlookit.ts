@@ -363,6 +363,7 @@ type CreateCommentOptions = {
 async function createComment(commentData: SnooComment, options: CreateCommentOptions={ppBuffer: []}) {
     const commentDiv: HTMLDivElement = document.createElement('div');
     commentDiv.id = commentData.data.id;
+    commentDiv.classList.add("comment");
 
     // Author parent div
     const author = document.createElement('div');
