@@ -118,24 +118,23 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
         // At the end of the list reddit adds a "more" object
         if (redditObj.kind === "t1") {
             // t1 is for comments
+            const commentElement = document.createElement("div");
+            if (options.indent > 0) {
+                commentElement.classList.add('replied-comment');
+            }
+
+            parentElement.appendChild(commentElement);
+
             const comment: SnooComment = redditObj as SnooComment;
-            const prom = createComment(comment, { ppBuffer: options.ppBuffer })
+            const prom: Promise<HTMLElement> = createComment(comment, {ppBuffer: options.ppBuffer, domNode: commentElement})
 
-            prom.then( (elem) => {
-                if (options.indent > 0) {
-                    elem.classList.add('replied-comment');
-                }
+            if (comment.data.replies) {
+                displayCommentsRecursive(commentElement, comment.data.replies.data.children, { indent: options.indent + 10, ppBuffer: options.ppBuffer });
+            }
 
-                parentElement.append(elem);
-
-                if (comment.data.replies) {
-                    displayCommentsRecursive(elem, comment.data.replies.data.children, { indent: options.indent + 10, ppBuffer: options.ppBuffer });
-                }
-
-                if (options.indent === 0) {
-                    parentElement.appendChild(document.createElement('hr'));
-                }
-            });
+            if (options.indent === 0) {
+                parentElement.appendChild(document.createElement('hr'));
+            }
         }
     }
 }
@@ -361,13 +360,16 @@ async function createProfilePicture(commentData: SnooComment, size: number = 50,
 }
 
 type CreateCommentOptions = {
-    ppBuffer: HTMLImageElement[]
+    ppBuffer: HTMLImageElement[],
+    domNode?: HTMLElement
 };
-async function createComment(commentData: SnooComment, options: CreateCommentOptions={ppBuffer: []}) {
-    const commentDiv: HTMLDivElement = document.createElement('div');
-    commentDiv.id = commentData.data.id;
-    commentDiv.classList.add("usertext");
-    commentDiv.classList.add("comment");
+async function createComment(commentData: SnooComment, options: CreateCommentOptions={ppBuffer: []}): Promise<HTMLElement> {
+    if (options.domNode === undefined) {
+        options.domNode = document.createElement('div');
+    }
+    options.domNode.id = commentData.data.id;
+    options.domNode.classList.add("usertext");
+    options.domNode.classList.add("comment");
 
     // Author parent div
     const author = document.createElement('div');
@@ -378,13 +380,13 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
     
     // Placeholder pic
     const ppSize = 50; //px
-    const placeHolder = document.createElement<"span">("span");
-    placeHolder.style.width = placeHolder.style.height = `${ppSize}px`;
-    author.appendChild(placeHolder);
+    const pfpPlaceHolder = document.createElement<"span">("span");
+    pfpPlaceHolder.style.width = pfpPlaceHolder.style.height = `${ppSize}px`;
+    author.appendChild(pfpPlaceHolder);
 
     // Real Profile pic
     createProfilePicture(commentData, ppSize, options.ppBuffer).then( (authorPfp) => {
-        author.replaceChild(authorPfp, placeHolder);
+        author.replaceChild(authorPfp, pfpPlaceHolder);
     });
 
     // Author's name and sent date
@@ -427,12 +429,11 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
     }
     author.append(authorText);
 
-    let commentBody = document.createElement('div');
-    commentBody.insertAdjacentHTML('beforeend', decodeHtml(commentData.data.body_html));
+    const commentText = document.createElement('div');
+    commentText.insertAdjacentHTML('beforeend', decodeHtml(commentData.data.body_html));
 
-    commentDiv.append(author, commentBody);
-    
-    return commentDiv
+    options.domNode.prepend(author, commentText);
+    return options.domNode
 }
 
 type SerializedHTML = string;
