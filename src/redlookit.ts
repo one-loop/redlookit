@@ -611,7 +611,6 @@ if (isDebugMode()) {
     if (loadingScreen) {
         loadingScreen.style.display = "none";
     }
-    console.log(loadingScreen);
 
     getPost(`${redditBaseURL}/r/test/comments/z0yiof/formatting_test/.json`);
 }
