@@ -68,7 +68,7 @@ function getPost(url) {
 
 function displayPosts(responses) {
     for (let response of responses) {
-        let section = document.createElement('button');
+        let section: HTMLButtonElement = document.createElement('button');
         section.classList.add('post');
 
         let title = document.createElement('span');
@@ -99,6 +99,9 @@ function displayPosts(responses) {
         // section.id = response.data.url;
 
         section.addEventListener('click', () => {
+            document.querySelector(".focused-post")?.classList.remove("focused-post");
+            section.classList.add("focused-post");
+
             if (isDebugMode()) {
                 console.log(`GETTING: ${redditBaseURL}${response.data.permalink}.json?limit=75`)
             }
@@ -385,8 +388,8 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
     author.appendChild(pfpPlaceHolder);
 
     // Real Profile pic
-    createProfilePicture(commentData, ppSize, options.ppBuffer).then( (authorPfp) => {
-        author.replaceChild(authorPfp, pfpPlaceHolder);
+    createProfilePicture(commentData, ppSize, options.ppBuffer).then( (generatedPfp) => {
+        author.replaceChild(generatedPfp, pfpPlaceHolder);
     });
 
     // Author's name and sent date

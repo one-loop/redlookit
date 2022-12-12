@@ -102,7 +102,7 @@ button {
     cursor: pointer;
 }
 
-.post:focus {
+.focused-post {
     border-left: 4px solid var(--pink);
     background-color: var(--post-link-hover);
 }
