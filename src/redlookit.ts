@@ -303,7 +303,6 @@ function getPostDetails(response: any) {
 async function generateGnomePic(commentData: SnooComment): Promise<HTMLImageElement> {
     const gnome = document.createElement<"img">("img");
     gnome.classList.add("gnome");
-    gnome.src = "resources/gnome.png";
 
     // Potential Hmirror 
     const flipSeed = await rng.random();
