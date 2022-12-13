@@ -489,8 +489,7 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
         authorText.append(authorTextInfo);
 
         // Sent date
-        let d = new Date();
-        d.setUTCSeconds(commentData.data.created_utc);
+        let d = new Date(commentData.data.created_utc*1000);
         const dateDiv = document.createElement("span");
         dateDiv.classList.add("comment-posted-date")
         dateDiv.innerHTML = d.toString().slice(0,21);
