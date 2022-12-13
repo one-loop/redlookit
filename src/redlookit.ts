@@ -253,7 +253,7 @@ function showPostFromData(response: ApiObj) {
         selftext.classList.add("usertext");
         postSection.append(selftext);
     }
-    if (response.data[0].data.children[0].data.is_reddit_media_domain === false) {
+    if (response.data[0].data.children[0].data.is_self === false && response.data[0].data.children[0].data.is_reddit_media_domain === false) {
         const div = document.createElement('div');
         const thumbnail = document.createElement('img');
         const link = document.createElement('a');
