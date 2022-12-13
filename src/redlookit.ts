@@ -40,9 +40,54 @@ const facesSideloader = new HumanFacesSideloader(200); // Side-load 200 faces in
 
 const rng = new Random();
 
-function getPosts(subreddit) {
+function showRedditLink(permalink: string): boolean {
+    const postMatch = permalink.match(/\/?r\/[^/]+?\/comments\/([^/]+)/);
+    if (isDebugMode()) console.log("postMatch", postMatch);
+
+    if (postMatch !== null) {
+        // The anchor points to a post
+        clearPost();
+        showPost(permalink);
+        return true;
+    } else {
+        const subMatch = permalink.match(/\/?r\/([^/]+)/);
+        if (isDebugMode()) console.log("subMatch", subMatch);
+
+        if (subMatch !== null) {
+            // The anchor points to a sub
+            showSubreddit(subMatch[1]);
+            return true;
+        } else {
+            // The anchor points to something weird
+            return false;
+        }
+    }
+}
+
+function showRedditPageOrDefault(permalink: string | null) {
+    if (isDebugMode()) console.log("interpreting link", permalink);
+    if (permalink === null) {
+        // We don't have an anchor in the URL
+        showSubreddit("popular");
+        if (isDebugMode()) {
+            showPost(`/r/test/comments/z0yiof/formatting_test/`);
+        }
+    } else {
+        // We have an anchor in the URL
+        const itWorked = showRedditLink(permalink);
+        if (itWorked === false) {
+            // The anchor pointed to something we do not support
+            showSubreddit("popular");
+        }
+    }
+
+}
+
+function showSubreddit(subreddit: string) {
+    clearPostsList();
     let section = document.createElement('section');
     section.classList.add('post')
+
     axios.get(`${redditBaseURL}/r/${subreddit}.json?limit=75`)
         .then(function  (response) {
             const responseData = response.data.data.children;
@@ -53,17 +98,45 @@ function getPosts(subreddit) {
         })
 }
 
-function getPost(url) {
+function showPost(permalink) {
+    const baseurl = removeTrailingSlash(new URL(`${redditBaseURL}${permalink}`));
+    const url = `${baseurl}/.json?limit=75`;
     return axios.get(url).then((response) => {
         try {
             clearPost();
-            expandPost(response);
+            showPostFromData(response);
         } catch (e) {
             console.error(e)
         }
     }).catch((e) => {
         console.error(e)
     });
+}
+
+function permalinkFromURLAnchor(): string | null {
+    // Capture the '/r/sub/...' part including the /r/
+    const permalink = new URL(document.URL).hash
+    if (permalink === "") {
+        return null;
+    }
+
+    // Remove the starting #
+    return permalink.slice(1);
+}
+
+function removeTrailingSlash(url: URL): URL {
+    if (url.pathname.substr(-1) === '/') {
+        url.pathname = url.pathname.slice(0,-1);
+        return url;
+    } else {
+        return url;
+    }
+}
+
+function setURLAnchor(permalink: string, pushState: boolean = true): void {
+    const url = removeTrailingSlash(new URL(document.URL));
+    const newurl = new URL(`${url.protocol}//${url.hostname}${url.pathname}#${permalink}`);
+    window.history.pushState({}, '', newurl);
 }
 
 function displayPosts(responses) {
@@ -101,18 +174,13 @@ function displayPosts(responses) {
         section.addEventListener('click', () => {
             document.querySelector(".focused-post")?.classList.remove("focused-post");
             section.classList.add("focused-post");
-
-            if (isDebugMode()) {
-                console.log(`GETTING: ${redditBaseURL}${response.data.permalink}.json?limit=75`)
-            }
-            getPost(`${redditBaseURL}${response.data.permalink}.json?limit=75`);
+            setURLAnchor(response.data.permalink);
+            showPost(response.data.permalink);
         })
         postsList.append(section);
     }
     postsList.append("That's enough reddit for now. Get back to work!")
 }
-
-getPosts('popular');
 
 type CommentBuilderOptions = {indent: number, ppBuffer: HTMLImageElement[]};
 
@@ -150,7 +218,7 @@ function displayComments(commentsData) {
     displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer });
 }
 
-function expandPost(response: ApiObj) {
+function showPostFromData(response: ApiObj) {
     try {
         // reset scroll position when user clicks on a new post
         let redditPost: HTMLElement = strictQuerySelector('.reddit-post');
@@ -470,8 +538,9 @@ searchForm.addEventListener('submit', async (event) => {
     subredditBtn.id = subreddit.value;
     subredditBtn.addEventListener('click', async (event) => {
         clearPost();
-        clearPostsList();
-        let posts = await getPosts(subredditBtn.id);
+        if (isDebugMode()) console.log("custom sub click", subredditBtn.id);
+        setURLAnchor(`/r/${subredditBtn.id}`);
+        showSubreddit(subredditBtn.id);
     })
     // document.cookie.subreddits.append(subreddit.value);
     subredditBtn.append('r/' + subreddit.value);
@@ -497,9 +566,10 @@ const popularSubreddits: NodeListOf<HTMLButtonElement> = document.querySelectorA
 
 for (let subreddit of popularSubreddits) {
     subreddit.addEventListener('click', async (event) => {
+        if (isDebugMode()) console.log("default sub click", subreddit.id);
+        setURLAnchor(`/r/${subreddit.id}`);
         clearPost();
-        clearPostsList();
-        let posts = await getPosts(subreddit.id);
+        showSubreddit(subreddit.id);
     })
 
 }
@@ -516,9 +586,10 @@ markAsRead.addEventListener('click', () => {
 
 const inboxButton: HTMLElement = strictQuerySelector('.inbox-button');
 inboxButton.addEventListener('click', async () => {
+    if (isDebugMode()) console.log("inbox click", "/r/popular");
+    setURLAnchor("/r/popular");
     clearPost();
-    clearPostsList();
-    let posts = await getPosts('popular')
+    showSubreddit('popular');
 })
 
 function isHTMLElement(obj: any): obj is HTMLElement {
@@ -598,6 +669,13 @@ checkbox.addEventListener('change', function() {
     }
 })
 
+window.addEventListener("hashchange", () => {
+    clearPost();
+    const permalink = permalinkFromURLAnchor();
+    if (isDebugMode()) console.log(`history buttons clicked`, permalink);
+    showRedditPageOrDefault(permalink);
+});
+
 let profileButton: HTMLElement = strictQuerySelector('.profile-button');
 let profilePanel: HTMLElement = strictQuerySelector('.profile-panel');
 
@@ -606,11 +684,16 @@ profileButton.addEventListener('click', () => {
     profilePanel.classList.toggle('profile-panel-show');
 })
 
+// Everything set up.
+// We start actually doing things now
+
 if (isDebugMode()) {
+    // Remove loading screen
     const loadingScreen = document.getElementById("loadingScreen");
     if (loadingScreen) {
         loadingScreen.style.display = "none";
     }
-
-    getPost(`${redditBaseURL}/r/test/comments/z0yiof/formatting_test/.json`);
 }
+
+const permalink = permalinkFromURLAnchor();
+showRedditPageOrDefault(permalink);
