@@ -41,11 +41,12 @@ const facesSideloader = new HumanFacesSideloader(200); // Side-load 200 faces in
 const rng = new Random();
 
 function showRedditLink(permalink: string): boolean {
-    const postMatch = permalink.match(/\/?r\/[^/]+?\/comments\/([^/]+)/);
+    const postMatch = permalink.match(/\/?r\/([^/]+?)\/comments\/([^/]+)/);
     if (isDebugMode()) console.log("postMatch", postMatch);
 
     if (postMatch !== null) {
         // The anchor points to a post
+        showSubreddit(postMatch[1]);
         clearPost();
         showPost(permalink);
         return true;
