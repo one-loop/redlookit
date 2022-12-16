@@ -25,15 +25,15 @@ PS: If you have a better name, please let me know 😅
 - [x] View image posts
 - [x] View video posts
 - [x] Comment trees
-- [x] Comments displayed with proper formatting
+- [x] URL navigation & shareability
+- [x] Support for all reddit markdown formattings
 - [x] Ability to "Load more comments" for comment trees that were cut short by reddit
 - [x] Collapsable side menu
 - [x] Light mode
-- [x] Help getting users
 - [x] Support for gnomes
-- [x] AI-generated faces for profile pictures
+- [x] AI-generated profile pictures
 - [ ] Sorting posts
-- [ ] infinite scroll
+- [ ] "Load more posts" button
 - [ ] Resizeable post area
 - [ ] Removing Subreddits
 
