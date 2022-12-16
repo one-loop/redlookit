@@ -24,13 +24,14 @@ PS: If you have a better name, please let me know 😅
 - [x] Responsive layout (somewhat)
 - [x] View image posts
 - [x] View video posts
-- [x] View comments
+- [x] Comment trees
+- [x] Comments displayed with proper formatting
+- [x] Ability to "Load more comments" for comment trees that were cut short by reddit
 - [x] Collapsable side menu
 - [x] Light mode
 - [x] Help getting users
-- [x] View comment reply tree
-- [x] Added gnomes on r/gnometalk (thanks Yarillo4)
-- [x] Outlook Profile Pictures
+- [x] Support for gnomes
+- [x] AI-generated faces for profile pictures
 - [ ] Sorting posts
 - [ ] infinite scroll
 - [ ] Resizeable post area
