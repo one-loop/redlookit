@@ -40,7 +40,8 @@ const facesSideloader = new HumanFacesSideloader(200); // Side-load 200 faces in
 
 const rng = new Random();
 
-function showRedditLink(permalink: string): boolean {
+type Permalink = string;
+function showRedditLink(permalink: Permalink): boolean {
     const postMatch = permalink.match(/\/?r\/([^/]+?)\/comments\/([^/]+)/);
     if (isDebugMode()) console.log("postMatch", postMatch);
 
@@ -65,7 +66,7 @@ function showRedditLink(permalink: string): boolean {
     }
 }
 
-function showRedditPageOrDefault(permalink: string | null) {
+function showRedditPageOrDefault(permalink: Permalink | null) {
     if (isDebugMode()) console.log("interpreting link", permalink);
     if (permalink === null) {
         // We don't have an anchor in the URL
@@ -99,7 +100,7 @@ function showSubreddit(subreddit: string) {
         })
 }
 
-function showPost(permalink) {
+function showPost(permalink: Permalink) {
     const baseurl = removeTrailingSlash(new URL(`${redditBaseURL}${permalink}`));
     const url = `${baseurl}/.json?limit=75`;
     return axios.get(url).then((response) => {
@@ -114,7 +115,7 @@ function showPost(permalink) {
     });
 }
 
-function permalinkFromURLAnchor(): string | null {
+function permalinkFromURLAnchor(): Permalink | null {
     // Capture the '/r/sub/...' part including the /r/
     const permalink = new URL(document.URL).hash
     if (permalink === "") {
@@ -134,7 +135,7 @@ function removeTrailingSlash(url: URL): URL {
     }
 }
 
-function setURLAnchor(permalink: string, pushState: boolean = true): void {
+function setURLAnchor(permalink: Permalink, pushState: boolean = true): void {
     const url = removeTrailingSlash(new URL(document.URL));
     const newurl = new URL(`${url.protocol}//${url.hostname}${url.pathname}#${permalink}`);
     window.history.pushState({}, '', newurl);
@@ -183,40 +184,103 @@ function displayPosts(responses) {
     postsList.append("That's enough reddit for now. Get back to work!")
 }
 
-type CommentBuilderOptions = {indent: number, ppBuffer: HTMLImageElement[]};
+type CommentBuilderOptions = {indent: number, ppBuffer: HTMLImageElement[], post: Permalink};
 
-function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[], options: CommentBuilderOptions = { indent: 0, ppBuffer: [] }) {
+function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],  {post, indent=0, ppBuffer=[]}: CommentBuilderOptions) {
+    if (listing.length === 0) {
+        return;
+    }
+
     for (const redditObj of listing) {
         // At the end of the list reddit adds a "more" object
         if (redditObj.kind === "t1") {
-            // t1 is for comments
+            // kind being t1 assures us listing[0] is a SnooComment
+            const comment: SnooComment = redditObj as SnooComment;
             const commentElement = document.createElement("div");
-            if (options.indent > 0) {
+            if (indent > 0) {
                 commentElement.classList.add('replied-comment');
             }
 
             parentElement.appendChild(commentElement);
-
-            const comment: SnooComment = redditObj as SnooComment;
-            const prom: Promise<HTMLElement> = createComment(comment, {ppBuffer: options.ppBuffer, domNode: commentElement})
+            const prom: Promise<HTMLElement> = createComment(comment, {ppBuffer: ppBuffer, domNode: commentElement})
 
             if (comment.data.replies) {
-                displayCommentsRecursive(commentElement, comment.data.replies.data.children, { indent: options.indent + 10, ppBuffer: options.ppBuffer });
+                displayCommentsRecursive(commentElement, comment.data.replies.data.children, {
+                    indent: indent + 10, 
+                    ppBuffer: ppBuffer,
+                    post: post
+                });
             }
 
-            if (options.indent === 0) {
+            if (indent === 0) {
                 parentElement.appendChild(document.createElement('hr'));
             }
+        } else if (redditObj.kind === "more" && post !== undefined) {
+            const data = redditObj as MoreComments;
+            const moreElement = document.createElement("span");
+            moreElement.classList.add("btn-more");
+            
+            // Fetch the parent of the "more" listing
+            const parentLink = `${redditBaseURL}${post}${data.data.parent_id.slice(3)}`;
+            /*
+                // We used to fetch the comment directly listed by the "more" listing aka data.data.id
+                // But sometimes 'id' was '_' and no children were listed (despite the fact that there was several on the actual website)
+                // If you go back 1 step in the tree to the parent and circle back to the children this way, however, you 
+                //   get around the bug and the children get properly listed
+                // Couldn't tell you why.
+
+                // If you wish to see the behavior in action, enable this piece of code
+                if (data.data.children.length === 0) {
+                    if (isDebugMode()) console.log("Empty 'more' object?", redditObj);
+                    moreElement.style.backgroundColor = "#ff0000";
+                }
+            */
+            
+            moreElement.addEventListener("click", () => {
+                moreElement.classList.add("waiting");
+                fetch(`${parentLink}.json`)
+                    .catch((e) => {
+                        moreElement.classList.remove("waiting");
+                        console.error(e);
+                    })
+                    .then((response: Response) => { 
+                        return response.json()
+                    })
+                    .catch((e) => {
+                        console.error(e);
+                    })
+                    .then((data: ApiObj[]) => {
+                        if (isDebugMode()) console.log("Got data!", parentLink, data);
+                        moreElement.remove();
+
+                        // Our type definitions aren't robust enough to go through the tree properly
+                        // We just cop out. Cast as `any` and try/catch.
+                        let replies: Listing<SnooComment>;
+                        try {
+                            replies = (data as any)[1].data.children[0].data.replies.data
+                        } catch (e) {
+                            return Promise.reject(e);
+                        }
+
+                        displayCommentsRecursive(parentElement, replies.children, {
+                            indent: indent + 10,
+                            ppBuffer: ppBuffer,
+                            post: post
+                        });
+                        return Promise.resolve();
+                    });
+            });
+            parentElement.appendChild(moreElement);
         }
     }
 }
 
-function displayComments(commentsData) {
+function displayComments(commentsData, {post}: {post: Permalink}) {
     postSection.classList.add('post-selected');
     postSection.classList.remove('deselected');
 
     const stableInTimeFaceBuffer = facesSideloader.getFaces().slice(0); // Stable-in-time copy of the full array
-    displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer });
+    displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post});
 }
 
 function showPostFromData(response: ApiObj) {
@@ -283,7 +347,8 @@ function showPostFromData(response: ApiObj) {
     const postDetails = getPostDetails(response)
     postSection.append(...postDetails)
     postSection.append(document.createElement('hr'))
-    displayComments(comments);
+
+    displayComments(comments, { post: response.data[0].data.children[0].data.permalink });
 }
 
 function getPostDetails(response: any) {

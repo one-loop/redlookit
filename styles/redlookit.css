@@ -440,6 +440,37 @@ button {
     padding-right: 10px;
 }
 
+.btn-more {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 100%;
+    height: 1.2em;
+    border-radius: 0.25em;
+    display: inline-block;
+    background-color: var(--background-color);
+    color: var(--background-color);
+    -webkit-transition: background-color 100ms, color 100ms;
+    -moz-transition:    background-color 100ms, color 100ms;
+    -ms-transition:     background-color 100ms, color 100ms;
+    -o-transition:      background-color 100ms, color 100ms;
+    transition:         background-color 100ms, color 100ms;
+}
+.btn-more:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+.btn-more:hover::before {
+    content: "More replies";
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    top: -0.175em;
+    left: 1em;
+}
+.btn-more.waiting:hover::before {
+    content: "Loading...";
+}
+
 button .menu {
     padding: 0;
     width: 32px !important;
