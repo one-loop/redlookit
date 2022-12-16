@@ -13,6 +13,11 @@ I'll continue to add new features. Feel free to contribute if you can, there's s
 
 ![Demo Gif](https://github.com/one-loop/one-loop.github.io/blob/main/Assets/Outlook%20Demo.gif?raw=true)
 
+## Redlookit
+
+This name comes from Reddit + Outlook => Redlookit (LOL)
+
+PS: If you have a better name, please let me know 😅
 
 ## 📕 Features
 - [x] Add subreddits
