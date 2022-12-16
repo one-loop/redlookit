@@ -33,6 +33,7 @@ PS: If you have a better name, please let me know 😅
 - [x] Support for gnomes
 - [x] AI-generated profile pictures
 - [ ] Sorting posts
+- [ ] View gallery posts
 - [ ] "Load more posts" button
 - [ ] Resizeable post area
 - [ ] Removing Subreddits
