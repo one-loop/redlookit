@@ -50,7 +50,7 @@
 
 body {
     color: var(--text-color);
-    font-family: Calibri;
+    font-family: var(--bs-font-sans-serif);
     background: var(--background-color);
     overflow-x: hidden; /* prevent side scrolling on main body*/
     overflow-y: hidden; /* hidden; prevent vertical scrolling on main body */
