@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "allowUnusedLabels": false,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "module": "es6",
+    "target": "es6",
+  },
+  "files": [
+    "src/redlookit.ts",
+    "src/random.ts",
+    "src/faces_sideloader.ts",
+    "src/@types/reddit-types.ts"
+  ]
+}
