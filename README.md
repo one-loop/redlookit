@@ -29,12 +29,16 @@ PS: If you have a better name, please let me know 😅🙏
 - [x] Light mode
 - [x] Help getting users
 - [x] View comment reply tree
+- [x] View more replies
 - [x] Added gnomes on r/gnometalk (thanks Yarillo4)
 - [x] Outlook Profile Pictures
-- [ ] Sorting posts
+- [x] Link routing
+- [ ] Sorting posts by top/new/hot/rising
 - [ ] infinite scroll
 - [ ] Resizeable post area
-- [ ] Removing Subreddits
+- [ ] Save added subreddits to cookies
+- [ ] Basic mobile responsiveness
+- [ ] Removing saved subreddits
 
 
 ## 💙 Contributing
