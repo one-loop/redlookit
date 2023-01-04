@@ -185,6 +185,7 @@ function expandPost(response: ApiObj) {
         const link = document.createElement('a');
 
         thumbnail.src = response.data[0].data.children[0].data.thumbnail;
+        thumbnail.onerror = "this.src='https://img.icons8.com/3d-fluency/512/news.png';";
         link.href = response.data[0].data.children[0].data.url_overridden_by_dest;
         link.innerText = titleText;
         link.target = "_blank";
