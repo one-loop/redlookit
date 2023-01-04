@@ -17,7 +17,7 @@ I'll continue to add new features. Feel free to contribute if you can, there's s
 
 This name comes from Reddit + Outlook => Redlookit (LOL)
 
-PS: If you have a better name, please let me know 😅🙏
+PS: If you have a better name, please let me know 🙏
 
 ## 📕 Features
 - [x] Add subreddits
