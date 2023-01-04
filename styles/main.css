@@ -24,26 +24,26 @@
 }
 
 .light {
-    --navbar-color: #0001ff;
+    --navbar-color: #0F6CBD;
     --text-color: #323130;
-    --background-color: #faf9f8;
+    --background-color: #fafafa;
     --background-color-2: #ffffff;
-    --pink: #0001ff;
+    --pink: #0F6CBD;
     --button-focus: #55576b;
     --post-color: #333333;
-    --subreddit-button: #0001ff;
+    --subreddit-button: #0F6CBD;
     --border-color: #646464;
-    --border-color-2: #edebe9;
+    --border-color-2: #f0f0f0;
     --text-color-1: #605e5c;
     --link-color: #0088d6;
-    --searchbar-unselected: #b3b3ff;
-    --searchbar-selected: #b3b3ff99;
+    --searchbar-unselected: rgba(255,255,255,0.7);
+    --searchbar-selected: #ffffff;
     --new-msg: #ffffff;
     --menu-selector-button: #f3f2f1;
     --menu-selector-button-focus: #e6e7ff;
     --setting-button-hover: #e1dfdd;
     --post-link-hover: #e6e7ff;
-    --menu-buttons-hover: #0000d7;
+    --menu-buttons-hover: #0C3B5E;
     --profile-panel-background: #fff;
 }
 
@@ -145,6 +145,10 @@ button {
     font: inherit;
     display: block;
     color: var(--subreddit-button);
+}
+
+.post>.subreddit {
+    font-size: 14px;
 }
 
 .subreddit::after {
@@ -507,7 +511,8 @@ button .menu {
 }
 
 .logo {
-    font-weight: bolder;
+/*     font-weight: bolder; */
+    font-weight: 600;
     font-size: 16px;
     padding: 0px 0px 0px 8px;
     color: white;
@@ -609,7 +614,7 @@ header {
     color: #212121;
     border: none;
     margin-right: 60px;
-    border-radius: 2px;
+    border-radius: 4px;
     transition: background-color .156s ease;
     /* position: absolute;
     top: 55px;
@@ -697,7 +702,7 @@ aside {
 }
 
 .light > .main-content .toolbar.icons {
-    box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/*     box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     /* box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.35) ; */
     /* border-right: 2px solid rgba(0, 0, 0, 0.35) ; */
 }
@@ -798,6 +803,8 @@ aside {
     text-align: left;
     /* padding-left: 55px; */
     border: none;
+    font-size: 14px;
+    font-weight: 600;
 }
 .menu-selector button:hover {
     background-color: var(--border-color-2);
