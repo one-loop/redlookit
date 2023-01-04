@@ -1,6 +1,7 @@
 .dark {
     --navbar-color: #6f40ff;
     --text-color: #ffffdb;
+    --text-color-2: #ffffff;
     --background-color: #212121;
     --background-color-2: #333333;
     --pink: #eaa8ff;
@@ -26,6 +27,7 @@
 .light {
     --navbar-color: #0F6CBD;
     --text-color: #323130;
+    --text-color-2: #424242;
     --background-color: #fafafa;
     --background-color-2: #ffffff;
     --pink: #0F6CBD;
@@ -655,7 +657,7 @@ header {
 .post-header-button {
     background-color: transparent;
     transition: 0.16s ease;
-    color: white;
+    color: var(--text-color-2);
     padding: 5px 10px;
     margin-top: 20px;
     align-items: flex-end;
