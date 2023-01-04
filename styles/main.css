@@ -380,6 +380,12 @@ button {
     text-decoration: none;
 }
 
+.dot-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .post-link-container>a::after {
     display: inline-block;
     width: 16px;
