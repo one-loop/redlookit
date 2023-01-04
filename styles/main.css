@@ -803,7 +803,7 @@ aside {
 }
 
 .menu-selector button {
-    background-color: var(--menu-selector-button);
+    background-color: var(--background-color);
     color: var(--text-color);
     min-height: 40px;
     text-align: left;
