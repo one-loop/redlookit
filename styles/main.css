@@ -859,7 +859,7 @@ aside {
 .subreddits-section button {
     width: 100%;
     padding-left: 55px;
-    background-color: var(--menu-selector-button);
+    background-color: var(--background-color);
     color: var(--pink);
     height: 40px;
     text-align: left;
