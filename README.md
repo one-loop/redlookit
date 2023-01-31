@@ -17,7 +17,7 @@ I'll continue to add new features. Feel free to contribute if you can, there's s
 
 This name comes from Reddit + Outlook => Redlookit (LOL)
 
-PS: If you have a better name, please let me know 😅
+PS: If you have a better name, please let me know 🙏
 
 ## 📕 Features
 - [x] Add subreddits
@@ -30,13 +30,18 @@ PS: If you have a better name, please let me know 😅
 - [x] Ability to "Load more comments" for comment trees that were cut short by reddit
 - [x] Collapsable side menu
 - [x] Light mode
+- [x] Help getting users
+- [x] View comment reply tree
+- [x] View more replies
 - [x] Support for gnomes
-- [x] AI-generated profile pictures
-- [ ] Sorting posts
-- [ ] View gallery posts
-- [ ] "Load more posts" button
+- [x] Outlook Profile Pictures
+- [x] Link routing
+- [ ] Sorting posts by top/new/hot/rising
+- [ ] infinite scroll
 - [ ] Resizeable post area
-- [ ] Removing Subreddits
+- [ ] Save added subreddits to cookies
+- [ ] Basic mobile responsiveness
+- [ ] Removing saved subreddits
 
 
 ## 💙 Contributing

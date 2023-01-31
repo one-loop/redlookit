@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yarillo4/redlookit.git"
+    "url": "git+https://github.com/one-loop/redlookit.git"
   },
   "author": "",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "bugs": {
-    "url": "https://github.com/Yarillo4/redlookit/issues"
+    "url": "https://github.com/one-loop/redlookit/issues"
   },
-  "homepage": "https://yarillo4.github.io/redlookit/"
+  "homepage": "https://one-loop.github.io/redlookit/"
 }
