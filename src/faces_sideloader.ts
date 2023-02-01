@@ -87,12 +87,12 @@ export class HumanFacesSideLoader {
 
                     this.faces.push(ppElem)
                     resolve(ppElem);
-                }, {once:true, passive:true} /* (performance options) */);
+                }, {once: true, passive: true} /* (performance options) */);
 
                 // If error
                 ppElem.addEventListener('error', () => {
                     reject();
-                }, {once:true, passive:true} /* (performance options) */);
+                }, {once: true, passive: true} /* (performance options) */);
             }, timeToStart);
         });
 

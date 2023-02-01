@@ -418,9 +418,9 @@ async function generateTextPic(commentData: SnooComment, size: number): Promise<
     const pseudoRand2 = await rng.random(0, initials.length-1);
     const ppInitials = initials[Math.round(pseudoRand1)] + initials[Math.round(pseudoRand2)];
 
-    textPic.style.padding = `${Math.round(0.12 * size)}px 3px 3px 3px`;
-    textPic.style.fontSize = `${Math.round(size / 2.08)}px`;
-    textPic.style.fontWeight = "bold";
+    textPic.style.fontWeight = "600";
+    textPic.style.fontSize = "16px";
+    textPic.style.lineHeight = "40px";
     textPic.style.textAlign = "center";
     textPic.style.display = "inline-block";
     textPic.style.cssText += "-webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;";
@@ -531,7 +531,6 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
     }
     options.domNode.id = commentData.data.id;
     options.domNode.classList.add("usertext");
-    options.domNode.classList.add("comment");
 
     // Author parent div
     const author = document.createElement('div');
@@ -591,6 +590,7 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
     author.append(authorText);
 
     const commentText = document.createElement('div');
+    commentText.classList.add("comment");
     commentText.insertAdjacentHTML('beforeend', decodeHtml(commentData.data.body_html));
 
     options.domNode.prepend(author, commentText);
