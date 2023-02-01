@@ -25,24 +25,25 @@ class TimedTask {
 }
 
 
-// HumanFacesSideloader
-// \brief To pre-load pictures from https://thispersondoesnotexist.com 
+// HumanFacesSideLoader
+// \brief To preload pictures from https://thispersondoesnotexist.com
 //     in the background & slowly build a backlog of them so that they can be instantly displayed
 // \description
-//     Provides: sideload()
-//         The big strength is you can use sideload() in a loop and it'll space out the queries for you
+//     Provides: sideLoad()
+//         The big strength is you can use sideLoad() in a loop, and it'll space out the queries for you
 //     Provides: getFaces()
 //         Access to all currently cached faces
-export class HumanFacesSideloader {
+export class HumanFacesSideLoader {
     faces: HTMLImageElement[] = [];
     promises: Promise<HTMLImageElement>[] = [];
     lastTask: TimedTask | null = null;
     currentID: number = 0;
     throttleMS: Milliseconds = 1000;
 
-    constructor(sideloadNFaces: number = 0) {
-        for (let i: number = 0; i < sideloadNFaces; i++) {
-            this.sideload();
+    constructor(sideLoadNFaces: number = 0) {
+        for (let i: number = 0; i < sideLoadNFaces; i++) {
+            // noinspection JSIgnoredPromiseFromCall
+            this.sideLoad();
         }
     }
 
@@ -54,7 +55,7 @@ export class HumanFacesSideloader {
         return Promise.all<HTMLImageElement>(this.promises);
     }
 
-    async sideload(): Promise<HTMLImageElement> {
+    async sideLoad(): Promise<HTMLImageElement> {
         let timeToStart = 0; // Now
 
         // If one request is on the way, queue this one next
@@ -71,7 +72,7 @@ export class HumanFacesSideloader {
             // If the query has been running for 100ms (so -100ms to go) it starts in 900ms
         }
 
-        // This will all be executed post-return (asynchronously), once `timeToStart` amount of milliseconds have ellapsed.
+        // This will all be executed post-return (asynchronously), once `timeToStart` amount of milliseconds have elapsed.
         const prom = new Promise<HTMLImageElement>( (resolve, reject) => {
             const id = this.currentID; // Make a copy to fix the value at the start time
 

@@ -25,8 +25,8 @@ PS: If you have a better name, please let me know 🙏
 - [x] View image posts
 - [x] View video posts
 - [x] Comment trees
-- [x] URL navigation & shareability
-- [x] Support for all reddit markdown formattings
+- [x] URL navigation & share-ability
+- [x] Support for all reddit markdown formatting
 - [x] Ability to "Load more comments" for comment trees that were cut short by reddit
 - [x] Collapsable side menu
 - [x] Light mode

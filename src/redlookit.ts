@@ -1,11 +1,12 @@
 import "../styles/redlookit.css"
 import "./@types/reddit-types.ts"
-import { HumanFacesSideloader } from "./faces_sideloader"
-import { Random, UUID, UUIDFormat } from "./random";
+import {HumanFacesSideLoader} from "./faces_sideloader"
+import {Random, UUID, UUIDFormat} from "./random";
+
 declare var axios: any
 
 function isDebugMode(): boolean {
-    // Won't support ipv6 loopbacks
+    // Won't support ipv6 loopback
     const url = new URL(document.URL);
     return url.protocol === "file:" || url.host === "localhost" || url.host === "127.0.0.1";
 }
@@ -26,7 +27,6 @@ function strictQuerySelector<T extends Element>(selector: string): T {
 const redditBaseURL: string = "https://www.reddit.com";
 const postsList: HTMLElement = strictQuerySelector("#posts");
 const postSection: HTMLElement = strictQuerySelector('section.reddit-post');
-// let colors = ['#3d5a80', '#98c1d9', '#e0fbfc', '#ee6c4d', '#293241'];
 let colors = ['#c24332', '#2e303f', '#63948c', '#ebe6d1', '#517c63', '#4c525f', '#371d31', '#f95950', '#023246', '#2e77ae', '#0d2137', '#ff8e2b'];
 let initials = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
@@ -36,7 +36,7 @@ menuButton!.addEventListener('click', () => {
     sideNavBar!.classList.toggle('hidden')
 })
 
-const facesSideloader = new HumanFacesSideloader(200); // Side-load 200 faces in the background
+const facesSideLoader = new HumanFacesSideLoader(200); // Side-load 200 faces in the background
 
 const rng = new Random();
 
@@ -49,7 +49,13 @@ function showRedditLink(permalink: Permalink): boolean {
         // The anchor points to a post
         showSubreddit(postMatch[1]);
         clearPost();
-        showPost(permalink);
+        showPost(permalink).catch( (reason) => {
+            console.error("There was a problem drawing this post on the page", {
+                "reason": reason,
+                "permalink": permalink,
+                "match results": postMatch
+            });
+        });
         return true;
     } else {
         const subMatch = permalink.match(/\/?r\/([^/]+)/);
@@ -72,12 +78,16 @@ function showRedditPageOrDefault(permalink: Permalink | null) {
         // We don't have an anchor in the URL
         showSubreddit("popular");
         if (isDebugMode()) {
-            showPost(`/r/test/comments/z0yiof/formatting_test/`);
+            showPost(`/r/test/comments/z0yiof/formatting_test/`).catch((reason) => {
+                console.error("There was a problem drawing the test post on the page", {
+                    "reason": reason,
+                });
+            });
         }
     } else {
         // We have an anchor in the URL
         const itWorked = showRedditLink(permalink);
-        if (itWorked === false) {
+        if (!itWorked) {
             // The anchor pointed to something we do not support
             showSubreddit("popular");
         }
@@ -127,7 +137,7 @@ function permalinkFromURLAnchor(): Permalink | null {
 }
 
 function removeTrailingSlash(url: URL): URL {
-    if (url.pathname.substr(-1) === '/') {
+    if (url.pathname.slice(-1) === '/') {
         url.pathname = url.pathname.slice(0,-1);
         return url;
     } else {
@@ -135,10 +145,15 @@ function removeTrailingSlash(url: URL): URL {
     }
 }
 
-function setURLAnchor(permalink: Permalink, pushState: boolean = true): void {
+interface URLAnchorFlags {
+    pushState: boolean
+}
+function setURLAnchor(permalink: Permalink, flags: URLAnchorFlags = {pushState:true}): void {
     const url = removeTrailingSlash(new URL(document.URL));
     const newurl = new URL(`${url.protocol}//${url.hostname}${url.pathname}#${permalink}`);
-    window.history.pushState({}, '', newurl);
+    if (flags.pushState) {
+        window.history.pushState({}, '', newurl);
+    }
 }
 
 function displayPosts(responses) {
@@ -177,7 +192,12 @@ function displayPosts(responses) {
             document.querySelector(".focused-post")?.classList.remove("focused-post");
             section.classList.add("focused-post");
             setURLAnchor(response.data.permalink);
-            showPost(response.data.permalink);
+            showPost(response.data.permalink).catch( (reason) => {
+                console.error("There was a problem drawing this post on the page", {
+                    "reason": reason,
+                    "permalink": response.data.permalink,
+                });
+            });
         })
         postsList.append(section);
     }
@@ -202,7 +222,10 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
             }
 
             parentElement.appendChild(commentElement);
-            const prom: Promise<HTMLElement> = createComment(comment, {ppBuffer: ppBuffer, domNode: commentElement})
+            const prom: Promise<HTMLElement> = createComment(comment, {ppBuffer: ppBuffer, domNode: commentElement});
+            prom.catch( (reason) => {
+                console.error("There was a problem drawing this comment on the page", {"reason":reason, "comment data": comment, "profile picture": ppBuffer, "anchor element on the page=": commentElement});
+            })
 
             if (comment.data.replies) {
                 displayCommentsRecursive(commentElement, comment.data.replies.data.children, {
@@ -276,10 +299,11 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
 }
 
 function displayComments(commentsData, {post}: {post: Permalink}) {
+    console.log(commentsData);
     postSection.classList.add('post-selected');
     postSection.classList.remove('deselected');
 
-    const stableInTimeFaceBuffer = facesSideloader.getFaces().slice(0); // Stable-in-time copy of the full array
+    const stableInTimeFaceBuffer = facesSideLoader.getFaces().slice(0); // Stable-in-time copy of the full array
     displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post});
 }
 
@@ -317,13 +341,15 @@ function showPostFromData(response: ApiObj) {
         selftext.classList.add("usertext");
         postSection.append(selftext);
     }
-    if (response.data[0].data.children[0].data.is_self === false && response.data[0].data.children[0].data.is_reddit_media_domain === false) {
+    if (!response.data[0].data.children[0].data.is_self && !response.data[0].data.children[0].data.is_reddit_media_domain) {
         const div = document.createElement('div');
         const thumbnail = document.createElement('img');
         const link = document.createElement('a');
 
         thumbnail.src = response.data[0].data.children[0].data.thumbnail;
-        thumbnail.onerror = "this.src='https://img.icons8.com/3d-fluency/512/news.png';";
+        thumbnail.onerror = () => {
+            thumbnail.src = 'https://img.icons8.com/3d-fluency/512/news.png';
+        };
         link.href = response.data[0].data.children[0].data.url_overridden_by_dest;
         link.innerText = titleText;
         link.target = "_blank";
@@ -367,7 +393,7 @@ function getPostDetails(response: any) {
     return [upvotes, subreddit, numComments];
 }
 
-async function generateGnomePic(commentData: SnooComment): Promise<HTMLImageElement> {
+async function generateGnomePic(): Promise<HTMLImageElement> {
     const gnome = document.createElement<"img">("img");
     gnome.classList.add("gnome");
 
@@ -377,8 +403,7 @@ async function generateGnomePic(commentData: SnooComment): Promise<HTMLImageElem
 
     // +Random rotation between -20deg +20deg
     const mirrorSeed = await rng.random();
-    const transforms = `${flip}rotate(${Math.round(mirrorSeed * 40 - 20)}deg) `;
-    gnome.style.transform = transforms;
+    gnome.style.transform = `${flip}rotate(${Math.round(mirrorSeed * 40 - 20)}deg) `;
     
     const colorSeed = await rng.random();
     gnome.style.backgroundColor = colors[Math.floor(colorSeed * colors.length)];
@@ -412,7 +437,7 @@ function copyImage2Canvas(origin: HTMLImageElement, newSize: number): HTMLCanvas
 
     // canvas will sample 4 pixels per pixel displayed then be downsized via css
     // otherwise if 1px = 1px the picture looks pixelated & jagged
-    // css seems to do a small cubic interpolation when downsizing and it makes a world of difference
+    // css seems to do a small cubic interpolation when downsizing, and it makes a world of difference
     canv.height = canv.width = newSize * 2;
 
     canv.style.height = canv.style.width = newSize.toString();
@@ -456,7 +481,7 @@ type HTMLProfilePictureElement = HTMLCanvasElement | HTMLImageElement | HTMLSpan
 async function createProfilePicture(commentData: SnooComment, size: number = 50, ppBuffer: HTMLImageElement[] = []): Promise<HTMLProfilePictureElement> {
     async function helper(): Promise<HTMLProfilePictureElement> {
         if (commentData.data.subreddit === "gnometalk") {
-            return generateGnomePic(commentData);
+            return generateGnomePic();
         } else {
             // 0-10  => 0
             // 10-25 => Between 0 and 0.7
@@ -574,7 +599,7 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
 
 type SerializedHTML = string;
 function decodeHtml(html: SerializedHTML): SerializedHTML {
-    var txt = document.createElement("textarea");
+    const txt = document.createElement("textarea");
     txt.innerHTML = html;
     return txt.value;
 }
@@ -601,7 +626,7 @@ searchForm.addEventListener('submit', async (event) => {
     let subredditBtn: HTMLButtonElement = document.createElement<"button">('button');
     subredditBtn.classList.add('subreddit', 'button');
     subredditBtn.id = subreddit.value;
-    subredditBtn.addEventListener('click', async (event) => {
+    subredditBtn.addEventListener('click', async () => {
         clearPost();
         if (isDebugMode()) console.log("custom sub click", subredditBtn.id);
         setURLAnchor(`/r/${subredditBtn.id}`);
@@ -630,7 +655,7 @@ searchForm.addEventListener('submit', async (event) => {
 const popularSubreddits: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.popular-subreddits>button')
 
 for (let subreddit of popularSubreddits) {
-    subreddit.addEventListener('click', async (event) => {
+    subreddit.addEventListener('click', async () => {
         if (isDebugMode()) console.log("default sub click", subreddit.id);
         setURLAnchor(`/r/${subreddit.id}`);
         clearPost();
