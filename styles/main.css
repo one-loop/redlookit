@@ -1649,3 +1649,107 @@ hr {
 .more-options:hover {
     background-color: var(--border-color-2)
 }
+
+@media (max-width: 1300px) {
+    .addin-icon {
+        display: none;
+    }
+    .icon-divider.fifth {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .undo-icon {
+        display: none;
+    }
+    .icon-divider.fourth {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .assign-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .assign-icon, .assign-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    .snooze-icon, .snooze-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .pinned-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .flag-icon, .flag-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .categorize-icon, .categorize-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+
+@media (max-width: 970px) {
+    .read-icon, .read-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .forward-icon, .forward-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .replyall-icon, .replyall-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .move-icon, .move-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .sweep-icon, .sweep-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .report-icon, .report-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .archive-icon, .archive-icon + .chevron-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .delete-icon, .delete-icon + .chevron-icon {
+        display: none;
+    }
+}
