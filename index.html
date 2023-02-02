@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Browse reddit while looking like you're reading email" name="description">
-    <title>Email - Redlookit</title>
+    <title>Email</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
@@ -14,6 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6705733956299645"
 crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/fabric-icons.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRXY5LSS9D"></script>
 <script>
@@ -34,11 +34,14 @@ crossorigin="anonymous"></script>
         <span class="logo">Outlook</span>
         <span class="search-bar">
             <form action="">
-                <input type="text" class="search" placeholder="Enter Subreddit Name">
+                <div>
+                    <input type="text" class="search" placeholder="Search Subreddit">
+                    <div class="search-results">Search Results</div>
+                </div>
             </form>
         </span>
         <span class="menu-buttons">
-<!--             <button class="meet-now">
+            <!-- <button class="meet-now">
                 <i class="ms-Icon ms-Icon--Video" aria-hidden="true"></i>
                 <span style="margin-left: 10px; position: relative; top: -3px;">Teams call</span>
             </button> -->
@@ -57,11 +60,11 @@ crossorigin="anonymous"></script>
             <button class="settings-button">
                 <i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
             </button>
-<!--             <button dir="ltr">
+            <!-- <button dir="ltr">
                 <i class="ms-Icon ms-Icon--Help" aria-hidden="true"></i>
             </button> -->
             <button>
-                <i class="ms-Icon ms-Icon--Megaphone" aria-hidden="true"></i>
+                <i class="ms-Icon ms-Icon--Lightbulb" aria-hidden="true"></i>
             </button>
             <button class="profile-pic profile-button">
                 <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 35px" alt="">
@@ -104,13 +107,25 @@ crossorigin="anonymous"></script>
     </div>
 
     <div class="profile-panel">
-        <div class="profile-panel-picture">
-            <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 75px" alt="">
+        <div style="display: flex; margin-bottom: 25px; padding-top: 20px;
+        padding-left: 10px;">
+            <div class="profile-panel-picture">
+                <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 75px" alt="">
+            </div>
+            <div class="profile-panel-content">
+                <h4>one-loop</h4>
+                <p>✋ I'm a beginner developer!</p>
+                <a href="https://github.com/one-loop" target="_blank">View Account</a>
+            </div>
         </div>
-        <div class="profile-panel-content">
-            <h4>one-loop</h4>
-            <p>✋ I'm a beginner developer!</p>
-            <a href="https://github.com/one-loop" target="_blank">View Account</a>
+        <div class="contributer">
+            <div class="profile-panel-picture">
+                <img src="https://avatars.githubusercontent.com/u/23503179?v=4" style="border-radius: 50%; width: 40px" alt="">
+            </div>
+            <div class="profile-panel-content">
+                <h5 style="margin-bottom: 0px;" title="(key contributor)">Yarillo</h5>
+                <a href="https://github.com/Yarillo4" target="_blank">View Account</a>
+            </div>
         </div>
     </div>
 
@@ -180,18 +195,135 @@ crossorigin="anonymous"></script>
 
         <div class="menu-and-content">
             <header class="header">
-                <button class="menu">
-                    <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
-                </button>
-                <button class="new-msg" aria-label="Add New Subreddit">New message</button>
-                <button class="mark-as-read-btn">
-                    <i class="ms-Icon ms-Icon--Read" aria-hidden="true"></i>
-                    Mark all as read
-                </button>
-                <button class="mark-as-read-btn">
-                    <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
-                    Undo
-                </button>
+                <div class="header-button-bar">
+                    <button class="header-button selected">Home</button>
+                    <button class="header-button">View</button>
+                    <button class="header-button">Help</button>
+                </div>
+                <div class="header-container">
+                    <button class="menu">
+                        <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
+                    </button>
+                    <button class="new-msg" aria-label="Add New Subreddit">
+                        <span style="display: flex; align-items: center; height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;">
+                        <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i>
+                        <span class="label-new-email">New email</span>
+                        </span>
+                    </button>
+                    <button class="new-msg-2">
+                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                    </button>
+                    <button class="delete-icon" aria-label="Delete">
+                        <i class="ms-Icon ms-Icon--Delete" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="archive-icon" aria-label="Archive">
+                        <i class="ms-Icon ms-Icon--Archive" aria-hidden="true"></i>
+                    </button>
+                    <button class="report-icon" aria-label="Report">
+                        <i class="ms-Icon ms-Icon--ShieldAlert" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="sweep-icon" aria-label="Sweep">
+                        <i class="ms-Icon ms-Icon--Broom" aria-hidden="true"></i>
+                    </button>
+                    <button class="move-icon" aria-label="Move">
+                        <i class="ms-Icon ms-Icon--FabricMovetoFolder" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="reply-icon" aria-label="Reply">
+                        <i class="ms-Icon ms-Icon--Reply" aria-hidden="true"></i>
+                    </button>
+                    <button class="replyall-icon" aria-label="ReplyAll">
+                        <i class="ms-Icon ms-Icon--ReplyAll" aria-hidden="true"></i>
+                    </button>
+                    <button class="forward-icon" aria-label="Forward">
+                        <i class="ms-Icon ms-Icon--ReplyMirrored" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="quick-steps-icon" aria-label="Quick Steps" style="padding: 4px;">
+                        <span style="display: flex; align-items: center; height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;">
+                            <i class="ms-Icon ms-Icon--LightningBolt" aria-hidden="true" style="font-size: 20px"></i>
+                            <span class="quick-steps-label">Quick Steps</span>
+                        </span>
+                        <button class="chevron-icon" style="border-radius: 0px 4px 4px 0px; border: 1px solid var(--outline); border-left: 0px; margin-right: 4px;">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="read-icon" aria-label="Read / Unread" style="padding: 0px 9px; border-radius: 4px;">
+                        <span style="display: flex; align-items: center; height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;">
+                            <i class="ms-Icon ms-Icon--Read" aria-hidden="true" style="margin-top: 0px; color: var(--icon)"></i>
+                            <span class="read-unread-label" style="margin-left: 4px; margin-right: 2px;">Read / Unread</span>
+                        </span>
+                    </button>
+                    <button class="categorize-icon" aria-label="Categorize">
+                        <i class="ms-Icon ms-Icon--Tag" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="flag-icon" aria-label="Flag">
+                        <i class="ms-Icon ms-Icon--Flag" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="pinned-icon" aria-label="Pinned">
+                        <i class="ms-Icon ms-Icon--Pinned" aria-hidden="true"></i>
+                    </button>
+                    <button class="snooze-icon" aria-label="Snooze">
+                        <i class="ms-Icon ms-Icon--Clock" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="assign-icon" aria-label="Assign Policy">
+                        <i class="ms-Icon ms-Icon--Archive" aria-hidden="true"></i>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="undo-icon" aria-label="Undo">
+                        <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="addin-icon" aria-label="Addin">
+                        <i class="ms-Icon ms-Icon--AddIn" aria-hidden="true"></i>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="more-options">
+                        <i class="ms-Icon ms-Icon--More" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="mark-as-read-btn" style="display: none">
+                        <i class="ms-Icon ms-Icon--Read" aria-hidden="true"></i>
+                        Read / Unread
+                    </button>
+                    <!-- <button class="mark-as-read-btn">
+                        <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
+                        Undo
+                    </button> -->
+                </div>
             </header>
             
             <div class="content-body">
@@ -200,8 +332,8 @@ crossorigin="anonymous"></script>
                         <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
                         Favorites
                     </button>
-                    <section class="favorites-buttons">
-                        <button class="inbox-button">
+                    <section class="favorites-buttons collapses">
+                        <button class="inbox-button" title="r/popular">
                             <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
                             Inbox
                         </button>
@@ -222,9 +354,9 @@ crossorigin="anonymous"></script>
                     
                     <span class="subreddits-section">
                         <button type="button" class="collapsible">
-                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                            <i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i>
                             Popular Subreddits</button>
-                        <div class="popular-subreddits">
+                        <div class="popular-subreddits" style="display: none;">
                             <button id="askreddit" class="subreddit button">r/AskReddit</button>
                             <button id="gaming" class="subreddit button">r/gaming</button>
                             <button id="aww" class="subreddit button">r/aww</button>
@@ -249,8 +381,13 @@ crossorigin="anonymous"></script>
                 
                 <div class="post-sidebar">
                     <div class="header-buttons">
-                        <button class="post-header-button">Focused</button>
-                        <button class="post-header-button">Other</button>
+                        <span>
+                            <button class="post-header-button selected">Focused</button>
+                            <button class="post-header-button">Other</button>
+                        </span>
+                        <span>
+                            <button class="post-header-button" style="font-size: 14px">Filter</button>
+                        </span>
                         <!-- <div class="dropdown post-header-button" style="float:right;">
                             <button class="dropbtn">Filter</button>
                             <div class="dropdown-content">
@@ -292,5 +429,6 @@ crossorigin="anonymous"></script>
         });
     </script>
     <script src="js/bundle.min.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
