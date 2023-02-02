@@ -212,7 +212,8 @@ button {
         -moz-user-select: text;     /* Firefox 43+ */
         -ms-user-select: text;      /* No support yet */
         user-select: text;          /* Likely future */   
-        padding-top: 8px;
+        padding-top: 0px;
+        margin-top: 8px;
     }
 }
 
