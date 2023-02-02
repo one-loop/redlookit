@@ -523,7 +523,8 @@ button {
     height: 1.2em;
     border-radius: 0.25em;
     display: inline-block;
-    background-color: var(--post-background);
+    /* background-color: var(--post-background); */
+    background-color: var(--background-color);
     color: var(--post-background);
     -webkit-transition: background-color 100ms, color 100ms;
     -moz-transition:    background-color 100ms, color 100ms;
