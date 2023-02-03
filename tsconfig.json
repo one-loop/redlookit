@@ -5,7 +5,7 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
     "allowUnusedLabels": false,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "sourceMap": true,
     "module": "es6",
     "target": "es6",
