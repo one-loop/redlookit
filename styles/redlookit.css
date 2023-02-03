@@ -187,6 +187,10 @@ button {
     margin-bottom: 20px;
 }
 
+.reddit-post a {
+    word-break: break-all;
+}
+
 @media (min-width: 700px) {
     .reddit-post {
         /* position: absolute; */
