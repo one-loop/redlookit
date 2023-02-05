@@ -13,15 +13,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6705733956299645"
 crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/fabric-icons.css">
+    <!-- <link rel="stylesheet" href="styles/fabric-icons.css"> -->
     <style>
         /*
         Your use of the content in the files referenced here is subject to the terms of the license at https://aka.ms/fabric-assets-license
         */
-        @font-face {
-            font-family: 'FabricMDL2Icons';
-            src: url('../fonts/fabric-icons-e528b88c.woff') format('woff');
-        }
 
         .ms-Icon {
             -moz-osx-font-smoothing: grayscale;
@@ -164,60 +160,57 @@ crossorigin="anonymous"></script>
     <main class="main-content">
         <aside class="toolbar icons">
             <form action="https://outlook.office365.com/mail/inbox" target="_blank">
-            <button>
-                <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i>
+            <button class="inbox-icon">
+                <!-- <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i> -->
+                <img class="ms-icon inbox selected" src="https://img.icons8.com/fluency-systems-filled/256/FFCDFF/new-post.png">
             </button>
             </form>
             <form action="https://outlook.office365.com/calendar/" target="_blank">
-            <button dir="ltr">
-                <i class="ms-Icon ms-Icon--Calendar" aria-hidden="true"></i>
+            <button dir="ltr" class="calendar-icon">
+                <!-- <i class="ms-Icon ms-Icon--Calendar" aria-hidden="true"></i> -->
+                <img class="ms-icon" src="https://img.icons8.com/fluency-systems-regular/256/ADADAD/calendar--v1.png">
             </button>
             </form>
             <form action="https://outlook.office365.com/people/" target="_blank">
-            <button>
-                <i class="ms-Icon ms-Icon--People" aria-hidden="true"></i>
+            <button class="people-icon">
+                <!-- <i class="ms-Icon ms-Icon--People" aria-hidden="true"></i> -->
+                <img class="ms-icon" src="https://img.icons8.com/fluency-systems-regular/256/ADADAD/conference-call.png">
             </button>
             </form>
             <form action="https://outlook.office365.com/files/" target="_blank">
-            <button>
-                <i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i>
+            <button class="attach-icon">
+                <!-- <i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i> -->
+                <img class="ms-icon" src="https://img.icons8.com/fluency-systems-regular/256/ADADAD/attach.png">
             </button>
             </form>
             <form action="https://to-do.office.com/tasks/" target="_blank">
             <button>
-                <i class="ms-Icon ms-Icon--ToDoLogoOutline" aria-hidden="true"></i>
+                <img src="https://img.icons8.com/fluency/256/microsoft-todo-2019.png" style="width: 20px; height: 20px;">
             </button>
             </form>
             <form action="https://www.office.com/launch/word" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><linearGradient id="Q7XamDf1hnh~bz~vAO7C6a_pGHcje298xSl_gr1" x1="28" x2="28" y1="14.966" y2="6.45" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#42a3f2"></stop><stop offset="1" stop-color="#42a4eb"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6a_pGHcje298xSl_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v7.003h32V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6b_pGHcje298xSl_gr2" x1="28" x2="28" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#11408a"></stop><stop offset="1" stop-color="#103f8f"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6b_pGHcje298xSl_gr2)" d="M12,33.054V40c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2v-6.946H12z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6c_pGHcje298xSl_gr3" x1="28" x2="28" y1="-15.46" y2="-15.521" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3079d6"></stop><stop offset="1" stop-color="#297cd2"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6c_pGHcje298xSl_gr3)" d="M12,15.003h32v9.002H12V15.003z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6d_pGHcje298xSl_gr4" x1="12" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1d59b3"></stop><stop offset="1" stop-color="#195bbc"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6d_pGHcje298xSl_gr4)" d="M12,24.005h32v9.05H12V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6e_pGHcje298xSl_gr5" x1="4.744" x2="23.494" y1="14.744" y2="33.493" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#256ac2"></stop><stop offset="1" stop-color="#1247ad"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6e_pGHcje298xSl_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M18.403,19l-1.546,7.264L15.144,19h-2.187l-1.767,7.489L9.597,19H7.641l2.344,10h2.352l1.713-7.689	L15.764,29h2.251l2.344-10H18.403z"></path></svg>
+                <img src="https://img.icons8.com/fluency/256/microsoft-word-2019.png" style="width: 24px; height: 24px;">
             </button>
             </form>
             <form action="https://www.office.com/launch/excel" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><rect width="16" height="9" x="28" y="15" fill="#21a366"></rect><path fill="#185c37" d="M44,24H12v16c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2V24z"></path><rect width="16" height="9" x="28" y="24" fill="#107c42"></rect><rect width="16" height="9" x="12" y="15" fill="#3fa071"></rect><path fill="#33c481" d="M42,6H28v9h16V8C44,6.895,43.105,6,42,6z"></path><path fill="#21a366" d="M14,6h14v9H12V8C12,6.895,12.895,6,14,6z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="flEJnwg7q~uKUdkX0KCyBa_UECmBSgBOvPT_gr1" x1="4.725" x2="23.055" y1="14.725" y2="33.055" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18884f"></stop><stop offset="1" stop-color="#0b6731"></stop></linearGradient><path fill="url(#flEJnwg7q~uKUdkX0KCyBa_UECmBSgBOvPT_gr1)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M9.807,19h2.386l1.936,3.754L16.175,19h2.229l-3.071,5l3.141,5h-2.351l-2.11-3.93L11.912,29H9.526	l3.193-5.018L9.807,19z"></path></svg>
+                <img src="https://img.icons8.com/fluency/256/microsoft-excel-2019.png" style="width: 24px; height: 24px;">
             </button>
             </form>
             <form action="https://www.office.com/launch/powerpoint" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><path fill="#d35230" d="M8,24c0,9.941,8.059,18,18,18s18-8.059,18-18H26H8z"></path><path fill="#ff8f6b" d="M26,6v18h18C44,14.059,35.941,6,26,6z"></path><path fill="#ed6c47" d="M26,6C16.059,6,8,14.059,8,24h18V6z"></path><path d="M26,16.681C26,14.648,24.352,13,22.319,13H11.774C9.417,16.044,8,19.852,8,24	c0,5.116,2.145,9.723,5.571,13h8.747C24.352,37,26,35.352,26,33.319V16.681z" opacity=".05"></path><path d="M22.213,13.333H11.525C9.32,16.321,8,20.002,8,24c0,4.617,1.753,8.814,4.611,12h9.602	c1.724,0,3.121-1.397,3.121-3.121V16.454C25.333,14.731,23.936,13.333,22.213,13.333z" opacity=".07"></path><path d="M22.106,13.667H11.276C9.218,16.593,8,20.151,8,24c0,4.148,1.417,7.956,3.774,11h10.332	c1.414,0,2.56-1.146,2.56-2.56V16.227C24.667,14.813,23.52,13.667,22.106,13.667z" opacity=".09"></path><linearGradient id="N~uyq1CljjkKMh72IFt0Fa_ifP93G7BXUhU_gr1" x1="4.586" x2="22.77" y1="14.586" y2="32.77" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ca4e2a"></stop><stop offset="1" stop-color="#b63016"></stop></linearGradient><path fill="url(#N~uyq1CljjkKMh72IFt0Fa_ifP93G7BXUhU_gr1)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M14.673,19.012H10v10h2.024v-3.521H14.3c1.876,0,3.397-1.521,3.397-3.397v-0.058	C17.697,20.366,16.343,19.012,14.673,19.012z M15.57,22.358c0,0.859-0.697,1.556-1.556,1.556h-1.99v-3.325h1.99	c0.859,0,1.556,0.697,1.556,1.556V22.358z"></path></svg>
+                <img src="https://img.icons8.com/fluency/256/microsoft-powerpoint-2019.png" style="width: 24px; height: 24px;">
             </button>
             </form>
             <form action="https://www.office.com/launch/onenote" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1" x1="12" x2="44" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c965eb"></stop><stop offset="1" stop-color="#c767e5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v32c0,1.105,0.895,2,2,2h21V15.003h9V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2" x1="39.5" x2="39.5" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7819a2"></stop><stop offset="1" stop-color="#771aa9"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2)" d="M35,33.054V42h7c1.105,0,2-0.895,2-2v-6.945L35,33.054L35,33.054z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3" x1="35" x2="44" y1="19.504" y2="19.504" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#ac4ad5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3)" d="M35,15.003h9v9.002h-9V15.003z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4" x1="35" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#912fbd"></stop><stop offset="1" stop-color="#9332bf"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4)" d="M35,24.005h9v9.05h-9V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5" x1="4.586" x2="23.414" y1="14.586" y2="33.414" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8521b0"></stop><stop offset="1" stop-color="#64129a"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M16.501,19v7.393L11.779,19H9.59v10h1.909v-7.45L16.258,29h2.152V19H16.501z"></path></svg>
+                <img src="https://img.icons8.com/fluency/256/microsoft-onenote-2019.png" style="width: 24px; height: 24px;">
+            </button>
+            </form>
+            <form action="https://www.office.com/launch/onedrive" target="_blank">
+            <button>
+                <img src="https://img.icons8.com/fluency/256/microsoft-onedrive-2019.png" style="width: 20px; height: 20px;">
             </button>
             </form>
                 </form>
@@ -359,25 +352,27 @@ crossorigin="anonymous"></script>
             <div class="content-body">
                 <aside class="menu-selector">
                     <button type="button" class="collapsible">
-                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                        Favorites
+                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>Favourites
                     </button>
                     <section class="favorites-buttons collapses">
                         <button class="inbox-button" title="r/popular">
-                            <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Inbox
+                            <!-- <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
+                            <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/inbox.png">
+                            <span>Inbox</span>
                         </button>
                         <button dir="ltr">
-                            <i class="ms-Icon ms-Icon--Send" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Sent Items
-                        </button>
-                        <button dir="ltr">
-                            <i class="ms-Icon ms-Icon--Edit" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Drafts
+                            <!-- <i class="ms-Icon ms-Icon--Edit" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
+                            <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/edit.png">
+                            <span>Drafts</span>
                         </button>
                         <button>
-                            <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Deleted Items
+                            <!-- <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
+                            <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/trash.png">
+                            <span>Deleted Items</span>
+                        </button>
+                        <button dir="ltr">
+                            <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/sent.png">
+                            <span>Sent Items</span>
                         </button>
                         <button style="color: var(--pink); padding-left: 55px">Add Favorite</button>
                     </section>
@@ -410,7 +405,8 @@ crossorigin="anonymous"></script>
                 </aside>
                 
                 <div class="post-sidebar">
-                    <div class="header-buttons">
+                    <div class="header-buttons" style="position: relative">
+                        <img class="check-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/ok--v1.png">
                         <span>
                             <button class="post-header-button selected">Focused</button>
                             <button class="post-header-button">Other</button>
