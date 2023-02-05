@@ -12,6 +12,7 @@
   },
   "files": [
     "src/redlookit.ts",
+    "src/subredditList.ts",
     "src/random.ts",
     "src/faces_sideloader.ts",
     "src/@types/reddit-types.ts"
