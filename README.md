@@ -33,11 +33,17 @@ PS: If you have a better name, please let me know 🙏
 - [x] Added gnomes on r/gnometalk (thanks Yarillo4)
 - [x] Outlook Profile Pictures
 - [x] Link routing
+- [x] Save added subreddits to local storage
+- [x] Basic mobile responsiveness
+- [x] Updated UI and Icons
+- [x] Save redlookit theme to local storage
+- [x] Contributers to profile menu
+- [x] Live search for top 1000 Subreddits
+- [ ] Live search for top 2500 Subreddits
+- [ ] New color schemes
 - [ ] Sorting posts by top/new/hot/rising
 - [ ] infinite scroll
 - [ ] Resizeable post area
-- [ ] Save added subreddits to cookies
-- [ ] Basic mobile responsiveness
 - [ ] Removing saved subreddits
 
 
