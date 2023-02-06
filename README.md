@@ -47,8 +47,8 @@ PS: If you have a better name, please let me know 🙏
 - [x] Save settings to local storage
 - [x] Save Subreddits from description
 - [x] Removing saved subreddits
+- [x] Sorting posts by top/new/hot/rising
 - [ ] New color schemes
-- [ ] Sorting posts by top/new/hot/rising
 - [ ] infinite scroll
 - [ ] Resizeable post area
 - [ ] Removing saved subreddits
