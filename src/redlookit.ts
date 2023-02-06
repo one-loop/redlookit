@@ -197,7 +197,7 @@ function displayPosts(responses, subreddit, subredditInformation={"data": {"titl
         favoriteIcon.id = subreddit;
         if (localStorage.getItem('savedSubreddits')) {
             if (localStorage.getItem('savedSubreddits').toLowerCase().includes(subreddit.toLowerCase())) {
-                console.log(`r/${subreddit} in SAVED DATA: ${localStorage.getItem('savedSubreddits')}`)
+                // console.log(`r/${subreddit} in SAVED DATA: ${localStorage.getItem('savedSubreddits')}`)
                 favoriteIcon.innerHTML = '<svg width="16" height="16" class="favorite-icon favorited" viewBox="0 0 176 168" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M89.7935 6.93173L111.277 50.4619C113.025 54.0036 116.404 56.4584 120.312 57.0264L168.351 64.0068C169.991 64.2451 170.646 66.2611 169.459 67.4182L134.698 101.302C131.87 104.058 130.579 108.031 131.247 111.923L139.453 159.767C139.733 161.401 138.018 162.647 136.551 161.876L93.5841 139.287C90.0882 137.449 85.9118 137.449 82.4159 139.287L39.4491 161.876C37.9818 162.647 36.267 161.401 36.5472 159.768L44.7531 111.923C45.4208 108.031 44.1302 104.059 41.302 101.302L6.54106 67.4182C5.35402 66.2611 6.00905 64.2451 7.64948 64.0068L55.6879 57.0264C59.5964 56.4584 62.9752 54.0036 64.7231 50.4619L86.2065 6.93174C86.9402 5.44523 89.0599 5.44525 89.7935 6.93173Z"/></svg>'
             } else {
                 favoriteIcon.innerHTML = '<svg width="16" height="16" class="favorite-icon" viewBox="0 0 176 168" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M89.7935 6.93173L111.277 50.4619C113.025 54.0036 116.404 56.4584 120.312 57.0264L168.351 64.0068C169.991 64.2451 170.646 66.2611 169.459 67.4182L134.698 101.302C131.87 104.058 130.579 108.031 131.247 111.923L139.453 159.767C139.733 161.401 138.018 162.647 136.551 161.876L93.5841 139.287C90.0882 137.449 85.9118 137.449 82.4159 139.287L39.4491 161.876C37.9818 162.647 36.267 161.401 36.5472 159.768L44.7531 111.923C45.4208 108.031 44.1302 104.059 41.302 101.302L6.54106 67.4182C5.35402 66.2611 6.00905 64.2451 7.64948 64.0068L55.6879 57.0264C59.5964 56.4584 62.9752 54.0036 64.7231 50.4619L86.2065 6.93174C86.9402 5.44523 89.0599 5.44525 89.7935 6.93173Z"/></svg>'
@@ -301,7 +301,7 @@ favoriteIcon.addEventListener('click', function() {
 })
 
 function favoriteSubreddit(subreddit) {
-    console.log(`Favoriting r/${subreddit}`);
+    // console.log(`Favoriting r/${subreddit}`);
     let subredditBtn: HTMLButtonElement = document.createElement<"button">('button');
     subredditBtn.classList.add('subreddit', 'button');
     subredditBtn.id = subreddit;
@@ -316,23 +316,23 @@ function favoriteSubreddit(subreddit) {
         let savedSubreddits = localStorage.getItem('savedSubreddits');
         savedSubreddits += `,${subreddit}`;
         localStorage.setItem('savedSubreddits', savedSubreddits);
-        console.log(`Favorited r/${subreddit}`)
+        // console.log(`Favorited r/${subreddit}`)
     } else {
         localStorage.setItem('savedSubreddits', subreddit);
-        console.log(`Favorited r/${subreddit}`)
+        // console.log(`Favorited r/${subreddit}`)
     }
     subredditBtn.append('r/' + subreddit);
     subredditSection.append(subredditBtn);
 }
 
 function unFavoriteSubreddit(subreddit) {
-    console.log(`Unfavoriting r/${subreddit}`);
+    // console.log(`Unfavoriting r/${subreddit}`);
     document.querySelector(`.your-subreddits .subreddit.button#${subreddit}`).remove();
     let savedSubreddits = localStorage.getItem('savedSubreddits');
     let newSavedSubreddits = savedSubreddits.split(',').filter(e => e !== subreddit);
-    console.log(newSavedSubreddits);
+    // console.log(newSavedSubreddits);
     localStorage.setItem('savedSubreddits', newSavedSubreddits.toString());
-    console.log(localStorage.getItem('savedSubreddits'));
+    // console.log(localStorage.getItem('savedSubreddits'));
 }
 
 type CommentBuilderOptions = {indent: number, ppBuffer: HTMLImageElement[], post: Permalink};
@@ -814,7 +814,7 @@ function displaySavedSubreddits() {
 
 function getSavedSubreddits() {
     if (localStorage.getItem('savedSubreddits')) {
-        console.log(localStorage.getItem('savedSubreddits'));
+        // console.log(localStorage.getItem('savedSubreddits'));
         let savedSubreddits = localStorage.getItem('savedSubreddits');
         return savedSubreddits.split(',');
     } else {
