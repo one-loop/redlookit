@@ -451,7 +451,6 @@ sortButton.addEventListener('click', function() {
         sortMenu.style.display = 'none';
         let sortTopMenu = document.querySelector('.sort-top-menu') as HTMLButtonElement;
         sortTopMenu.style.display = 'none';
-        sortButton.classList.add('opened')
         // sortButton.style.backgroundColor = 'var(--background-color-2)'
     }
 })
@@ -532,7 +531,7 @@ async function displayTopSortedPosts(sortType, subreddit) {
     sortMenu.style.display = 'none';
     sortTopMenu.style.display = 'none';
     sortButton.classList.remove('opened');
-    axios.get(`${redditBaseURL}/r/${subreddit}/top.json?t=${sortType}&?limit=75`)
+    axios.get(`${redditBaseURL}/r/${subreddit}/top.json?t=${sortType}`)
         .then(function (response1) {
             const responseData = response1.data.data.children;
             axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
