@@ -39,7 +39,7 @@ PS: If you have a better name, please let me know 🙏
 - [x] Save redlookit theme to local storage
 - [x] Contributers to profile menu
 - [x] Live search for top 1000 Subreddits
-- [ ] Live search for top 2500 Subreddits
+- [x] Live search for top 2500 Subreddits
 - [ ] New color schemes
 - [ ] Sorting posts by top/new/hot/rising
 - [ ] infinite scroll
