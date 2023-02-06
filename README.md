@@ -40,6 +40,13 @@ PS: If you have a better name, please let me know 🙏
 - [x] Contributers to profile menu
 - [x] Live search for top 1000 Subreddits
 - [x] Live search for top 2500 Subreddits
+- [x] Credits/Contributions
+- [x] Subreddit Details
+- [x] Hide subreddit details option
+- [x] Long/Short Email Addresses
+- [x] Save settings to local storage
+- [x] Save Subreddits from description
+- [x] Removing saved subreddits
 - [ ] New color schemes
 - [ ] Sorting posts by top/new/hot/rising
 - [ ] infinite scroll
