@@ -6539,11 +6539,11 @@ export const subreddits = [
         'members': '441998',
         'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
     },
-    {
-        'subreddit': 'anime_titties',
-        'members': '441844',
-        'icon': 'https://a.thumbs.redditmedia.com/CREEY5PYbSfvQ9t1TIwu4lzmjmnLjLfi9ZDwLZ7Cks8.png'
-    },
+    // {
+    //     'subreddit': 'anime_titties',
+    //     'members': '441844',
+    //     'icon': 'https://a.thumbs.redditmedia.com/CREEY5PYbSfvQ9t1TIwu4lzmjmnLjLfi9ZDwLZ7Cks8.png'
+    // },
     {
         'subreddit': 'AskMenOver30',
         'members': '441610',
@@ -10573,11 +10573,11 @@ export const subreddits = [
         'members': '248799',
         'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
     },
-    {
-        'subreddit': 'TikTok_Tits',
-        'members': '248759',
-        'icon': 'https://b.thumbs.redditmedia.com/Gigqs8-8w6qqjvj1vawDamtcIqiTf8PsqdliG3z4LLo.png'
-    },
+    // {
+    //     'subreddit': 'TikTok_Tits',
+    //     'members': '248759',
+    //     'icon': 'https://b.thumbs.redditmedia.com/Gigqs8-8w6qqjvj1vawDamtcIqiTf8PsqdliG3z4LLo.png'
+    // },
     {
         'subreddit': 'Fire',
         'members': '248696',
@@ -12463,5 +12463,10 @@ export const subreddits = [
         'subreddit': 'VintageFashion',
         'members': '200552',
         'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+    },
+    {
+        'subreddit': 'gnometalk',
+        'members': '1401',
+        'icon': 'https://static.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png/revision/latest?cb=20190114192842'
     }
 ]

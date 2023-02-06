@@ -515,6 +515,85 @@ button {
     cursor: pointer;
 } */
 
+.subreddit-info {
+    /* height: 88px; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 24px 0px;
+    background-color: var(--background-color-2);
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 1px solid var(--border-color-2);
+    max-height: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    position: relative;
+}
+
+.form-check.form-switch {
+    margin-bottom: 10px;
+}
+
+.subreddit-details-container {
+    white-space: nowrap;
+    margin-left: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.subreddit-info-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.subreddit-icon-container {
+    padding-left: 20px;
+}
+
+.subreddit-info-heading {
+    color: var(--post-color);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    max-width: 210px;
+}
+
+.favorite-icon {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 8px;
+    left: 280px;
+    fill: none;
+    stroke: var(--new-msg);
+    cursor: pointer;
+    stroke-width: 15px;
+}
+
+.favorite-icon.favorited {
+    fill: var(--new-msg);
+}
+
+.subreddit-info-details {
+    color: var(--icon);
+    cursor: auto;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 24px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .post-detail-info {
     margin-top: 10px;
     padding: 10px 10px 0px 12px;
@@ -888,7 +967,7 @@ header {
 .new-msg {
     color: var(--text-color-neg) !important;
     background-color: var(--new-msg);
-    font-family: Segoe UI, Calibri, Serif;
+    /* font-family: Segoe UI, Calibri, Serif; */
     /* padding: 4px 17px; */
     border: none;
     margin: 4px 0px;
