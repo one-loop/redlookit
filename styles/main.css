@@ -1057,7 +1057,82 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
+/* 
+.post-header-button.sort:focus {
+    background-color: var(--border-color-2);
+    border-radius: 4px;
+} */
+
+.sort-menu {
+    position: absolute;
+    z-index: 10;
+    width: 180px;
+    background-color: var(--background-color-2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0px; */
+    border: 1px solid var(--outline);
+    -webkit-box-shadow: 0 8px 16px rgb(0 0 0 / 14%), 0 0 2px rgb(0 0 0 / 12%);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 14%), 0 0 2px rgb(0 0 0 / 12%);
+    display: none;
+}
+
+.sort-top-menu {
+    position: absolute;
+    z-index: 10;
+    width: 180px;
+    left: 440px;
+    background-color: var(--background-color-2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0px; */
+    border: 1px solid var(--outline);
+    -webkit-box-shadow: 0 8px 16px rgb(0 0 0 / 14%), 0 0 2px rgb(0 0 0 / 12%);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 14%), 0 0 2px rgb(0 0 0 / 12%);
+    display: none;
+    top: 146px;
+}
+
+.light .sort-icon {
+    content: url('https://img.icons8.com/fluency-systems-regular/256/000000/sort-amount-up.png');
+}
+
+.post-header-button.sort.opened {
+    background-color: var(--border-color-2);
+    border-radius: 4px;
+}
+
+.sort-button {
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: var(--background-color-2);
+    color: var(--post-color);
+    height: 36px;
+    transition: 0.16s ease-in;
+    text-align: left;
+    padding-left: 30px;
+    border-radius: 8px;
+}
+
+.sort-button.top {
+    /* position: absolute; */
+}
+
+.sort-button.top > .ms-Icon {
+    /* position: relative; */
+    padding-left: 100px;
+    font-size: 10px;
+}
+
+.sort-button:hover {
+    background-color: var(--background-color);
+}
+
 
 .post-header-button {
     background-color: transparent;
@@ -1096,6 +1171,7 @@ header {
     border-radius: 5px;
     background-color: var(--background-color);
 }
+
 
 header {
     display: flex;
