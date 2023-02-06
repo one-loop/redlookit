@@ -491,6 +491,11 @@ sortTopWeek.addEventListener('click', async function() {
     displayTopSortedPosts('week', sortButton.id)
 })
 
+let sortTopMonth = document.querySelector('.sort-button.month') as HTMLButtonElement;
+sortTopMonth.addEventListener('click', async function() {
+    displayTopSortedPosts('month', sortButton.id)
+})
+
 let sortTopYear = document.querySelector('.sort-button.year') as HTMLButtonElement;
 sortTopYear.addEventListener('click', async function() {
     displayTopSortedPosts('year', sortButton.id)
