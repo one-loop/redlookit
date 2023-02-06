@@ -100,9 +100,10 @@ function showSubreddit(subreddit: string) {
     clearPostsList();
     let section = document.createElement('section');
     section.classList.add('post')
+    document.querySelector('.post-header-button.sort').id = subreddit;
 
     axios.get(`${redditBaseURL}/r/${subreddit}.json?limit=75`)
-        .then(function  (response1) {
+        .then(function (response1) {
             const responseData = response1.data.data.children;
             axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
                 .then(function(response2) {
@@ -224,7 +225,6 @@ function displayPosts(responses, subreddit, subredditInformation={"data": {"titl
         subredditDetailsContainer.classList.add('subreddit-details-container');
         subredditInfoContainer.append(subredditIconContainer, subredditDetailsContainer, favoriteIcon);
         headerButtons.parentNode.insertBefore(subredditInfoContainer, headerButtons);
-        var calcHeight =  178 + subredditInfoContainer.offsetHeight;
         // scrollable.style.height = `calc(100vh - ${calcHeight})`;
         scrollable.style.height = 'calc(100vh - 273px)';
     } else {
@@ -435,6 +435,121 @@ function displayComments(commentsData, {post}: {post: Permalink}) {
 
     const stableInTimeFaceBuffer = facesSideLoader.getFaces().slice(0); // Stable-in-time copy of the full array
     displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post});
+}
+
+let sortButton = document.querySelector('.post-header-button.sort') as HTMLElement;
+let sortMenu = document.querySelector('.sort-menu') as HTMLElement;
+
+sortButton.addEventListener('click', function() {
+    // console.log(sortMenu.style.display)
+    if (sortMenu.style.display == 'none' || sortMenu.style.display == '') {
+        // sortButton.style.backgroundColor = '#000';
+        sortButton.classList.add('opened');
+        sortMenu.style.display = 'flex';
+    } else {
+        sortButton.classList.remove('opened');
+        sortMenu.style.display = 'none';
+        let sortTopMenu = document.querySelector('.sort-top-menu') as HTMLButtonElement;
+        sortTopMenu.style.display = 'none';
+        sortButton.classList.add('opened')
+        // sortButton.style.backgroundColor = 'var(--background-color-2)'
+    }
+})
+
+
+let sortHot = document.querySelector('.sort-button.hot') as HTMLButtonElement;
+sortHot.addEventListener('click', async function() {
+    displaySortedPosts('hot', sortButton.id)
+})
+
+let sortNew = document.querySelector('.sort-button.new') as HTMLButtonElement;
+sortNew.addEventListener('click', async function() {
+    displaySortedPosts('new', sortButton.id)
+})
+
+let sortRising = document.querySelector('.sort-button.rising') as HTMLButtonElement;
+sortRising.addEventListener('click', async function() {
+    displaySortedPosts('rising', sortButton.id)
+})
+let sortTopMenu = document.querySelector('.sort-top-menu') as HTMLButtonElement;
+
+let topButton = document.querySelector('.sort-button.top') as HTMLButtonElement;
+topButton.addEventListener('click', function() {
+    if ((sortTopMenu.style.display == 'none' || sortTopMenu.style.display == '') && sortMenu.style.display == 'flex') {
+        sortTopMenu.style.display = 'flex';
+    } else {
+        sortTopMenu.style.display = 'none';
+    }
+})
+
+let sortTopDay = document.querySelector('.sort-button.today') as HTMLButtonElement;
+sortTopDay.addEventListener('click', async function() {
+    displayTopSortedPosts('day', sortButton.id)
+})
+
+let sortTopWeek = document.querySelector('.sort-button.week') as HTMLButtonElement;
+sortTopWeek.addEventListener('click', async function() {
+    displayTopSortedPosts('week', sortButton.id)
+})
+
+let sortTopYear = document.querySelector('.sort-button.year') as HTMLButtonElement;
+sortTopYear.addEventListener('click', async function() {
+    displayTopSortedPosts('year', sortButton.id)
+})
+
+let sortTopAll = document.querySelector('.sort-button.all-time') as HTMLButtonElement;
+sortTopAll.addEventListener('click', async function() {
+    displayTopSortedPosts('all', sortButton.id)
+})
+
+async function displaySortedPosts(sortType, subreddit) {
+    clearPostsList();
+    sortMenu.style.display = 'none';
+    sortTopMenu.style.display = 'none';
+    sortButton.classList.remove('opened')
+    axios.get(`${redditBaseURL}/r/${subreddit}/${sortType}/.json?limit=75`)
+        .then(function (response1) {
+            const responseData = response1.data.data.children;
+            axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
+                .then(function(response2) {
+                    const subredditInformation = response2.data;
+                    console.log(subredditInformation);
+                    displayPosts(responseData, sortButton.id, subredditInformation);
+                    // console.log(`displayed ${sortType} posts for`, subreddit)
+                })
+                .catch((e: Error) => {
+                    displayPosts(responseData, sortButton.id);
+                    console.error(e);
+                })
+        })
+        .catch((e: Error) => {
+            console.error(e);
+        })
+}
+
+async function displayTopSortedPosts(sortType, subreddit) {
+    clearPostsList();
+    sortMenu.style.display = 'none';
+    sortTopMenu.style.display = 'none';
+    sortButton.classList.remove('opened');
+    axios.get(`${redditBaseURL}/r/${subreddit}/top.json?t=${sortType}&?limit=75`)
+        .then(function (response1) {
+            const responseData = response1.data.data.children;
+            axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
+                .then(function(response2) {
+                    const subredditInformation = response2.data;
+                    console.log(subredditInformation);
+                    displayPosts(responseData, sortButton.id, subredditInformation);
+                    // console.log(`displayed ${sortType} posts for`, subreddit)
+                })
+                .catch((e: Error) => {
+                    displayPosts(responseData, sortButton.id);
+                    console.error(e);
+                })
+        })
+        .catch((e: Error) => {
+            console.error(e);
+        })
 }
 
 function showPostFromData(response: ApiObj) {
@@ -746,6 +861,9 @@ function decodeHtml(html: SerializedHTML): SerializedHTML {
 
 function clearPost() {
     postSection.innerHTML = '';
+    sortMenu.style.display = 'none';
+    sortTopMenu.style.display = 'none';
+    sortButton.classList.remove('opened');
     subredditInfoContainer.style.display = 'none';
     headerButtons.style.borderRadius = "4px 4px 0px 0px";
 }
@@ -843,7 +961,6 @@ for (let subreddit of popularSubreddits) {
         clearPost();
         showSubreddit(subreddit.id);
     })
-
 }
 
 
@@ -1016,12 +1133,18 @@ profileButton.addEventListener('click', () => {
 
 document.addEventListener('click', function handleClickOutsideBox(event) {
 	let searchResults = document.querySelector('.search-results');
+    // let sortMenu = document.querySelector('.sort-menu') as HTMLElement;
+    // let sortTopMenu = document.querySelector('.sort-top-menu') as HTMLElement;
+
     let target = event.target as Node;
 
-	if (!searchResults.contains(target)) {
-		hideSearchResults()
-	}
+    // hdie search results/open menus if user clicks out of it
+	if (!searchResults.contains(target)) {hideSearchResults()}
+	// if (!sortMenu.contains(target)) {sortMenu.style.display = 'none';}
+    // if (!sortTopMenu.contains(target)) {sortTopMenu.style.display = 'none';}
 });
+
+
 
 let inputBox = document.querySelector(".search") as HTMLInputElement;
 if (subredditName) {
