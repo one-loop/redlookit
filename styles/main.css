@@ -7,31 +7,32 @@
 
 
 .dark {
-    --navbar-color: #6f40ff;
+    /* --navbar-color: #6f40ff; */
     --text-color: #ffffff;
     --text-color-neg: #333333;
     --background-color: #212121;
     --background-color-2: #333333;
-    --pink: #eaa8ff;
+    --placeholder: white;
     --button-focus: #55576b;
     --post-color: #ffffff;
     --post-background: #333333;
-    --subreddit-button: #ffcdff;
-    --subreddit-button: #979797;
+    --menu-button: #bdbdbd;
     --themeLighter: #55576b;
     --border-color: #646464;
     --border-color-2: #000000;
-    --text-color-1: #eabfee;
+    --text-color-1: white;
     --link-color: #0088d6;
-    --searchbar-unselected: #382963;
-    --searchbar-selected: #38296399;
-    --new-msg: #ffcdff;
-    --new-msg-hover: #eaa8ff;
+    /* --searchbar-unselected: #382963;
+    --searchbar-selected: #38296399; */
+    --searchbar-unselected: rgba(33, 32, 33, 0.7);
+    --searchbar-selected: #333333;
+    /* --new-msg: #ffcdff; */
+    /* --new-msg-hover: #eaa8ff; */
     --menu-selector-button: #21212130;
     --menu-selector-button-focus: #4b4d61;
     --setting-button-hover: #555555;
     --post-link-hover: #33333370;
-    --menu-buttons-hover: #6b3fff;
+    /* --menu-buttons-hover: #6b3fff; */
     --profile-panel-background: #1a1a1a;
     --icon: #bdbdbd;
     --outline: #2e2e2e;
@@ -45,17 +46,17 @@
     --text-color-neg: #fff;
     --background-color: #fafafa;
     --background-color-2: #ffffff;
-    --pink: #0F6CBD;
+    --placeholder: #0F6CBD;
     --button-focus: #55576b;
     --post-color: #333333;
     --post-background: #fff;
-    --subreddit-button: #0F6CBD;
+    --menu-button: #616161;
     --border-color: #646464;
     --border-color-2: #f0f0f0;
     --text-color-1: #605e5c;
     --link-color: #0088d6;
     --searchbar-unselected: rgba(255,255,255,0.7);
-    --searchbar-selected: #ffffff;
+    --searchbar-selected: #FFFFFF;
     --new-msg: #0F6CBD;
     --new-msg-hover: #0F548C;
     /* --menu-selector-button: #f3f2f1; */
@@ -69,6 +70,7 @@
     --outline: #e5e5e5;
     --toolbar-icon: #616161;
 }
+
 
 
 body {
@@ -107,7 +109,7 @@ button {
     height: 84px;
     padding: 7px 15px 18px 55px;
     border: none;
-    border-bottom: 1px solid var(--background-color);
+    border-bottom: 1px solid var(--border-color-2);
     width: 100%;
     text-align: left;
     /* color: white; */
@@ -171,10 +173,6 @@ button {
     color: var(--post-color);
 }
 
-
-.subreddit::after {
-/*     content: "@outlook.com";   */
-}
 
 .main-content {
     /* height: 86vh; */
@@ -350,9 +348,6 @@ button {
 .search-result-item:first-of-type {
     border-top: 0px;
 }
-.search-result-item:last-of-type {
-    /* border-bottom: 1px; */
-}
 
 
 @media (max-width: 940px) {
@@ -435,6 +430,7 @@ button {
     border: 1px solid var(--border-color-2);
     padding: 6px 12px;
     min-height: 42px;
+    margin-bottom: 20px;
 }
 
 
@@ -652,11 +648,13 @@ button .menu {
     height: 32px !important;
 }
 
-.menu:active {
+.menu:focus {
     background-color: var(--border-color-2);
+    outline: 1px solid var(--post-color);
 }
 .menu:hover {
     background-color: var(--background-color);
+    outline: 1px solid var(--outline);
 }
 
 .navbar {
@@ -669,6 +667,7 @@ button .menu {
     justify-content: flex-start;
     flex-direction: row !important;
     align-items: center;
+    /* background-image: none; */
     /* width: 100vw !important; */
 }
 
@@ -686,6 +685,7 @@ button .menu {
     font-size: 16px;
     padding: 0px 0px 0px 8px;
     color: white;
+    font-weight: 600;
     /* position: absolute;
     top: 26%;
     left: 4%; */
@@ -694,14 +694,14 @@ button .menu {
     /* margin: 0 auto 0 0 !important; */
     /* margin-right: 50px !important; */
     /* width: 10px !important; */
-    font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+    /* font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif; */
     /* z-index: 3; */
 }
 
 .search {
     /* background-color: #; */
     /* background-color: #382963; */
-    background: url(https://img.icons8.com/windows/32/ffcdff/search--v1.png);
+    background: url(https://img.icons8.com/windows/32/ffffff/search--v1.png);
     background-position: 16px 6px;
     background-size: 20px 20px;
     background-color: var(--searchbar-unselected);
@@ -723,7 +723,7 @@ button .menu {
 .light .search {
     /* background-color: #; */
     /* background-color: #382963; */
-    background: url(https://img.icons8.com/windows/32/106cbd/search--v1.png);
+    background: url(https://img.icons8.com/windows/32/000000/search--v1.png);
     background-position: 16px 6px;
     background-size: 20px 20px;
     background-color: var(--searchbar-unselected);
@@ -743,7 +743,7 @@ button .menu {
 }
 
 .search::placeholder {
-    color: var(--pink)
+    color: var(--placeholder);
 }
 
 .search:focus, input:focus{
@@ -826,7 +826,7 @@ header {
     align-items: center;
     margin-left: 10px;
     margin-right: 20px;
-    margin-top: 3px;
+    margin-top: 4px;
     -webkit-box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
     box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
 }
@@ -864,49 +864,46 @@ header {
     height: 20px;
 }
 
-.toolbar.icons .calendar-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/ffcdff/calendar--v1.png')
+.toolbar.icons .calendar-icon:hover circle, .toolbar.icons .calendar-icon:hover line {
+    stroke: var(--background-color) !important;
+    fill: var(--background-color) !important;
 }
 
-.light .toolbar.icons .calendar-icon .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-regular/256/616161/calendar--v1.png')
+.toolbar.icons .calendar-icon:hover rect {
+    stroke: var(--new-msg) !important;
+    fill: var(--new-msg) !important;
 }
 
-.light .toolbar.icons .calendar-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/0F6CBD/calendar--v1.png')
+.toolbar.icons svg {
+    transition: 0.16s ease-in;
 }
 
-.toolbar.icons .calendar-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/ffcdff/calendar--v1.png')
+.toolbar.icons .attach-icon:hover path {
+    stroke: var(--new-msg);
+    stroke-width: 50px;
 }
 
-.light .toolbar.icons .people-icon .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-regular/256/616161/conference-call.png')
+.toolbar.icons .people-icon:hover path, .toolbar.icons .people-icon:hover circle {
+    stroke: var(--new-msg) !important;
+    fill: var(--new-msg) !important;
 }
 
-.light .toolbar.icons .people-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/0F6CBD/conference-call.png')
+.toolbar.icons .people-icon:hover path:nth-of-type(3) {
+    stroke: var(--background-color) !important;
+    fill: none !important;
 }
 
-.toolbar.icons .people-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/ffcdff/conference-call.png')
+.toolbar.icons .open-icon:hover rect {
+    fill: var(--new-msg) !important;
+    stroke: var(--new-msg) !important;
 }
 
-.toolbar.icons .attach-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/ffcdff/attach--v1.png')
+.toolbar.icons .open-icon:hover rect:first-child {
+    fill: none !important;
+    stroke: var(--toolbar-icon);
 }
 
-.light .toolbar.icons .attach-icon .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-regular/256/616161/attach--v1.png')
-}
 
-.light .toolbar.icons .attach-icon:hover .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/0F6CBD/attach--v1.png')
-}
-
-.light .toolbar.icons .inbox-icon .ms-icon {
-    content: url('https://img.icons8.com/fluency-systems-filled/256/0F6CBD/new-post.png')
-}
 
 .header-button.selected::before {
     content: '';
@@ -961,7 +958,8 @@ header {
 }
 
 .header-button:hover {
-    background-color: var(--border-color-2)
+    background-color: var(--border-color-2);
+    font-weight: 600;
 }
 
 .new-msg {
@@ -1119,9 +1117,6 @@ header {
     border-radius: 8px;
 }
 
-.sort-button.top {
-    /* position: absolute; */
-}
 
 .sort-button.top > .ms-Icon {
     /* position: relative; */
@@ -1182,22 +1177,25 @@ header {
 header .menu {
     background-color: transparent;
     border: none;
-    color: var(--subreddit-button);
+    color: var(--menu-button);
     width: 42px;
     height: 30px;
     margin: 0 5px;
     align-items: center;
     border-radius: 4px;
     margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.mark-as-read-btn {
+/* .mark-as-read-btn {
     background: transparent;
     color:  var(--pink);
     border: none;
     padding: 5px 5px;
-}
+} */
 
 aside {
     /* position: fixed; */
@@ -1209,12 +1207,6 @@ aside {
     height: 100vh;
     overflow-y: hidden;
     background-color: var(--border-color-2);
-}
-
-.light > .main-content .toolbar.icons {
-    /* box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-    /* box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.35) ; */
-    /* border-right: 2px solid rgba(0, 0, 0, 0.35) ; */
 }
 
 .toolbar button {
@@ -1229,6 +1221,9 @@ aside {
     border-radius: 4px;
     border: none;
     transition: background-color 0.16s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .toolbar button:hover {
@@ -1249,7 +1244,9 @@ aside {
     background-color: transparent;
     width: 48px;
     height: 48px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile {
@@ -1287,7 +1284,7 @@ aside {
 
 ::-webkit-scrollbar-track {
     border-radius: 0px;
-    box-shadow: inset 0 0 10px var(--border-color-2);
+    /* box-shadow: inset 0 0 10px var(--border-color-2); */
     background-color: var(--background-color);
 }
 
@@ -1297,10 +1294,6 @@ aside {
     width: 5px;
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: outset 0 0 5px #dddddd;
-    /* width: 50px; */
-}
 
 @media (min-width: 920px) {
     .menu-selector {
@@ -1451,6 +1444,10 @@ aside.menu-selector {
     margin-bottom: -1px;
     overflow: hidden;
     visibility: hidden;
+}
+
+.dot-menu svg {
+    fill: #000;
 }
 
 #loadingScreen {
@@ -1657,6 +1654,387 @@ aside.menu-selector {
     /* display: none; */
 }
 
+.dark.defaultTheme {
+    --navbar-color: #6f40ff;
+    --text-color: #ffffff;
+    --text-color-neg: #333333;
+    --background-color: #212121;
+    --background-color-2: #333333;
+    --placeholder: #eaa8ff;
+    --button-focus: #55576b;
+    --post-color: #ffffff;
+    --post-background: #333333;
+    --menu-button: #bdbdbd;
+    --themeLighter: #55576b;
+    --border-color: #646464;
+    --border-color-2: #000000;
+    --text-color-1: white;
+    --link-color: #0088d6;
+    --new-msg: #ffcdff;
+    --new-msg-hover: #eaa8ff;
+    --menu-selector-button: #21212130;
+    --menu-selector-button-focus: #4b4d61;
+    --setting-button-hover: #555555;
+    --post-link-hover: #33333370;
+    --menu-buttons-hover: #6b3fff;
+    --profile-panel-background: #1a1a1a;
+    --icon: #bdbdbd;
+    --outline: #2e2e2e;
+    --toolbar-icon: #adadad;
+}
+
+.light.defaultTheme {
+    --navbar-color: #0F6CBD;
+    --text-color: #323130;
+    --text-color-2: #424242;
+    --text-color-neg: #fff;
+    --background-color: #fafafa;
+    --background-color-2: #ffffff;
+    --placeholder: #0F6CBD;
+    --button-focus: #55576b;
+    --post-color: #333333;
+    --post-background: #fff;
+    --menu-button: #616161;
+    --border-color: #646464;
+    --border-color-2: #f0f0f0;
+    --text-color-1: #605e5c;
+    --link-color: #0088d6;
+    --new-msg: #0F6CBD;
+    --new-msg-hover: #0F548C;
+    /* --menu-selector-button: #f3f2f1; */
+    --menu-selector-button: #fafafa;
+    --menu-selector-button-focus: #fafafa;
+    --setting-button-hover: #e1dfdd;
+    --post-link-hover: #e6e7ff;
+    --menu-buttons-hover: #0C3B5E;
+    --profile-panel-background: #fff;
+    --icon: #616161;
+    --outline: #e5e5e5;
+    --toolbar-icon: #616161;
+}
+
+.dark.theme1 {
+    --navbar-color: #000;
+    /* --searchbar-unselected: #333;
+    --searchbar-selected: #333; */
+    --new-msg: #62aaff;
+    --new-msg-hover: #a4d4ff;
+    --placeholder: #adadad;
+    --text-color-1: #fff;
+}
+
+.dark.theme1 nav span button:hover {
+    background-color:#2E2E2E !important;
+}
+
+.dark.theme1 nav span .ms-Icon {
+    color: #adadad;
+}
+
+.theme1 .logo {
+    color: var(--new-msg);
+}
+
+.light.theme1 nav span button:hover {
+    background-color:#fff !important;
+}
+
+.light.theme1 nav span .ms-Icon, .light.theme1 .dot-menu svg {
+    color: #616161;
+    fill: #616161 !important;
+}
+
+.light.theme1 {
+    --navbar-color: #f0f0f0;
+    --new-msg: #106cbd;
+    --new-msg-hover: #a4d4ff;
+    --placeholder: #adadad;
+}
+
+.dark.theme2 {
+    --navbar-color: #9969c9;
+    --new-msg: #c299d9;
+    --new-msg-hover: #e8c5fb;
+    --placeholder: #ffefff;
+}
+
+.light.theme2 {
+    --navbar-color: #422158;
+    --new-msg: #422158;
+    --new-msg-hover: #2D163B;
+    --placeholder: #180d1f;
+}
+
+.dark.theme3, .light.theme3 {
+    --navbar-color: #33a8ff;
+    --new-msg: #5eb3ff;
+    --new-msg-hover: #4095FC;
+    --placeholder: #adadad;
+}
+
+.light.theme3 {
+    --placeholder: #2b80fb;
+}
+
+
+.dark.theme4, .light.theme4 {
+    --navbar-color: #ffb400;
+    --new-msg: #ffb400;
+    --new-msg-hover: #ffce59;
+    --placeholder: #ffdb73;
+}
+
+.light.theme4 {
+    --placeholder: #ffb400;
+}
+
+.dark.theme5, .light.theme5 {
+    --navbar-color: #4e8132;
+    --new-msg: #6db644;
+    --new-msg-hover: #88d65c;
+    --placeholder: #c5ff92;
+}
+
+.light.theme5 {
+    --placeholder: #448715;
+}
+
+.dark.theme6 {
+    --navbar-color: #767676;
+    --new-msg: #a8a8a8;
+    --new-msg-hover: #d2d2d2;
+    --placeholder: #adadad;
+}
+
+.light.theme6 {
+    --navbar-color: #323437;
+    --new-msg: #323437;
+    --new-msg-hover: #1d1d1d;
+    --placeholder: #323437;
+}
+
+
+.dark.theme7 {
+    --navbar-color: #5a74cc;
+    --new-msg: #99adf3;
+    --new-msg-hover: #c6d1fa;
+    --placeholder: #b7c7ff;
+}
+
+.light.theme7 {
+    --navbar-color: #5a74cc;
+    --new-msg: #7189de;
+    --new-msg-hover: #5a6eb5;
+    --placeholder: #5a74cc;
+}
+
+.dark.theme8 {
+    --navbar-color: #eb455f;
+    --new-msg: #ff6a81;
+    --new-msg-hover: #ed9ca8;
+    --placeholder: #ffccd4;
+}
+
+.light.theme8 {
+    --navbar-color: #eb455f;
+    --new-msg: #ff6a81;
+    --new-msg-hover: #ed9ca8;
+    --placeholder: #eb455f;
+}
+
+.dark.theme9 {
+    --navbar-color: #42b5d7;
+    --new-msg: #43B5D7;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #bfffff;
+}
+
+.light.theme9 {
+    --navbar-color: #42b5d7;
+    --new-msg: #43B5D7;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #005669;
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+}
+
+.theme9 .navbar {
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/whale/headerbgmaing2.gif');
+}
+
+.dark.theme9 nav span button, .light.theme9 nav span button {
+    background: #00829dcc;
+}
+
+.dark.theme9 nav span button:hover, .theme9 nav span button:hover {
+    background: #057590cc;
+}
+
+.theme9 .logo {
+    color: #005669;
+}
+
+/* ------------------------ */
+
+.dark.theme10 {
+    --navbar-color: #42b5d7;
+    --new-msg: #42b5d7;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #bcfbfb;
+}
+
+.light.theme10 {
+    --navbar-color: #42b5d7;
+    --new-msg: #42b5d7;
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #005669;
+}
+
+.theme10 .navbar {
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/modern/headerbgmaing2.png');
+}
+
+.dark.theme10 nav span button, .light.theme10 nav span button {
+    background: rgba(47,161,189,0.6);
+}
+
+.light.theme10 nav span button:hover {
+    background: #005669;
+}
+
+.dark.theme10 nav span button:hover {
+    background: #9cdcf2;
+}
+
+.theme10 .logo {
+    color: #005669;
+}
+
+/* --------------- */
+
+.dark.theme11 {
+    --navbar-color: #42b5d7;
+    --new-msg: #ff8c00;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #ffb347;
+    --placeholder: #ffdb73;
+}
+
+.light.theme11 {
+    --navbar-color: #42b5d7;
+    --new-msg: #ff8c00;
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+    --new-msg-hover: #ffb347;
+    --placeholder: #d77701;
+}
+
+.theme11 .navbar {
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif');
+}
+
+.dark.theme11 nav span button {
+    background: rgba(193, 87, 0,.8);
+}
+
+.light.theme11 nav span button {
+    background: rgba(242,127,3,.8);
+}
+
+.light.theme11 nav span button:hover {
+    background: #D77700;
+}
+
+.dark.theme11 nav span button:hover {
+    background: #ffb952;
+}
+
+.form-check-input:checked {
+    background-color: var(--navbar-color) !important;
+    border-color: var(--navbar-color) !important;
+}
+
+.theme-button {
+    width: 48px;
+    height: 48px;
+    /* margin: 2px; */
+    border-radius: 4px;
+    border: none;
+}
+
+.dark .theme-button.default {
+    background-color: #6f40ff
+}
+
+.light .theme-button.default {
+    background-color: #0F6CBD;
+}
+
+.light .theme-button.theme1 {
+    background-color: #fff;
+}
+
+.theme-button.theme1 {
+    background-color: #000;
+}
+
+.theme-button.theme2 {
+    background-color: #9969c9;
+}
+
+.theme-button.theme3 {
+    background-color: #7193ff;
+    background-color: #33a8ff;
+}
+
+.theme-button.theme4 {
+    background-color: #ffb400;
+}
+
+.theme-button.theme5 {
+    background-color: #4e8132;
+}
+
+.theme-button.theme6 {
+    background-color: #323437;
+}
+
+.theme-button.theme7 {
+    background-color: #5a74cc;
+}
+
+.theme-button.theme8 {
+    background-color: #EB455F;
+}
+
+.theme-button.theme9 {
+    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/whale/headerbgmaing2.gif') !important;
+}
+
+.theme-button.theme10 {
+    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/modern/headerbgmaing2.png') !important;
+}
+
+.theme-button.theme11 {
+    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif') !important;
+}
+
+
+.theme-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+    width: fit-content;
+}
+
+.theme-button.selected, .theme-button.selected:focus {
+    margin: 0px;
+    outline: 2px solid var(--new-msg) !important;
+    border: 2px solid var(--background-color)
+}
+
 .settings-panel-show {
     left: calc(100% - 250px);
     display: inline;
@@ -1675,9 +2053,9 @@ aside.menu-selector {
     position: absolute;
     /* bottom: 0; */
     top: 6%;
-    left: -2px;
+    left: -1.5px;
     border-radius: 4px;
-    border-left: 2px solid var(--navbar-color);
+    border-left: 2px solid var(--new-msg);
     height: 84%;
 
 }
@@ -1701,8 +2079,11 @@ aside.menu-selector {
     padding: 5px;
     border-width: 0;
     cursor: pointer;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1825,10 +2206,6 @@ h4.post-section-title > a{
 .search-result-link, .search-result-link:hover {
     color: var(--post-color) !important;
     text-decoration: none !important;
-}
-
-hr {
-    /* margin: 16px 12px; */
 }
 
 .ms-Icon {
