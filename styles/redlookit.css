@@ -826,7 +826,7 @@ header {
     align-items: center;
     margin-left: 10px;
     margin-right: 20px;
-    margin-top: 3px;
+    margin-top: 4px;
     -webkit-box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
     box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
 }
@@ -1668,7 +1668,7 @@ aside.menu-selector {
     --themeLighter: #55576b;
     --border-color: #646464;
     --border-color-2: #000000;
-    --text-color-1: #eabfee;
+    --text-color-1: white;
     --link-color: #0088d6;
     --new-msg: #ffcdff;
     --new-msg-hover: #eaa8ff;
