@@ -481,6 +481,75 @@ topButton.addEventListener('click', function() {
     }
 })
 
+let themes = ['default', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11']
+
+let defaultTheme = document.querySelector('.theme-button.default') as HTMLButtonElement; 
+let theme1 = document.querySelector('.theme-button.theme1') as HTMLButtonElement;
+let theme2 = document.querySelector('.theme-button.theme2') as HTMLButtonElement;
+let theme3 = document.querySelector('.theme-button.theme3') as HTMLButtonElement;
+let theme4 = document.querySelector('.theme-button.theme4') as HTMLButtonElement;
+let theme5 = document.querySelector('.theme-button.theme5') as HTMLButtonElement;
+let theme6 = document.querySelector('.theme-button.theme6') as HTMLButtonElement;
+let theme7 = document.querySelector('.theme-button.theme7') as HTMLButtonElement;
+let theme8 = document.querySelector('.theme-button.theme8') as HTMLButtonElement;
+let theme9 = document.querySelector('.theme-button.theme9') as HTMLButtonElement;
+let theme10 = document.querySelector('.theme-button.theme10') as HTMLButtonElement;
+let theme11 = document.querySelector('.theme-button.theme11') as HTMLButtonElement;
+
+enableTheme(defaultTheme, 'defaultTheme')
+enableTheme(theme1, 'theme1')
+enableTheme(theme2, 'theme2')
+enableTheme(theme3, 'theme3')
+enableTheme(theme4, 'theme4')
+enableTheme(theme5, 'theme5')
+enableTheme(theme6, 'theme6')
+enableTheme(theme7, 'theme7')
+enableTheme(theme8, 'theme8')
+enableTheme(theme9, 'theme9')
+enableTheme(theme10, 'theme10')
+enableTheme(theme11, 'theme11')
+
+
+function enableTheme(theme, themeClassName) {
+    theme.addEventListener('click', function() {
+        removeThemeSelected();
+        for (let theme of themes) {
+            document.body.classList.remove(theme);
+        }
+        if (!theme.classList.contains('selected')) {
+            // if (document.body.classList.contains('defaultTheme')) {
+            //     document.body.classList.remove('defaultTheme')
+            // }
+            document.body.classList.add(themeClassName);
+            theme.classList.add('selected');
+            console.log('theme selected:', theme.classList[1])
+            localStorage.setItem('currentTheme', theme.classList[1])
+        } else {
+            theme.classList.remove('selected');
+            document.body.classList.remove(themeClassName);
+            localStorage.setItem('currentTheme', '')
+        }
+    })
+}
+
+function applySavedTheme() {
+    if (localStorage.getItem('currentTheme')) {
+        let currentTheme = localStorage.getItem('currentTheme');
+        removeThemeSelected();
+        document.querySelector(`.theme-button.${currentTheme}`).classList.add('selected');
+        document.body.classList.add(currentTheme);
+    }
+}
+
+function removeThemeSelected() {
+    let themeContainer = document.querySelector('.theme-grid-container') as HTMLElement;
+    for (let theme of themeContainer.children) {
+        theme.classList.remove('selected');
+    }
+    // (document.querySelector('.navbar') as HTMLElement).style.backgroundImage = 'none';
+}
+
+
 let sortTopDay = document.querySelector('.sort-button.today') as HTMLButtonElement;
 sortTopDay.addEventListener('click', async function() {
     displayTopSortedPosts('day', sortButton.id)
@@ -1211,6 +1280,7 @@ function numberFormatter(number) {
 setDarkMode();  
 showSubredditDetails();
 showLongAddress();
+applySavedTheme();
 
 // Everything set up.
 // We start actually doing things now
