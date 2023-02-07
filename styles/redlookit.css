@@ -348,9 +348,6 @@ button {
 .search-result-item:first-of-type {
     border-top: 0px;
 }
-.search-result-item:last-of-type {
-    /* border-bottom: 1px; */
-}
 
 
 @media (max-width: 940px) {
@@ -1210,12 +1207,6 @@ aside {
     height: 100vh;
     overflow-y: hidden;
     background-color: var(--border-color-2);
-}
-
-.light > .main-content .toolbar.icons {
-    /* box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-    /* box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.35) ; */
-    /* border-right: 2px solid rgba(0, 0, 0, 0.35) ; */
 }
 
 .toolbar button {
@@ -2215,10 +2206,6 @@ h4.post-section-title > a{
 .search-result-link, .search-result-link:hover {
     color: var(--post-color) !important;
     text-decoration: none !important;
-}
-
-hr {
-    /* margin: 16px 12px; */
 }
 
 .ms-Icon {
