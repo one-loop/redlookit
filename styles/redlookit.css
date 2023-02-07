@@ -174,10 +174,6 @@ button {
 }
 
 
-.subreddit::after {
-/*     content: "@outlook.com";   */
-}
-
 .main-content {
     /* height: 86vh; */
     height: calc(100vh - 123px);
@@ -1124,9 +1120,6 @@ header {
     border-radius: 8px;
 }
 
-.sort-button.top {
-    /* position: absolute; */
-}
 
 .sort-button.top > .ms-Icon {
     /* position: relative; */
