@@ -2405,7 +2405,8 @@ aside.menu-selector {
 }
 
 .theme-button.theme11 {
-    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif') !important;
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif') !important;
+    background-position: 135px;
 }
 
 .theme-button.theme12 {
