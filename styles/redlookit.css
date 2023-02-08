@@ -1139,6 +1139,10 @@ header {
     color: var(--post-color);
 }
 
+.post-header-button.selected {
+    font-weight: 600;
+    width: 85px;
+}
 
 .post-header-button.selected::before {
     /* border-bottom: 2px solid  var(--pink); */
@@ -1153,9 +1157,9 @@ header {
     transition: ease-out 0.25s;
 }
 .post-header-button.selected:hover::before {
-    left: 0%;
+    left: 7.5%;
     border-bottom: 2px solid var(--new-msg);
-    width: 100%;
+    width: 85%;
     border-radius: 3px 3px 0px 0px;
 }
 .post-header-button:hover {
@@ -1390,8 +1394,8 @@ aside.menu-selector {
 }
 
 .check-icon {
-    width: 20px;
-    height: 20px;
+    /* width: 20px; */
+    /* height: 20px; */
     position: absolute;
     left: 17px;
     cursor: pointer;
@@ -1732,11 +1736,13 @@ aside.menu-selector {
     color: var(--new-msg);
 }
 
+.theme1 .
+
 .light.theme1 nav span button:hover {
     background-color:#fff !important;
 }
 
-.light.theme1 nav span .ms-Icon, .light.theme1 .dot-menu svg {
+.light.theme1 nav span .ms-Icon, .light.theme1 .dot-menu svg ellipse {
     color: #616161;
     fill: #616161 !important;
 }
@@ -1875,16 +1881,16 @@ aside.menu-selector {
 /* ------------------------ */
 
 .dark.theme10 {
-    --navbar-color: #42b5d7;
-    --new-msg: #42b5d7;
+    --navbar-color: #7fbbc9;
+    --new-msg: #7fbbc9;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
     --new-msg-hover: #8cdefc;
     --placeholder: #bcfbfb;
 }
 
 .light.theme10 {
-    --navbar-color: #42b5d7;
-    --new-msg: #42b5d7;
+    --navbar-color: #7fbbc9;
+    --new-msg: #7fbbc9;
     --searchbar-unselected: rgba(255, 255, 255, 0.9);
     --new-msg-hover: #8cdefc;
     --placeholder: #005669;
@@ -1913,7 +1919,7 @@ aside.menu-selector {
 /* --------------- */
 
 .dark.theme11 {
-    --navbar-color: #42b5d7;
+    --navbar-color: #ff8c00;
     --new-msg: #ff8c00;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
     --new-msg-hover: #ffb347;
@@ -1921,7 +1927,7 @@ aside.menu-selector {
 }
 
 .light.theme11 {
-    --navbar-color: #42b5d7;
+    --navbar-color: #ff8c00;
     --new-msg: #ff8c00;
     --searchbar-unselected: rgba(255, 255, 255, 0.9);
     --new-msg-hover: #ffb347;
@@ -2081,6 +2087,37 @@ aside.menu-selector {
     }
 }
 
+@keyframes ponies {
+    0% {
+        background-position: 120%,-20%,-20%,120%
+    }
+
+    25% {
+        background-position: -20%,-20%,-20%,120%
+    }
+
+    30% {
+        background-position: -20%,-20%,-20%,120%
+    }
+
+    55% {
+        background-position: -20%,120%,-20%,120%
+    }
+
+    65% {
+        background-position: -20%,120%,-20%,120%
+    }
+
+    95% {
+        background-position: -20%,120%,120%,-20%
+    }
+
+    100% {
+        background-position: -20%,120%,120%,-20%
+    }
+}
+
+
 .dark.theme13 {
     --navbar-color: #eb455f;
     --new-msg: #ff6a81;
@@ -2160,21 +2197,21 @@ aside.menu-selector {
     width: 100%
 }
 
-.dark.theme15 {
+.dark.theme16 {
     --navbar-color: #a8a8a8;
     --new-msg: #a8a8a8;
     --new-msg-hover: #d2d2d2;
     --placeholder: #adadad;
 }
 
-.light.theme15 {
+.light.theme16 {
     --navbar-color: #323437;
     --new-msg: #323437;
     --new-msg-hover: #1d1d1d;
     --placeholder: #333;
 }
 
-.theme15 .navbar {
+.theme16 .navbar {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
     -webkit-animation-direction: alternate;
@@ -2188,20 +2225,60 @@ aside.menu-selector {
     animation-direction: alternate;
 } */
 
-.theme15 nav span button {
+.theme16 nav span button {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
 
-.light.theme15 nav span button:hover {
+.light.theme16 nav span button:hover {
     background-color: rgba(220, 220, 220, 0.4) !important;
 }
 
-.dark.theme15 nav span button:hover {
+.dark.theme16 nav span button:hover {
     background-color: rgba(120, 120, 120, 0.4) !important;
 }
+
+/* ----------- */
+
+.dark.theme15 {
+    --navbar-color: #c93c9c;
+    --new-msg: #ff75d1;
+    --new-msg-hover: #ff9fee;
+    --placeholder: #ffc0ff;
+}
+
+.light.theme15 {
+    --navbar-color: #dc4fad;
+    --new-msg: #dc4fad;
+    --new-msg-hover: #C8338A;
+    --placeholder: #bc2676;
+}
+
+.dark.theme15 nav span button, .light.theme15 nav span button {
+    background: #c93c9c66 !important;
+    /* background: rgba(193, 87, 0,.8); */
+}
+
+
+.dark.theme15 nav span button:hover, .light.theme15 nav span button:hover {
+    background: #ff9feecc !important;
+}
+
+
+.theme15 .navbar {
+    background-image: url(https://github.com/panzi/Browser-Ponies/blob/gh-pages/ponies/aloe/trotcycle_aloe_left.gif?raw=true), 
+                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/Derpy%20Hooves/derpy_fly_right.gif?raw=true), 
+                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/Rainbow%20Dash/trotcycle_rainbow_wing_right.gif?raw=true), 
+                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/King%20Thorax/thorax-fly-left.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: ponies 90s linear infinite;
+}
+
+/* --------------- */
+
 
 @keyframes kitty-mode-left-animation {
     0% {
@@ -2437,12 +2514,23 @@ aside.menu-selector {
 }
 
 .theme-button.theme15 {
+    background-color: #dc4fad;
+    background-image: url('https://raw.githubusercontent.com/panzi/Browser-Ponies/gh-pages/ponies/aloe/trotcycle_aloe_left.gif');
+    /* background-image: url('resources/chocolatechip.gif'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-button.theme16 {
     /* background-color: bgcolor; */
     -webkit-animation: rainbow 10s infinite;
     animation: rainbow 10s infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+
+
 
 @keyframes rainbow {
     0% {
@@ -2482,6 +2570,7 @@ aside.menu-selector {
 .settings-panel-show {
     left: calc(100% - 250px);
     display: inline;
+    overflow: scroll;
 }
 
 .form-switch>label {

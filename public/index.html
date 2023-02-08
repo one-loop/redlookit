@@ -152,7 +152,7 @@ crossorigin="anonymous"></script>
             <button class="theme-button theme13"></button>
             <button class="theme-button theme14"></button>
             <button class="theme-button theme15"></button>
-
+            <button class="theme-button theme16"></button>
         </div>
         <h6 style="margin-top: 30px">Dark Mode</h6>
         <div class="form-check form-switch">
@@ -358,7 +358,7 @@ crossorigin="anonymous"></script>
                         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" y="0.5" width="15" height="4" rx="0.5" stroke="#6ba02b"></rect>
                             <path d="M1.5 4.5H14.5V11C14.5 12.3807 13.3807 13.5 12 13.5H4C2.61929 13.5 1.5 12.3807 1.5 11V4.5Z" stroke="#6ba02b"></path>
-                            <line x1="6" y1="7.5" x2="10" y2="7.5" stroke="#6ba02b"></line>
+                            <line x1="6.5" y1="7.5" x2="9.5" y2="7.5" stroke="#6ba02b" stroke-linecap="round"></line>
                         </svg>
                         <!-- <i class="ms-Icon ms-Icon--Archive" aria-hidden="true"></i> -->
                     </button>
@@ -416,8 +416,8 @@ crossorigin="anonymous"></script>
                         flex-wrap: nowrap;
                         justify-content: center;
                         align-items: center;">
-                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.3704 1H4.24074L1 11.8014H4.62963L2.55556 20L15 7.11644H9.2963L11.3704 1Z" stroke="#eba301" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <svg width="15" height="21" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px; margin-left: 5px;">
+                                <path d="M31.1514 2H10.5L2.20166 31.9662C1.84885 33.2403 2.80713 34.5 4.12912 34.5H11L6.29479 53.3208C5.79962 55.3015 8.24136 56.6639 9.66685 55.2023L40.6874 23.3964C41.9231 22.1295 41.0254 20 39.2557 20H27.5L33.0325 4.67929C33.5032 3.37565 32.5374 2 31.1514 2Z" stroke="#eba301" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                             <!-- <i class="ms-Icon ms-Icon--LightningBolt" aria-hidden="true" style="font-size: 20px"></i> -->
                             <span class="quick-steps-label">Quick Steps</span>
@@ -570,7 +570,7 @@ crossorigin="anonymous"></script>
                             </svg>                                
                             <span>Sent Items</span>
                         </button>
-                        <button style="color: var(--pink); padding-left: 55px">Add Favorite</button>
+                        <button style="color: var(--new-msg); padding-left: 55px">Add Favorite</button>
                     </section>
                     
                     <span class="subreddits-section">
@@ -602,14 +602,26 @@ crossorigin="anonymous"></script>
                 
                 <div class="post-sidebar">
                     <div class="header-buttons" style="position: relative">
-                        <img class="check-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/ok--v1.png">
+                        <!-- <img class="check-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/ok--v1.png"> -->
+                        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9.5L8 11.5L12.5 7" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle cx="9" cy="9" r="8.5" stroke="var(--post-color)"></circle>
+                        </svg>
                         <span>
                             <button class="post-header-button selected">Focused</button>
                             <button class="post-header-button">Other</button>
                         </span>
                         <span>
-                            <button class="post-header-button sort" style="font-size: 14px" id="popular">
-                                <img class="sort-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/sort-amount-up.png" width="20" height="20">
+                            <button class="post-header-button sort" style="font-size: 14px;display: flex;align-items: center;justify-content: center;gap: 8px;" id="popular">
+                                <!-- <img class="sort-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/sort-amount-up.png" width="20" height="20"> -->
+                                <svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0.5H14.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M2.5 4.5H12.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M4.5 8.5H10.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <line x1="18.5" y1="8.5" x2="18.5" y2="0.5" stroke="var(--post-color)" stroke-linecap="round"></line>
+                                    <path d="M18.5 0.5L15.7 3.89999" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M18.5 0.5L21.3 3.90004" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                </svg>                                    
                                 Sort</button>
                             <div class="sort-menu">
                                 <button class="sort-button hot">Hot</button>
