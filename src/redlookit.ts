@@ -492,68 +492,26 @@ topButton.addEventListener('click', function() {
     }
 })
 
-let themes = [
-                'defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
+let themeNames = ['defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
                 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11', 
-                'theme12', 'theme13', 'theme14', 'theme15', 'theme16'
-            ]
+                'theme12', 'theme13', 'theme14', 'theme15', 'theme16']
 
-let defaultTheme = document.querySelector('.theme-button.default') as HTMLButtonElement; 
-let theme1 = document.querySelector('.theme-button.theme1') as HTMLButtonElement;
-let theme2 = document.querySelector('.theme-button.theme2') as HTMLButtonElement;
-let theme3 = document.querySelector('.theme-button.theme3') as HTMLButtonElement;
-let theme4 = document.querySelector('.theme-button.theme4') as HTMLButtonElement;
-let theme5 = document.querySelector('.theme-button.theme5') as HTMLButtonElement;
-let theme6 = document.querySelector('.theme-button.theme6') as HTMLButtonElement;
-let theme7 = document.querySelector('.theme-button.theme7') as HTMLButtonElement;
-let theme8 = document.querySelector('.theme-button.theme8') as HTMLButtonElement;
-let theme9 = document.querySelector('.theme-button.theme9') as HTMLButtonElement;
-let theme10 = document.querySelector('.theme-button.theme10') as HTMLButtonElement;
-let theme11 = document.querySelector('.theme-button.theme11') as HTMLButtonElement;
-let theme12 = document.querySelector('.theme-button.theme12') as HTMLButtonElement;
-let theme13 = document.querySelector('.theme-button.theme13') as HTMLButtonElement;
-let theme14  = document.querySelector('.theme-button.theme14') as HTMLButtonElement;
-let theme15  = document.querySelector('.theme-button.theme15') as HTMLButtonElement;
-let theme16  = document.querySelector('.theme-button.theme16') as HTMLButtonElement;
+let themes = document.querySelector('.theme-grid-container') as HTMLElement;
 
-
-enableTheme(defaultTheme, 'defaultTheme')
-enableTheme(theme1, 'theme1')
-enableTheme(theme2, 'theme2')
-enableTheme(theme3, 'theme3')
-enableTheme(theme4, 'theme4')
-enableTheme(theme5, 'theme5')
-enableTheme(theme6, 'theme6')
-enableTheme(theme7, 'theme7')
-enableTheme(theme8, 'theme8')
-enableTheme(theme9, 'theme9')
-enableTheme(theme10, 'theme10')
-enableTheme(theme11, 'theme11')
-enableTheme(theme12, 'theme12')
-enableTheme(theme13, 'theme13')
-enableTheme(theme14, 'theme14')
-enableTheme(theme15, 'theme15')
-enableTheme(theme16, 'theme16')
-
-
-function enableTheme(theme, themeClassName) {
+for (let theme of themes.children) {
     theme.addEventListener('click', function() {
+        let themeName = theme.classList[1];
+        // console.log('APPLYING THEME:', themeName);
         removeThemeSelected();
-        for (let theme of themes) {
-            document.body.classList.remove(theme);
-        }
+        document.body.classList.remove(...themeNames);
         if (!theme.classList.contains('selected')) {
-            // if (document.body.classList.contains('defaultTheme')) {
-            //     document.body.classList.remove('defaultTheme')
-            // }
-            document.body.classList.add(themeClassName);
+            document.body.classList.add(themeName);
             theme.classList.add('selected');
-            // console.log('theme selected:', theme.classList[1])
-            localStorage.setItem('currentTheme', theme.classList[1])
+            localStorage.setItem('currentTheme', themeName);
         } else {
             theme.classList.remove('selected');
-            document.body.classList.remove(themeClassName);
-            localStorage.setItem('currentTheme', '')
+            document.body.classList.remove(themeName);
+            localStorage.setItem('currentTheme', '');
         }
     })
 }
@@ -568,8 +526,7 @@ function applySavedTheme() {
 }
 
 function removeThemeSelected() {
-    let themeContainer = document.querySelector('.theme-grid-container') as HTMLElement;
-    for (let theme of themeContainer.children) {
+    for (let theme of themes.children) {
         theme.classList.remove('selected');
     }
     // (document.querySelector('.navbar') as HTMLElement).style.backgroundImage = 'none';
