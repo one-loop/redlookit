@@ -504,7 +504,7 @@ let theme12 = document.querySelector('.theme-button.theme12') as HTMLButtonEleme
 let theme13 = document.querySelector('.theme-button.theme13') as HTMLButtonElement;
 let theme14  = document.querySelector('.theme-button.theme14') as HTMLButtonElement;
 let theme15  = document.querySelector('.theme-button.theme15') as HTMLButtonElement;
-let theme16  = document.querySelector('.theme-button.theme16') as HTMLButtonElement;
+// let theme16  = document.querySelector('.theme-button.theme16') as HTMLButtonElement;
 
 
 enableTheme(defaultTheme, 'defaultTheme')
@@ -523,7 +523,7 @@ enableTheme(theme12, 'theme12')
 enableTheme(theme13, 'theme13')
 enableTheme(theme14, 'theme14')
 enableTheme(theme15, 'theme15')
-enableTheme(theme16, 'theme16')
+// enableTheme(theme16, 'theme16')
 
 
 function enableTheme(theme, themeClassName) {

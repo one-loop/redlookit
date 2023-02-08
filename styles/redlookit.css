@@ -1768,7 +1768,7 @@ aside.menu-selector {
     --placeholder: #180d1f;
 }
 
-.dark.theme3, .light.theme3 {
+/* .dark.theme3, .light.theme3 {
     --navbar-color: #33a8ff;
     --new-msg: #5eb3ff;
     --new-msg-hover: #4095FC;
@@ -1777,7 +1777,7 @@ aside.menu-selector {
 
 .light.theme3 {
     --placeholder: #2b80fb;
-}
+} */
 
 
 .dark.theme4, .light.theme4 {
@@ -1831,14 +1831,14 @@ aside.menu-selector {
     --placeholder: #5a74cc;
 }
 
-.dark.theme8 {
+.dark.theme3 {
     --navbar-color: #eb455f;
     --new-msg: #ff6a81;
     --new-msg-hover: #ed9ca8;
     --placeholder: #ffccd4;
 }
 
-.light.theme8 {
+.light.theme3 {
     --navbar-color: #eb455f;
     --new-msg: #ff6a81;
     --new-msg-hover: #ed9ca8;
@@ -2197,21 +2197,21 @@ aside.menu-selector {
     width: 100%
 }
 
-.dark.theme16 {
+.dark.theme8 {
     --navbar-color: #a8a8a8;
     --new-msg: #a8a8a8;
     --new-msg-hover: #d2d2d2;
     --placeholder: #adadad;
 }
 
-.light.theme16 {
+.light.theme8 {
     --navbar-color: #323437;
     --new-msg: #323437;
     --new-msg-hover: #1d1d1d;
     --placeholder: #333;
 }
 
-.theme16 .navbar {
+.theme8 .navbar {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
     -webkit-animation-direction: alternate;
@@ -2225,18 +2225,18 @@ aside.menu-selector {
     animation-direction: alternate;
 } */
 
-.theme16 nav span button {
+.theme8 nav span button {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
 
-.light.theme16 nav span button:hover {
+.light.theme8 nav span button:hover {
     background-color: rgba(220, 220, 220, 0.4) !important;
 }
 
-.dark.theme16 nav span button:hover {
+.dark.theme8 nav span button:hover {
     background-color: rgba(120, 120, 120, 0.4) !important;
 }
 
@@ -2448,8 +2448,9 @@ aside.menu-selector {
 }
 
 .theme-button.theme3 {
-    background-color: #7193ff;
-    background-color: #33a8ff;
+    /* background-color: #7193ff;
+    background-color: #33a8ff; */
+    background-color: #EB455F;
 }
 
 .theme-button.theme4 {
@@ -2468,9 +2469,9 @@ aside.menu-selector {
     background-color: #5a74cc;
 }
 
-.theme-button.theme8 {
+/* .theme-button.theme8 {
     background-color: #EB455F;
-}
+} */
 
 .theme-button.theme9 {
     background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/whale/headerbgmaing2.gif') !important;
@@ -2522,7 +2523,7 @@ aside.menu-selector {
     background-position: center;
 }
 
-.theme-button.theme16 {
+.theme-button.theme8 {
     /* background-color: bgcolor; */
     -webkit-animation: rainbow 10s infinite;
     animation: rainbow 10s infinite;
