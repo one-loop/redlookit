@@ -2119,7 +2119,7 @@ aside.menu-selector {
 /* --------------- */
 
 .dark.theme14 {
-    --navbar-color: #42b5d7;
+    --navbar-color: #ffb400;
     --new-msg: #ff8c00;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
     --new-msg-hover: #ffb347;
@@ -2127,7 +2127,7 @@ aside.menu-selector {
 }
 
 .light.theme14 {
-    --navbar-color: #42b5d7;
+    --navbar-color: #ffb400;
     --new-msg: #ff8c00;
     --searchbar-unselected: rgba(255, 255, 255, 0.9);
     --new-msg-hover: #ffb347;
