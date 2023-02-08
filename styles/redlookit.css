@@ -2400,7 +2400,8 @@ aside.menu-selector {
 }
 
 .theme-button.theme10 {
-    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/modern/headerbgmaing2.png') !important;
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/modern/headerbgmaing2.png') !important;
+    background-position: 660px;
 }
 
 .theme-button.theme11 {
