@@ -492,9 +492,12 @@ topButton.addEventListener('click', function() {
     }
 })
 
-let themeNames = ['defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
+// when adding a new theme in css, remember to add the theme class name to this list
+let themeNames=['defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
                 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11', 
-                'theme12', 'theme13', 'theme14', 'theme15', 'theme16']
+                'theme12', 'theme13', 'theme14', 'theme15', 'theme16', 'theme17',
+                'theme18']
+
 
 let themes = document.querySelector('.theme-grid-container') as HTMLElement;
 
@@ -520,8 +523,12 @@ function applySavedTheme() {
     if (localStorage.getItem('currentTheme')) {
         let currentTheme = localStorage.getItem('currentTheme');
         removeThemeSelected();
+        document.body.classList.remove(...themeNames);
         document.querySelector(`.theme-button.${currentTheme}`).classList.add('selected');
         document.body.classList.add(currentTheme);
+    } else {
+        document.body.classList.remove(...themeNames);
+        document.body.classList.add('defaultTheme');
     }
 }
 
