@@ -4,6 +4,7 @@ import {HumanFacesSideLoader} from "./faces_sideloader"
 import {Random, UUID, UUIDFormat} from "./random";
 import {subreddits} from "./subredditList";
 
+
 declare var axios: any
 
 function isDebugMode(): boolean {
@@ -216,7 +217,7 @@ function displayPosts(responses, subreddit, subredditInformation={"data": {"titl
         subredditInfoIcon.src = getSubredditIcon(subredditInformation);
         subredditInfoIcon.classList.add('subreddit-info-icon');
         if (subreddit == 'gnometalk') {
-            subredditInfoHeading.innerHTML = 'Well done, you found the easter egg';
+            subredditInfoHeading.innerHTML = 'You found an easter egg!';
             subredditInfoIcon.src = 'https://static.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png/revision/latest?cb=20190114192842';
         }
         subredditDetailsContainer.append(subredditInfoHeading, subredditInfoDetails);
@@ -481,7 +482,7 @@ topButton.addEventListener('click', function() {
     }
 })
 
-let themes = ['default', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11']
+let themes = ['default', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11', 'theme12', 'theme13', 'theme14', 'theme15']
 
 let defaultTheme = document.querySelector('.theme-button.default') as HTMLButtonElement; 
 let theme1 = document.querySelector('.theme-button.theme1') as HTMLButtonElement;
@@ -495,6 +496,11 @@ let theme8 = document.querySelector('.theme-button.theme8') as HTMLButtonElement
 let theme9 = document.querySelector('.theme-button.theme9') as HTMLButtonElement;
 let theme10 = document.querySelector('.theme-button.theme10') as HTMLButtonElement;
 let theme11 = document.querySelector('.theme-button.theme11') as HTMLButtonElement;
+let theme12 = document.querySelector('.theme-button.theme12') as HTMLButtonElement;
+let theme13 = document.querySelector('.theme-button.theme13') as HTMLButtonElement;
+let theme14  = document.querySelector('.theme-button.theme14') as HTMLButtonElement;
+let theme15  = document.querySelector('.theme-button.theme15') as HTMLButtonElement;
+
 
 enableTheme(defaultTheme, 'defaultTheme')
 enableTheme(theme1, 'theme1')
@@ -508,6 +514,10 @@ enableTheme(theme8, 'theme8')
 enableTheme(theme9, 'theme9')
 enableTheme(theme10, 'theme10')
 enableTheme(theme11, 'theme11')
+enableTheme(theme12, 'theme12')
+enableTheme(theme13, 'theme13')
+enableTheme(theme14, 'theme14')
+enableTheme(theme15, 'theme15')
 
 
 function enableTheme(theme, themeClassName) {
@@ -522,7 +532,7 @@ function enableTheme(theme, themeClassName) {
             // }
             document.body.classList.add(themeClassName);
             theme.classList.add('selected');
-            console.log('theme selected:', theme.classList[1])
+            // console.log('theme selected:', theme.classList[1])
             localStorage.setItem('currentTheme', theme.classList[1])
         } else {
             theme.classList.remove('selected');
@@ -981,7 +991,9 @@ searchForm.addEventListener('submit', async (event) => {
     // }
     // subredditBtn.append('r/' + subredditName.value);
     // subredditSection.append(subredditBtn);
-    // subredditName.value = ''; 
+    // subredditName.value = '';
+    (document.querySelector('.search-results') as HTMLElement).style.display = 'none';
+    // subredditName.value = '';
 })
 
 function displaySavedSubreddits() {
@@ -1225,9 +1237,14 @@ if (subredditName) {
     // searchBoxClicked();
 	// console.log(inputBox.value)
 	if (subredditName.value.length > 0) {
-		let results = subreddits.filter(sub => sub.subreddit.toLowerCase().includes(inputBox.value.toLowerCase()));
+        if (subredditName.value.startsWith('r/')) {
+            let results = subreddits.filter(sub => sub.subreddit.toLowerCase().includes(inputBox.value.toLowerCase().slice(2)));
+            displaySearchResults(results.slice(0, 5))
+        } else {
+            let results = subreddits.filter(sub => sub.subreddit.toLowerCase().includes(inputBox.value.toLowerCase()));
+            displaySearchResults(results.slice(0, 5))
+        }
 		// console.log(results.slice(0, 5));
-		displaySearchResults(results.slice(0, 5))
 	} else {
 		hideSearchResults()
 	}

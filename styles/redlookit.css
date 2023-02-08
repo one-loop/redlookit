@@ -379,8 +379,9 @@ button {
 }
 
 .comment * {
-    line-height: 20px;
+    /* line-height: 20px; */
     vertical-align: middle;
+    /* margin-left: 25px; */
 }
 
 .post-author {
@@ -841,17 +842,12 @@ header {
 
 .fluent-icon {
     /* filter: invert(1); */
-    width: 20px;
-    height: 20px;
+    /* width: 20px; */
+    /* height: 20px; */
     margin-left: 38px;
     margin-right: 8px;
 }
 
-.dark .fluent-icon {
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
-}
 
 .inbox-button, .favorites-buttons button {
     padding-left: 9px;
@@ -1334,12 +1330,13 @@ aside.menu-selector {
 }
 
 .menu-selector svg {
-    margin: 0px 20px 0px 5px;
+    /* margin: 0px 20px 0px 5px; */
 }
 
 .menu-selector button:focus {
     background-color: var(--menu-selector-button-focus);
     /* color: var(--pink); */
+    color: var(--post-color)
 }
 
 .favorites {
@@ -1951,6 +1948,395 @@ aside.menu-selector {
     background: #ffb952;
 }
 
+
+/* -------------------- */
+
+.dark.theme12 {
+    --navbar-color: #6ecbcb;
+    --new-msg: #42b5d7;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #bcfbfb;
+}
+
+.light.theme12 {
+    --navbar-color: #6ecbcb;
+    --new-msg: #42b5d7;
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #005669;
+}
+
+.theme12 .navbar {
+    /* background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/STRIPES.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/FIREFOX.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/gh-pages/assets/MANEKI.gif?raw=true)
+                    url(https://github.com/one-loop/redlookit/gh-pages/assets/MIDNIGHT.gif?raw=true); */
+    /* url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/GHOSTPUFFS.gif?raw=true),  */
+    /* url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/KINAKO.gif?raw=true), */
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/STRIPES.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/FIREFOX.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MANEKI.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MIDNIGHT.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: corgis 90s linear infinite;
+}
+
+.dark.theme12 nav span button, .light.theme12 nav span button {
+    background: rgba(47,161,189,0.6);
+}
+
+.light.theme12 nav span button:hover {
+    background: #005669;
+}
+
+.dark.theme12 nav span button:hover {
+    background: #9cdcf2;
+}
+
+@keyframes corgis {
+    0% {
+        background-position: 120%,-20%,-20%,120%
+    }
+
+    25% {
+        background-position: -20%,-20%,-20%,120%
+    }
+
+    30% {
+        background-position: -20%,-20%,-20%,120%
+    }
+
+    55% {
+        background-position: -20%,120%,-20%,120%
+    }
+
+    65% {
+        background-position: -20%,120%,-20%,120%
+    }
+
+    95% {
+        background-position: -20%,120%,120%,-20%
+    }
+
+    100% {
+        background-position: -20%,120%,120%,-20%
+    }
+}
+
+@keyframes kitties {
+    0% {
+        background-position: 120%,-20%,-20%,120%
+    }
+
+    25% {
+        background-position: -20%,-20%,-20%,120%
+    }
+
+    30% {
+        background-position: -20%,-20%,-20%,120%
+    }
+
+    55% {
+        background-position: -20%,120%,-20%,120%
+    }
+
+    65% {
+        background-position: -20%,120%,-20%,120%
+    }
+
+    95% {
+        background-position: -20%,120%,120%,-20%
+    }
+
+    100% {
+        background-position: -20%,120%,120%,-20%
+    }
+}
+
+@keyframes crabs {
+    0% {
+        background-position: -10%
+    }
+
+    5% {
+        background-position: -10%
+    }
+
+    45% {
+        background-position: 110%
+    }
+
+    50% {
+        background-position: 110%
+    }
+
+    95% {
+        background-position: -10%
+    }
+
+    100% {
+        background-position: -10%
+    }
+}
+
+.dark.theme13 {
+    --navbar-color: #eb455f;
+    --new-msg: #ff6a81;
+    --new-msg-hover: #ed9ca8;
+    --placeholder: #ffccd4;
+}
+
+.light.theme13 {
+    --navbar-color: #eb455f;
+    --new-msg: #ff6a81;
+    --new-msg-hover: #ed9ca8;
+    --placeholder: #eb455f;
+}
+
+.dark.theme13 nav span button, .light.theme13 nav span button {
+    background: rgba(235, 69, 94, 0.4) !important;
+    /* background: rgba(193, 87, 0,.8); */
+}
+
+
+.dark.theme13 nav span button:hover, .light.theme13 nav span button:hover {
+    background: rgba(235, 69, 94, 0.8) !important;
+}
+
+
+.theme13 .navbar {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/chocolatechip.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/redvelvet.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: corgis 90s linear infinite;
+}
+
+/* --------------- */
+
+.dark.theme14 {
+    --navbar-color: #42b5d7;
+    --new-msg: #ff8c00;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #ffb347;
+    --placeholder: #ffdb73;
+}
+
+.light.theme14 {
+    --navbar-color: #42b5d7;
+    --new-msg: #ff8c00;
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+    --new-msg-hover: #ffb347;
+    --placeholder: #d77701;
+}
+
+.dark.theme14 nav span button {
+    background: rgba(193, 87, 0,.8);
+}
+
+.light.theme14 nav span button {
+    background: rgba(242,127,3,.8);
+}
+
+.light.theme14 nav span button:hover {
+    background: #D77700;
+}
+
+.dark.theme14 nav span button:hover {
+    background: #ffb952;
+}
+
+.theme14 .navbar {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/crab.gif?raw=true);
+    animation: crabs 60s linear infinite;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.dark.theme15 {
+    --navbar-color: #a8a8a8;
+    --new-msg: #a8a8a8;
+    --new-msg-hover: #d2d2d2;
+    --placeholder: #adadad;
+}
+
+.light.theme15 {
+    --navbar-color: #323437;
+    --new-msg: #323437;
+    --new-msg-hover: #1d1d1d;
+    --placeholder: #333;
+}
+
+.theme15 .navbar {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/* .theme15 .new-msg, .theme15 .new-msg-2 {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+} */
+
+.theme15 nav span button {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.light.theme15 nav span button:hover {
+    background-color: rgba(220, 220, 220, 0.4) !important;
+}
+
+.dark.theme15 nav span button:hover {
+    background-color: rgba(120, 120, 120, 0.4) !important;
+}
+
+@keyframes kitty-mode-left-animation {
+    0% {
+        background-position: 110%,110%
+    }
+
+    15% {
+        background-position: 110%,110%
+    }
+
+    35% {
+        background-position: -10%,110%
+    }
+
+    50% {
+        background-position: -10%,110%
+    }
+
+    65% {
+        background-position: -10%,110%
+    }
+
+    85% {
+        background-position: -10%,110%
+    }
+
+    100% {
+        background-position: -10%,-10%
+    }
+}
+
+@keyframes kitty-mode-right-animation {
+    0% {
+        background-position: 110%,110%
+    }
+
+    15% {
+        background-position: 110%,110%
+    }
+
+    35% {
+        background-position: 110%,110%
+    }
+
+    50% {
+        background-position: 110%,110%
+    }
+
+    65% {
+        background-position: -10%,110%
+    }
+
+    85% {
+        background-position: -10%,110%
+    }
+
+    100% {
+        background-position: -10%,-10%
+    }
+}
+
+@keyframes kitty-mode-animation-slow {
+    0% {
+        background-position: 110%
+    }
+
+    100% {
+        background-position: -10%
+    }
+}
+
+@keyframes kitty-mode-animation-medium {
+    0% {
+        background-position: 110%
+    }
+
+    5% {
+        background-position: 110%
+    }
+
+    95% {
+        background-position: -10%
+    }
+
+    100% {
+        background-position: -10%
+    }
+}
+
+@keyframes kitty-mode-animation-fast {
+    0% {
+        background-position: 110%
+    }
+
+    10% {
+        background-position: 110%
+    }
+
+    90% {
+        background-position: -10%
+    }
+
+    100% {
+        background-position: -10%
+    }
+}
+
+.kitty-mode-fast {
+    animation: kitty-mode-animation-fast 40s linear
+}
+
+.kitty-mode-medium {
+    animation: kitty-mode-animation-medium 40s linear
+}
+
+.kitty-mode-slow {
+    animation: kitty-mode-animation-slow 40s linear
+}
+
+.kitty-left {
+    transform: scaleX(-1)
+}
+
+.kitty-canvas {
+    background-repeat: no-repeat;
+    background-size: 73px 60px;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+
 .form-check-input:checked {
     background-color: var(--navbar-color) !important;
     border-color: var(--navbar-color) !important;
@@ -2021,6 +2407,62 @@ aside.menu-selector {
     background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif') !important;
 }
 
+.theme-button.theme12 {
+    background-color: #6ecbcb;
+    /* background-image: url('./src/resources/STRIPES.gif'); */
+    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/STRIPES.gif?raw=true');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-button.theme13 {
+    background-color: #eb455f;
+    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true');
+    /* background-image: url('resources/chocolatechip.gif'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-button.theme14 {
+    background-color: #42b5d7;
+    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/crab.gif?raw=true');
+    /* background-image: url('resources/crab.gif'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px -7px;
+}
+
+.theme-button.theme15 {
+    /* background-color: bgcolor; */
+    -webkit-animation: rainbow 10s infinite;
+    animation: rainbow 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
 
 .theme-grid-container {
     display: grid;
@@ -2222,6 +2664,9 @@ h4.post-section-title > a{
     background-color: var(--post-background);
     border: none;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .delete-icon:hover, .chevron-icon:hover, .archive-icon:hover, 
@@ -2299,6 +2744,9 @@ h4.post-section-title > a{
     margin-bottom: 4px;
     margin-right: 0px;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .archive-icon {

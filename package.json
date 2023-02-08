@@ -33,5 +33,9 @@
     "url": "https://github.com/one-loop/redlookit/issues"
   },
   "homepage": "https://one-loop.github.io/redlookit/",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0"
+  }
 }
