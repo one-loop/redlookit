@@ -48,11 +48,19 @@ PS: If you have a better name, please let me know 🙏
 - [x] Save Subreddits from description
 - [x] Removing saved subreddits
 - [x] Sorting posts by top/new/hot/rising
-- [ ] New color schemes
+- [x] More color schemes
+- [x] Animated themes
+- [x] SVG icons
+- [x] Corgis, Kitties, Crabs Themes (from Google Colab)
+- [x] Rainbow Theme
+- [x] Ponies Theme (by Rooster Dragon from Desktop Ponies)
 - [ ] infinite scroll
 - [ ] Resizeable post area
-- [ ] Removing saved subreddits
-
+- [ ] Sorting Comments
+- [ ] Default comment sorting option
+- [ ] Infinite Scroll
+- [ ] Customizable display density (roomy, cozy, compact)
+- [ ] Clean mobile view
 
 ## 💙 Contributing
 Feel free to fork this repo and push any changes or features you add. This is my first big project, and I'm a total beginner, so I'll gladly accept help from anyone 😃
