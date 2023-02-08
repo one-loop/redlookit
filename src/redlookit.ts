@@ -227,11 +227,21 @@ function displayPosts(responses, subreddit, subredditInformation={"data": {"titl
         subredditInfoContainer.append(subredditIconContainer, subredditDetailsContainer, favoriteIcon);
         headerButtons.parentNode.insertBefore(subredditInfoContainer, headerButtons);
         // scrollable.style.height = `calc(100vh - ${calcHeight})`;
-        scrollable.style.height = 'calc(100vh - 273px)';
+        if (document.body.classList.contains('compact')) {
+            scrollable.style.height = 'calc(100vh - 252px)';
+        } else if (document.body.classList.contains('cozy')) {
+            scrollable.style.height = 'calc(100vh - 265px)';
+        } else {
+            scrollable.style.height = 'calc(100vh - 273px)';
+        }
     } else {
         subredditInfoContainer.style.display = 'none';
         headerButtons.style.borderRadius = "4px 4px 0px 0px";
-        scrollable.style.height = 'calc(100vh - 178px)';
+        if (document.body.classList.contains('compact')) {
+            scrollable.style.height = 'calc(100vh - 170px)';
+        } else {
+            scrollable.style.height = 'calc(100vh - 178px)';
+        }
     }
     if (subreddit.toLowerCase() == 'crappydesign') {document.body.style.fontFamily = '"Comic Sans MS", "Comic Sans", cursive'; subredditInfoContainer.style.background = `linear-gradient(${Math.floor(Math.random() * (360 - 0 + 1) + 0)}deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%)`; subredditInfoContainer.style.backgroundSize = '350px'; subredditInfoContainer.style.transform = `rotate(${Math.floor(Math.random() * (5 - -5 + 1) + -5)}deg)`; subredditInfoContainer.style.zIndex = '10'} else { document.body.style.fontFamily = 'Segoe UI'; subredditInfoContainer.style.background = 'var(--background-color-2)', subredditInfoContainer.style.transform = 'none', subredditInfoContainer.style.zIndex = 'auto'}
     for (let response of responses) {
@@ -483,7 +493,7 @@ topButton.addEventListener('click', function() {
 })
 
 let themes = [
-                'default', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
+                'defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
                 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11', 
                 'theme12', 'theme13', 'theme14', 'theme15', 'theme16'
             ]
@@ -504,7 +514,7 @@ let theme12 = document.querySelector('.theme-button.theme12') as HTMLButtonEleme
 let theme13 = document.querySelector('.theme-button.theme13') as HTMLButtonElement;
 let theme14  = document.querySelector('.theme-button.theme14') as HTMLButtonElement;
 let theme15  = document.querySelector('.theme-button.theme15') as HTMLButtonElement;
-// let theme16  = document.querySelector('.theme-button.theme16') as HTMLButtonElement;
+let theme16  = document.querySelector('.theme-button.theme16') as HTMLButtonElement;
 
 
 enableTheme(defaultTheme, 'defaultTheme')
@@ -523,7 +533,7 @@ enableTheme(theme12, 'theme12')
 enableTheme(theme13, 'theme13')
 enableTheme(theme14, 'theme14')
 enableTheme(theme15, 'theme15')
-// enableTheme(theme16, 'theme16')
+enableTheme(theme16, 'theme16')
 
 
 function enableTheme(theme, themeClassName) {
@@ -563,6 +573,48 @@ function removeThemeSelected() {
         theme.classList.remove('selected');
     }
     // (document.querySelector('.navbar') as HTMLElement).style.backgroundImage = 'none';
+}
+
+let roomyButton = document.querySelector('.display-density-button.roomy') as HTMLElement;
+let cozyButton = document.querySelector('.display-density-button.cozy') as HTMLElement;
+let compactButton = document.querySelector('.display-density-button.compact') as HTMLElement;
+
+roomyButton.addEventListener('click', function() {
+    localStorage.setItem('displayDensity', 'roomy');
+    cozyButton.classList.remove('selected');
+    compactButton.classList.remove('selected');
+    roomyButton.classList.add('selected');
+    document.body.classList.remove('cozy', 'compact');
+    document.body.classList.add('roomy');
+})
+
+cozyButton.addEventListener('click', function() {
+    localStorage.setItem('displayDensity', 'cozy');
+    roomyButton.classList.remove('selected');
+    compactButton.classList.remove('selected');
+    cozyButton.classList.add('selected');
+    document.body.classList.remove('compact', 'roomy');
+    document.body.classList.add('cozy');
+})
+
+compactButton.addEventListener('click', function() {
+    localStorage.setItem('displayDensity', 'compact');
+    roomyButton.classList.remove('selected');
+    cozyButton.classList.remove('selected');
+    compactButton.classList.add('selected');
+    document.body.classList.remove('cozy', 'roomy');
+    document.body.classList.add('compact');
+})
+
+function setDisplayDensity() {
+    if (localStorage.getItem('displayDensity')) {
+        let displayDensity = localStorage.getItem('displayDensity');
+        document.body.classList.add(displayDensity);
+        roomyButton.classList.remove('selected');
+        cozyButton.classList.remove('selected');
+        compactButton.classList.remove('selected');
+        document.querySelector(`.display-density-button.${displayDensity}`).classList.add('selected');
+    }
 }
 
 
@@ -1304,6 +1356,7 @@ setDarkMode();
 showSubredditDetails();
 showLongAddress();
 applySavedTheme();
+setDisplayDensity();
 
 // Everything set up.
 // We start actually doing things now
