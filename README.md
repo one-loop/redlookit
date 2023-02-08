@@ -54,13 +54,13 @@ PS: If you have a better name, please let me know 🙏
 - [x] Corgis, Kitties, Crabs Themes (from Google Colab)
 - [x] Rainbow Theme
 - [x] Ponies Theme (by Rooster Dragon from Desktop Ponies)
+- [x] Clean mobile view
 - [ ] infinite scroll
 - [ ] Resizeable post area
 - [ ] Sorting Comments
 - [ ] Default comment sorting option
 - [ ] Infinite Scroll
 - [ ] Customizable display density (roomy, cozy, compact)
-- [ ] Clean mobile view
 
 ## 💙 Contributing
 Feel free to fork this repo and push any changes or features you add. This is my first big project, and I'm a total beginner, so I'll gladly accept help from anyone 😃
