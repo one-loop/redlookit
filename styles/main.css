@@ -1314,6 +1314,12 @@ aside {
     align-items: center;
     justify-content: center;
 }
+
+.light .deselected img {
+    content: url(https://res.cdn.office.net/owamail/20230127001.12/resources/images/illustration_mail-hash-4338a4a7.svg)
+}
+
+
 .get-started {
     margin-bottom: 5px;
 }
@@ -1699,6 +1705,26 @@ h4.settings {
     font-weight: 400;
 }
 
+.theme-button {
+    width: 48px;
+    height: 48px;
+    /* margin: 2px; */
+    border-radius: 4px;
+    border: none;
+}
+
+.dark .theme-button.defaultTheme {
+    background-color: #6f40ff
+}
+
+.light .theme-button.defaultTheme {
+    background-color: #0F6CBD;
+}
+
+.light .theme-button.theme1 {
+    background-color: #fff;
+}
+
 .dark.defaultTheme {
     --navbar-color: #6f40ff;
     --text-color: #ffffff;
@@ -1758,7 +1784,13 @@ h4.settings {
     --toolbar-icon: #616161;
 }
 
-.dark.theme1 {
+/* -------------------- */
+
+.theme-button.theme1 {
+    background-color: #000;
+}
+
+.theme1 {
     --navbar-color: #000;
     /* --searchbar-unselected: #333;
     --searchbar-selected: #333; */
@@ -1780,8 +1812,6 @@ h4.settings {
     color: var(--new-msg);
 }
 
-.theme1 .
-
 .light.theme1 nav span button:hover {
     background-color:#fff !important;
 }
@@ -1798,7 +1828,13 @@ h4.settings {
     --placeholder: #adadad;
 }
 
-.dark.theme2 {
+.theme-button.theme2 {
+    background-color: #9969c9;
+}
+
+/* -------------------- */
+
+.theme2 {
     --navbar-color: #9969c9;
     --new-msg: #c299d9;
     --new-msg-hover: #e8c5fb;
@@ -1812,19 +1848,45 @@ h4.settings {
     --placeholder: #180d1f;
 }
 
-/* .dark.theme3, .light.theme3 {
+/* -------------------- */
+
+.theme-button.theme17 {
+    background-color: #34a8ff;
+}
+
+.theme17 {
     --navbar-color: #33a8ff;
     --new-msg: #5eb3ff;
     --new-msg-hover: #4095FC;
     --placeholder: #adadad;
 }
 
+/* -------------------- */
+
+.theme-button.theme3 {
+    /* background-color: #7193ff;
+    background-color: #33a8ff; */
+    background-color: #EB455F;
+}
+
+.theme3 {
+    --navbar-color: #eb455f;
+    --new-msg: #ff6a81;
+    --new-msg-hover: #ed9ca8;
+    --placeholder: #ffccd4;
+}
+
 .light.theme3 {
-    --placeholder: #2b80fb;
-} */
+    --placeholder: #eb455f;
+}
 
+/* -------------------- */
 
-.dark.theme4, .light.theme4 {
+.theme-button.theme4 {
+    background-color: #ffb400;
+}
+
+.theme4 {
     --navbar-color: #ffb400;
     --new-msg: #ffb400;
     --new-msg-hover: #ffce59;
@@ -1835,7 +1897,13 @@ h4.settings {
     --placeholder: #ffb400;
 }
 
-.dark.theme5, .light.theme5 {
+/* -------------------- */
+
+.theme-button.theme5 {
+    background-color: #4e8132;
+}
+
+.theme5 {
     --navbar-color: #4e8132;
     --new-msg: #6db644;
     --new-msg-hover: #88d65c;
@@ -1846,7 +1914,13 @@ h4.settings {
     --placeholder: #448715;
 }
 
-.dark.theme6 {
+/* -------------------- */
+
+.theme-button.theme6 {
+    background-color: #323437;
+}
+
+.theme6 {
     --navbar-color: #767676;
     --new-msg: #a8a8a8;
     --new-msg-hover: #d2d2d2;
@@ -1860,8 +1934,13 @@ h4.settings {
     --placeholder: #323437;
 }
 
+/* -------------------- */
 
-.dark.theme7 {
+.theme-button.theme7 {
+    background-color: #5a74cc;
+}
+
+.theme7 {
     --navbar-color: #5a74cc;
     --new-msg: #99adf3;
     --new-msg-hover: #c6d1fa;
@@ -1875,21 +1954,60 @@ h4.settings {
     --placeholder: #5a74cc;
 }
 
-.dark.theme3 {
-    --navbar-color: #eb455f;
-    --new-msg: #ff6a81;
-    --new-msg-hover: #ed9ca8;
-    --placeholder: #ffccd4;
+/* -------------------- */
+
+.theme-button.theme8 {
+    /* background-color: bgcolor; */
+    -webkit-animation: rainbow 10s infinite;
+    animation: rainbow 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
 
-.light.theme3 {
-    --navbar-color: #eb455f;
-    --new-msg: #ff6a81;
-    --new-msg-hover: #ed9ca8;
-    --placeholder: #eb455f;
+.dark.theme8 {
+    --navbar-color: #a8a8a8;
+    --new-msg: #a8a8a8;
+    --new-msg-hover: #d2d2d2;
+    --placeholder: #adadad;
 }
 
-.dark.theme9 {
+.light.theme8 {
+    --navbar-color: #323437;
+    --new-msg: #323437;
+    --new-msg-hover: #1d1d1d;
+    --placeholder: #333;
+}
+
+.theme8 .navbar {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.theme8 nav span button {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.light.theme8 nav span button:hover {
+    background-color: rgba(220, 220, 220, 0.4) !important;
+}
+
+.dark.theme8 nav span button:hover {
+    background-color: rgba(120, 120, 120, 0.4) !important;
+}
+
+/* -------------------- */
+
+.theme-button.theme9 {
+    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/whale/headerbgmaing2.gif') !important;
+}
+
+
+.theme9 {
     --navbar-color: #42b5d7;
     --new-msg: #43B5D7;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
@@ -1922,9 +2040,15 @@ h4.settings {
     color: #005669;
 }
 
-/* ------------------------ */
+/* -------------------- */
 
-.dark.theme10 {
+.theme-button.theme10 {
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/modern/headerbgmaing2.png') !important;
+    background-position: 660px;
+}
+
+
+.theme10 {
     --navbar-color: #7fbbc9;
     --new-msg: #7fbbc9;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
@@ -1933,10 +2057,7 @@ h4.settings {
 }
 
 .light.theme10 {
-    --navbar-color: #7fbbc9;
-    --new-msg: #7fbbc9;
     --searchbar-unselected: rgba(255, 255, 255, 0.9);
-    --new-msg-hover: #8cdefc;
     --placeholder: #005669;
 }
 
@@ -1960,9 +2081,14 @@ h4.settings {
     color: #005669;
 }
 
-/* --------------- */
+/* -------------------- */
 
-.dark.theme11 {
+.theme-button.theme11 {
+    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif') !important;
+    background-position: 135px;
+}
+
+.theme11 {
     --navbar-color: #ff8c00;
     --new-msg: #ff8c00;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
@@ -1971,10 +2097,7 @@ h4.settings {
 }
 
 .light.theme11 {
-    --navbar-color: #ff8c00;
-    --new-msg: #ff8c00;
     --searchbar-unselected: rgba(255, 255, 255, 0.9);
-    --new-msg-hover: #ffb347;
     --placeholder: #d77701;
 }
 
@@ -1998,10 +2121,18 @@ h4.settings {
     background: #ffb952;
 }
 
-
 /* -------------------- */
 
-.dark.theme12 {
+.theme-button.theme12 {
+    background-color: #6ecbcb;
+    /* background-image: url('./src/resources/STRIPES.gif'); */
+    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/STRIPES.gif?raw=true');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme12 {
     --navbar-color: #6ecbcb;
     --new-msg: #42b5d7;
     --searchbar-unselected: rgba(33, 32, 33, 0.9);
@@ -2010,10 +2141,7 @@ h4.settings {
 }
 
 .light.theme12 {
-    --navbar-color: #6ecbcb;
-    --new-msg: #42b5d7;
     --searchbar-unselected: rgba(255, 255, 255, 0.9);
-    --new-msg-hover: #8cdefc;
     --placeholder: #005669;
 }
 
@@ -2044,6 +2172,206 @@ h4.settings {
 .dark.theme12 nav span button:hover {
     background: #9cdcf2;
 }
+
+/* -------------------- */
+
+.theme-button.theme13 {
+    background-color: #eb455f;
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme13 {
+    --navbar-color: #eb455f;
+    --new-msg: #ff6a81;
+    --new-msg-hover: #ed9ca8;
+    --placeholder: #ffccd4;
+}
+
+.light.theme13 {
+    --placeholder: #eb455f;
+}
+
+.dark.theme13 nav span button, .light.theme13 nav span button {
+    background: rgba(235, 69, 94, 0.4) !important;
+    /* background: rgba(193, 87, 0,.8); */
+}
+
+
+.dark.theme13 nav span button:hover, .light.theme13 nav span button:hover {
+    background: rgba(235, 69, 94, 0.8) !important;
+}
+
+
+.theme13 .navbar {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/chocolatechip.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/redvelvet.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: corgis 90s linear infinite;
+}
+
+/* -------------------- */
+
+.theme-button.theme14 {
+    background-color: #ffb400;
+    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/crab.gif?raw=true');
+    /* background-image: url('resources/crab.gif'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px -7px;
+}
+
+.theme14 {
+    --navbar-color: #ffb400;
+    --new-msg: #ff8c00;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #ffb347;
+    --placeholder: #ffdb73;
+}
+
+.light.theme14 {
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+    --placeholder: #d77701;
+}
+
+.dark.theme14 nav span button {
+    background: rgba(193, 87, 0,.8);
+}
+
+.light.theme14 nav span button {
+    background: rgba(242,127,3,.8);
+}
+
+.light.theme14 nav span button:hover {
+    background: #D77700;
+}
+
+.dark.theme14 nav span button:hover {
+    background: #ffb952;
+}
+
+.theme14 .navbar {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/crab.gif?raw=true);
+    animation: crabs 60s linear infinite;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+/* -------------------- */
+
+.theme-button.theme15 {
+    background-color: #dc4fad;
+    background-image: url('https://raw.githubusercontent.com/panzi/Browser-Ponies/gh-pages/ponies/aloe/trotcycle_aloe_left.gif');
+    /* background-image: url('resources/chocolatechip.gif'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dark.theme15 {
+    --navbar-color: #c93c9c;
+    --new-msg: #ff75d1;
+    --new-msg-hover: #ff9fee;
+    --placeholder: #ffc0ff;
+}
+
+.light.theme15 {
+    --navbar-color: #dc4fad;
+    --new-msg: #dc4fad;
+    --new-msg-hover: #C8338A;
+    --placeholder: #bc2676;
+}
+
+.dark.theme15 nav span button, .light.theme15 nav span button {
+    background: #c93c9c66 !important;
+    /* background: rgba(193, 87, 0,.8); */
+}
+
+
+.dark.theme15 nav span button:hover, .light.theme15 nav span button:hover {
+    background: #ff9feecc !important;
+}
+
+
+.theme15 .navbar {
+    background-image: url(https://github.com/panzi/Browser-Ponies/blob/gh-pages/ponies/aloe/trotcycle_aloe_left.gif?raw=true), 
+                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/Derpy%20Hooves/derpy_fly_right.gif?raw=true), 
+                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/Rainbow%20Dash/trotcycle_rainbow_wing_right.gif?raw=true), 
+                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/King%20Thorax/thorax-fly-left.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: ponies 90s linear infinite;
+}
+
+/* -------------------- */
+
+.theme-button.theme16 {
+    background-color: #98c7c9;
+    background-image: url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-left.webp);
+    /* background-image: url(resources/crab.gif); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: 0px -7px; */
+}
+
+.theme16 {
+    --navbar-color: #9cc5c7;
+    --new-msg: #7c9fa1;
+    --new-msg-hover: #95d6d9;
+    --placeholder: #9cc5c7;
+}
+
+.light.theme16 {
+    --placeholder: #3f5a5b;
+}
+
+.dark.theme16 nav span button, .light.theme16 nav span button {
+    background: #6c8d8f50 !important;
+    /* background: rgba(193, 87, 0,.8); */
+}
+
+.dark.theme16 nav span button:hover, .light.theme16 nav span button:hover {
+    background: #6c8d8f30 !important;
+}
+
+.theme16 .navbar {
+    background-image: url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-left.webp),
+                    url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-right.webp),
+                    url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-right.webp),
+                    url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-left.webp);
+    animation: ponies 90s linear infinite;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: 80px; */
+    /* height: 100%; */
+    /* background-position: 130px -17px; */
+    /* width: 100%; */
+}
+
+/* -------------------- */
+
+.theme-button.theme18 {
+    background-color: #82ba01;
+}
+
+.theme18 {
+    --navbar-color: #82ba01;
+    --new-msg: #82ba01;
+    --new-msg-hover: #5e9b1a;
+    --placeholder: #6fa14a;
+}
+
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
 
 @keyframes corgis {
     0% {
@@ -2162,466 +2490,6 @@ h4.settings {
 }
 
 
-.dark.theme13 {
-    --navbar-color: #eb455f;
-    --new-msg: #ff6a81;
-    --new-msg-hover: #ed9ca8;
-    --placeholder: #ffccd4;
-}
-
-.light.theme13 {
-    --navbar-color: #eb455f;
-    --new-msg: #ff6a81;
-    --new-msg-hover: #ed9ca8;
-    --placeholder: #eb455f;
-}
-
-.dark.theme13 nav span button, .light.theme13 nav span button {
-    background: rgba(235, 69, 94, 0.4) !important;
-    /* background: rgba(193, 87, 0,.8); */
-}
-
-
-.dark.theme13 nav span button:hover, .light.theme13 nav span button:hover {
-    background: rgba(235, 69, 94, 0.8) !important;
-}
-
-
-.theme13 .navbar {
-    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/chocolatechip.gif?raw=true), 
-                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true), 
-                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true), 
-                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/redvelvet.gif?raw=true);
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: corgis 90s linear infinite;
-}
-
-/* --------------- */
-
-.dark.theme14 {
-    --navbar-color: #ffb400;
-    --new-msg: #ff8c00;
-    --searchbar-unselected: rgba(33, 32, 33, 0.9);
-    --new-msg-hover: #ffb347;
-    --placeholder: #ffdb73;
-}
-
-.light.theme14 {
-    --navbar-color: #ffb400;
-    --new-msg: #ff8c00;
-    --searchbar-unselected: rgba(255, 255, 255, 0.9);
-    --new-msg-hover: #ffb347;
-    --placeholder: #d77701;
-}
-
-.dark.theme14 nav span button {
-    background: rgba(193, 87, 0,.8);
-}
-
-.light.theme14 nav span button {
-    background: rgba(242,127,3,.8);
-}
-
-.light.theme14 nav span button:hover {
-    background: #D77700;
-}
-
-.dark.theme14 nav span button:hover {
-    background: #ffb952;
-}
-
-.theme14 .navbar {
-    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/crab.gif?raw=true);
-    animation: crabs 60s linear infinite;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    position: relative;
-    width: 100%
-}
-
-.dark.theme8 {
-    --navbar-color: #a8a8a8;
-    --new-msg: #a8a8a8;
-    --new-msg-hover: #d2d2d2;
-    --placeholder: #adadad;
-}
-
-.light.theme8 {
-    --navbar-color: #323437;
-    --new-msg: #323437;
-    --new-msg-hover: #1d1d1d;
-    --placeholder: #333;
-}
-
-.theme8 .navbar {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-/* .theme15 .new-msg, .theme15 .new-msg-2 {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-} */
-
-.theme8 nav span button {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-.light.theme8 nav span button:hover {
-    background-color: rgba(220, 220, 220, 0.4) !important;
-}
-
-.dark.theme8 nav span button:hover {
-    background-color: rgba(120, 120, 120, 0.4) !important;
-}
-
-/* ----------- */
-
-.dark.theme15 {
-    --navbar-color: #c93c9c;
-    --new-msg: #ff75d1;
-    --new-msg-hover: #ff9fee;
-    --placeholder: #ffc0ff;
-}
-
-.light.theme15 {
-    --navbar-color: #dc4fad;
-    --new-msg: #dc4fad;
-    --new-msg-hover: #C8338A;
-    --placeholder: #bc2676;
-}
-
-.dark.theme15 nav span button, .light.theme15 nav span button {
-    background: #c93c9c66 !important;
-    /* background: rgba(193, 87, 0,.8); */
-}
-
-
-.dark.theme15 nav span button:hover, .light.theme15 nav span button:hover {
-    background: #ff9feecc !important;
-}
-
-
-.theme15 .navbar {
-    background-image: url(https://github.com/panzi/Browser-Ponies/blob/gh-pages/ponies/aloe/trotcycle_aloe_left.gif?raw=true), 
-                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/Derpy%20Hooves/derpy_fly_right.gif?raw=true), 
-                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/Rainbow%20Dash/trotcycle_rainbow_wing_right.gif?raw=true), 
-                    url(https://github.com/RoosterDragon/Desktop-Ponies/blob/master/Content/Ponies/King%20Thorax/thorax-fly-left.gif?raw=true);
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: ponies 90s linear infinite;
-}
-
-/* --------------- */
-
-.dark.theme16 {
-    --navbar-color: #9cc5c7;
-    --new-msg: #7c9fa1;
-    --new-msg-hover: #95d6d9;
-    --placeholder: #9cc5c7;
-}
-
-.light.theme16 {
-    --navbar-color: #9cc5c7;
-    --new-msg: #7c9fa1;
-    --new-msg-hover: #95d6d9;
-    --placeholder: #3f5a5b;
-}
-
-.dark.theme16 nav span button, .light.theme16 nav span button {
-    background: #6c8d8f50 !important;
-    /* background: rgba(193, 87, 0,.8); */
-}
-
-.dark.theme16 nav span button:hover, .light.theme16 nav span button:hover {
-    background: #6c8d8f30 !important;
-}
-
-.theme16 .navbar {
-    background-image: url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-left.webp),
-                    url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-right.webp),
-                    url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-right.webp),
-                    url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-left.webp);
-    animation: ponies 90s linear infinite;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-size: 80px; */
-    /* height: 100%; */
-    /* background-position: 130px -17px; */
-    /* width: 100%; */
-}
-
-@keyframes kitty-mode-left-animation {
-    0% {
-        background-position: 110%,110%
-    }
-
-    15% {
-        background-position: 110%,110%
-    }
-
-    35% {
-        background-position: -10%,110%
-    }
-
-    50% {
-        background-position: -10%,110%
-    }
-
-    65% {
-        background-position: -10%,110%
-    }
-
-    85% {
-        background-position: -10%,110%
-    }
-
-    100% {
-        background-position: -10%,-10%
-    }
-}
-
-@keyframes kitty-mode-right-animation {
-    0% {
-        background-position: 110%,110%
-    }
-
-    15% {
-        background-position: 110%,110%
-    }
-
-    35% {
-        background-position: 110%,110%
-    }
-
-    50% {
-        background-position: 110%,110%
-    }
-
-    65% {
-        background-position: -10%,110%
-    }
-
-    85% {
-        background-position: -10%,110%
-    }
-
-    100% {
-        background-position: -10%,-10%
-    }
-}
-
-@keyframes kitty-mode-animation-slow {
-    0% {
-        background-position: 110%
-    }
-
-    100% {
-        background-position: -10%
-    }
-}
-
-@keyframes kitty-mode-animation-medium {
-    0% {
-        background-position: 110%
-    }
-
-    5% {
-        background-position: 110%
-    }
-
-    95% {
-        background-position: -10%
-    }
-
-    100% {
-        background-position: -10%
-    }
-}
-
-@keyframes kitty-mode-animation-fast {
-    0% {
-        background-position: 110%
-    }
-
-    10% {
-        background-position: 110%
-    }
-
-    90% {
-        background-position: -10%
-    }
-
-    100% {
-        background-position: -10%
-    }
-}
-
-.kitty-mode-fast {
-    animation: kitty-mode-animation-fast 40s linear
-}
-
-.kitty-mode-medium {
-    animation: kitty-mode-animation-medium 40s linear
-}
-
-.kitty-mode-slow {
-    animation: kitty-mode-animation-slow 40s linear
-}
-
-.kitty-left {
-    transform: scaleX(-1)
-}
-
-.kitty-canvas {
-    background-repeat: no-repeat;
-    background-size: 73px 60px;
-    height: 100%;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-
-.form-check-input:checked {
-    background-color: var(--navbar-color) !important;
-    border-color: var(--navbar-color) !important;
-}
-
-.theme-button {
-    width: 48px;
-    height: 48px;
-    /* margin: 2px; */
-    border-radius: 4px;
-    border: none;
-}
-
-.dark .theme-button.default {
-    background-color: #6f40ff
-}
-
-.light .theme-button.default {
-    background-color: #0F6CBD;
-}
-
-.light .theme-button.theme1 {
-    background-color: #fff;
-}
-
-.theme-button.theme1 {
-    background-color: #000;
-}
-
-.theme-button.theme2 {
-    background-color: #9969c9;
-}
-
-.theme-button.theme3 {
-    /* background-color: #7193ff;
-    background-color: #33a8ff; */
-    background-color: #EB455F;
-}
-
-.theme-button.theme4 {
-    background-color: #ffb400;
-}
-
-.theme-button.theme5 {
-    background-color: #4e8132;
-}
-
-.theme-button.theme6 {
-    background-color: #323437;
-}
-
-.theme-button.theme7 {
-    background-color: #5a74cc;
-}
-
-/* .theme-button.theme8 {
-    background-color: #EB455F;
-} */
-
-.theme-button.theme9 {
-    background: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/whale/headerbgmaing2.gif') !important;
-}
-
-.theme-button.theme10 {
-    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/modern/headerbgmaing2.png') !important;
-    background-position: 660px;
-}
-
-.theme-button.theme11 {
-    background-image: url('https://res.cdn.office.net/owamail/20230127001.10/resources/images/themes/robot/headerbgmaing2.gif') !important;
-    background-position: 135px;
-}
-
-.theme-button.theme12 {
-    background-color: #6ecbcb;
-    /* background-image: url('./src/resources/STRIPES.gif'); */
-    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/STRIPES.gif?raw=true');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.theme-button.theme13 {
-    background-color: #eb455f;
-    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/oreo.gif?raw=true');
-    /* background-image: url('resources/chocolatechip.gif'); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.theme-button.theme14 {
-    background-color: #ffb400;
-    background-image: url('https://github.com/one-loop/redlookit/blob/gh-pages/assets/crab.gif?raw=true');
-    /* background-image: url('resources/crab.gif'); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0px -7px;
-}
-
-.theme-button.theme15 {
-    background-color: #dc4fad;
-    background-image: url('https://raw.githubusercontent.com/panzi/Browser-Ponies/gh-pages/ponies/aloe/trotcycle_aloe_left.gif');
-    /* background-image: url('resources/chocolatechip.gif'); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.theme-button.theme16 {
-    background-color: #98c7c9;
-    background-image: url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/duck-left.webp);
-    /* background-image: url(resources/crab.gif); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* background-position: 0px -7px;
-}
-
-.theme-button.theme8 {
-    /* background-color: bgcolor; */
-    -webkit-animation: rainbow 10s infinite;
-    animation: rainbow 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-
-
 @keyframes rainbow {
     0% {
         background-color: #45a3e5
@@ -2643,6 +2511,12 @@ h4.settings {
         background-color: #864cbf
     }
 }
+
+.form-check-input:checked {
+    background-color: var(--navbar-color) !important;
+    border-color: var(--navbar-color) !important;
+}
+
 
 .theme-grid-container {
     display: grid;
