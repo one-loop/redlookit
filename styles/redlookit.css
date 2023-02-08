@@ -289,17 +289,52 @@ button {
     header {
         padding: 0;
     }
+
+    .subreddit-info {
+        width: 100vw;
+    }
+
+    .favorite-icon {
+        left: calc(100vw - 50px)
+    }
+
+    .settings-panel, .check-icon, .settings-button {
+        display: none !important;
+    }
+
+    .label-new-email {
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 520px) {
-    .logo {
-        display: none;
+    .logo, .quick-steps-icon, .quick-steps-icon+.chevron-icon {
+        display: none !important;
     }
     .search {
-        margin-left: 5% !important;
+        /* margin-left: 5% !important; */
+        width: 95vw !important;
+        margin: auto !important;
     }
     .search-results {
-        margin-left: 5% !important;
+        /* margin-left: 5% !important; */
+        display: block;
+        width: 95% !important;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        left: 0% !important;
+    }
+    .new-msg-2 {
+        margin-right: auto;
+    }
+    .sort-top-menu {
+        left: 20%;
+    }
+}
+
+@media (max-width: 340px) {
+    .reply-icon {
+        display: none !important;
     }
 }
 
@@ -444,7 +479,7 @@ button {
     background-color: var(--background-color-2);
     border-radius: 5px;
     border: 1px solid var(--border-color-2);
-    transition: 0.16s ease;
+    /* transition: 0.16s ease; */
     margin: 5px auto;
     color: var(--post-color);
     align-items: flex-start;
@@ -1981,8 +2016,8 @@ aside.menu-selector {
     /* url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/GHOSTPUFFS.gif?raw=true),  */
     /* url(https://raw.githubusercontent.com/one-loop/redlookit/gh-pages/assets/KINAKO.gif?raw=true), */
     background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/STRIPES.gif?raw=true), 
-                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/FIREFOX.gif?raw=true), 
-                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MANEKI.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/FIREFOX-right.gif?raw=true), 
+                    url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MANEKI-right.gif?raw=true), 
                     url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MIDNIGHT.gif?raw=true);
     background-repeat: no-repeat;
     background-size: contain;
