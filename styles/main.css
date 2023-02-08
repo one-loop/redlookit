@@ -1687,7 +1687,7 @@ aside.menu-selector {
     border-left: 1px solid var(--outline);
     font: 600 20px SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
     transition: left 0.16s ease-in;
-    /* display: none; */
+    display: none;
 }
 
 .dark.defaultTheme {
