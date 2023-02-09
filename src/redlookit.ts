@@ -496,7 +496,7 @@ topButton.addEventListener('click', function() {
 let themeNames=['defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
                 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11', 
                 'theme12', 'theme13', 'theme14', 'theme15', 'theme16', 'theme17',
-                'theme18']
+                'theme18', 'theme19']
 
 
 let themes = document.querySelector('.theme-grid-container') as HTMLElement;
@@ -505,7 +505,7 @@ for (let theme of themes.children) {
     theme.addEventListener('click', function() {
         let themeName = theme.classList[1];
         // console.log('APPLYING THEME:', themeName);
-        removeThemeSelected();
+        removeThemeSelected()
         document.body.classList.remove(...themeNames);
         if (!theme.classList.contains('selected')) {
             document.body.classList.add(themeName);
