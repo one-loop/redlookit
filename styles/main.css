@@ -1315,7 +1315,7 @@ aside {
     justify-content: center;
 }
 
-.light .deselected img {
+.light .reddit-post.scrollable.deselected img {
     content: url(https://res.cdn.office.net/owamail/20230127001.12/resources/images/illustration_mail-hash-4338a4a7.svg)
 }
 
@@ -2370,6 +2370,59 @@ h4.settings {
 }
 
 /* -------------------- */
+
+.theme-button.theme19 {
+    /* background-image: url(); */
+    /* background-image: url('./src/resources/STRIPES.gif'); */
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MARIO-right.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/mario-background.png?raw=true);
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, left;
+}
+
+.theme19 {
+    --navbar-color: #65c9ff;
+    --new-msg: #42b5d7;
+    --searchbar-unselected: rgba(33, 32, 33, 0.9);
+    --new-msg-hover: #8cdefc;
+    --placeholder: #bcfbfb;
+}
+
+.light.theme19 {
+    --searchbar-unselected: rgba(255, 255, 255, 0.9);
+    --placeholder: #005669;
+}
+
+.dark.theme19 nav span button, .light.theme12 nav span button {
+    background: rgba(47,161,189,0.6);
+}
+
+.light.theme19 nav span button:hover {
+    background: #005669;
+}
+
+.dark.theme19 nav span button:hover {
+    background: #9cdcf2;
+}
+
+body.theme19 {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/mario-background.png?raw=true);
+    background-repeat: no-repeat;
+}
+
+.theme19 .navbar {
+    background-color: transparent;
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MARIO-left.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/LUIGI-right.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/MARIO-right.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/LUIGI-left.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: corgis 90s linear infinite;
+}
+
+
+/* -------------------- */
 /* -------------------- */
 /* -------------------- */
 
@@ -2523,6 +2576,7 @@ h4.settings {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     width: fit-content;
+    margin-bottom: 30px;
 }
 
 .settings-panel h6 {
