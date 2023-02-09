@@ -26,11 +26,16 @@
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.3",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
   "bugs": {
     "url": "https://github.com/one-loop/redlookit/issues"
   },
-  "homepage": "https://one-loop.github.io/redlookit/"
+  "homepage": "https://one-loop.github.io/redlookit/",
+  "keywords": [],
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0"
+  }
 }

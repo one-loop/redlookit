@@ -13,6 +13,32 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6705733956299645"
 crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="styles/fabric-icons.css"> -->
+    <style>
+        /*
+        Your use of the content in the files referenced here is subject to the terms of the license at https://aka.ms/fabric-assets-license
+        */
+
+        .ms-Icon {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-family: 'FabricMDL2Icons';
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .ms-Icon--ArchiveUndo:before { content: "\E3A1"; }
+        .ms-Icon--Flag:before { content: "\E7C1"; }
+        .ms-Icon--LightningBolt:before { content: "\E945"; }
+        .ms-Icon--Mail:before { content: "\E715"; }
+        .ms-Icon--Read:before { content: "\E8C3"; }
+        .ms-Icon--Reply:before { content: "\E97A"; }
+        .ms-Icon--ReplyAll:before { content: "\EE0A"; }
+        .ms-Icon--ReplyMirrored:before { content: "\EE35"; }
+        .ms-Icon--Tag:before { content: "\E8EC"; }
+
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRXY5LSS9D"></script>
 <script>
@@ -23,24 +49,37 @@ crossorigin="anonymous"></script>
   gtag('config', 'G-MRXY5LSS9D');
 </script>
 </head>
-<body class="dark">
+<body class="dark roomy">
     <nav class="navbar">
         <span class="dot-menu-button">
             <button class="dot-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,21.5c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,71.66667c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM28.66667,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM78.83333,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667zM129,121.83333c-3.956,0 -7.16667,3.21067 -7.16667,7.16667v14.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h14.33333c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.33333c0,-3.956 -3.21067,-7.16667 -7.16667,-7.16667z"></path></g></g></svg>
+                <svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="25.6" cy="25.5999" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="128" cy="25.5999" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="230.4" cy="25.5999" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="25.6" cy="127.998" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="128" cy="127.998" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="230.4" cy="127.998" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="25.6" cy="230.4" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="128" cy="230.4" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                <ellipse cx="230.4" cy="230.4" rx="25.6" ry="25.5999" fill="white"></ellipse>
+                </svg>
             </button>
         </span>
         <span class="logo">Outlook</span>
         <span class="search-bar">
             <form action="">
-                <input type="text" class="search" placeholder="Enter Subreddit Name">
+                <div>
+                    <input type="text" class="search" placeholder="Search Subreddit">
+                    <div class="search-results">Search Results</div>
+                </div>
             </form>
         </span>
         <span class="menu-buttons">
-            <button class="meet-now">
+            <!-- <button class="meet-now">
                 <i class="ms-Icon ms-Icon--Video" aria-hidden="true"></i>
                 <span style="margin-left: 10px; position: relative; top: -3px;">Teams call</span>
-            </button>
+            </button> -->
             <button>
                 <i class="ms-Icon ms-Icon--OfficeChat" aria-hidden="true"></i>
             </button>
@@ -56,14 +95,14 @@ crossorigin="anonymous"></script>
             <button class="settings-button">
                 <i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
             </button>
-            <button dir="ltr">
+            <!-- <button dir="ltr">
                 <i class="ms-Icon ms-Icon--Help" aria-hidden="true"></i>
-            </button>
+            </button> -->
             <button>
-                <i class="ms-Icon ms-Icon--Megaphone" aria-hidden="true"></i>
+                <i class="ms-Icon ms-Icon--Lightbulb" aria-hidden="true"></i>
             </button>
             <button class="profile-pic profile-button">
-                <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 35px" alt="">
+                <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 32px; height: 32px;" alt="">
             </button>
         </span>
     </nav>
@@ -96,20 +135,107 @@ crossorigin="anonymous"></script>
             </button>
         </div>
         <h6>Theme</h6>
+        <div class="theme-grid-container">
+            <button class="theme-button defaultTheme selected"></button>
+            <button class="theme-button theme1"></button>
+            <button class="theme-button theme2"></button>
+            <button class="theme-button theme3"></button>
+            <button class="theme-button theme4"></button>
+            <button class="theme-button theme5"></button>
+            <button class="theme-button theme6"></button>
+            <button class="theme-button theme7"></button>
+            <button class="theme-button theme17"></button>
+            <button class="theme-button theme18"></button>
+            <button class="theme-button theme8"></button>
+            <button class="theme-button theme9"></button>
+            <button class="theme-button theme10"></button>
+            <button class="theme-button theme11"></button>
+            <button class="theme-button theme12"></button>
+            <button class="theme-button theme13"></button>
+            <button class="theme-button theme14"></button>
+            <button class="theme-button theme15"></button>
+            <button class="theme-button theme16"></button>
+            <button class="theme-button theme19"></button>
+        </div>
+        <h6 style="margin-top: 30px">Appearance</h6>
         <div class="form-check form-switch">
             <label for="flexSwitchCheckChecked">Dark Mode</label>
             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         </div>
+        <div class="form-check form-switch">
+            <label for="show-subreddit-details" title="(looks more inconspicuous if turned on)">Show Subreddit Details</label>
+            <input class="form-check-input" type="checkbox" id="show-subreddit-details" checked>
+        </div>
+        <div class="form-check form-switch">
+            <label for="show-long-emails" title="(looks more inconspicuous if turned on)">Long Email Address</label>
+            <input class="form-check-input" type="checkbox" id="show-long-emails" checked>
+        </div>
+        <h6 style="margin-top: 30px">Display Density</h6>
+        <div class="display-density-container">
+            <button class="display-density-button roomy selected" title="(may require refresh)">
+                <svg width="84" height="75" viewBox="0 0 84 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1.00037H82C82.5523 1.00037 83 1.44808 83 2.00037V72.5C83 73.0523 82.5523 73.5 82 73.5H2C1.44772 73.5 1 73.0523 1 72.5V2.00037C1 1.44808 1.44772 1.00037 2 1.00037Z" fill="var(--background-color)" stroke="#979593" stroke-width="2"></path>
+                    <path d="M8 15.499H76V36.499H8V15.499Z" fill="var(--background-color-2)"></path>
+                    <path d="M23 19.499H72V25.4999H23V19.499Z" fill="#979593"></path>
+                    <path d="M23 27.542L45 27.499V32.5003L23 32.5433V27.542Z" fill="#979593"></path>
+                    <path d="M47 27.542H72V32.5433H47V27.542Z" fill="#979593"></path>
+                    <path d="M19 23.499C19 25.7082 17.2091 27.499 15 27.499C12.7909 27.499 11 25.7082 11 23.499C11 21.2899 12.7909 19.499 15 19.499C17.2091 19.499 19 21.2899 19 23.499Z" fill="#979593"></path>
+                    <path d="M8 38.499H76V59.4979H8V38.499Z" fill="var(--background-color-2"></path>
+                    <path d="M23 42.4981H72V48.499H23V42.4981Z" fill="#979593"></path>
+                    <path d="M23 50.4977L45 50.4548V55.4561L23 55.499V50.4977Z" fill="#979593"></path>
+                    <path d="M47 50.499H72V55.5003H47V50.499Z" fill="#979593"></path>
+                    <path d="M18.9684 46.499C18.9684 48.7082 17.1776 50.499 14.9684 50.499C12.7593 50.499 10.9684 48.7082 10.9684 46.499C10.9684 44.2899 12.7593 42.499 14.9684 42.499C17.1776 42.499 18.9684 44.2899 18.9684 46.499Z" fill="#979593"></path>
+                </svg>    
+                <span>Roomy</span>        
+            </button>
+            <button class="display-density-button cozy" title="(may require refresh)">
+                <svg width="84" height="74" viewBox="0 0 84 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1H82C82.5523 1 83 1.44772 83 2V72C83 72.5523 82.5523 73 82 73H2C1.44772 73 1 72.5523 1 72V2C1 1.44771 1.44771 1 2 1Z" fill="var(--background-color)" stroke="#979593" stroke-width="2"></path>
+                    <path d="M11 18.5H73V26.5003H11V18.5Z" fill="#979593" stroke="var(--background-color-2)" stroke-width="4"></path>
+                    <path d="M11 33H73V41.0003H11V33Z" fill="#979593" stroke="var(--background-color-2)" stroke-width="4"></path>
+                    <path d="M11 47H73V55.0003H11V47Z" fill="#979593" stroke="var(--background-color-2)" stroke-width="4"></path>
+                </svg>
+                <span>Cozy</span>                               
+            </button>
+            <button class="display-density-button compact" title="(may require refresh)">
+                <svg width="84" height="75" viewBox="0 0 84 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1.5H82C82.5523 1.5 83 1.94772 83 2.5V72.5C83 73.0523 82.5523 73.5 82 73.5H2C1.44772 73.5 1 73.0523 1 72.5V2.5C1 1.94771 1.44771 1.5 2 1.5Z" fill="var(--background-color)" stroke="#979593" stroke-width="2"></path>
+                    <path d="M9.5 43H74.5V50H9.5V43Z" fill="var(--background-color-2)" stroke="var(--background-color-2)"></path>
+                    <path d="M13 44.5H71V48.5H13V44.5Z" fill="#979593"></path>
+                    <path d="M9.5 52H74.5V59H9.5V52Z" fill="var(--background-color-2)" stroke="var(--background-color-2)"></path>
+                    <path d="M13 53.5H71V57.5H13V53.5Z" fill="#979593"></path>
+                    <path d="M9.5 25H74.5V32H9.5V25Z" fill="var(--background-color-2)" stroke="var(--background-color-2)"></path>
+                    <path d="M13 26.5H71V30.5H13V26.5Z" fill="#979593"></path>
+                    <path d="M9.5 16H74.5V23H9.5V16Z" fill="var(--background-color-2)" stroke="var(--background-color-2)"></path>
+                    <path d="M13 17.5H71V21.5H13V17.5Z" fill="#979593"></path>
+                    <path d="M9.5 34H74.5V41H9.5V34Z" fill="var(--background-color-2)" stroke="var(--background-color-2)"></path>
+                    <path d="M13 35.5H71V39.5H13V35.5Z" fill="#979593"></path>
+                </svg>
+                <span>Compact</span>                                      
+            </button>
+        </div>
     </div>
 
     <div class="profile-panel">
-        <div class="profile-panel-picture">
-            <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 75px" alt="">
+        <div style="display: flex; margin-bottom: 25px; padding-top: 20px;
+        padding-left: 10px;">
+            <div class="profile-panel-picture">
+                <img src="https://avatars.githubusercontent.com/u/78092430?v=4" style="border-radius: 50%; width: 75px" alt="">
+            </div>
+            <div class="profile-panel-content">
+                <h4>one-loop</h4>
+                <p>✋ I'm a beginner developer!</p>
+                <a href="https://github.com/one-loop" target="_blank">View Account</a>
+            </div>
         </div>
-        <div class="profile-panel-content">
-            <h4>one-loop</h4>
-            <p>✋ I'm a beginner developer!</p>
-            <a href="https://github.com/one-loop" target="_blank">View Account</a>
+        <div class="contributer">
+            <div class="profile-panel-picture">
+                <img src="https://avatars.githubusercontent.com/u/23503179?v=4" style="border-radius: 50%; width: 40px" alt="">
+            </div>
+            <div class="profile-panel-content">
+                <h5 style="margin-bottom: 0px;" title="(key contributor)">Yarillo</h5>
+                <a href="https://github.com/Yarillo4" target="_blank">View Account</a>
+            </div>
         </div>
     </div>
 
@@ -118,112 +244,386 @@ crossorigin="anonymous"></script>
     <main class="main-content">
         <aside class="toolbar icons">
             <form action="https://outlook.office365.com/mail/inbox" target="_blank">
-            <button>
-                <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i>
+            <button class="inbox-icon">
+                <!-- <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i> -->
+                <!-- <img class="ms-icon inbox selected" src="https://img.icons8.com/fluency-systems-filled/256/FFCDFF/new-post.png"> -->
+                <svg width="16" height="13" viewBox="0 0 215 172" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                        fill: var(--new-msg);
+                    ">
+                    <path d="M107.5 87L1.5 29C1.9 11 18 1 27.5 1H187.5C195.5 1 212.5 10 214 29L107.5 87Z" fill="green"></path>
+                    <path d="M214 140.5V48L107.5 104.5L1 48L1 142C2.5 163 22.5 170.941 30.5 171C75.8333 171.333 167.781 171 185 171C199.5 171 214 157.5 214 140.5Z" fill="green"></path>
+                    <path d="M107.5 87L1.5 29C1.9 11 18 1 27.5 1H187.5C195.5 1 212.5 10 214 29L107.5 87Z" stroke="green"></path>
+                    <path d="M214 140.5V48L107.5 104.5L1 48L1 142C2.5 163 22.5 170.941 30.5 171C75.8333 171.333 167.781 171 185 171C199.5 171 214 157.5 214 140.5Z" stroke="green"></path>
+                    </svg>
             </button>
             </form>
             <form action="https://outlook.office365.com/calendar/" target="_blank">
-            <button dir="ltr">
-                <i class="ms-Icon ms-Icon--Calendar" aria-hidden="true"></i>
+            <button dir="ltr" class="calendar-icon">
+                <!-- <i class="ms-Icon ms-Icon--Calendar" aria-hidden="true"></i> -->
+                <!-- <img class="ms-icon" src="https://img.icons8.com/fluency-systems-regular/256/ADADAD/calendar--v1.png"> -->
+                <svg width="14" height="14" viewBox="0 0 392 392" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_171_34)">
+                    <rect x="20" y="16" width="352" height="352" rx="51" stroke="var(--toolbar-icon)" stroke-width="32" shape-rendering="crispEdges"></rect>
+                    </g>
+                    <line x1="4" y1="101" x2="388" y2="101" stroke="var(--toolbar-icon)" stroke-width="32"></line>
+                    <circle cx="105" cy="187" r="27" fill="var(--toolbar-icon)"></circle>
+                    <circle cx="196" cy="187" r="27" fill="var(--toolbar-icon)"></circle>
+                    <circle cx="196" cy="283" r="27" fill="var(--toolbar-icon)"></circle>
+                    <circle cx="105" cy="283" r="27" fill="var(--toolbar-icon)"></circle>
+                    <circle cx="286" cy="187" r="27" fill="var(--toolbar-icon)"></circle>
+                    <defs>
+                    <filter id="filter0_d_171_34" x="0" y="0" width="392" height="392" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                    <feOffset dy="4"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_171_34"></feBlend>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_171_34" result="shape"></feBlend>
+                    </filter>
+                    </defs>
+                </svg>
             </button>
             </form>
             <form action="https://outlook.office365.com/people/" target="_blank">
-            <button>
-                <i class="ms-Icon ms-Icon--People" aria-hidden="true"></i>
+            <button class="people-icon">
+                <!-- <i class="ms-Icon ms-Icon--People" aria-hidden="true"></i> -->
+                <!-- <img class="ms-icon" src="https://img.icons8.com/fluency-systems-regular/256/ADADAD/conference-call.png"> -->
+                <svg width="20" height="15" viewBox="0 0 541 436" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M355.465 239.353C338.142 240.767 326.828 248.187 324 270.447C324 309.313 355.819 345 426.527 345C497.235 345 521.629 306.84 524.811 274.687C527.031 252.25 509.255 239 494.053 239C456.931 239 380.213 239.353 355.465 239.353Z" stroke="var(--toolbar-icon)" stroke-width="30"></path>
+                    <path d="M480 120.5C480 154.007 453.043 181 420 181C386.957 181 360 154.007 360 120.5C360 86.9926 386.957 60 420 60C453.043 60 480 86.9926 480 120.5Z" stroke="var(--toolbar-icon)" stroke-width="30"></path>
+                    <path d="M90 241C65.5 243 49.5 253.5 45.5 285C45.5 340 90.5 390.5 190.5 390.5C290.5 390.5 325 336.5 329.5 291C332.64 259.25 307.5 240.5 286 240.5C233.5 240.5 125 241 90 241Z" stroke="var(--border-color-2)" stroke-width="90"></path>
+                    <path d="M90 241C65.5 243 49.5 253.5 45.5 285C45.5 340 90.5 390.5 190.5 390.5C290.5 390.5 325 336.5 329.5 291C332.64 259.25 307.5 240.5 286 240.5C233.5 240.5 125 241 90 241Z" stroke="var(--toolbar-icon)" stroke-width="30"></path>
+                    <circle cx="187.5" cy="97.5" r="82.5" stroke="var(--toolbar-icon)" stroke-width="30"></circle>
+                    <!-- <path d="M450 120.5C450 154.007 423.043 181 390 181C356.957 181 330 154.007 330 120.5C330 86.9926 356.957 60 390 60C423.043 60 450 86.9926 450 120.5Z" stroke="var(--toolbar-icon)" stroke-width="30"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M329.754 346.792C347.701 355.31 370.041 360 396.527 360C434.611 360 462.226 349.674 480.927 333.138C499.563 316.661 507.84 295.34 509.738 276.164C512.962 243.59 486.75 224 464.053 224C445.462 224 416.975 224.088 390.07 224.177L381.975 224.203C358.155 224.282 336.561 224.353 325.465 224.353H324.854L324.245 224.403C323.298 224.48 322.347 224.574 321.392 224.687C329.118 232.983 335.424 242.92 339.536 254.333C351.052 254.306 366.07 254.256 382.056 254.203L390.168 254.177C417.089 254.088 445.522 254 464.053 254C471.76 254 481.101 260.91 479.884 273.21C478.6 286.187 473.09 300.023 461.055 310.664C449.087 321.246 429.151 330 396.527 330C371.971 330 353.535 325.384 340.193 318.482C337.76 327.915 334.333 337.445 329.754 346.792Z" fill="var(--toolbar-icon)"/>
+                    <path d="M60 241C35.5 243 19.5 253.5 15.5 285C15.5 340 60.5 390.5 160.5 390.5C260.5 390.5 295 336.5 299.5 291C302.64 259.25 277.5 240.5 256 240.5C203.5 240.5 95 241 60 241Z" stroke="var(--toolbar-icon)" stroke-width="30"/>
+                    <circle cx="157.5" cy="97.5" r="82.5" stroke="black" stroke-width="30"/>                         -->
+                </svg>
             </button>
             </form>
             <form action="https://outlook.office365.com/files/" target="_blank">
-            <button>
-                <i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i>
+            <button class="attach-icon">
+                <!-- <i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i> -->
+                <!-- <img class="ms-icon" src="https://img.icons8.com/fluency-systems-regular/256/ADADAD/attach.png"> -->
+                <svg width="14" height="15" viewBox="0 0 423 427" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 262.475L230 48.4752C260 16.9749 319 -3.02489 375 43.4751C407.5 74.4751 426.5 134.975 373.5 193.975L175.5 391.475C153 412.475 118.5 418.475 90.5 394.975C55 358.475 71.5 323.475 95 300.475L252 142.975" stroke="var(--toolbar-icon)" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
             </button>
             </form>
             <form action="https://to-do.office.com/tasks/" target="_blank">
             <button>
-                <i class="ms-Icon ms-Icon--ToDoLogoOutline" aria-hidden="true"></i>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL1SURBVHgB7VVPaxNBFH8zidHWViNoUpHWePGcD6DQiBSqIlUEqxcdBEFE/AhZP4FfYUHEQlEqBf8cdAsF8daeRFCwR2+phPqn7b7xzezOZrLZZJOaXCQPktnd2Znfn/fmLcAw/ve47v18OL+y9W1+9Vc1aZ7BAOPau60qATiMA3CFlOHOwtmRR/Y7HAYUV9/Wq9KXjpQSJALQAOCjE3diIA5cfl2v8kg5AzXSQCNrcaLvDlxarlfBUo40YuiAvqef7URfHbjwsk45R4eRXK5Ua+WsSb0ao5qQWMkmbXTsplfOwO4cYNb9vlDZ6AZ85vkPyrnvhDuTUqbVcSYDNKRnigRK/T4SK8nYJksC5ww9Wpen2w1aVUkjcX6xRjlnTqCU8HhcdehEOOpnEsTizJjLOoCb6Eji3LNalfZ04vZGgIaENU9z4gWBq/UsBbwjiemnBA7SacmxccJSbU4C51wszQbgEYEU8EQSZ57UdMFx1qywyXIWpsPcZ0AsXzzk2puyiXmvJDO4lgLeRKI0W77FNXioKkYiAG4oV/MZQLF85Ygb3zBLZTndJbiK0uHTxTWJmMcweaqRIKjKZkFTwaDq1ZkHLlW5A2ZQvEoA1+t/5/iSBLYOXcT4qSKMTRXyqrmoxoIY4OnrpoYj9XM9z6R40wYcIKyB/G0vv39besS73O7Fg6UijJcmoGF747gp5cZ2XXgQXAND8f7GURc6hHZt061s/smxSjsnRk8WYXSqCKq9NhQrhbLhAhhHZHC9mw4eOWAiyYkDk0UYIQKcASQVXaITKMWqSAePHDARdyJH4LnJQkOxnW/biTD/qu4k+l2DtxCIk9h3ohABtCNhik2lB3xffBAFF3qIxM+xIeFv767bKm0S8Wf0Lz7e6Q1cRcfPcelxLc/4jkcpLkf5Nh3OrgE6aut3ewdPJWCTILAyTyBBHohP9/YG3hUBm0TcCYIXn+/vHbxrAkkkqMeLL/8I3hMBQwJgZy6b9Te+Pji+AsMYRh/iL5mvmIzqBzX8AAAAAElFTkSuQmCC" alt="To Do" class="" data-clicklog="custom" style="width: 20px; height: 20px;">
+                <!-- <img src="https://img.icons8.com/fluency/256/microsoft-todo-2019.png" style="width: 20px; height: 20px;"> -->
             </button>
             </form>
             <form action="https://www.office.com/launch/word" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><linearGradient id="Q7XamDf1hnh~bz~vAO7C6a_pGHcje298xSl_gr1" x1="28" x2="28" y1="14.966" y2="6.45" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#42a3f2"></stop><stop offset="1" stop-color="#42a4eb"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6a_pGHcje298xSl_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v7.003h32V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6b_pGHcje298xSl_gr2" x1="28" x2="28" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#11408a"></stop><stop offset="1" stop-color="#103f8f"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6b_pGHcje298xSl_gr2)" d="M12,33.054V40c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2v-6.946H12z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6c_pGHcje298xSl_gr3" x1="28" x2="28" y1="-15.46" y2="-15.521" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3079d6"></stop><stop offset="1" stop-color="#297cd2"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6c_pGHcje298xSl_gr3)" d="M12,15.003h32v9.002H12V15.003z"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6d_pGHcje298xSl_gr4" x1="12" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1d59b3"></stop><stop offset="1" stop-color="#195bbc"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6d_pGHcje298xSl_gr4)" d="M12,24.005h32v9.05H12V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="Q7XamDf1hnh~bz~vAO7C6e_pGHcje298xSl_gr5" x1="4.744" x2="23.494" y1="14.744" y2="33.493" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#256ac2"></stop><stop offset="1" stop-color="#1247ad"></stop></linearGradient><path fill="url(#Q7XamDf1hnh~bz~vAO7C6e_pGHcje298xSl_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M18.403,19l-1.546,7.264L15.144,19h-2.187l-1.767,7.489L9.597,19H7.641l2.344,10h2.352l1.713-7.689	L15.764,29h2.251l2.344-10H18.403z"></path></svg>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiM0MWE1ZWU7fS5jbHMtM3tmaWxsOiMyYjdjZDM7fS5jbHMtNHtmaWxsOiMxODVhYmQ7fS5jbHMtNXtmaWxsOiMxMDNmOTE7fS5jbHMtNntvcGFjaXR5OjAuNTt9LmNscy03e2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPldvcmRfMjR4PC90aXRsZT48ZyBpZD0iV29yZCI+PGcgaWQ9Il8yNCIgZGF0YS1uYW1lPSIyNCI+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNCw3VjJhMSwxLDAsMCwwLTEtMUg3QTEsMSwwLDAsMCw2LDJWN2w5LDJaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjI0IDcgNiA3IDYgMTIgMTUuNSAxNCAyNCAxMiAyNCA3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy00IiBwb2ludHM9IjI0IDEyIDYgMTIgNiAxNyAxNSAxOC41IDI0IDE3IDI0IDEyIi8+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNNiwxN0gyNGEwLDAsMCwwLDEsMCwwdjVhMSwxLDAsMCwxLTEsMUg3YTEsMSwwLDAsMS0xLTFWMTdhMCwwLDAsMCwxLDAsMFoiLz48cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik0xMy44Myw2SDZWMjBoNy42QTEuNSwxLjUsMCwwLDAsMTUsMTguNjVWNy4xN0ExLjE4LDEuMTgsMCwwLDAsMTMuODMsNloiLz48cmVjdCBpZD0iQmFja19QbGF0ZSIgZGF0YS1uYW1lPSJCYWNrIFBsYXRlIiBjbGFzcz0iY2xzLTQiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEuMTciLz48cGF0aCBpZD0iTGV0dGVyIiBjbGFzcz0iY2xzLTciIGQ9Ik0xMC4xNiwxNkg4LjcyTDcsMTAuNDgsNS4yOCwxNkgzLjg0TDIuMjQsOEgzLjY4TDQuOCwxMy42LDYuNDgsOC4xNmgxLjJsMS42LDUuNDRMMTAuNCw4aDEuMzZaIi8+PC9nPjwvZz48L3N2Zz4=" alt="Word" class="" data-clicklog="custom" style="width: 20px; height: 20px;">                <!-- <img src="https://img.icons8.com/fluency/256/microsoft-word-2019.png" style="width: 24px; height: 24px;"> -->
             </button>
             </form>
             <form action="https://www.office.com/launch/excel" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><rect width="16" height="9" x="28" y="15" fill="#21a366"></rect><path fill="#185c37" d="M44,24H12v16c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2V24z"></path><rect width="16" height="9" x="28" y="24" fill="#107c42"></rect><rect width="16" height="9" x="12" y="15" fill="#3fa071"></rect><path fill="#33c481" d="M42,6H28v9h16V8C44,6.895,43.105,6,42,6z"></path><path fill="#21a366" d="M14,6h14v9H12V8C12,6.895,12.895,6,14,6z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="flEJnwg7q~uKUdkX0KCyBa_UECmBSgBOvPT_gr1" x1="4.725" x2="23.055" y1="14.725" y2="33.055" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18884f"></stop><stop offset="1" stop-color="#0b6731"></stop></linearGradient><path fill="url(#flEJnwg7q~uKUdkX0KCyBa_UECmBSgBOvPT_gr1)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M9.807,19h2.386l1.936,3.754L16.175,19h2.229l-3.071,5l3.141,5h-2.351l-2.11-3.93L11.912,29H9.526	l3.193-5.018L9.807,19z"></path></svg>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMyMWEzNjY7fS5jbHMtMntmaWxsOm5vbmU7fS5jbHMtM3tmaWxsOiMxMDdjNDE7fS5jbHMtNHtmaWxsOiMzM2M0ODE7fS5jbHMtNXtmaWxsOiMxODVjMzc7fS5jbHMtNntvcGFjaXR5OjAuNTt9LmNscy03e2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkV4Y2VsXzI0eDwvdGl0bGU+PGcgaWQ9IkV4Y2VsIj48ZyBpZD0iXzI0IiBkYXRhLW5hbWU9IjI0Ij48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNiwxSDdBMSwxLDAsMCwwLDYsMlY3bDEwLDUsNCwxLjVMMjQsMTJWN1oiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIvPjxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iNiIgeT0iNy4wMiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjQuOTgiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0yNCwyVjdIMTZWMWg3QTEsMSwwLDAsMSwyNCwyWiIvPjxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTE2LDEySDZWMjJhMSwxLDAsMCwwLDEsMUgyM2ExLDEsMCwwLDAsMS0xVjE3WiIvPjxwYXRoIGNsYXNzPSJjbHMtNiIgZD0iTTEzLjgzLDZINlYyMGg3LjZBMS41LDEuNSwwLDAsMCwxNSwxOC42NVY3LjE3QTEuMTgsMS4xOCwwLDAsMCwxMy44Myw2WiIvPjxyZWN0IGlkPSJCYWNrX1BsYXRlIiBkYXRhLW5hbWU9IkJhY2sgUGxhdGUiIGNsYXNzPSJjbHMtMyIgeT0iNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iMS4xNyIvPjxwYXRoIGNsYXNzPSJjbHMtNyIgZD0iTTMuNDMsMTYsNiwxMiwzLjY0LDhINS41NWwxLjMsMi41NWE0LjYzLDQuNjMsMCwwLDEsLjI0LjU0aDBhNS43Nyw1Ljc3LDAsMCwxLC4yNy0uNTZMOC43Niw4aDEuNzVMOC4wOCwxMmwyLjQ5LDRIOC43MWwtMS41LTIuOEEyLjE0LDIuMTQsMCwwLDEsNywxMi44M0g3YTEuNTQsMS41NCwwLDAsMS0uMTcuMzZMNS4zLDE2WiIvPjxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iMTYiIHk9IjEyIiB3aWR0aD0iOCIgaGVpZ2h0PSI1Ii8+PC9nPjwvZz48L3N2Zz4=" alt="Excel" class="" data-clicklog="custom" style="width: 20px; height: 20px;">                <!-- <img src="https://img.icons8.com/fluency/256/microsoft-excel-2019.png" style="width: 24px; height: 24px;"> -->
             </button>
             </form>
             <form action="https://www.office.com/launch/powerpoint" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><path fill="#d35230" d="M8,24c0,9.941,8.059,18,18,18s18-8.059,18-18H26H8z"></path><path fill="#ff8f6b" d="M26,6v18h18C44,14.059,35.941,6,26,6z"></path><path fill="#ed6c47" d="M26,6C16.059,6,8,14.059,8,24h18V6z"></path><path d="M26,16.681C26,14.648,24.352,13,22.319,13H11.774C9.417,16.044,8,19.852,8,24	c0,5.116,2.145,9.723,5.571,13h8.747C24.352,37,26,35.352,26,33.319V16.681z" opacity=".05"></path><path d="M22.213,13.333H11.525C9.32,16.321,8,20.002,8,24c0,4.617,1.753,8.814,4.611,12h9.602	c1.724,0,3.121-1.397,3.121-3.121V16.454C25.333,14.731,23.936,13.333,22.213,13.333z" opacity=".07"></path><path d="M22.106,13.667H11.276C9.218,16.593,8,20.151,8,24c0,4.148,1.417,7.956,3.774,11h10.332	c1.414,0,2.56-1.146,2.56-2.56V16.227C24.667,14.813,23.52,13.667,22.106,13.667z" opacity=".09"></path><linearGradient id="N~uyq1CljjkKMh72IFt0Fa_ifP93G7BXUhU_gr1" x1="4.586" x2="22.77" y1="14.586" y2="32.77" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ca4e2a"></stop><stop offset="1" stop-color="#b63016"></stop></linearGradient><path fill="url(#N~uyq1CljjkKMh72IFt0Fa_ifP93G7BXUhU_gr1)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M14.673,19.012H10v10h2.024v-3.521H14.3c1.876,0,3.397-1.521,3.397-3.397v-0.058	C17.697,20.366,16.343,19.012,14.673,19.012z M15.57,22.358c0,0.859-0.697,1.556-1.556,1.556h-1.99v-3.325h1.99	c0.859,0,1.556,0.697,1.556,1.556V22.358z"></path></svg>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiNlZDZjNDc7fS5jbHMtM3tmaWxsOiNmZjhmNmI7fS5jbHMtNHtmaWxsOiNkMzUyMzA7fS5jbHMtNXtvcGFjaXR5OjAuNTt9LmNscy02e29wYWNpdHk6MC4xO30uY2xzLTd7ZmlsbDojYzQzZTFjO30uY2xzLTh7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+UG93ZXJwb2ludF8yNHg8L3RpdGxlPjxnIGlkPSJQb3dlcnBvaW50Ij48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEzLDFBMTEsMTEsMCwwLDAsMiwxMmwxNC44NCwzLjg0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEzLDFBMTEsMTEsMCwwLDEsMjQsMTJMMTguNSwxNSwxMywxMloiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0yLDEyYTExLDExLDAsMCwwLDIyLDBaIi8+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNMTUsMTguNjVWNy4xN0ExLjE4LDEuMTgsMCwwLDAsMTMuODMsNkgzLjhBMTAuOTEsMTAuOTEsMCwwLDAsNS40OSwyMEgxMy42QTEuNSwxLjUsMCwwLDAsMTUsMTguNjVaIi8+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNMTUsMTguNjVWNy4xN0ExLjE4LDEuMTgsMCwwLDAsMTMuODMsNkgzLjhBMTAuOTEsMTAuOTEsMCwwLDAsNS40OSwyMEgxMy42QTEuNSwxLjUsMCwwLDAsMTUsMTguNjVaIi8+PHJlY3QgaWQ9IkJhY2tfUGxhdGUiIGRhdGEtbmFtZT0iQmFjayBQbGF0ZSIgY2xhc3M9ImNscy03IiB5PSI1IiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHJ4PSIxLjE3Ii8+PHBhdGggY2xhc3M9ImNscy04IiBkPSJNNy40LDhhMy4zMiwzLjMyLDAsMCwxLDIuMi42NCwyLjMyLDIuMzIsMCwwLDEsLjc2LDEuODZBMy40MiwzLjQyLDAsMCwxLDEwLDEyLjExYTIuNTQsMi41NCwwLDAsMS0xLjA3LDEsMy43LDMuNywwLDAsMS0xLjYxLjM0SDUuNzhWMTZINC4yMlY4Wk01Ljc4LDEySDcuMTJhMS43OCwxLjc4LDAsMCwwLDEuMTktLjM1LDEuNDYsMS40NiwwLDAsMCwuNC0xLjFjMC0uODgtLjUxLTEuMzItMS41NC0xLjMySDUuNzhaIi8+PC9nPjwvc3ZnPg==" alt="PowerPoint" class="" data-clicklog="custom" style="width: 20px; height: 20px;">
+                <!-- <img src="https://img.icons8.com/fluency/256/microsoft-powerpoint-2019.png" style="width: 24px; height: 24px;"> -->
             </button>
             </form>
             <form action="https://www.office.com/launch/onenote" target="_blank">
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="20" height="20"
-    viewBox="0 0 48 48"
-    style=" fill:#000000;"><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1" x1="12" x2="44" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c965eb"></stop><stop offset="1" stop-color="#c767e5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJaa_yTtdbCPCXVuI_gr1)" d="M42,6H14c-1.105,0-2,0.895-2,2v32c0,1.105,0.895,2,2,2h21V15.003h9V8C44,6.895,43.105,6,42,6z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2" x1="39.5" x2="39.5" y1="42" y2="33.054" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7819a2"></stop><stop offset="1" stop-color="#771aa9"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJab_yTtdbCPCXVuI_gr2)" d="M35,33.054V42h7c1.105,0,2-0.895,2-2v-6.945L35,33.054L35,33.054z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3" x1="35" x2="44" y1="19.504" y2="19.504" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#ac4ad5"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJac_yTtdbCPCXVuI_gr3)" d="M35,15.003h9v9.002h-9V15.003z"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4" x1="35" x2="44" y1="28.53" y2="28.53" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#912fbd"></stop><stop offset="1" stop-color="#9332bf"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJad_yTtdbCPCXVuI_gr4)" d="M35,24.005h9v9.05h-9V24.005z"></path><path d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z" opacity=".05"></path><path d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z" opacity=".07"></path><path d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z" opacity=".09"></path><linearGradient id="e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5" x1="4.586" x2="23.414" y1="14.586" y2="33.414" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8521b0"></stop><stop offset="1" stop-color="#64129a"></stop></linearGradient><path fill="url(#e4t2Q3zu0NW9dfIUK4ZJae_yTtdbCPCXVuI_gr5)" d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z"></path><path fill="#fff" d="M16.501,19v7.393L11.779,19H9.59v10h1.909v-7.45L16.258,29h2.152V19H16.501z"></path></svg>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiNjYTY0ZWE7fS5jbHMtM3tvcGFjaXR5OjAuNzU7fS5jbHMtNHtmaWxsOiM3NzE5YWE7fS5jbHMtNXtmaWxsOiNmZmY7fS5jbHMtNntmaWxsOiNhZTRiZDU7fS5jbHMtN3tmaWxsOiM5MzMyYmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5PbmVOb3RlXzI0eDwvdGl0bGU+PGcgaWQ9Ik9uZU5vdGUiPjxnIGlkPSJfMjQiIGRhdGEtbmFtZT0iMjQiPjxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjMsMUg3QTEsMSwwLDAsMCw2LDJWMjJhMSwxLDAsMCwwLDEsMUgyMC4yM0EzLjc3LDMuNzcsMCwwLDAsMjQsMTkuMjNWMkExLDEsMCwwLDAsMjMsMVoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xMy44Myw2SDZWMjBoNy42QTEuNSwxLjUsMCwwLDAsMTUsMTguNjVWNy4xN0ExLjE4LDEuMTgsMCwwLDAsMTMuODMsNloiLz48cmVjdCBpZD0iQmFja19QbGF0ZSIgZGF0YS1uYW1lPSJCYWNrIFBsYXRlIiBjbGFzcz0iY2xzLTQiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEuMTciLz48cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik0zLjgsOEg1LjVsMi45NCw1LjE2YTUuMzQsNS4zNCwwLDAsMSwuMzMuNzdoMGE2LjU3LDYuNTcsMCwwLDEtLjA1LTEuMDZWOEgxMC4ydjhIOC42MUw1LjU1LDEwLjY4YTUuMTEsNS4xMSwwLDAsMS0uMzEtLjU1aDBhMTAuMjIsMTAuMjIsMCwwLDEsMCwxLjE2VjE2SDMuOFoiLz48cmVjdCBjbGFzcz0iY2xzLTYiIHg9IjE4IiB5PSI1IiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ii8+PHJlY3QgY2xhc3M9ImNscy03IiB4PSIxOCIgeT0iMTEiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0xOCwxN3Y2aDVhMSwxLDAsMCwwLDEtMVYxN1oiLz48L2c+PC9nPjwvc3ZnPg==" alt="OneNote" class="" data-clicklog="custom" style="width: 20px;height: 20px;">
+                <!-- <img src="https://img.icons8.com/fluency/256/microsoft-onenote-2019.png" style="width: 24px; height: 24px;"> -->
             </button>
             </form>
-                </form>
+            <form action="https://www.office.com/launch/onedrive" target="_blank">
+            <button>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiMwMzY0Yjg7fS5jbHMtM3tmaWxsOiMwMDc4ZDQ7fS5jbHMtNHtmaWxsOiMxNDkwZGY7fS5jbHMtNXtmaWxsOiMyOGE4ZWE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5PbmVEcml2ZV8yNHg8L3RpdGxlPjxnIGlkPSJPbmVEcml2ZSI+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNC41LDE1bDQuOTUtNC43NEE3LjUsNy41LDAsMCwwLDUuOTIsOEM2LDgsMTQuNSwxNSwxNC41LDE1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTkuMTUsOC44OWgwQTYsNiwwLDAsMCw2LDhINS45MmE2LDYsMCwwLDAtNC44NCw5LjQzTDguNSwxNi41bDUuNjktNC41OVoiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0xOS40NSwxMC4yNmgtLjMyYTQuODQsNC44NCwwLDAsMC0xLjk0LjRoMGwtMywxLjI2TDE3LjUsMTZsNS45MiwxLjQ0YTQuODgsNC44OCwwLDAsMC00LTcuMThaIi8+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNMS4wOCwxNy40M0E2LDYsMCwwLDAsNiwyMEgxOS4xM2E0Ljg5LDQuODksMCwwLDAsNC4yOS0yLjU2bC05LjIzLTUuNTNaIi8+PC9nPjwvc3ZnPg==" alt="OneDrive" class="" data-clicklog="custom" style="width: 20px; height: 20px;">                <!-- <img src="https://img.icons8.com/fluency/256/microsoft-onedrive-2019.png" style="width: 20px; height: 20px;"> -->
+            </button>
+            </form>
+            <button class="open-icon">
+                <svg width="18" height="18" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="206" height="206" rx="31" stroke="var(--toolbar-icon)" stroke-width="20"/>
+                    <rect x="48" y="48" width="49" height="49" rx="12" stroke="var(--toolbar-icon)" stroke-width="20"/>
+                    <rect x="129" y="48" width="49" height="49" rx="12" stroke="var(--toolbar-icon)" stroke-width="20"/>
+                    <rect x="48" y="129" width="49" height="49" rx="12" stroke="var(--toolbar-icon)" stroke-width="20"/>
+                    <rect x="129" y="129" width="49" height="49" rx="12" stroke="var(--toolbar-icon)" stroke-width="20"/>
+                </svg>
+            </button>
         </aside>
 
         <div class="menu-and-content">
             <header class="header">
-                <button class="menu">
-                    <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
-                </button>
-                <button class="new-msg" aria-label="Add New Subreddit">New message</button>
-                <button class="mark-as-read-btn">
-                    <i class="ms-Icon ms-Icon--Read" aria-hidden="true"></i>
-                    Mark all as read
-                </button>
-                <button class="mark-as-read-btn">
-                    <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
-                    Undo
-                </button>
+                <div class="header-button-bar">
+                    <button class="header-button selected">Home</button>
+                    <button class="header-button">View</button>
+                    <button class="header-button">Help</button>
+                </div>
+                <div class="header-container">
+                    <button class="menu">
+                        <!-- <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i> -->
+                        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.5" x2="16" y2="0.5" stroke="var(--menu-button)"></line>
+                            <line y1="5.5" x2="16" y2="5.5" stroke="var(--menu-button)"></line>
+                            <line y1="10.5" x2="16" y2="10.5" stroke="var(--menu-button)"></line>
+                        </svg>
+                    </button>
+                    <button class="new-msg" aria-label="Add New Subreddit">
+                        <span style="display: flex; align-items: center; height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;">
+                        <!-- <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i> -->
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.99996 0.50007H14C14.8284 0.50007 15.5 1.17164 15.5 2.00007V11.0001C15.5 11.8285 14.8284 12.5001 14 12.5001H1.99996C1.17153 12.5001 0.499959 11.8285 0.499959 11.0001V2.00007C0.499959 1.17164 1.17153 0.50007 1.99996 0.50007Z" stroke="var(--text-color-neg)"/>
+                            <path d="M0.5 3L6.97101 6.88261C7.60437 7.26262 8.39563 7.26262 9.02899 6.88261L15.5 3" stroke="var(--text-color-neg)" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="label-new-email">New email</span>
+                        </span>
+                    </button>
+                    <button class="new-msg-2">
+                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                    </button>
+                    <button class="delete-icon" aria-label="Delete">
+                        <!-- <i class="ms-Icon ms-Icon--Delete" aria-hidden="true"></i> -->
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="3.5" x2="16" y2="3.5" stroke="var(--icon)"></line>
+                            <path d="M6.00003 3.5C5.83336 2.66667 6.00003 1 8.00003 1C10 1 10.1667 2.66667 10 3.5M14 3.5L13 14.5C12.8333 15.1667 12.1 16.5 10.5 16.5C8.9 16.5 7.5 16.5 5.5 16.5C3.5 16.5 3.18602 15.2441 3 14.5L2 3.5" stroke="var(--icon)"></path>
+                            <line x1="6.5" y1="6" x2="6.5" y2="13" stroke="var(--icon)"></line>
+                            <line x1="9.5" y1="6" x2="9.5" y2="13" stroke="var(--icon)"></line>
+                        </svg>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="archive-icon" aria-label="Archive">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="15" height="4" rx="0.5" stroke="#6ba02b"></rect>
+                            <path d="M1.5 4.5H14.5V11C14.5 12.3807 13.3807 13.5 12 13.5H4C2.61929 13.5 1.5 12.3807 1.5 11V4.5Z" stroke="#6ba02b"></path>
+                            <line x1="6.5" y1="7.5" x2="9.5" y2="7.5" stroke="#6ba02b" stroke-linecap="round"></line>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--Archive" aria-hidden="true"></i> -->
+                    </button>
+                    <button class="report-icon" aria-label="Report">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.08616 4.5L7.99995 9.5M7.99999 0.5C10.3639 2.47135 12.5733 2.82816 14.3612 2.82816V8.38968C13.9999 11 12.5 13 7.99996 16C2.99996 13 1.99996 11 1.50003 8.38968C1.46572 6.62923 1.48571 4.11557 1.50003 3C3.39115 2.86246 5.76503 2.51719 7.99999 0.5Z" stroke="#dc5f63" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8.68768 11.7335C8.68768 12.1386 8.37979 12.467 8 12.467C7.62021 12.467 7.31232 12.1386 7.31232 11.7335C7.31232 11.3284 7.62021 11 8 11C8.37979 11 8.68768 11.3284 8.68768 11.7335Z" fill="#dc5f63"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--ShieldAlert" aria-hidden="true"></i> -->
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="sweep-icon" aria-label="Sweep">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 11L11.9096 11.2867C11.9163 11.2771 11.9227 11.2673 11.9287 11.2572L11.5 11ZM11 6.50006L10.6465 6.85363L10.6465 6.85363L11 6.50006ZM6.5 5.49994L6.34191 5.02559C6.3012 5.03916 6.2624 5.05791 6.22647 5.08139L6.5 5.49994ZM1 8.99997L0.73418 8.57648C0.605269 8.6574 0.520233 8.79263 0.503157 8.94387C0.486081 9.09511 0.538823 9.2459 0.646447 9.35352L1 8.99997ZM8 16L7.64645 16.3535C7.75096 16.458 7.89637 16.511 8.04361 16.4981C8.19086 16.4852 8.32485 16.4078 8.40962 16.2867L8 16ZM10.2924 12.7251L10.702 13.0118L10.702 13.0118L10.2924 12.7251ZM10.6464 5.93934C10.4512 6.1346 10.4512 6.45118 10.6464 6.64645C10.8417 6.84171 11.1583 6.84171 11.3536 6.64645L10.6464 5.93934ZM16.6464 1.35355C16.8417 1.15829 16.8417 0.841709 16.6464 0.646447C16.4512 0.451184 16.1346 0.451184 15.9393 0.646447L16.6464 1.35355ZM11.9287 11.2572C12.2417 10.7357 12.4518 9.83355 12.4249 8.91062C12.3979 7.97862 12.1259 6.91883 11.3535 6.14649L10.6465 6.85363C11.1745 7.3816 11.4026 8.15511 11.4254 8.93967C11.4484 9.73329 11.2583 10.431 11.0713 10.7427L11.9287 11.2572ZM11.3535 6.14649C10.0004 4.79348 7.99971 4.47307 6.34191 5.02559L6.65809 5.97428C8.00029 5.52695 9.59226 5.79952 10.6465 6.85363L11.3535 6.14649ZM0.646447 9.35352L7.64645 16.3535L8.35355 15.6464L1.35355 8.64641L0.646447 9.35352ZM6.22647 5.08139L4.37841 6.28911L4.92547 7.12621L6.77353 5.91848L6.22647 5.08139ZM4.38612 6.28418L0.73418 8.57648L1.26582 9.42345L4.91776 7.13115L4.38612 6.28418ZM4.28714 7.0496L9.92763 13.067L10.6572 12.3832L5.01673 6.36572L4.28714 7.0496ZM8.40962 16.2867L10.702 13.0118L9.88281 12.4384L7.59038 15.7132L8.40962 16.2867ZM10.702 13.0118L11.9096 11.2867L11.0904 10.7133L9.88281 12.4384L10.702 13.0118ZM11.3536 6.64645L16.6464 1.35355L15.9393 0.646447L10.6464 5.93934L11.3536 6.64645Z" fill="var(--icon)"/>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--Broom" aria-hidden="true"></i> -->
+                    </button>
+                    <button class="move-icon" aria-label="Move">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 7V4.5C16 3.83333 15.7 2.5 14.5 2.5H7.5M7.5 2.5L6 1H2.5C2 1 1 1.3 1 2.5V12.5C1 13 1.3 14 2.5 14H7.5M7.5 2.5L6 4.5H1" stroke="#3691d8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 16C14.9853 16 17 13.9853 17 11.5C17 9.01472 14.9853 7 12.5 7C10.0147 7 8 9.01472 8 11.5C8 13.9853 10.0147 16 12.5 16ZM14.8535 11.1464L12.8535 9.14645C12.6583 8.95119 12.3417 8.95119 12.1465 9.14645C11.9512 9.34171 11.9512 9.65829 12.1465 9.85355L13.2929 11H10.5C10.2238 11 10 11.2239 10 11.5C10 11.7761 10.2238 12 10.5 12H13.2929L12.1465 13.1464C11.9512 13.3417 11.9512 13.6583 12.1465 13.8536C12.3417 14.0488 12.6583 14.0488 12.8535 13.8536L14.8535 11.8536C15.0488 11.6583 15.0488 11.3417 14.8535 11.1464Z" fill="#3691d8"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--FabricMovetoFolder" aria-hidden="true"></i> -->
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="reply-icon" aria-label="Reply">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 1L1 5.5M1 5.5L5.5 10M1 5.5H8.5C11.5 5.5 15.5 8 15.5 12.5" stroke="#bb68c6" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--Reply" aria-hidden="true"></i> -->
+                    </button>
+                    <button class="replyall-icon" aria-label="ReplyAll">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L3.5 5.5M3.5 5.5L8 10M3.5 5.5H8.5C11.5 5.5 15 8 15 12.5M5 1L0.5 5.5L5 10" stroke="#bb68c6" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--ReplyAll" aria-hidden="true"></i> -->
+                    </button>
+                    <button class="forward-icon" aria-label="Forward">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L15.5 5.5M15.5 5.5L11 10M15.5 5.5H8C5 5.5 1 8 1 12.5" stroke="#3691d8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--ReplyMirrored" aria-hidden="true"></i> -->
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <span class="icon-divider"></span>
+                    <button class="quick-steps-icon" aria-label="Quick Steps" style="padding: 4px;">
+                        <span style="display: flex; align-items: center; height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;">
+                            <svg width="15" height="21" viewBox="0 0 44 58" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px; margin-left: 5px;">
+                                <path d="M31.1514 2H10.5L2.20166 31.9662C1.84885 33.2403 2.80713 34.5 4.12912 34.5H11L6.29479 53.3208C5.79962 55.3015 8.24136 56.6639 9.66685 55.2023L40.6874 23.3964C41.9231 22.1295 41.0254 20 39.2557 20H27.5L33.0325 4.67929C33.5032 3.37565 32.5374 2 31.1514 2Z" stroke="#eba301" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <!-- <i class="ms-Icon ms-Icon--LightningBolt" aria-hidden="true" style="font-size: 20px"></i> -->
+                            <span class="quick-steps-label">Quick Steps</span>
+                        </span>
+                        <button class="chevron-icon" style="border-radius: 0px 4px 4px 0px; border: 1px solid var(--outline); border-left: 0px; margin-right: 4px;">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="read-icon" aria-label="Read / Unread" style="padding: 0px 9px; border-radius: 4px;">
+                        <span style="display: flex; align-items: center; height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;">
+                            <!-- <i class="ms-Icon ms-Icon--Read" aria-hidden="true" style="margin-top: 0px; color: var(--icon)"></i> -->
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.9424 9.29436L8.2074 9.45999L8.4724 9.29436L14.9424 5.25061C15.2754 5.04247 15.7074 5.28189 15.7074 5.67461V10.8704C15.7074 12.2511 14.5881 13.3704 13.2074 13.3704H3.2074C1.82669 13.3704 0.707397 12.2511 0.707397 10.8704V5.67461C0.707397 5.28189 1.13937 5.04247 1.4724 5.25061L7.9424 9.29436Z" stroke="var(--icon)"></path>
+                                <path d="M1 5L8 0.5L15.5 5" stroke="var(--icon)" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="read-unread-label" style="margin-left: 4px; margin-right: 2px;">Read / Unread</span>
+                        </span>
+                    </button>
+                    <button class="categorize-icon" aria-label="Categorize">
+                        <!-- <i class="ms-Icon ms-Icon--Tag" aria-hidden="true"></i> -->
+                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.29202 12.4953L9.55438 5.63657C9.6472 5.54891 9.77003 5.50008 9.89769 5.50008L15.0001 5.50007C15.8285 5.50008 16.5001 6.17166 16.5001 7.0001L16.5 12.569C16.5 12.7065 16.4433 12.838 16.3433 12.9325L9.11608 19.7582C8.51223 20.3285 7.55991 20.2995 6.99184 19.6935L2.22765 14.6118C1.66252 14.009 1.6913 13.0626 2.29202 12.4953Z" stroke="var(--icon)"></path>
+                            <circle cx="13" cy="9" r="1" fill="var(--icon)"></circle>
+                        </svg>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="flag-icon" aria-label="Flag">
+                        <!-- <i class="ms-Icon ms-Icon--Flag" aria-hidden="true"></i> -->
+                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14.5V9.5M1 9.5V0.5H12.3347L9.5 5L12.5 9.5H1Z" stroke="#dc5f62" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="pinned-icon" aria-label="Pinned">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.1708 2.28717L17.7249 5.84133C18.3936 6.50996 18.2842 7.62296 17.4983 8.14873L14.162 10.3806C13.8015 10.6218 13.51 10.9526 13.316 11.3405L11.6733 14.626C11.5206 14.9313 11.1138 14.9973 10.8725 14.756L8.10355 11.987L5.33461 9.21808C5.09329 8.97676 5.15931 8.56994 5.46456 8.41731L8.72706 6.78606C9.13317 6.58301 9.47632 6.27319 9.71966 5.88986L11.8437 2.54391C12.3584 1.73318 13.4917 1.60813 14.1708 2.28717Z" stroke="#3691d8"></path>
+                            <path d="M4 16L8 12" stroke="#3691d8"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--Pinned" aria-hidden="true"></i> -->
+                    </button>
+                    <button class="snooze-icon" aria-label="Snooze">
+                        <!-- <i class="ms-Icon ms-Icon--Clock" aria-hidden="true"></i> -->
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="7.5" stroke="var(--icon)"></circle>
+                            <line x1="7.5" y1="3" x2="7.5" y2="9" stroke="var(--icon)"></line>
+                            <line x1="11" y1="8.5" x2="8" y2="8.5" stroke="var(--icon)"></line>
+                        </svg>
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <button class="assign-icon" aria-label="Assign Policy">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.5 6.5V4.5" stroke="#3691d8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M1.5 4.5V12C1.5 12.5 1.9 13.5 3.5 13.5C5.1 13.5 6.5 13.5 7 13.5" stroke="#3691d8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.5 7.5H9" stroke="#3691d8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <rect x="0.5" y="0.5" width="15" height="4" rx="1.5" stroke="#3691d8"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7449 7.59102C10.4122 7.40077 9.99817 7.6399 9.99658 8.02303L9.98962 9.75903C9.98901 9.93623 9.89453 10.0998 9.74133 10.189L8.24146 11.063C7.9104 11.2559 7.9104 11.7342 8.24146 11.9271L9.74133 12.8011C9.89453 12.8903 9.98901 13.0539 9.98962 13.2311L9.99658 14.9671C9.99805 15.3502 10.4122 15.5893 10.7449 15.3991L12.2517 14.5371C12.4055 14.4491 12.5945 14.4491 12.7483 14.5371L14.2551 15.3991C14.5878 15.5893 15.002 15.3502 15.0034 14.9671L15.0104 13.2311C15.011 13.0539 15.1055 12.8903 15.2587 12.8011L16.7585 11.9271C17.0896 11.7342 17.0896 11.2559 16.7585 11.063L15.2587 10.189C15.1055 10.0998 15.011 9.93623 15.0104 9.75903L15.0034 8.02303C15.002 7.6399 14.5878 7.40077 14.2551 7.59102L12.7483 8.45303C12.5945 8.54102 12.4055 8.54102 12.2517 8.45303L10.7449 7.59102ZM12.5 12.5C13.0522 12.5 13.5 12.0523 13.5 11.5C13.5 10.9477 13.0522 10.5 12.5 10.5C11.9478 10.5 11.5 10.9477 11.5 11.5C11.5 12.0523 11.9478 12.5 12.5 12.5Z" fill="#3691d8"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--Archive" aria-hidden="true"></i> -->
+                        <button class="chevron-icon">
+                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true" style="font-size: 10px"></i>
+                        </button>
+                    </button>
+                    <span class="icon-divider third"></span>
+                    <button class="undo-icon" aria-label="Undo">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 15.5001L11.5 7.99999C12.5 6.99999 13.4998 4.4999 11 2C9 -7.41482e-05 7 0.500091 5.5 1.49999L0.5 5.50011M0.5 5.50011V0.5M0.5 5.50011H5.5" stroke="var(--icon)" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i> -->
+                    </button>
+                    <span class="icon-divider fourth"></span>
+                    <button class="addin-icon" aria-label="Addin">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 14.5H7V14V3C7 2.17157 6.32843 1.5 5.5 1.5H2C1.17157 1.5 0.5 2.17157 0.5 3V13C0.5 13.8284 1.17157 14.5 2 14.5H6.5Z" stroke="#d67540"></path>
+                            <path d="M1 8L0.5 8L0.5 8.5L0.5 13C0.5 13.8284 1.17157 14.5 2 14.5L12 14.5C12.8284 14.5 13.5 13.8284 13.5 13L13.5 9.5C13.5 8.67157 12.8284 8 12 8L1 8Z" stroke="#d67540"></path>
+                            <path d="M11.5 1V6M14 3.5L9 3.49998" stroke="#d67540" stroke-linecap="round"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--AddIn" aria-hidden="true"></i> -->
+                    </button>
+                    <span class="icon-divider fifth"></span>
+                    <button class="more-options">
+                        <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2.00002C3.5 2.82845 2.82843 3.50002 2 3.50002C1.17157 3.50002 0.5 2.82845 0.5 2.00002C0.5 1.1716 1.17157 0.500023 2 0.500023C2.82843 0.500023 3.5 1.1716 3.5 2.00002Z" fill="var(--icon)"></path>
+                            <path d="M8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2Z" fill="var(--icon)"></path>
+                            <path d="M13.5 2C13.5 2.82843 12.8284 3.5 12 3.5C11.1716 3.5 10.5 2.82843 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2Z" fill="var(--icon)"></path>
+                        </svg>
+                        <!-- <i class="ms-Icon ms-Icon--More" aria-hidden="true"></i> -->
+                    </button>
+
+                    <button class="mark-as-read-btn" style="display: none">
+                        <i class="ms-Icon ms-Icon--Read" aria-hidden="true"></i>
+                        Read / Unread
+                    </button>
+                    <!-- <button class="mark-as-read-btn">
+                        <i class="ms-Icon ms-Icon--Undo" aria-hidden="true"></i>
+                        Undo
+                    </button> -->
+                </div>
             </header>
             
             <div class="content-body">
                 <aside class="menu-selector">
                     <button type="button" class="collapsible">
-                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                        Favorites
+                        <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>Favourites
                     </button>
                     <section class="favorites-buttons collapses">
-                        <button class="inbox-button">
-                            <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Inbox
+                        <button class="inbox-button" title="r/popular">
+                            <!-- <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
+                            <!-- <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/inbox.png"> -->
+                            <svg class="fluent-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_180_204" fill="white">
+                                <path d="M0 3C0 1.34315 1.34315 0 3 0H11C12.6569 0 14 1.34315 14 3V11C14 12.6569 12.6569 14 11 14H3C1.34315 14 0 12.6569 0 11V3Z"></path>
+                                </mask>
+                                <path d="M0.5 7C0.223858 7 0 7.22386 0 7.5C0 7.77614 0.223858 8 0.5 8V7ZM4.5 7.5H5C5 7.22386 4.77614 7 4.5 7V7.5ZM9.5 7.5V7C9.22386 7 9 7.22386 9 7.5H9.5ZM13.5 8C13.7761 8 14 7.77614 14 7.5C14 7.22386 13.7761 7 13.5 7V8ZM0.5 8H4.5V7H0.5V8ZM4 7.5C4 7.99668 4.14489 8.73057 4.59423 9.35465C5.06193 10.0042 5.83704 10.5 7 10.5V9.5C6.16296 9.5 5.68807 9.16243 5.40577 8.77035C5.10511 8.35277 5 7.83666 5 7.5H4ZM7 10.5C8.16296 10.5 8.93807 10.0042 9.40577 9.35465C9.85511 8.73057 10 7.99668 10 7.5H9C9 7.83666 8.89489 8.35277 8.59423 8.77035C8.31193 9.16243 7.83704 9.5 7 9.5V10.5ZM9.5 8H13.5V7H9.5V8ZM3 1H11V-1H3V1ZM13 3V11H15V3H13ZM11 13H3V15H11V13ZM1 11V3H-1V11H1ZM3 13C1.89543 13 1 12.1046 1 11H-1C-1 13.2091 0.790861 15 3 15V13ZM13 11C13 12.1046 12.1046 13 11 13V15C13.2091 15 15 13.2091 15 11H13ZM11 1C12.1046 1 13 1.89543 13 3H15C15 0.790861 13.2091 -1 11 -1V1ZM3 -1C0.790861 -1 -1 0.790861 -1 3H1C1 1.89543 1.89543 1 3 1V-1Z" fill="var(--post-color)" mask="url(#path-1-inside-1_180_204)"></path>
+                            </svg>
+                            <span>Inbox</span>
                         </button>
                         <button dir="ltr">
-                            <i class="ms-Icon ms-Icon--Send" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Sent Items
-                        </button>
-                        <button dir="ltr">
-                            <i class="ms-Icon ms-Icon--Edit" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Drafts
+                            <!-- <i class="ms-Icon ms-Icon--Edit" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
+                            <!-- <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/edit.png"> -->
+                            <svg class="fluent-icon" width="20" height="20" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 3.5H11.5" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.5 6.5H8.5M3.5 9.5H5.5" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.53643 13.2124L13.0209 4.72798L16.2053 7.91238L7.71812 16.3995L4.11187 17.4902C3.73287 17.6048 3.37736 17.2544 3.4865 16.8737L4.53643 13.2124ZM13.728 4.02087L15.1151 2.63372C15.7009 2.04793 16.6507 2.04793 17.2365 2.63372L18.2995 3.6968C18.8853 4.28259 18.8853 5.23233 18.2995 5.81812L16.9124 7.20528L13.728 4.02087Z" stroke="var(--post-color)"/>
+                            </svg>
+                            <span>Drafts</span>
                         </button>
                         <button>
-                            <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i>
-                            Deleted Items
+                            <!-- <i class="ms-Icon ms-Icon--Delete" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
+                            <!-- <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/trash.png"> -->
+                            <svg class="fluent-icon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 7V13M9.5 7V13" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.5 3.5H2M15.5 3.5H14M2 3.5L3.5 15C3.5 15.5 3.9 16.5 5.5 16.5C7.1 16.5 9.33333 16.5 10.5 16.5C11.8625 16.5 12.5 15.5 12.5 15C12.5 15 13.5 7 14 3.5M2 3.5H6M14 3.5H10M6 3.5C5.83333 2.66667 6 1 8 1C10 1 10.1667 2.66667 10 3.5M6 3.5H10" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                            <span>Deleted Items</span>
                         </button>
-                        <button style="color: var(--pink); padding-left: 55px">Add Favorite</button>
+                        <button dir="ltr">
+                            <!-- <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/sent.png"> -->
+                            <svg class="fluent-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.0422 9.44464L2.30394 16.51C1.9162 16.7094 1.47681 16.3516 1.5935 15.9315L3.40741 9.40146C3.48038 9.13879 3.48038 8.8612 3.40741 8.59853L1.5935 2.06845C1.47681 1.64835 1.9162 1.29058 2.30393 1.48998L16.0422 8.55535C16.4039 8.7414 16.4039 9.25859 16.0422 9.44464Z" stroke="var(--post-color)"/>
+                                <path d="M4 9H12" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                            <span>Sent Items</span>
+                        </button>
+                        <button style="color: var(--new-msg); padding-left: 55px">Add Favorite</button>
                     </section>
                     
                     <span class="subreddits-section">
                         <button type="button" class="collapsible">
-                            <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                            <i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i>
                             Popular Subreddits</button>
-                        <div class="popular-subreddits">
+                        <div class="popular-subreddits" style="display: none;">
                             <button id="askreddit" class="subreddit button">r/AskReddit</button>
                             <button id="gaming" class="subreddit button">r/gaming</button>
                             <button id="aww" class="subreddit button">r/aww</button>
@@ -247,9 +647,44 @@ crossorigin="anonymous"></script>
                 </aside>
                 
                 <div class="post-sidebar">
-                    <div class="header-buttons">
-                        <button class="post-header-button">Focused</button>
-                        <button class="post-header-button">Other</button>
+                    <div class="header-buttons" style="position: relative">
+                        <!-- <img class="check-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/ok--v1.png"> -->
+                        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9.5L8 11.5L12.5 7" stroke="var(--post-color)" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle cx="9" cy="9" r="8.5" stroke="var(--post-color)"></circle>
+                        </svg>
+                        <span>
+                            <button class="post-header-button selected">Focused</button>
+                            <button class="post-header-button">Other</button>
+                        </span>
+                        <span>
+                            <button class="post-header-button sort" style="font-size: 14px;display: flex;align-items: center;justify-content: center;gap: 8px;" id="popular">
+                                <!-- <img class="sort-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/sort-amount-up.png" width="20" height="20"> -->
+                                <svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0.5H14.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M2.5 4.5H12.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M4.5 8.5H10.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <line x1="18.5" y1="8.5" x2="18.5" y2="0.5" stroke="var(--post-color)" stroke-linecap="round"></line>
+                                    <path d="M18.5 0.5L15.7 3.89999" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M18.5 0.5L21.3 3.90004" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                </svg>                                    
+                                Sort</button>
+                            <div class="sort-menu">
+                                <button class="sort-button hot">Hot</button>
+                                <button class="sort-button new">New</button>
+                                <button class="sort-button rising">Rising</button>
+                                <button class="sort-button top">Top
+                                    <i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="sort-top-menu">
+                                <button class="sort-button today">Today</button>
+                                <button class="sort-button week">This Week</button>
+                                <button class="sort-button month">This Month</button>
+                                <button class="sort-button year">This Year</button>
+                                <button class="sort-button all-time">All Time</button>
+                            </div>
+                        </span>
                         <!-- <div class="dropdown post-header-button" style="float:right;">
                             <button class="dropbtn">Filter</button>
                             <div class="dropdown-content">

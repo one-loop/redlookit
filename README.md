@@ -11,7 +11,7 @@ I'll continue to add new features. Feel free to contribute if you can, there's s
 3. If you want to view posts from a specific subreddit, type the name of the subreddit in the search bar and hit enter. Then click on the subreddit button under the "your subreddits" section in the sidebar which will get the posts from that subreddit and display it in the email area
 4. Clicking on a post will expand it to the right where you can read comments
 
-![Demo Gif](https://github.com/one-loop/one-loop.github.io/blob/main/Assets/Outlook%20Demo.gif?raw=true)
+https://user-images.githubusercontent.com/78092430/217018630-1c2d5dd1-c97e-4a8b-9854-2112a2c8688a.mp4
 
 ## Redlookit
 
@@ -36,13 +36,34 @@ PS: If you have a better name, please let me know 🙏
 - [x] Support for gnomes
 - [x] Outlook Profile Pictures
 - [x] Link routing
-- [ ] Sorting posts by top/new/hot/rising
+- [x] Save added subreddits to local storage
+- [x] Basic mobile responsiveness
+- [x] Updated UI and Icons
+- [x] Save redlookit theme to local storage
+- [x] Contributers to profile menu
+- [x] Live search for top 1000 Subreddits
+- [x] Live search for top 2500 Subreddits
+- [x] Credits/Contributions
+- [x] Subreddit Details
+- [x] Hide subreddit details option
+- [x] Long/Short Email Addresses
+- [x] Save settings to local storage
+- [x] Save Subreddits from description
+- [x] Removing saved subreddits
+- [x] Sorting posts by top/new/hot/rising
+- [x] More color schemes
+- [x] Animated themes
+- [x] SVG icons
+- [x] Corgis, Kitties, Crabs Themes (from Google Colab)
+- [x] Rainbow Theme
+- [x] Ponies Theme (by Rooster Dragon from Desktop Ponies)
+- [x] Clean mobile view
 - [ ] infinite scroll
 - [ ] Resizeable post area
-- [ ] Save added subreddits to cookies
-- [ ] Basic mobile responsiveness
-- [ ] Removing saved subreddits
-
+- [ ] Sorting Comments
+- [ ] Default comment sorting option
+- [ ] Infinite Scroll
+- [ ] Customizable display density (roomy, cozy, compact)
 
 ## 💙 Contributing
 Feel free to fork this repo and push any changes or features you add. This is my first big project, and I'm a total beginner, so I'll gladly accept help from anyone 😃
