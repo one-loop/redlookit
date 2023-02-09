@@ -2421,6 +2421,70 @@ body.theme19 {
     animation: corgis 90s linear infinite;
 }
 
+/* -------------------- */
+
+.theme-button.theme20 {
+    /*compress and crop gif*/
+    /* background-color: var(--background-color);
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/5a4e0c67086875.5b30e171c7ffd.gif);
+    background-size: 80px; */
+    background-color: #f8f8f8;
+    background-image: url(https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme20 .navbar {
+    /*compress and crop gif*/
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-RIGHT.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-LEFT.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-LEFT.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-RIGHT.gif?raw=true);
+    animation: corgis 30s linear infinite reverse;
+    background-repeat: no-repeat;
+    background-size: 140px;
+    /* background-position: 0px 173px; */
+    height: 100%;
+    /* position: relative; */
+    width: 100%;
+}
+
+.theme20 {
+    --navbar-color: #f8f8f8;
+    --new-msg: #e75959;
+    --new-msg-hover: #f95951;
+    /* --placeholder: #ffb400; */
+    --placeholder: #ff8000;
+}
+
+.light.theme20 {
+    --navbar-color: #f0f0f0;
+    /* --navbar-color: #333; */
+    --placeholder: #333;
+}
+
+.theme20 .logo {
+    color: black;
+}
+
+.dark.theme20 nav span button {
+    background: rgba(0, 122, 193,.8);
+}
+
+.light.theme20 nav span button {
+    background: rgba(0, 122, 193,.8);
+}
+
+.light.theme20 nav span button:hover {
+    background: #D77700;
+}
+
+.dark.theme20 nav span button:hover {
+    background: #ffb952;
+}
+
 
 /* -------------------- */
 /* -------------------- */
