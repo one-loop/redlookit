@@ -55,6 +55,11 @@ PS: If you have a better name, please let me know 🙏
 - [x] Rainbow Theme
 - [x] Ponies Theme (by Rooster Dragon from Desktop Ponies)
 - [x] Clean mobile view
+- [x] Customizable display density (roomy, cozy, compact)
+- [x] Fix + simplify theme code
+- [x] Change all icons to sag (prevent weird icon glitch)
+- [x] Mario Theme
+- [x] F1 Car Theme (Inspired by Dylan Nowak on Behance: https://www.behance.net/DylanNowak5)
 - [ ] infinite scroll
 - [ ] Resizeable post area
 - [ ] Sorting Comments
