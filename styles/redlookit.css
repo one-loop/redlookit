@@ -2934,6 +2934,7 @@ h4.post-section-title > a{
 }
 
 .menu-and-content {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     flex: 1;
