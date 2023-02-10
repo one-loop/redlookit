@@ -417,12 +417,6 @@ button {
     font-size: 3em;
 }
 
-.comment * {
-    /* line-height: 20px; */
-    vertical-align: middle;
-    /* margin-left: 25px; */
-}
-
 .post-author {
     font-size: 14px;
     color: var(--border-color);
