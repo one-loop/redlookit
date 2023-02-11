@@ -1272,11 +1272,13 @@ function hideMedia() {
     }
 }
 
-let spoilerTexts = document.querySelectorAll('.md-spoiler-text') as NodeListOf<HTMLElement>;
+let spoilerTexts = document.querySelectorAll('span.md-spoiler-text') as NodeListOf<HTMLElement>;
 if (spoilerTexts) {
     for (let spoilerText of spoilerTexts) {
         spoilerText.addEventListener('click', function () {
-            spoilerText.classList.remove('md-spoiler-text');
+            // spoilerText.classList.remove('md-spoiler-text');
+            spoilerText.classList.add('hello');
+
             // console.log('spoiler text clicked');
         });
     }
@@ -1349,13 +1351,13 @@ function displaySearchResults(results) {
     searchResults.innerHTML = '';
 
     for (let result of results) {
-        searchResults.innerHTML += `<a href="#/r/${result.subreddit}" class="search-result-link"><div class="search-result-item"><img src="${result.icon}" class="search-subreddit-icon"><div class="search-result-item-info"><div class="search-result-subreddit-name">r/${result.subreddit}</div><div class="search-result-subreddit-info">Community • ${numberFormatter(result.members)} members</div></div><button class="add-subreddit-button" id="${result.subreddit}">+</button></div></a>`
+        searchResults.innerHTML += `<a href="#/r/${result.subreddit}" class="search-result-link"><div class="search-result-item"><img src="${result.icon}" class="search-subreddit-icon"><div class="search-result-item-info"><div class="search-result-subreddit-name">r/${result.subreddit}</div><div class="search-result-subreddit-info">Community • ${numberFormatter(result.members)} members</div></div></div></a>`
         // console.log(searchResultItem)
         let searchResultLinks = document.querySelectorAll('.search-result-link');
 
         for (let searchResultLink of searchResultLinks) {
             searchResultLink.addEventListener('click', function() {
-                console.log('clicked on search result box');
+                console.log('outer button clicked');
                 hideSearchResults();
                 // inputBox.value = '';
                 // let yourSubredditsSection = document.querySelector('.your-subreddits')
@@ -1367,8 +1369,9 @@ function displaySearchResults(results) {
 
 let addSubreddit = document.querySelector('.add-subreddit-button') as HTMLElement;
 if (addSubreddit) {
-    addSubreddit.addEventListener('click', () => {
-        console.log('favorite button clicked');
+    addSubreddit.addEventListener('click', (event) => {
+        console.log('inner button clicked');
+        event.stopPropagation();
     })
 }
 
