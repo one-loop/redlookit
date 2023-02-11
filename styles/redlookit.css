@@ -2797,9 +2797,20 @@ body.theme19 {
 }
 
 .settings-header {
+    /* display: flex;
+    flex-direction: row;
+    width: 200px; */
     display: flex;
     flex-direction: row;
-    width: 200px;
+    align-items: center;
+    /* justify-content: center; */
+    width: 293px;
+    height: 70px;
+    position: fixed;
+    background-color: var(--background-color);
+    margin-bottom: 50px;
+    /* position: relative; */
+    top: 48px;
 }
 
 .close-settings {
