@@ -60,8 +60,9 @@
     --new-msg: #0F6CBD;
     --new-msg-hover: #0F548C;
     /* --menu-selector-button: #f3f2f1; */
-    --menu-selector-button: #fafafa;
-    --menu-selector-button-focus: #fafafa;
+    /* --menu-selector-button: #fafafa; */
+    --menu-selector-button: #f0f0f0;
+    --menu-selector-button-focus: #f0f0f0;
     --setting-button-hover: #e1dfdd;
     --post-link-hover: #e6e7ff;
     --menu-buttons-hover: #0C3B5E;
@@ -838,6 +839,13 @@ button .menu {
     cursor: pointer;
 }
 
+.collapses button:active, .subreddit.button:active, .collapses button.selected:active, .subreddit.button.selected:active {
+    background-color: var(--outline);
+}
+
+.collapses button.selected, .subreddit.button.selected {
+    background-color: var(--menu-selector-button-focus);
+}
 
 nav span button {
     display: inline-block;
@@ -903,8 +911,9 @@ header {
 
 .inbox-button, .favorites-buttons button {
     padding-left: 9px;
-    padding-right: 19px;
-    width: auto;
+    /* padding-right: 19px; */
+    /* width: auto; */
+    width: 227px;
 }
 
 .toolbar.icons .ms-icon {
@@ -1379,7 +1388,8 @@ aside.menu-selector {
 }
 
 .menu-selector button {
-    background-color: var(--menu-selector-button);
+    /* background-color: var(--menu-selector-button); */
+    background-color: var(--background-color);
     color: var(--text-color);
     min-height: 40px;
     text-align: left;
@@ -1395,11 +1405,10 @@ aside.menu-selector {
     /* margin: 0px 20px 0px 5px; */
 }
 
-.menu-selector button:focus {
+/* .menu-selector button:focus {
     background-color: var(--menu-selector-button-focus);
-    /* color: var(--pink); */
     color: var(--post-color)
-}
+} */
 
 .favorites {
     /* padding: 15px 75px 15px 55px; */
@@ -1415,7 +1424,7 @@ aside.menu-selector {
 
 .favorites-buttons > button {
     display: block;
-    width: 100% !important;
+    /* width: 100% !important; */
     border-radius: 4px;
 }
 
@@ -1436,15 +1445,16 @@ aside.menu-selector {
 }
 
 .subreddits-section button {
-    width: 100%;
+    /* width: 100%; */
     padding-left: 55px;
-    background-color: var(--menu-selector-button);
+    background-color: var(--background-color);
     color: var(--text-color);
     height: 40px;
     text-align: left;
     /* padding-left: 55px; */
     border: none;
     border-radius: 4px;
+    width: 227px;
 }
 
 .subreddits-section button:hover {
@@ -1463,10 +1473,9 @@ aside.menu-selector {
     content: url(https://img.icons8.com/fluency-systems-regular/256/808080/ok--v1.png)
 }
 
-.subreddits-section button:focus {
+/* .subreddits-section button:focus {
     background-color: var(--menu-selector-button-focus);
-    /* color: var(--pink); */
-}
+} */
 
 .meet-now {
     width: 120px;
@@ -1785,8 +1794,9 @@ h4.settings {
     --new-msg: #0F6CBD;
     --new-msg-hover: #0F548C;
     /* --menu-selector-button: #f3f2f1; */
-    --menu-selector-button: #fafafa;
-    --menu-selector-button-focus: #fafafa;
+    /* --menu-selector-button: #fafafa; */
+    --menu-selector-button: #f0f0f0;
+    --menu-selector-button-focus: #f0f0f0;
     --setting-button-hover: #e1dfdd;
     --post-link-hover: #e6e7ff;
     --menu-buttons-hover: #0C3B5E;
@@ -2815,7 +2825,7 @@ body.theme19 {
 .display-density-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 7px;
+    gap: 13px;
     width: fit-content;
     margin-bottom: 30px;
 }

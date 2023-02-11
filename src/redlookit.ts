@@ -1284,6 +1284,33 @@ if (spoilerTexts) {
     }
 }
 
+let sidebarButtons = document.querySelectorAll('.collapses button, .subreddit.button') as NodeListOf<HTMLElement>;
+for (let sidebarButton of sidebarButtons) {
+    sidebarButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        console.log('clicked');
+        for (let allsidebarButton of sidebarButtons) {
+            allsidebarButton.classList.remove('selected');
+        }
+        sidebarButton.classList.add('selected');
+    })
+}
+
+let pageTitleInputForm = document.querySelector('.page-title-input-form') as HTMLInputElement;
+let pageTitleInputBox = document.querySelector('.page-title-input-box') as HTMLInputElement;
+
+pageTitleInputForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    localStorage.setItem('pageTitle', pageTitleInputBox.value);
+    document.title = pageTitleInputBox.value;
+})
+
+function setPageTitle() {
+    if (localStorage.getItem('pageTitle')) {
+        document.title = localStorage.getItem('pageTitle');
+    }
+}
+
 window.addEventListener("hashchange", () => {
     clearPost();
     const permalink = permalinkFromURLAnchor();
@@ -1392,6 +1419,7 @@ showLongAddress();
 applySavedTheme();
 setDisplayDensity();
 hideMedia();
+setPageTitle();
 
 // Everything set up.
 // We start actually doing things now
