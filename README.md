@@ -52,7 +52,7 @@ PS: If you have a better name, please let me know 🙏
 - [x] Animated themes
 - [x] SVG icons
 - [x] Corgis, Kitties, Crabs Themes (from Google Colab)
-- [x] Rainbow Theme
+- [x] Rainbow Theme, Nyan cat theme, Appa theme (from cas van de pol)
 - [x] Ponies Theme (by Rooster Dragon from Desktop Ponies)
 - [x] Clean mobile view
 - [x] Customizable display density (roomy, cozy, compact)
@@ -60,6 +60,13 @@ PS: If you have a better name, please let me know 🙏
 - [x] Change all icons to sag (prevent weird icon glitch)
 - [x] Mario Theme
 - [x] F1 Car Theme (Inspired by Dylan Nowak on Behance: https://www.behance.net/DylanNowak5)
+- [x] Hide Spoiler text
+- [x] Fix savedSubreddit display bug
+- [x] Hide media option
+- [x] Blurred searchbar
+- [x] Clear post when esc pressed
+- [x] Add subreddit link to posts
+- [x] Update search bar icons to community icons
 - [ ] infinite scroll
 - [ ] Resizeable post area
 - [ ] Sorting Comments
