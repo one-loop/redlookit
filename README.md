@@ -67,12 +67,10 @@ PS: If you have a better name, please let me know 🙏
 - [x] Clear post when esc pressed
 - [x] Add subreddit link to posts
 - [x] Update search bar icons to community icons
-- [ ] infinite scroll
 - [ ] Resizeable post area
 - [ ] Sorting Comments
 - [ ] Default comment sorting option
 - [ ] Infinite Scroll
-- [ ] Customizable display density (roomy, cozy, compact)
 
 ## 💙 Contributing
 Feel free to fork this repo and push any changes or features you add. This is my first big project, and I'm a total beginner, so I'll gladly accept help from anyone 😃
