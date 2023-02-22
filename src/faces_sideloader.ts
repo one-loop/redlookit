@@ -94,10 +94,6 @@ export class HumanFacesSideLoader {
 
                 // If error
                 ppElem.addEventListener('error', () => {
-                    // console.log('There was an error loading this face');
-                    // let ppElem = document.createElement("img");
-                    ppElem.src = `https://avatars.githubusercontent.com/u/78092430?v=4`;
-                    this.faces.push(ppElem)
                     reject();
                 }, {once: true, passive: true} /* (performance options) */);
             }, timeToStart);
