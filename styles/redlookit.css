@@ -418,6 +418,12 @@ button {
     font-size: 3em;
 }
 
+.comment * {
+    /* line-height: 20px; */
+    /* vertical-align: middle; */
+    /* margin-left: 25px; */
+}
+
 .post-author {
     font-size: 14px;
     color: var(--border-color);
@@ -2833,13 +2839,14 @@ body.theme19 {
     flex-direction: row;
     align-items: center;
     /* justify-content: center; */
-    width: 293px;
+    width: 309px;
     height: 70px;
     position: fixed;
     background-color: var(--background-color);
     margin-bottom: 50px;
-    /* position: relative; */
     top: 48px;
+    padding-left: 16px;
+    right: 10px;
 }
 
 .close-settings {
