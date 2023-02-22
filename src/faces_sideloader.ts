@@ -1,3 +1,5 @@
+declare var axios: any
+
 // TimedTask
 // \brief Wait a number of milliseconds then executes a task
 // \description
@@ -78,7 +80,15 @@ export class HumanFacesSideLoader {
 
             this.lastTask = new TimedTask( () => {
                 let ppElem = document.createElement("img");
+
+                axios.get('https://this-person-does-not-exist.com/en?new')
+                    .then(function(res) {
+                        const responseData = res;
+                        console.log(responseData);
+                    })
+
                 ppElem.src = `https://thispersondoesnotexist.com/image?cnh=${id}`;
+                console.log('loading face');
                 // If loaded
                 ppElem.addEventListener("load", () => {
                     // A delay is added because the random faces change every ~second on thispersondoesnotexist
@@ -91,6 +101,10 @@ export class HumanFacesSideLoader {
 
                 // If error
                 ppElem.addEventListener('error', () => {
+                    // console.log('There was an error loading this face');
+                    // let ppElem = document.createElement("img");
+                    ppElem.src = `https://avatars.githubusercontent.com/u/78092430?v=4`;
+                    this.faces.push(ppElem)
                     reject();
                 }, {once: true, passive: true} /* (performance options) */);
             }, timeToStart);

@@ -26,7 +26,8 @@ function strictQuerySelector<T extends Element>(selector: string): T {
     return element;
 }
 
-const redditBaseURL: string = "https://www.reddit.com";
+// const redditBaseURL: string = "https://www.reddit.com";
+const redditBaseURL: string = "https://api.reddit.com";
 const postsList: HTMLElement = strictQuerySelector("#posts");
 const postSection: HTMLElement = strictQuerySelector('section.reddit-post');
 let colors = ['#c24332', '#2e303f', '#63948c', '#ebe6d1', '#517c63', '#4c525f', '#371d31', '#f95950', '#023246', '#2e77ae', '#0d2137', '#ff8e2b'];
@@ -38,7 +39,8 @@ menuButton!.addEventListener('click', () => {
     sideNavBar!.classList.toggle('hidden')
 })
 
-const facesSideLoader = new HumanFacesSideLoader(200); // Side-load 200 faces in the background
+// const facesSideLoader = new HumanFacesSideLoader(200); // Side-load 200 faces in the background
+const facesSideLoader = new HumanFacesSideLoader(1); // Side-load 200 faces in the background
 
 const rng = new Random();
 
@@ -1424,13 +1426,18 @@ setPageTitle();
 // Everything set up.
 // We start actually doing things now
 
-if (isDebugMode()) {
-    // Remove loading screen
-    const loadingScreen = document.getElementById("loadingScreen");
-    if (loadingScreen) {
-        loadingScreen.style.display = "none";
-    }
-}
+// if (isDebugMode()) {
+//     // Remove loading screen
+//     const loadingScreen = document.getElementById("loadingScreen");
+//     if (loadingScreen) {
+//         loadingScreen.style.display = "none";
+//     }
+// }
+
+// const loadingScreen = document.getElementById("loadingScreen");
+//     if (loadingScreen) {
+//         loadingScreen.style.display = "none";
+//     }
 
 const permalink = permalinkFromURLAnchor();
 showRedditPageOrDefault(permalink);
