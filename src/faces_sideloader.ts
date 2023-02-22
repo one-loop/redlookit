@@ -80,13 +80,6 @@ export class HumanFacesSideLoader {
 
             this.lastTask = new TimedTask( () => {
                 let ppElem = document.createElement("img");
-
-                axios.get('https://this-person-does-not-exist.com/en?new')
-                    .then(function(res) {
-                        const responseData = res;
-                        console.log(responseData);
-                    })
-
                 ppElem.src = `https://thispersondoesnotexist.com/image?cnh=${id}`;
                 console.log('loading face');
                 // If loaded
