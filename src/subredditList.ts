@@ -27,7 +27,7 @@ export const subreddits = [
     {
         'subreddit': 'worldnews',
         'members': '30847901',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'todayilearned',
@@ -37,7 +37,7 @@ export const subreddits = [
     {
         'subreddit': 'movies',
         'members': '30324548',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pics',
@@ -152,7 +152,7 @@ export const subreddits = [
     {
         'subreddit': 'Documentaries',
         'members': '20325700',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GetMotivated',
@@ -187,12 +187,12 @@ export const subreddits = [
     {
         'subreddit': 'listentothis',
         'members': '17777178',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OldSchoolCool',
         'members': '17432686',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'history',
@@ -202,7 +202,7 @@ export const subreddits = [
     {
         'subreddit': 'personalfinance',
         'members': '17297382',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nosleep',
@@ -212,7 +212,7 @@ export const subreddits = [
     {
         'subreddit': 'philosophy',
         'members': '17119802',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WritingPrompts',
@@ -307,7 +307,7 @@ export const subreddits = [
     {
         'subreddit': 'relationship_advice',
         'members': '8196845',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nextfuckinglevel',
@@ -317,7 +317,7 @@ export const subreddits = [
     {
         'subreddit': 'travel',
         'members': '7254963',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Whatcouldgowrong',
@@ -352,7 +352,7 @@ export const subreddits = [
     {
         'subreddit': 'WTF',
         'members': '6962349',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'facepalm',
@@ -407,7 +407,7 @@ export const subreddits = [
     {
         'subreddit': 'BeAmazed',
         'members': '5819836',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnimalsBeingJerks',
@@ -417,7 +417,7 @@ export const subreddits = [
     {
         'subreddit': 'Tinder',
         'members': '5666940',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BlackPeopleTwitter',
@@ -452,12 +452,12 @@ export const subreddits = [
     {
         'subreddit': 'EatCheapAndHealthy',
         'members': '5331924',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ContagiousLaughter',
         'members': '5323483',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WatchPeopleDieInside',
@@ -467,7 +467,7 @@ export const subreddits = [
     {
         'subreddit': 'therewasanattempt',
         'members': '5267842',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gardening',
@@ -477,17 +477,17 @@ export const subreddits = [
     {
         'subreddit': 'malefashionadvice',
         'members': '5183797',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'programming',
         'members': '5146236',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Parenting',
         'members': '5137672',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'stocks',
@@ -497,7 +497,7 @@ export const subreddits = [
     {
         'subreddit': 'photography',
         'members': '5103335',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Awwducational',
@@ -512,14 +512,14 @@ export const subreddits = [
     {
         'subreddit': 'AskWomen',
         'members': '4889041',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Bitcoin',
         'members': '4807515',
         'icon': 'https://b.thumbs.redditmedia.com/xZpXRXofgIyDCoy_MQhG1x4MM9FSxtzymap57CtOMLA.png'
     },
-    { 'subreddit': 'confession', 'members': '4785259', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'confession', 'members': '4785259', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'HumansBeingBros',
         'members': '4735335',
@@ -528,7 +528,7 @@ export const subreddits = [
     {
         'subreddit': 'woodworking',
         'members': '4680780',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'YouShouldKnow',
@@ -538,7 +538,7 @@ export const subreddits = [
     {
         'subreddit': 'trippinthroughtime',
         'members': '4637542',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rarepuppers',
@@ -563,7 +563,7 @@ export const subreddits = [
     {
         'subreddit': 'cars',
         'members': '4453489',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'instant_regret',
@@ -573,7 +573,7 @@ export const subreddits = [
     {
         'subreddit': 'PublicFreakout',
         'members': '4429959',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NintendoSwitch',
@@ -598,17 +598,17 @@ export const subreddits = [
     {
         'subreddit': 'starterpacks',
         'members': '4245141',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dating_advice',
         'members': '4206129',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NetflixBestOf',
         'members': '4178579',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'europe',
@@ -618,17 +618,17 @@ export const subreddits = [
     {
         'subreddit': 'drawing',
         'members': '4144681',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'streetwear',
         'members': '4106736',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IdiotsInCars',
         'members': '4072717',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'woahdude',
@@ -658,7 +658,7 @@ export const subreddits = [
     {
         'subreddit': 'HomeImprovement',
         'members': '3948009',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'reactiongifs',
@@ -668,7 +668,7 @@ export const subreddits = [
     {
         'subreddit': 'KidsAreFuckingStupid',
         'members': '3923289',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Eyebleach',
@@ -693,7 +693,7 @@ export const subreddits = [
     {
         'subreddit': 'nonononoyes',
         'members': '3853470',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'boardgames',
@@ -703,7 +703,7 @@ export const subreddits = [
     {
         'subreddit': 'scifi',
         'members': '3832145',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'iphone',
@@ -715,7 +715,7 @@ export const subreddits = [
         'members': '3778109',
         'icon': 'https://b.thumbs.redditmedia.com/0a-C1jMHPm4N8eT0NNi1hQjGrgnlg-qvshxD8Th8HAI.png'
     },
-    { 'subreddit': 'battlestations', 'members': '3752067', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'battlestations', 'members': '3752067', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'blackmagicfuckery',
         'members': '3703754',
@@ -729,14 +729,14 @@ export const subreddits = [
     {
         'subreddit': 'learnprogramming',
         'members': '3683432',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'foodhacks',
         'members': '3651692',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
-    { 'subreddit': 'Cooking', 'members': '3596140', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'Cooking', 'members': '3596140', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'PewdiepieSubmissions',
         'members': '3581371',
@@ -745,12 +745,12 @@ export const subreddits = [
     {
         'subreddit': 'backpacking',
         'members': '3515379',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'slowcooking',
         'members': '3499636',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nfl',
@@ -770,7 +770,7 @@ export const subreddits = [
     {
         'subreddit': 'bodyweightfitness',
         'members': '3388786',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HolUp',
@@ -785,7 +785,7 @@ export const subreddits = [
     {
         'subreddit': 'MaliciousCompliance',
         'members': '3337889',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GifRecipes',
@@ -815,17 +815,17 @@ export const subreddits = [
     {
         'subreddit': 'socialskills',
         'members': '3299783',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HistoryPorn',
         'members': '3298888',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'unpopularopinion',
         'members': '3293752',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NoStupidQuestions',
@@ -855,7 +855,7 @@ export const subreddits = [
     {
         'subreddit': 'femalefashionadvice',
         'members': '3184893',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'howto',
@@ -870,12 +870,12 @@ export const subreddits = [
     {
         'subreddit': 'hardware',
         'members': '3155239',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CozyPlaces',
         'members': '3144001',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'camping',
@@ -890,17 +890,17 @@ export const subreddits = [
     {
         'subreddit': 'coolguides',
         'members': '3121897',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'raspberry_pi',
         'members': '3121093',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Economics',
         'members': '3108116',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OutOfTheLoop',
@@ -910,7 +910,7 @@ export const subreddits = [
     {
         'subreddit': 'nutrition',
         'members': '3084464',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blursedimages',
@@ -925,12 +925,12 @@ export const subreddits = [
     {
         'subreddit': 'DeepIntoYouTube',
         'members': '3042974',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DiWHY',
         'members': '3030198',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'marvelstudios',
@@ -945,12 +945,12 @@ export const subreddits = [
     {
         'subreddit': 'offmychest',
         'members': '2994349',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'frugalmalefashion',
         'members': '2986782',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Fantasy',
@@ -960,7 +960,7 @@ export const subreddits = [
     {
         'subreddit': 'biology',
         'members': '2974164',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DnD',
@@ -970,7 +970,7 @@ export const subreddits = [
     {
         'subreddit': 'ArtefactPorn',
         'members': '2964369',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'assholedesign',
@@ -980,7 +980,7 @@ export const subreddits = [
     {
         'subreddit': 'yesyesyesyesno',
         'members': '2942118',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'trashy',
@@ -995,7 +995,7 @@ export const subreddits = [
     {
         'subreddit': 'HealthyFood',
         'members': '2910641',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'teenagers',
@@ -1005,7 +1005,7 @@ export const subreddits = [
     {
         'subreddit': 'humor',
         'members': '2894326',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PS5',
@@ -1020,7 +1020,7 @@ export const subreddits = [
     {
         'subreddit': 'MealPrepSunday',
         'members': '2871342',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'comicbooks',
@@ -1045,7 +1045,7 @@ export const subreddits = [
     {
         'subreddit': 'WhitePeopleTwitter',
         'members': '2795157',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'educationalgifs',
@@ -1060,7 +1060,7 @@ export const subreddits = [
     {
         'subreddit': 'ksi',
         'members': '2775307',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'atheism',
@@ -1070,12 +1070,12 @@ export const subreddits = [
     {
         'subreddit': 'Filmmakers',
         'members': '2767245',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Frugal',
         'members': '2738766',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bodybuilding',
@@ -1130,32 +1130,32 @@ export const subreddits = [
     {
         'subreddit': 'writing',
         'members': '2616126',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DoesAnybodyElse',
         'members': '2612586',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nevertellmetheodds',
         'members': '2611166',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Survival',
         'members': '2603598',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hacking',
         'members': '2602477',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StockMarket',
         'members': '2599163',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'astrophotography',
@@ -1170,7 +1170,7 @@ export const subreddits = [
     {
         'subreddit': 'MachineLearning',
         'members': '2579882',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'marvelmemes',
@@ -1180,7 +1180,7 @@ export const subreddits = [
     {
         'subreddit': 'suggestmeabook',
         'members': '2569017',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'oddlyterrifying',
@@ -1190,7 +1190,7 @@ export const subreddits = [
     {
         'subreddit': 'Perfectfit',
         'members': '2540589',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CampingandHiking',
@@ -1200,12 +1200,12 @@ export const subreddits = [
     {
         'subreddit': 'somethingimade',
         'members': '2538007',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'solotravel',
         'members': '2536150',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'electronicmusic',
@@ -1215,17 +1215,17 @@ export const subreddits = [
     {
         'subreddit': 'dogs',
         'members': '2487314',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'homestead',
         'members': '2478104',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ThriftStoreHauls',
         'members': '2461817',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'indieheads',
@@ -1245,12 +1245,12 @@ export const subreddits = [
     {
         'subreddit': 'podcasts',
         'members': '2440228',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WinStupidPrizes',
         'members': '2439369',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'maybemaybemaybe',
@@ -1265,7 +1265,7 @@ export const subreddits = [
     {
         'subreddit': 'crafts',
         'members': '2422281',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ChoosingBeggars',
@@ -1280,7 +1280,7 @@ export const subreddits = [
     {
         'subreddit': 'TrollYChromosome',
         'members': '2388624',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Android',
@@ -1295,7 +1295,7 @@ export const subreddits = [
     {
         'subreddit': 'Design',
         'members': '2351902',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PrequelMemes',
@@ -1305,22 +1305,22 @@ export const subreddits = [
     {
         'subreddit': 'sex',
         'members': '2327330',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'technicallythetruth',
         'members': '2320593',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'instantkarma',
         'members': '2318790',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'running',
         'members': '2316192',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wow',
@@ -1350,7 +1350,7 @@ export const subreddits = [
     {
         'subreddit': 'legaladvice',
         'members': '2303012',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'javascript',
@@ -1375,7 +1375,7 @@ export const subreddits = [
     {
         'subreddit': 'progresspics',
         'members': '2265809',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'baseball',
@@ -1400,17 +1400,17 @@ export const subreddits = [
     {
         'subreddit': 'FreeEBOOKS',
         'members': '2236331',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hiphopheads',
         'members': '2235422',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'meme',
         'members': '2215279',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'apexlegends',
@@ -1420,7 +1420,7 @@ export const subreddits = [
     {
         'subreddit': 'GamePhysics',
         'members': '2195870',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MapPorn',
@@ -1430,7 +1430,7 @@ export const subreddits = [
     {
         'subreddit': 'WhatsWrongWithYourDog',
         'members': '2184873',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'reallifedoodles',
@@ -1465,12 +1465,12 @@ export const subreddits = [
     {
         'subreddit': 'tipofmytongue',
         'members': '2163359',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'investing',
         'members': '2162078',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Roadcam',
@@ -1490,7 +1490,7 @@ export const subreddits = [
     {
         'subreddit': 'options',
         'members': '982445',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'compsci',
@@ -1500,7 +1500,7 @@ export const subreddits = [
     {
         'subreddit': 'Physics',
         'members': '2142154',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'teslamotors',
@@ -1510,7 +1510,7 @@ export const subreddits = [
     {
         'subreddit': 'shittyfoodporn',
         'members': '2133731',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'insanepeoplefacebook',
@@ -1520,12 +1520,12 @@ export const subreddits = [
     {
         'subreddit': 'homeautomation',
         'members': '2102088',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ArtisanVideos',
         'members': '2098759',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'google',
@@ -1535,7 +1535,7 @@ export const subreddits = [
     {
         'subreddit': 'comics',
         'members': '2090479',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CasualConversation',
@@ -1590,37 +1590,37 @@ export const subreddits = [
     {
         'subreddit': 'JusticeServed',
         'members': '2001175',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mealtimevideos',
         'members': '1988414',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'roadtrip',
         'members': '1980648',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ofcoursethatsathing',
         'members': '1979315',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'literature',
         'members': '1978647',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'urbanexploration',
         'members': '1967072',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'digitalnomad',
         'members': '1965267',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EDM',
@@ -1630,22 +1630,22 @@ export const subreddits = [
     {
         'subreddit': 'Entrepreneur',
         'members': '1958880',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IWantOut',
         'members': '1957081',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'vandwellers',
         'members': '1953281',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AbandonedPorn',
         'members': '1952002',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hmmm',
@@ -1665,7 +1665,7 @@ export const subreddits = [
     {
         'subreddit': 'Justrolledintotheshop',
         'members': '1932748',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'audiophile',
@@ -1695,7 +1695,7 @@ export const subreddits = [
     {
         'subreddit': 'FanTheories',
         'members': '1902880',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnimeART',
@@ -1715,7 +1715,7 @@ export const subreddits = [
     {
         'subreddit': 'conspiracy',
         'members': '1894199',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pennystocks',
@@ -1735,7 +1735,7 @@ export const subreddits = [
     {
         'subreddit': 'CryptoMoonShots',
         'members': '1867281',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'JUSTNOMIL',
@@ -1750,12 +1750,12 @@ export const subreddits = [
     {
         'subreddit': 'Poetry',
         'members': '1849883',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'techsupport',
         'members': '1849620',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wallpaper',
@@ -1795,7 +1795,7 @@ export const subreddits = [
     {
         'subreddit': 'Shoestring',
         'members': '1801258',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'chemistry',
@@ -1805,12 +1805,12 @@ export const subreddits = [
     {
         'subreddit': 'ExposurePorn',
         'members': '1797148',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LivestreamFail',
         'members': '1795960',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'spacex',
@@ -1820,12 +1820,12 @@ export const subreddits = [
     {
         'subreddit': 'Cinemagraphs',
         'members': '1786071',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'financialindependence',
         'members': '1785690',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TrueCrime',
@@ -1840,12 +1840,12 @@ export const subreddits = [
     {
         'subreddit': 'TooAfraidToAsk',
         'members': '1770364',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CatastrophicFailure',
         'members': '1758148',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ThatsInsane',
@@ -1870,7 +1870,7 @@ export const subreddits = [
     {
         'subreddit': 'MangaCollectors',
         'members': '1746413',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fightporn',
@@ -1880,7 +1880,7 @@ export const subreddits = [
     {
         'subreddit': 'motorcycles',
         'members': '1743100',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Steam',
@@ -1890,7 +1890,7 @@ export const subreddits = [
     {
         'subreddit': 'quityourbullshit',
         'members': '1730786',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'funnysigns',
@@ -1920,7 +1920,7 @@ export const subreddits = [
     {
         'subreddit': 'powerwashingporn',
         'members': '1712303',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AsianBeauty',
@@ -1930,7 +1930,7 @@ export const subreddits = [
     {
         'subreddit': '3amjokes',
         'members': '1704842',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'comedyheaven',
@@ -1940,7 +1940,7 @@ export const subreddits = [
     {
         'subreddit': 'finance',
         'members': '1697998',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'confusing_perspective',
@@ -1950,12 +1950,12 @@ export const subreddits = [
     {
         'subreddit': '3Dprinting',
         'members': '1682503',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'carporn',
         'members': '1678131',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ShittyLifeProTips',
@@ -1965,7 +1965,7 @@ export const subreddits = [
     {
         'subreddit': 'TIHI',
         'members': '1676160',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'breakingbad',
@@ -2000,12 +2000,12 @@ export const subreddits = [
     {
         'subreddit': 'realestateinvesting',
         'members': '1640396',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FunnyAnimals',
         'members': '1634781',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ethereum',
@@ -2020,7 +2020,7 @@ export const subreddits = [
     {
         'subreddit': 'algotrading',
         'members': '1621034',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'houseplants',
@@ -2030,7 +2030,7 @@ export const subreddits = [
     {
         'subreddit': 'povertyfinance',
         'members': '1615999',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'iamverysmart',
@@ -2040,7 +2040,7 @@ export const subreddits = [
     {
         'subreddit': 'SkincareAddiction',
         'members': '1606826',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'harrypotter',
@@ -2050,12 +2050,12 @@ export const subreddits = [
     {
         'subreddit': 'Guitar',
         'members': '1598860',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Screenwriting',
         'members': '1594300',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ProRevenge',
@@ -2065,7 +2065,7 @@ export const subreddits = [
     {
         'subreddit': 'specializedtools',
         'members': '1590218',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DesignPorn',
@@ -2075,19 +2075,19 @@ export const subreddits = [
     {
         'subreddit': 'ADHD',
         'members': '1584913',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'photocritique',
         'members': '1583419',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'strength_training',
         'members': '1581951',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
-    { 'subreddit': 'PerfectTiming', 'members': '1579070', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'PerfectTiming', 'members': '1579070', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'VALORANT',
         'members': '1574534',
@@ -2096,7 +2096,7 @@ export const subreddits = [
     {
         'subreddit': 'Makeup',
         'members': '1572889',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'thewalkingdead',
@@ -2116,12 +2116,12 @@ export const subreddits = [
     {
         'subreddit': 'malelivingspace',
         'members': '1564131',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MachinePorn',
         'members': '1562263',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hockey',
@@ -2136,7 +2136,7 @@ export const subreddits = [
     {
         'subreddit': 'netflix',
         'members': '1549687',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Amd',
@@ -2146,17 +2146,17 @@ export const subreddits = [
     {
         'subreddit': 'niceguys',
         'members': '1538996',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'holdmybeer',
         'members': '1534337',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TikTokCringe',
         'members': '1527926',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'webdev',
@@ -2166,7 +2166,7 @@ export const subreddits = [
     {
         'subreddit': 'cringepics',
         'members': '1513330',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cursedimages',
@@ -2176,7 +2176,7 @@ export const subreddits = [
     {
         'subreddit': 'snowboarding',
         'members': '1511714',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rpg',
@@ -2201,7 +2201,7 @@ export const subreddits = [
     {
         'subreddit': 'childfree',
         'members': '1491031',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'india',
@@ -2216,7 +2216,7 @@ export const subreddits = [
     {
         'subreddit': 'SpecArt',
         'members': '1481652',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'careerguidance',
@@ -2236,12 +2236,12 @@ export const subreddits = [
     {
         'subreddit': 'Boxing',
         'members': '1477611',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnimalsBeingGeniuses',
         'members': '1474836',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FuckYouKaren',
@@ -2251,22 +2251,22 @@ export const subreddits = [
     {
         'subreddit': 'Fishing',
         'members': '1466183',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'selfimprovement',
         'members': '1447689',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'productivity',
         'members': '1445385',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'awfuleverything',
         'members': '1443800',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'XboxSeriesX',
@@ -2276,7 +2276,7 @@ export const subreddits = [
     {
         'subreddit': 'UnethicalLifeProTips',
         'members': '1431379',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'skyrim',
@@ -2291,7 +2291,7 @@ export const subreddits = [
     {
         'subreddit': 'insaneparents',
         'members': '1423140',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Health',
@@ -2321,12 +2321,12 @@ export const subreddits = [
     {
         'subreddit': 'classicalmusic',
         'members': '1397356',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'clevercomebacks',
         'members': '1391345',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'greentext',
@@ -2341,7 +2341,7 @@ export const subreddits = [
     {
         'subreddit': 'Baking',
         'members': '1385090',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ShouldIbuythisgame',
@@ -2356,32 +2356,32 @@ export const subreddits = [
     {
         'subreddit': 'modernwarfare',
         'members': '1379038',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Zoomies',
         'members': '1378339',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'truegaming',
         'members': '1374983',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cookingforbeginners',
         'members': '1367943',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ArchitecturePorn',
         'members': '1359938',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gtaonline',
         'members': '1358290',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Colorization',
@@ -2391,17 +2391,17 @@ export const subreddits = [
     {
         'subreddit': 'womensstreetwear',
         'members': '1355403',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CODWarzone',
         'members': '1355289',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TattooDesigns',
         'members': '1347938',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cringe',
@@ -2426,12 +2426,12 @@ export const subreddits = [
     {
         'subreddit': 'halo',
         'members': '1323024',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Meditation',
         'members': '1321024',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CryptoMarkets',
@@ -2446,7 +2446,7 @@ export const subreddits = [
     {
         'subreddit': 'mashups',
         'members': '1312456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Twitch',
@@ -2456,27 +2456,27 @@ export const subreddits = [
     {
         'subreddit': 'CombatFootage',
         'members': '1308270',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Skincare_Addiction',
         'members': '1307817',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'yoga',
         'members': '1306464',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'oddlyspecific',
         'members': '1304373',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'vinyl',
         'members': '1298341',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LofiHipHop',
@@ -2491,7 +2491,7 @@ export const subreddits = [
     {
         'subreddit': 'privacy',
         'members': '1289877',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'brasil',
@@ -2511,7 +2511,7 @@ export const subreddits = [
     {
         'subreddit': 'sadcringe',
         'members': '1287702',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nvidia',
@@ -2521,17 +2521,17 @@ export const subreddits = [
     {
         'subreddit': 'getdisciplined',
         'members': '1282930',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Daytrading',
         'members': '1280578',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'iamverybadass',
         'members': '1267838',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tumblr',
@@ -2551,7 +2551,7 @@ export const subreddits = [
     {
         'subreddit': 'thalassophobia',
         'members': '1254554',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IWantToLearn',
@@ -2566,12 +2566,12 @@ export const subreddits = [
     {
         'subreddit': 'theydidthemath',
         'members': '1251708',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'suspiciouslyspecific',
         'members': '1247568',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheLastAirbender',
@@ -2586,7 +2586,7 @@ export const subreddits = [
     {
         'subreddit': 'climbing',
         'members': '1232404',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'self',
@@ -2606,7 +2606,7 @@ export const subreddits = [
     {
         'subreddit': 'TravelHacks',
         'members': '1219125',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WhyWereTheyFilming',
@@ -2616,7 +2616,7 @@ export const subreddits = [
     {
         'subreddit': 'tiktokthots',
         'members': '1216065',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'freefolk',
@@ -2636,12 +2636,12 @@ export const subreddits = [
     {
         'subreddit': 'PixelArt',
         'members': '1206937',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BeforeNAfterAdoption',
         'members': '1206148',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'vegan',
@@ -2651,27 +2651,27 @@ export const subreddits = [
     {
         'subreddit': 'unitedkingdom',
         'members': '1194503',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PraiseTheCameraMan',
         'members': '1194192',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UrbanHell',
         'members': '1191757',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '15minutefood',
         'members': '1190142',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PornhubComments',
         'members': '1189925',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BoneAppleTea',
@@ -2686,7 +2686,7 @@ export const subreddits = [
     {
         'subreddit': 'Simulated',
         'members': '1176964',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MechanicalKeyboards',
@@ -2696,7 +2696,7 @@ export const subreddits = [
     {
         'subreddit': 'CreditCards',
         'members': '1166363',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DotA2',
@@ -2711,12 +2711,12 @@ export const subreddits = [
     {
         'subreddit': 'Homebrewing',
         'members': '1159152',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cosplaygirls',
         'members': '1158326',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HydroHomies',
@@ -2726,12 +2726,12 @@ export const subreddits = [
     {
         'subreddit': 'AmateurRoomPorn',
         'members': '1156188',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'jobs',
         'members': '1155632',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TwoSentenceHorror',
@@ -2741,22 +2741,22 @@ export const subreddits = [
     {
         'subreddit': 'birdswitharms',
         'members': '1151195',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LetsNotMeet',
         'members': '1150337',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MechanicAdvice',
         'members': '1147810',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'architecture',
         'members': '1147147',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Terraria',
@@ -2776,7 +2776,7 @@ export const subreddits = [
     {
         'subreddit': 'Hair',
         'members': '1137695',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ShitPostCrusaders',
@@ -2796,7 +2796,7 @@ export const subreddits = [
     {
         'subreddit': 'IdiotsFightingThings',
         'members': '1134859',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'startups',
@@ -2811,17 +2811,17 @@ export const subreddits = [
     {
         'subreddit': 'aviation',
         'members': '1124313',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mildlysatisfying',
         'members': '1124303',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CallOfDuty',
         'members': '1121924',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beermoney',
@@ -2831,32 +2831,32 @@ export const subreddits = [
     {
         'subreddit': 'MostBeautiful',
         'members': '1118334',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'curlyhair',
         'members': '1116821',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PersonalFinanceCanada',
         'members': '1116295',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FrugalFemaleFashion',
         'members': '1116013',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'painting',
         'members': '1115456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnimeFunny',
         'members': '1115372',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'france',
@@ -2866,12 +2866,12 @@ export const subreddits = [
     {
         'subreddit': 'EngineeringPorn',
         'members': '1114687',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskAcademia',
         'members': '1113088',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fakehistoryporn',
@@ -2881,12 +2881,12 @@ export const subreddits = [
     {
         'subreddit': 'Coffee',
         'members': '1108923',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'minipainting',
         'members': '1107357',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Naruto',
@@ -2901,12 +2901,12 @@ export const subreddits = [
     {
         'subreddit': 'Python',
         'members': '1097519',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nostalgia',
         'members': '1097371',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FUCKYOUINPARTICULAR',
@@ -2926,17 +2926,17 @@ export const subreddits = [
     {
         'subreddit': 'Paranormal',
         'members': '1094272',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'worldbuilding',
         'members': '1091508',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GetStudying',
         'members': '1090910',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dndmemes',
@@ -2976,12 +2976,12 @@ export const subreddits = [
     {
         'subreddit': 'bicycling',
         'members': '1078712',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'shittyaskscience',
         'members': '1075392',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'oldpeoplefacebook',
@@ -2996,17 +2996,17 @@ export const subreddits = [
     {
         'subreddit': 'Catswithjobs',
         'members': '1070892',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MUAontheCheap',
         'members': '1069398',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'datingoverthirty',
         'members': '1066416',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'awesome',
@@ -3016,12 +3016,12 @@ export const subreddits = [
     {
         'subreddit': 'budgetfood',
         'members': '1064663',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'business',
         'members': '1063470',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Mindfulness',
@@ -3036,12 +3036,12 @@ export const subreddits = [
     {
         'subreddit': 'NoFap',
         'members': '1062099',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DigitalPainting',
         'members': '1059929',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wiiu',
@@ -3066,7 +3066,7 @@ export const subreddits = [
     {
         'subreddit': 'tippytaps',
         'members': '1054295',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cyberpunkgame',
@@ -3086,7 +3086,7 @@ export const subreddits = [
     {
         'subreddit': 'copypasta',
         'members': '1046837',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'discordapp',
@@ -3096,37 +3096,37 @@ export const subreddits = [
     {
         'subreddit': 'mangadeals',
         'members': '1041841',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whatsthisplant',
         'members': '1041682',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'im14andthisisdeep',
         'members': '1041542',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'graphic_design',
         'members': '1039537',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'confessions',
         'members': '1039072',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blessedimages',
         'members': '1038354',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IllegallySmolCats',
         'members': '1029940',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'okbuddyretard',
@@ -3141,12 +3141,12 @@ export const subreddits = [
     {
         'subreddit': 'Conservative',
         'members': '1025210',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'smallbusiness',
         'members': '1025100',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'boxoffice',
@@ -3156,7 +3156,7 @@ export const subreddits = [
     {
         'subreddit': 'BeautyGuruChatter',
         'members': '1021072',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OnePunchMan',
@@ -3186,7 +3186,7 @@ export const subreddits = [
     {
         'subreddit': 'Autos',
         'members': '1010548',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ComedyCemetery',
@@ -3206,7 +3206,7 @@ export const subreddits = [
     {
         'subreddit': 'AskEconomics',
         'members': '1006522',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'westworld',
@@ -3216,22 +3216,22 @@ export const subreddits = [
     {
         'subreddit': 'crappyoffbrands',
         'members': '1004355',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ArtPorn',
         'members': '1003515',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wholesomegifs',
         'members': '1002990',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gamedev',
         'members': '1002899',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'disney',
@@ -3251,7 +3251,7 @@ export const subreddits = [
     {
         'subreddit': 'TheDepthsBelow',
         'members': '992974',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lgbt',
@@ -3266,7 +3266,7 @@ export const subreddits = [
     {
         'subreddit': 'ThingsCutInHalfPorn',
         'members': '987992',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NotMyJob',
@@ -3276,17 +3276,17 @@ export const subreddits = [
     {
         'subreddit': 'ApplyingToCollege',
         'members': '986862',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'xxfitness',
         'members': '986553',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Moviesinthemaking',
         'members': '984370',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wholesomeanimemes',
@@ -3296,7 +3296,7 @@ export const subreddits = [
     {
         'subreddit': 'options',
         'members': '982445',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Glitch_in_the_Matrix',
@@ -3306,7 +3306,7 @@ export const subreddits = [
     {
         'subreddit': 'CatsWithDogs',
         'members': '977915',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'economy',
@@ -3326,7 +3326,7 @@ export const subreddits = [
     {
         'subreddit': 'cosplayers',
         'members': '976041',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ihadastroke',
@@ -3336,7 +3336,7 @@ export const subreddits = [
     {
         'subreddit': 'yesyesyesno',
         'members': '967462',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cscareerquestions',
@@ -3346,7 +3346,7 @@ export const subreddits = [
     {
         'subreddit': 'confidentlyincorrect',
         'members': '959189',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskAnAmerican',
@@ -3371,7 +3371,7 @@ export const subreddits = [
     {
         'subreddit': 'Satisfyingasfuck',
         'members': '953214',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DecidingToBeBetter',
@@ -3386,7 +3386,7 @@ export const subreddits = [
     {
         'subreddit': 'tennis',
         'members': '946831',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DCcomics',
@@ -3411,12 +3411,12 @@ export const subreddits = [
     {
         'subreddit': 'MovieSuggestions',
         'members': '940830',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ThatLookedExpensive',
         'members': '940804',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dankvideos',
@@ -3426,27 +3426,27 @@ export const subreddits = [
     {
         'subreddit': 'sewing',
         'members': '940657',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'depression',
         'members': '937336',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EconomicHistory',
         'members': '936420',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dogpictures',
         'members': '936276',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'youngpeopleyoutube',
         'members': '933010',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'headphones',
@@ -3456,12 +3456,12 @@ export const subreddits = [
     {
         'subreddit': 'watchpeoplesurvive',
         'members': '929850',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LeopardsAteMyFace',
         'members': '927935',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blender',
@@ -3481,7 +3481,7 @@ export const subreddits = [
     {
         'subreddit': 'Handwriting',
         'members': '920869',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NASCAR',
@@ -3491,12 +3491,12 @@ export const subreddits = [
     {
         'subreddit': 'antimeme',
         'members': '920495',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StupidFood',
         'members': '916971',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WeWantPlates',
@@ -3511,7 +3511,7 @@ export const subreddits = [
     {
         'subreddit': '30PlusSkinCare',
         'members': '913220',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'de',
@@ -3521,7 +3521,7 @@ export const subreddits = [
     {
         'subreddit': 'catpics',
         'members': '906147',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'homegym',
@@ -3536,12 +3536,12 @@ export const subreddits = [
     {
         'subreddit': 'PanPorn',
         'members': '904781',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hometheater',
         'members': '902183',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UKPersonalFinance',
@@ -3556,17 +3556,17 @@ export const subreddits = [
     {
         'subreddit': 'AnimeMusicVideos',
         'members': '898008',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'casualiama',
         'members': '895962',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'buildapcsales',
         'members': '895191',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Memes_Of_The_Dank',
@@ -3576,12 +3576,12 @@ export const subreddits = [
     {
         'subreddit': 'nononono',
         'members': '894496',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sciencememes',
         'members': '893622',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mexico',
@@ -3591,12 +3591,12 @@ export const subreddits = [
     {
         'subreddit': 'SubredditDrama',
         'members': '891824',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskUK',
         'members': '891178',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'surrealmemes',
@@ -3611,17 +3611,17 @@ export const subreddits = [
     {
         'subreddit': 'ifyoulikeblank',
         'members': '889893',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fffffffuuuuuuuuuuuu',
         'members': '889606',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GameDeals',
         'members': '888933',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bonehurtingjuice',
@@ -3631,7 +3631,7 @@ export const subreddits = [
     {
         'subreddit': 'binance',
         'members': '888227',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'smashbros',
@@ -3661,17 +3661,17 @@ export const subreddits = [
     {
         'subreddit': 'mechanical_gifs',
         'members': '878713',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Hololive',
         'members': '872891',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MarvelStudiosSpoilers',
         'members': '871714',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dogswithjobs',
@@ -3681,12 +3681,12 @@ export const subreddits = [
     {
         'subreddit': 'Minecraftbuilds',
         'members': '869675',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FunnyandSad',
         'members': '869267',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CityPorn',
@@ -3696,7 +3696,7 @@ export const subreddits = [
     {
         'subreddit': 'hiphop101',
         'members': '867783',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'london',
@@ -3711,7 +3711,7 @@ export const subreddits = [
     {
         'subreddit': 'intermittentfasting',
         'members': '863416',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'standupshots',
@@ -3726,17 +3726,17 @@ export const subreddits = [
     {
         'subreddit': 'AskCulinary',
         'members': '859586',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Nicegirls',
         'members': '859297',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'QuotesPorn',
         'members': '856262',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Breadit',
@@ -3751,7 +3751,7 @@ export const subreddits = [
     {
         'subreddit': 'raisedbynarcissists',
         'members': '853960',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AccidentalComedy',
@@ -3761,17 +3761,17 @@ export const subreddits = [
     {
         'subreddit': 'weed',
         'members': '850358',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BestofRedditorUpdates',
         'members': '849059',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IndoorGarden',
         'members': '848882',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'freebies',
@@ -3781,7 +3781,7 @@ export const subreddits = [
     {
         'subreddit': 'gamernews',
         'members': '845926',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bestoflegaladvice',
@@ -3791,22 +3791,22 @@ export const subreddits = [
     {
         'subreddit': 'ukraine',
         'members': '844679',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blunderyears',
         'members': '843899',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'datascience',
         'members': '843613',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FullmetalAlchemist',
         'members': '842735',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IASIP',
@@ -3831,7 +3831,7 @@ export const subreddits = [
     {
         'subreddit': 'oilpainting',
         'members': '836187',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PourPainting',
@@ -3846,22 +3846,22 @@ export const subreddits = [
     {
         'subreddit': 'ScottishPeopleTwitter',
         'members': '833438',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TrollXChromosomes',
         'members': '829692',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'notliketheothergirls',
         'members': '827674',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dankchristianmemes',
         'members': '827583',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LateStageCapitalism',
@@ -3881,12 +3881,12 @@ export const subreddits = [
     {
         'subreddit': 'Wallstreetbetsnew',
         'members': '819547',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'spotify',
         'members': '818643',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whitepeoplegifs',
@@ -3896,12 +3896,12 @@ export const subreddits = [
     {
         'subreddit': 'resumes',
         'members': '815100',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cosplayprops',
         'members': '812608',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'JoeRogan',
@@ -3911,12 +3911,12 @@ export const subreddits = [
     {
         'subreddit': 'SkincareAddicts',
         'members': '811321',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beards',
         'members': '810823',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lotr',
@@ -3931,17 +3931,17 @@ export const subreddits = [
     {
         'subreddit': 'AMA',
         'members': '806759',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'imsorryjon',
         'members': '806355',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rap',
         'members': '804878',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'linux',
@@ -3956,12 +3956,12 @@ export const subreddits = [
     {
         'subreddit': 'AskScienceFiction',
         'members': '800923',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'britishproblems',
         'members': '797897',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskEurope',
@@ -3991,12 +3991,12 @@ export const subreddits = [
     {
         'subreddit': 'manhwa',
         'members': '786470',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'creepypasta',
         'members': '785569',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'destiny2',
@@ -4011,7 +4011,7 @@ export const subreddits = [
     {
         'subreddit': 'funnyvideos',
         'members': '783556',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Advice',
@@ -4021,17 +4021,17 @@ export const subreddits = [
     {
         'subreddit': 'OSHA',
         'members': '780773',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'notinteresting',
         'members': '778079',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'amv',
         'members': '777598',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CrazyIdeas',
@@ -4041,12 +4041,12 @@ export const subreddits = [
     {
         'subreddit': 'Illustration',
         'members': '774179',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'guns',
         'members': '770694',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheYouShow',
@@ -4056,17 +4056,17 @@ export const subreddits = [
     {
         'subreddit': 'sysadmin',
         'members': '769848',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Cyberpunk',
         'members': '769385',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'acne',
         'members': '769208',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ffxiv',
@@ -4076,12 +4076,12 @@ export const subreddits = [
     {
         'subreddit': 'Mommit',
         'members': '767898',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ABoringDystopia',
         'members': '767632',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Animesuggest',
@@ -4091,27 +4091,27 @@ export const subreddits = [
     {
         'subreddit': 'badeconomics',
         'members': '767186',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FloridaMan',
         'members': '767130',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tattoo',
         'members': '763831',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PenmanshipPorn',
         'members': '763744',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LongDistance',
         'members': '763661',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'talesfromtechsupport',
@@ -4121,17 +4121,17 @@ export const subreddits = [
     {
         'subreddit': 'GameTheorists',
         'members': '760901',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskOuija',
         'members': '760295',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ufc',
         'members': '760039',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'manganews',
@@ -4141,12 +4141,12 @@ export const subreddits = [
     {
         'subreddit': 'shortscarystories',
         'members': '756352',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'suicidebywords',
         'members': '755620',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cosplay',
@@ -4161,12 +4161,12 @@ export const subreddits = [
     {
         'subreddit': 'BadDesigns',
         'members': '752116',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'apolloapp',
         'members': '751001',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'donthelpjustfilm',
@@ -4176,12 +4176,12 @@ export const subreddits = [
     {
         'subreddit': 'landscaping',
         'members': '749883',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MakeNewFriendsHere',
         'members': '749379',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'futurama',
@@ -4191,7 +4191,7 @@ export const subreddits = [
     {
         'subreddit': 'AutoDetailing',
         'members': '747833',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnimalsOnReddit',
@@ -4201,22 +4201,22 @@ export const subreddits = [
     {
         'subreddit': 'holdmyjuicebox',
         'members': '745326',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dank_meme',
         'members': '744989',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Pareidolia',
         'members': '744458',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FIFA',
         'members': '741872',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Cricket',
@@ -4231,7 +4231,7 @@ export const subreddits = [
     {
         'subreddit': 'Embroidery',
         'members': '739545',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HunterXHunter',
@@ -4246,13 +4246,13 @@ export const subreddits = [
     {
         'subreddit': 'HomeDecorating',
         'members': '738775',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
-    { 'subreddit': 'Repsneakers', 'members': '738476', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'Repsneakers', 'members': '738476', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'puns',
         'members': '737113',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AppleWatch',
@@ -4267,22 +4267,22 @@ export const subreddits = [
     {
         'subreddit': 'electronics',
         'members': '733613',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HaircareScience',
         'members': '732640',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Cawwsplay',
         'members': '731327',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dndnext',
         'members': '731220',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Prematurecelebration',
@@ -4292,7 +4292,7 @@ export const subreddits = [
     {
         'subreddit': 'booksuggestions',
         'members': '728780',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SquaredCircle',
@@ -4302,7 +4302,7 @@ export const subreddits = [
     {
         'subreddit': 'rapbattles',
         'members': '726501',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Kanye',
@@ -4322,7 +4322,7 @@ export const subreddits = [
     {
         'subreddit': 'web_design',
         'members': '722966',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Celebs',
@@ -4332,7 +4332,7 @@ export const subreddits = [
     {
         'subreddit': 'holdmyfries',
         'members': '721587',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Bundesliga',
@@ -4347,7 +4347,7 @@ export const subreddits = [
     {
         'subreddit': 'grilling',
         'members': '717386',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'playstation',
@@ -4357,17 +4357,17 @@ export const subreddits = [
     {
         'subreddit': 'googlehome',
         'members': '716792',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Catloaf',
         'members': '714140',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EngineeringStudents',
         'members': '713597',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bjj',
@@ -4377,12 +4377,12 @@ export const subreddits = [
     {
         'subreddit': 'HouseOfTheDragon',
         'members': '711675',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'InfrastructurePorn',
         'members': '708941',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LegalAdviceUK',
@@ -4392,7 +4392,7 @@ export const subreddits = [
     {
         'subreddit': 'CatsAreAssholes',
         'members': '707623',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LSD',
@@ -4407,7 +4407,7 @@ export const subreddits = [
     {
         'subreddit': 'TalesFromTheFrontDesk',
         'members': '706161',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'brooklynninenine',
@@ -4422,7 +4422,7 @@ export const subreddits = [
     {
         'subreddit': 'NailArt',
         'members': '704614',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tea',
@@ -4432,7 +4432,7 @@ export const subreddits = [
     {
         'subreddit': 'outside',
         'members': '701648',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'howtonotgiveafuck',
@@ -4452,7 +4452,7 @@ export const subreddits = [
     {
         'subreddit': 'ActualPublicFreakouts',
         'members': '699874',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ClashRoyale',
@@ -4467,7 +4467,7 @@ export const subreddits = [
     {
         'subreddit': 'streetwearstartup',
         'members': '696367',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hbo',
@@ -4482,7 +4482,7 @@ export const subreddits = [
     {
         'subreddit': 'youtube',
         'members': '694071',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cardano',
@@ -4497,37 +4497,37 @@ export const subreddits = [
     {
         'subreddit': 'nyc',
         'members': '690541',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OldPhotosInRealLife',
         'members': '689091',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'combinedgifs',
         'members': '688652',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AccidentalCamouflage',
         'members': '687013',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'toolporn',
         'members': '685609',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'offbeat',
         'members': '685068',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RetroFuturism',
         'members': '684133',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SatoshiStreetBets',
@@ -4542,12 +4542,12 @@ export const subreddits = [
     {
         'subreddit': 'findfashion',
         'members': '682824',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'learnpython',
         'members': '682714',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PuppySmiles',
@@ -4557,7 +4557,7 @@ export const subreddits = [
     {
         'subreddit': 'gentlemanboners',
         'members': '679210',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Spiderman',
@@ -4567,7 +4567,7 @@ export const subreddits = [
     {
         'subreddit': 'crossfit',
         'members': '678306',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UFOs',
@@ -4577,12 +4577,12 @@ export const subreddits = [
     {
         'subreddit': 'EatCheapAndVegan',
         'members': '674086',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'InteriorDesign',
         'members': '672962',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dontdeadopeninside',
@@ -4592,7 +4592,7 @@ export const subreddits = [
     {
         'subreddit': 'AwesomeCarMods',
         'members': '672323',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'calvinandhobbes',
@@ -4612,7 +4612,7 @@ export const subreddits = [
     {
         'subreddit': 'edmproduction',
         'members': '669370',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'perfectloops',
@@ -4627,12 +4627,12 @@ export const subreddits = [
     {
         'subreddit': 'DataHoarder',
         'members': '668034',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mangacoloring',
         'members': '666141',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'jailbreak',
@@ -4642,12 +4642,12 @@ export const subreddits = [
     {
         'subreddit': 'plotholes',
         'members': '665105',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CatsOnKeyboards',
         'members': '664816',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'deadbydaylight',
@@ -4657,27 +4657,27 @@ export const subreddits = [
     {
         'subreddit': 'wallpapers',
         'members': '664472',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PokemonSwordAndShield',
         'members': '662456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'shittyrobots',
         'members': '661706',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WorkReform',
         'members': '660194',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Watercolor',
         'members': '660117',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'thanosdidnothingwrong',
@@ -4692,7 +4692,7 @@ export const subreddits = [
     {
         'subreddit': 'Buddhism',
         'members': '657668',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NotHowGirlsWork',
@@ -4712,7 +4712,7 @@ export const subreddits = [
     {
         'subreddit': 'CatsStandingUp',
         'members': '655618',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FantasyPL',
@@ -4742,17 +4742,17 @@ export const subreddits = [
     {
         'subreddit': 'redneckengineering',
         'members': '646388',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImaginaryLandscapes',
         'members': '642922',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'byebyejob',
         'members': '642734',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Marriage',
@@ -4772,7 +4772,7 @@ export const subreddits = [
     {
         'subreddit': 'boottoobig',
         'members': '640312',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'unstirredpaint',
@@ -4792,37 +4792,37 @@ export const subreddits = [
     {
         'subreddit': 'comedyhomicide',
         'members': '636235',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NFT',
         'members': '635948',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'catfaceplant',
         'members': '635677',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'indie',
         'members': '634842',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wholesomemes',
         'members': '634000',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nhl',
         'members': '633597',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SelfAwarewolves',
         'members': '633534',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ireland',
@@ -4832,12 +4832,12 @@ export const subreddits = [
     {
         'subreddit': 'WhatsWrongWithYourCat',
         'members': '632782',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'xboxinsiders',
         'members': '631435',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Chonkers',
@@ -4847,7 +4847,7 @@ export const subreddits = [
     {
         'subreddit': 'Catswhoyell',
         'members': '630407',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dbz',
@@ -4862,12 +4862,12 @@ export const subreddits = [
     {
         'subreddit': 'medicalschool',
         'members': '629624',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AmongUs',
         'members': '628165',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'toronto',
@@ -4882,12 +4882,12 @@ export const subreddits = [
     {
         'subreddit': 'LosAngeles',
         'members': '626580',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'seriouseats',
         'members': '626235',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lostredditors',
@@ -4902,12 +4902,12 @@ export const subreddits = [
     {
         'subreddit': 'HighStrangeness',
         'members': '625276',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Tools',
         'members': '624769',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Brawlstars',
@@ -4927,22 +4927,22 @@ export const subreddits = [
     {
         'subreddit': 'AskElectronics',
         'members': '622718',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CampingGear',
         'members': '621699',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MedievalCats',
         'members': '620195',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ontario',
         'members': '618813',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ActLikeYouBelong',
@@ -4952,7 +4952,7 @@ export const subreddits = [
     {
         'subreddit': 'FinancialCareers',
         'members': '617633',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TrueCrimeDiscussion',
@@ -5002,7 +5002,7 @@ export const subreddits = [
     {
         'subreddit': 'summonerschool',
         'members': '613758',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StoppedWorking',
@@ -5017,7 +5017,7 @@ export const subreddits = [
     {
         'subreddit': 'chess',
         'members': '612287',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HongKong',
@@ -5027,7 +5027,7 @@ export const subreddits = [
     {
         'subreddit': 'mlb',
         'members': '610509',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WaltDisneyWorld',
@@ -5037,22 +5037,22 @@ export const subreddits = [
     {
         'subreddit': 'airpods',
         'members': '608933',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Repaintings',
         'members': '608851',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RBI',
         'members': '608754',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'braless',
         'members': '608497',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'excel',
@@ -5062,7 +5062,7 @@ export const subreddits = [
     {
         'subreddit': 'Cartalk',
         'members': '604433',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'redditgetsdrawn',
@@ -5072,17 +5072,17 @@ export const subreddits = [
     {
         'subreddit': 'labrats',
         'members': '604168',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'malegrooming',
         'members': '602669',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pussypassdenied',
         'members': '602202',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'plantclinic',
@@ -5102,22 +5102,22 @@ export const subreddits = [
     {
         'subreddit': 'beauty',
         'members': '598382',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'serialkillers',
         'members': '598100',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GymMemes',
         'members': '597960',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DogsAndPlants',
         'members': '596484',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Warframe',
@@ -5127,12 +5127,12 @@ export const subreddits = [
     {
         'subreddit': 'ketorecipes',
         'members': '594925',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beyondthebump',
         'members': '594820',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CrackheadCraigslist',
@@ -5152,27 +5152,27 @@ export const subreddits = [
     {
         'subreddit': 'Ultralight',
         'members': '592172',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UnusualVideos',
         'members': '591189',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UkraineWarVideoReport',
         'members': '590597',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Nike',
         'members': '590291',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mangaswap',
         'members': '590225',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TrueCrimePodcasts',
@@ -5182,7 +5182,7 @@ export const subreddits = [
     {
         'subreddit': 'soccercirclejerk',
         'members': '589480',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FORTnITE',
@@ -5192,27 +5192,27 @@ export const subreddits = [
     {
         'subreddit': 'RobinHoodPennyStocks',
         'members': '588192',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'femalelivingspace',
         'members': '586475',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blackpeoplegifs',
         'members': '586349',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'indie_rock',
         'members': '586156',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'creepyencounters',
         'members': '585219',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'crochet',
@@ -5222,7 +5222,7 @@ export const subreddits = [
     {
         'subreddit': 'flexibility',
         'members': '583118',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'techsupportgore',
@@ -5232,7 +5232,7 @@ export const subreddits = [
     {
         'subreddit': 'Warhammer40k',
         'members': '581211',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'happy',
@@ -5252,7 +5252,7 @@ export const subreddits = [
     {
         'subreddit': 'WildernessBackpacking',
         'members': '578838',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MonsterHunter',
@@ -5267,37 +5267,37 @@ export const subreddits = [
     {
         'subreddit': 'singapore',
         'members': '576894',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sfx',
         'members': '576568',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beginnerfitness',
         'members': '575219',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'community',
         'members': '575170',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'melbourne',
         'members': '574987',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LearnJapanese',
         'members': '574739',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KGBTR',
         'members': '574414',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'distantsocializing',
@@ -5307,12 +5307,12 @@ export const subreddits = [
     {
         'subreddit': 'PokemonGoFriends',
         'members': '573976',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DrawMyTattoo',
         'members': '573444',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pokemontrades',
@@ -5322,22 +5322,22 @@ export const subreddits = [
     {
         'subreddit': 'r4r',
         'members': '572210',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Sims4',
         'members': '571580',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'theyknew',
         'members': '570787',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'creepydesign',
         'members': '569701',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PoliticalCompassMemes',
@@ -5347,7 +5347,7 @@ export const subreddits = [
     {
         'subreddit': 'drunkencookery',
         'members': '568707',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'boston',
@@ -5357,12 +5357,12 @@ export const subreddits = [
     {
         'subreddit': 'Ghosts',
         'members': '567072',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'peopleofwalmart',
         'members': '566464',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'chromeos',
@@ -5372,12 +5372,12 @@ export const subreddits = [
     {
         'subreddit': 'MilitaryPorn',
         'members': '565364',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FancyFollicles',
         'members': '565308',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'vexillology',
@@ -5387,7 +5387,7 @@ export const subreddits = [
     {
         'subreddit': 'LiminalSpace',
         'members': '563532',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bangtan',
@@ -5432,7 +5432,7 @@ export const subreddits = [
     {
         'subreddit': 'shrooms',
         'members': '558675',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'animenocontext',
@@ -5447,12 +5447,12 @@ export const subreddits = [
     {
         'subreddit': 'DMAcademy',
         'members': '556034',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PetiteFashionAdvice',
         'members': '554536',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lawncare',
@@ -5472,17 +5472,17 @@ export const subreddits = [
     {
         'subreddit': 'smoking',
         'members': '553771',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PupliftingNews',
         'members': '553580',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gifsthatendtoosoon',
         'members': '553157',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'batman',
@@ -5497,12 +5497,12 @@ export const subreddits = [
     {
         'subreddit': 'patientgamers',
         'members': '551776',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'popping',
         'members': '550030',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'homelab',
@@ -5512,17 +5512,17 @@ export const subreddits = [
     {
         'subreddit': 'menwritingwomen',
         'members': '547385',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fictionalpsychology',
         'members': '546217',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'darksouls3',
         'members': '546178',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ketoscience',
@@ -5532,7 +5532,7 @@ export const subreddits = [
     {
         'subreddit': 'onebag',
         'members': '544623',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rupaulsdragrace',
@@ -5542,22 +5542,22 @@ export const subreddits = [
     {
         'subreddit': 'pewdiepie',
         'members': '541922',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Bad_Cop_No_Donut',
         'members': '541734',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'JustGuysBeingDudes',
         'members': '541478',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KitchenConfidential',
         'members': '540144',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'startrek',
@@ -5567,7 +5567,7 @@ export const subreddits = [
     {
         'subreddit': 'Cursed_Images',
         'members': '539182',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'csgo',
@@ -5577,7 +5577,7 @@ export const subreddits = [
     {
         'subreddit': 'Instantregret',
         'members': '538399',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'olympics',
@@ -5587,22 +5587,22 @@ export const subreddits = [
     {
         'subreddit': 'tech',
         'members': '536969',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'de_IAmA',
         'members': '533708',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IndianDankMemes',
         'members': '532452',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'arduino',
         'members': '532281',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'findareddit',
@@ -5617,37 +5617,37 @@ export const subreddits = [
     {
         'subreddit': 'Funnymemes',
         'members': '527984',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cute',
         'members': '527714',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FinancialPlanning',
         'members': '527078',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'statistics',
         'members': '526519',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Anticonsumption',
         'members': '526474',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'musictheory',
         'members': '525963',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'foraging',
         'members': '525005',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ClashOfClans',
@@ -5657,12 +5657,12 @@ export const subreddits = [
     {
         'subreddit': 'ShittyFanTheories',
         'members': '523764',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'churning',
         'members': '523009',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Aquariums',
@@ -5672,37 +5672,37 @@ export const subreddits = [
     {
         'subreddit': 'firstworldanarchists',
         'members': '522074',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'learnart',
         'members': '521395',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'virtualreality',
         'members': '521224',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lifting',
         'members': '520047',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IsItBullshit',
         'members': '519301',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'weddingshaming',
         'members': '519240',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'awwwtf',
         'members': '519098',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EmpireDidNothingWrong',
@@ -5712,7 +5712,7 @@ export const subreddits = [
     {
         'subreddit': 'TalesFromYourServer',
         'members': '518465',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SandersForPresident',
@@ -5722,7 +5722,7 @@ export const subreddits = [
     {
         'subreddit': 'TrueReddit',
         'members': '518313',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'delusionalartists',
@@ -5732,7 +5732,7 @@ export const subreddits = [
     {
         'subreddit': 'Fauxmoi',
         'members': '518093',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bisexual',
@@ -5742,12 +5742,12 @@ export const subreddits = [
     {
         'subreddit': 'Shoes',
         'members': '517891',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'learntodraw',
         'members': '516782',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ItemShop',
@@ -5767,7 +5767,7 @@ export const subreddits = [
     {
         'subreddit': 'dontyouknowwhoiam',
         'members': '514313',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'conspiracytheories',
@@ -5777,7 +5777,7 @@ export const subreddits = [
     {
         'subreddit': '52book',
         'members': '512545',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Libertarian',
@@ -5787,17 +5787,17 @@ export const subreddits = [
     {
         'subreddit': 'LeagueOfMemes',
         'members': '512103',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IRLEasterEggs',
         'members': '511353',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'italy',
         'members': '511229',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'classicwow',
@@ -5817,12 +5817,12 @@ export const subreddits = [
     {
         'subreddit': 'SaimanSays',
         'members': '510550',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hitmanimals',
         'members': '509758',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'theocho',
@@ -5832,12 +5832,12 @@ export const subreddits = [
     {
         'subreddit': 'mycology',
         'members': '509603',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bayarea',
         'members': '508230',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'feetpics',
@@ -5847,12 +5847,12 @@ export const subreddits = [
     {
         'subreddit': 'declutter',
         'members': '507002',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImTheMainCharacter',
         'members': '506773',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DnDBehindTheScreen',
@@ -5872,7 +5872,7 @@ export const subreddits = [
     {
         'subreddit': 'audioengineering',
         'members': '504319',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BoJackHorseman',
@@ -5882,7 +5882,7 @@ export const subreddits = [
     {
         'subreddit': 'amcstock',
         'members': '504195',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'civ',
@@ -5892,17 +5892,17 @@ export const subreddits = [
     {
         'subreddit': 'shittysuperpowers',
         'members': '503215',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'aliens',
         'members': '502724',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'happycrowds',
         'members': '502129',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sweden',
@@ -5922,7 +5922,7 @@ export const subreddits = [
     {
         'subreddit': 'HermanCainAward',
         'members': '500923',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'doctorwho',
@@ -5932,12 +5932,12 @@ export const subreddits = [
     {
         'subreddit': 'betterCallSaul',
         'members': '500601',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'webcomics',
         'members': '499052',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'argentina',
@@ -5977,7 +5977,7 @@ export const subreddits = [
     {
         'subreddit': 'absolutelynotme_irl',
         'members': '494936',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheMandalorianTV',
@@ -5997,7 +5997,7 @@ export const subreddits = [
     {
         'subreddit': 'misleadingthumbnails',
         'members': '491372',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'assassinscreed',
@@ -6007,7 +6007,7 @@ export const subreddits = [
     {
         'subreddit': 'Seattle',
         'members': '490569',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'timelapse',
@@ -6017,7 +6017,7 @@ export const subreddits = [
     {
         'subreddit': 'BBQ',
         'members': '489458',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'instantpot',
@@ -6052,7 +6052,7 @@ export const subreddits = [
     {
         'subreddit': 'WorkOnline',
         'members': '487627',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Disneyland',
@@ -6067,22 +6067,22 @@ export const subreddits = [
     {
         'subreddit': 'ramen',
         'members': '485342',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NBA2k',
         'members': '484107',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KenM',
         'members': '483222',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Sidemen',
         'members': '482981',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ItHadToBeBrazil',
@@ -6092,12 +6092,12 @@ export const subreddits = [
     {
         'subreddit': 'wildlifephotography',
         'members': '482036',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LucidDreaming',
         'members': '481638',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheSimpsons',
@@ -6112,7 +6112,7 @@ export const subreddits = [
     {
         'subreddit': 'Thetruthishere',
         'members': '479524',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whowouldwin',
@@ -6122,27 +6122,27 @@ export const subreddits = [
     {
         'subreddit': 'DesignMyRoom',
         'members': '478907',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'femalehairadvice',
         'members': '478638',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DungeonsAndDragons',
         'members': '477715',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SHIBArmy',
         'members': '477708',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'texas',
         'members': '477206',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WatchandLearn',
@@ -6157,7 +6157,7 @@ export const subreddits = [
     {
         'subreddit': 'Polska',
         'members': '475933',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beetlejuicing',
@@ -6182,7 +6182,7 @@ export const subreddits = [
     {
         'subreddit': 'BeautyBoxes',
         'members': '471880',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'attackontitan',
@@ -6192,47 +6192,47 @@ export const subreddits = [
     {
         'subreddit': 'wikipedia',
         'members': '471002',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Journaling',
         'members': '470817',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'coding',
         'members': '470566',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '196',
         'members': '470417',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'skateboarding',
         'members': '469557',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whenthe',
         'members': '469319',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'circlejerk',
         'members': '469012',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'japanlife',
         'members': '468791',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'burdurland',
         'members': '468777',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nocontextpics',
@@ -6247,17 +6247,17 @@ export const subreddits = [
     {
         'subreddit': 'AdPorn',
         'members': '467657',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'netsec',
         'members': '465921',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BirdsArentReal',
         'members': '465279',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ukpolitics',
@@ -6267,12 +6267,12 @@ export const subreddits = [
     {
         'subreddit': 'marketing',
         'members': '463688',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'poland',
         'members': '462283',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mildlypenis',
@@ -6282,7 +6282,7 @@ export const subreddits = [
     {
         'subreddit': 'adhdmeme',
         'members': '461169',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SmashBrosUltimate',
@@ -6297,7 +6297,7 @@ export const subreddits = [
     {
         'subreddit': 'Scams',
         'members': '460064',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AccidentalRacism',
@@ -6317,7 +6317,7 @@ export const subreddits = [
     {
         'subreddit': 'matureplants',
         'members': '458563',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CitiesSkylines',
@@ -6342,32 +6342,32 @@ export const subreddits = [
     {
         'subreddit': '1200isplenty',
         'members': '457548',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'grilledcheese',
         'members': '456703',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wholesomebpt',
         'members': '456456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Volumeeating',
         'members': '456070',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'raimimemes',
         'members': '455617',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Doom',
         'members': '455341',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheMonkeysPaw',
@@ -6387,7 +6387,7 @@ export const subreddits = [
     {
         'subreddit': 'powerlifting',
         'members': '453125',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Smite',
@@ -6397,12 +6397,12 @@ export const subreddits = [
     {
         'subreddit': 'vancouver',
         'members': '453024',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'espresso',
         'members': '452266',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mbti',
@@ -6432,17 +6432,17 @@ export const subreddits = [
     {
         'subreddit': 'Atlanta',
         'members': '449525',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KamikazeByWords',
         'members': '449282',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'actuallesbians',
         'members': '449232',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beer',
@@ -6452,17 +6452,17 @@ export const subreddits = [
     {
         'subreddit': 'steak',
         'members': '448567',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '13or30',
         'members': '448268',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fo4',
         'members': '448132',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'appletv',
@@ -6472,12 +6472,12 @@ export const subreddits = [
     {
         'subreddit': 'MuseumOfReddit',
         'members': '448039',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'toastme',
         'members': '446452',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fivenightsatfreddys',
@@ -6487,12 +6487,12 @@ export const subreddits = [
     {
         'subreddit': 'fasting',
         'members': '445924',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HomeworkHelp',
         'members': '445182',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LosAngelesRams',
@@ -6502,7 +6502,7 @@ export const subreddits = [
     {
         'subreddit': 'cybersecurity',
         'members': '444308',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ToiletPaperUSA',
@@ -6517,12 +6517,12 @@ export const subreddits = [
     {
         'subreddit': 'EDC',
         'members': '443664',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'xbox',
         'members': '443363',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'castiron',
@@ -6532,12 +6532,12 @@ export const subreddits = [
     {
         'subreddit': 'ABraThatFits',
         'members': '442461',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'animegifs',
         'members': '441998',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     // {
     //     'subreddit': 'anime_titties',
@@ -6547,12 +6547,12 @@ export const subreddits = [
     {
         'subreddit': 'AskMenOver30',
         'members': '441610',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WallStreetbetsELITE',
         'members': '440444',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'creepyasterisks',
@@ -6562,7 +6562,7 @@ export const subreddits = [
     {
         'subreddit': 'UnsentLetters',
         'members': '440214',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CrossStitch',
@@ -6572,7 +6572,7 @@ export const subreddits = [
     {
         'subreddit': 'BeginnerWoodWorking',
         'members': '439857',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'philadelphia',
@@ -6582,7 +6582,7 @@ export const subreddits = [
     {
         'subreddit': 'UnsolvedMysteries',
         'members': '439223',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CrackWatch',
@@ -6592,52 +6592,52 @@ export const subreddits = [
     {
         'subreddit': 'Neverbrokeabone',
         'members': '437936',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KDRAMA',
         'members': '436834',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AreTheStraightsOK',
         'members': '436443',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PunPatrol',
         'members': '436292',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'medicine',
         'members': '434722',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CabinPorn',
         'members': '434561',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Psychonaut',
         'members': '434469',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'starwarsmemes',
         'members': '433719',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'democrats',
         'members': '432489',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskPhotography',
         'members': '432225',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'socialism',
@@ -6652,22 +6652,22 @@ export const subreddits = [
     {
         'subreddit': 'ComedyNecrophilia',
         'members': '429953',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'China',
         'members': '429794',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dashcamgifs',
         'members': '429637',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheRightCantMeme',
         'members': '429259',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nukedmemes',
@@ -6682,17 +6682,17 @@ export const subreddits = [
     {
         'subreddit': 'findapath',
         'members': '427709',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'engineering',
         'members': '426683',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WhatShouldICook',
         'members': '426577',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LiverpoolFC',
@@ -6702,17 +6702,17 @@ export const subreddits = [
     {
         'subreddit': 'freelance',
         'members': '426056',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sticknpokes',
         'members': '425749',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'longhair',
         'members': '425683',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'birding',
@@ -6722,7 +6722,7 @@ export const subreddits = [
     {
         'subreddit': 'Markiplier',
         'members': '425214',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EverythingScience',
@@ -6737,17 +6737,17 @@ export const subreddits = [
     {
         'subreddit': 'Blep',
         'members': '423788',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RealEstate',
         'members': '423119',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cozy',
         'members': '422219',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'unixporn',
@@ -6772,27 +6772,27 @@ export const subreddits = [
     {
         'subreddit': 'OculusQuest',
         'members': '420775',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Dogtraining',
         'members': '420650',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Nailpolish',
         'members': '420456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'stopdrinking',
         'members': '420215',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'selfie',
         'members': '420163',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RimWorld',
@@ -6807,12 +6807,12 @@ export const subreddits = [
     {
         'subreddit': 'newjersey',
         'members': '419485',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BotanicalPorn',
         'members': '418250',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Undertale',
@@ -6847,12 +6847,12 @@ export const subreddits = [
     {
         'subreddit': 'UkrainianConflict',
         'members': '414367',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GTAV',
         'members': '413687',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Welding',
@@ -6872,17 +6872,17 @@ export const subreddits = [
     {
         'subreddit': 'recruitinghell',
         'members': '411903',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'legaladvicecanada',
         'members': '411831',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DIYUK',
         'members': '410905',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'japanpics',
@@ -6892,7 +6892,7 @@ export const subreddits = [
     {
         'subreddit': 'valheim',
         'members': '410400',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Angryupvote',
@@ -6902,27 +6902,27 @@ export const subreddits = [
     {
         'subreddit': 'ShitAmericansSay',
         'members': '409498',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnimalPorn',
         'members': '409269',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ScarySigns',
         'members': '409221',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LetsTalkMusic',
         'members': '408251',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pyrocynical',
         'members': '408086',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'outrun',
@@ -6932,12 +6932,12 @@ export const subreddits = [
     {
         'subreddit': 'gundeals',
         'members': '406801',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'awardtravel',
         'members': '406337',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'elderscrollsonline',
@@ -6947,12 +6947,12 @@ export const subreddits = [
     {
         'subreddit': 'nursing',
         'members': '405926',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AusFinance',
         'members': '405577',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'totallynotrobots',
@@ -6962,22 +6962,22 @@ export const subreddits = [
     {
         'subreddit': 'Teachers',
         'members': '404248',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Badfaketexts',
         'members': '403970',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SuicideWatch',
         'members': '403770',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'skyrimmods',
         'members': '403454',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'playboicarti',
@@ -6987,12 +6987,12 @@ export const subreddits = [
     {
         'subreddit': 'rage',
         'members': '402764',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StarWarsLeaks',
         'members': '402124',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MildlyVandalised',
@@ -7002,12 +7002,12 @@ export const subreddits = [
     {
         'subreddit': 'metalworking',
         'members': '401888',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BlackPink',
         'members': '401315',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'marijuanaenthusiasts',
@@ -7022,22 +7022,22 @@ export const subreddits = [
     {
         'subreddit': 'AskOldPeople',
         'members': '400274',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'japan',
         'members': '400268',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gainit',
         'members': '398465',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'careeradvice',
         'members': '397997',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MixedRaceGirls',
@@ -7047,17 +7047,17 @@ export const subreddits = [
     {
         'subreddit': 'DeadBedrooms',
         'members': '396976',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NoPoo',
         'members': '396651',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'godtiersuperpowers',
         'members': '396372',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'feedthebeast',
@@ -7067,17 +7067,17 @@ export const subreddits = [
     {
         'subreddit': 'sydney',
         'members': '395712',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OrganicGardening',
         'members': '395594',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Miniworlds',
         'members': '393833',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'forhonor',
@@ -7097,17 +7097,17 @@ export const subreddits = [
     {
         'subreddit': 'tuckedinkitties',
         'members': '392121',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'functionalprint',
         'members': '391599',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'shockwaveporn',
         'members': '391097',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FinalFantasy',
@@ -7117,32 +7117,32 @@ export const subreddits = [
     {
         'subreddit': 'mallninjashit',
         'members': '390351',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GiftIdeas',
         'members': '390141',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskHR',
         'members': '390131',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AusLegal',
         'members': '390066',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PiratedGames',
         'members': '389865',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AccidentalWesAnderson',
         'members': '389791',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Berserk',
@@ -7157,7 +7157,7 @@ export const subreddits = [
     {
         'subreddit': 'vegetablegardening',
         'members': '388709',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AnarchyChess',
@@ -7167,17 +7167,17 @@ export const subreddits = [
     {
         'subreddit': 'DepthHub',
         'members': '387853',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ShitMomGroupsSay',
         'members': '387698',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sanfrancisco',
         'members': '387242',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pelotoncycle',
@@ -7187,17 +7187,17 @@ export const subreddits = [
     {
         'subreddit': 'CrusaderKings',
         'members': '387110',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ApexOutlands',
         'members': '386871',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImaginaryMonsters',
         'members': '386869',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lakers',
@@ -7212,7 +7212,7 @@ export const subreddits = [
     {
         'subreddit': 'lostgeneration',
         'members': '385991',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Persona5',
@@ -7227,7 +7227,7 @@ export const subreddits = [
     {
         'subreddit': 'newzealand',
         'members': '385118',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OTMemes',
@@ -7237,22 +7237,22 @@ export const subreddits = [
     {
         'subreddit': 'NorthCarolina',
         'members': '384860',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BollyBlindsNGossip',
         'members': '384790',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blop',
         'members': '384050',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HowToHack',
         'members': '383987',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'happycowgifs',
@@ -7277,17 +7277,17 @@ export const subreddits = [
     {
         'subreddit': 'mathmemes',
         'members': '383409',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'imaginarymaps',
         'members': '383194',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'youdontsurf',
         'members': '383174',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pointlesslygendered',
@@ -7317,12 +7317,12 @@ export const subreddits = [
     {
         'subreddit': 'restofthefuckingowl',
         'members': '380106',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'desabafos',
         'members': '380094',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'trashpandas',
@@ -7342,7 +7342,7 @@ export const subreddits = [
     {
         'subreddit': 'mentalhealth',
         'members': '379541',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fatlogic',
@@ -7377,7 +7377,7 @@ export const subreddits = [
     {
         'subreddit': 'dvdcollection',
         'members': '378530',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HollowKnight',
@@ -7387,12 +7387,12 @@ export const subreddits = [
     {
         'subreddit': 'TrueFilm',
         'members': '378204',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LoveIsBlindOnNetflix',
         'members': '378101',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bigboye',
@@ -7402,7 +7402,7 @@ export const subreddits = [
     {
         'subreddit': 'gtaglitches',
         'members': '377658',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ask',
@@ -7412,17 +7412,17 @@ export const subreddits = [
     {
         'subreddit': 'quotes',
         'members': '377225',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'scarystories',
         'members': '376677',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MasterReturns',
         'members': '376648',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'needadvice',
@@ -7432,17 +7432,17 @@ export const subreddits = [
     {
         'subreddit': 'Houseporn',
         'members': '376434',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'trapproduction',
         'members': '376428',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UnnecessaryInventions',
         'members': '376335',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'killthecameraman',
@@ -7452,22 +7452,22 @@ export const subreddits = [
     {
         'subreddit': 'spirituality',
         'members': '375404',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Alternativerock',
         'members': '375249',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'makeupexchange',
         'members': '374944',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'torontoraptors',
         'members': '374663',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'delhi',
@@ -7502,7 +7502,7 @@ export const subreddits = [
     {
         'subreddit': 'MetalMemes',
         'members': '372906',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'thingsforants',
@@ -7512,12 +7512,12 @@ export const subreddits = [
     {
         'subreddit': 'cellbits',
         'members': '372225',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Kombucha',
         'members': '372141',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DC_Cinematic',
@@ -7547,7 +7547,7 @@ export const subreddits = [
     {
         'subreddit': 'nocontext',
         'members': '370779',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Amouranth',
@@ -7557,17 +7557,17 @@ export const subreddits = [
     {
         'subreddit': 'legostarwars',
         'members': '369438',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CulinaryPlating',
         'members': '369318',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'amex',
         'members': '369182',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sustainability',
@@ -7577,12 +7577,12 @@ export const subreddits = [
     {
         'subreddit': 'Michigan',
         'members': '368109',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Genshin_Impact_Leaks',
         'members': '368034',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'instantbarbarians',
@@ -7597,7 +7597,7 @@ export const subreddits = [
     {
         'subreddit': 'Old_Recipes',
         'members': '367306',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NFL_Draft',
@@ -7617,12 +7617,12 @@ export const subreddits = [
     {
         'subreddit': 'sleep',
         'members': '365762',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Foodforthought',
         'members': '365378',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Catculations',
@@ -7632,7 +7632,7 @@ export const subreddits = [
     {
         'subreddit': 'GradSchool',
         'members': '364764',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dividends',
@@ -7642,7 +7642,7 @@ export const subreddits = [
     {
         'subreddit': 'shittyreactiongifs',
         'members': '363327',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'thedivision',
@@ -7652,12 +7652,12 @@ export const subreddits = [
     {
         'subreddit': 'gatesopencomeonin',
         'members': '363036',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Sourdough',
         'members': '362921',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CelebrityButts',
@@ -7667,7 +7667,7 @@ export const subreddits = [
     {
         'subreddit': 'hardwareswap',
         'members': '361709',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PokemonScarletViolet',
@@ -7677,14 +7677,14 @@ export const subreddits = [
     {
         'subreddit': 'bangalore',
         'members': '361572',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'criticalrole',
         'members': '360933',
         'icon': 'https://b.thumbs.redditmedia.com/D4P_EvJPICh09rzJkfLa6KFIgUyUgR-mUoXXU6LmSgI.png'
     },
-    { 'subreddit': '90DayFiance', 'members': '360839', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': '90DayFiance', 'members': '360839', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'FortniteLeaks',
         'members': '360253',
@@ -7693,7 +7693,7 @@ export const subreddits = [
     {
         'subreddit': 'PlantBasedDiet',
         'members': '359967',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'trans',
@@ -7703,37 +7703,37 @@ export const subreddits = [
     {
         'subreddit': 'witchcraft',
         'members': '359166',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ARK',
         'members': '358821',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'femboy',
         'members': '358678',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Swingers',
         'members': '358489',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lastimages',
         'members': '358230',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HelpMeFind',
         'members': '358206',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'onions',
         'members': '358005',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'horrorlit',
@@ -7743,19 +7743,19 @@ export const subreddits = [
     {
         'subreddit': 'GTA',
         'members': '356775',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CatTaps',
         'members': '356469',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'muglife',
         'members': '356425',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
-    { 'subreddit': 'askgaybros', 'members': '356385', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'askgaybros', 'members': '356385', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'litecoin',
         'members': '356257',
@@ -7764,12 +7764,12 @@ export const subreddits = [
     {
         'subreddit': 'weightroom',
         'members': '355979',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DnDGreentext',
         'members': '355828',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Ripple',
@@ -7779,7 +7779,7 @@ export const subreddits = [
     {
         'subreddit': 'cakedecorating',
         'members': '355267',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'microgrowery',
@@ -7794,12 +7794,12 @@ export const subreddits = [
     {
         'subreddit': 'wtfstockphotos',
         'members': '354800',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'COVID19',
         'members': '354729',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'medizzy',
@@ -7809,17 +7809,17 @@ export const subreddits = [
     {
         'subreddit': 'SkincareAddictionUK',
         'members': '354660',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'acturnips',
         'members': '354618',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'badcode',
         'members': '354041',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IndiaNostalgia',
@@ -7834,12 +7834,12 @@ export const subreddits = [
     {
         'subreddit': 'aves',
         'members': '353377',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cryptocurrencymemes',
         'members': '353140',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Metalcore',
@@ -7854,12 +7854,12 @@ export const subreddits = [
     {
         'subreddit': 'ITCareerQuestions',
         'members': '351854',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Ohio',
         'members': '351760',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fatFIRE',
@@ -7869,12 +7869,12 @@ export const subreddits = [
     {
         'subreddit': 'fitmeals',
         'members': '351617',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bouldering',
         'members': '351605',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SubwayCreatures',
@@ -7884,7 +7884,7 @@ export const subreddits = [
     {
         'subreddit': 'bollywood',
         'members': '350538',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'evangelion',
@@ -7894,12 +7894,12 @@ export const subreddits = [
     {
         'subreddit': 'trebuchetmemes',
         'members': '350049',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SommerRay',
         'members': '349746',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'starcitizen',
@@ -7909,7 +7909,7 @@ export const subreddits = [
     {
         'subreddit': 'Pennsylvania',
         'members': '348680',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rance',
@@ -7924,17 +7924,17 @@ export const subreddits = [
     {
         'subreddit': 'WeightLossAdvice',
         'members': '348342',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Christianity',
         'members': '347358',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'VideoEditing',
         'members': '347079',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Incorgnito',
@@ -7944,7 +7944,7 @@ export const subreddits = [
     {
         'subreddit': 'Nootropics',
         'members': '346950',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hoi4',
@@ -7954,7 +7954,7 @@ export const subreddits = [
     {
         'subreddit': 'houston',
         'members': '346845',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KeanuBeingAwesome',
@@ -7969,7 +7969,7 @@ export const subreddits = [
     {
         'subreddit': 'FL_Studio',
         'members': '346055',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Denmark',
@@ -7994,7 +7994,7 @@ export const subreddits = [
     {
         'subreddit': 'Drumkits',
         'members': '344554',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ChainsawMan',
@@ -8004,7 +8004,7 @@ export const subreddits = [
     {
         'subreddit': 'Leathercraft',
         'members': '343780',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WhatIsThisPainting',
@@ -8014,12 +8014,12 @@ export const subreddits = [
     {
         'subreddit': 'Dallas',
         'members': '343423',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ipad',
         'members': '343263',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Diablo',
@@ -8029,7 +8029,7 @@ export const subreddits = [
     {
         'subreddit': 'GetEmployed',
         'members': '342688',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'offlineTV',
@@ -8044,7 +8044,7 @@ export const subreddits = [
     {
         'subreddit': 'AirBnB',
         'members': '341772',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GodofWar',
@@ -8054,42 +8054,42 @@ export const subreddits = [
     {
         'subreddit': 'HumanPorn',
         'members': '340425',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'thanksihateit',
         'members': '340393',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PhotoshopTutorials',
         'members': '339677',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EntitledBitch',
         'members': '339574',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GodofWarRagnarok',
         'members': '339537',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'uberdrivers',
         'members': '339529',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BabyBumps',
         'members': '338943',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dogelore',
         'members': '338769',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Needafriend',
@@ -8099,12 +8099,12 @@ export const subreddits = [
     {
         'subreddit': 'IndieFolk',
         'members': '338382',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'malehairadvice',
         'members': '338246',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Austin',
@@ -8124,7 +8124,7 @@ export const subreddits = [
     {
         'subreddit': 'interiordecorating',
         'members': '338059',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BritishSuccess',
@@ -8134,7 +8134,7 @@ export const subreddits = [
     {
         'subreddit': 'BadArt',
         'members': '337621',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blackmirror',
@@ -8154,7 +8154,7 @@ export const subreddits = [
     {
         'subreddit': 'toddlers',
         'members': '335700',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AAAAAAAAAAAAAAAAA',
@@ -8169,7 +8169,7 @@ export const subreddits = [
     {
         'subreddit': 'bizarrelife',
         'members': '334592',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gay',
@@ -8179,12 +8179,12 @@ export const subreddits = [
     {
         'subreddit': 'introverts',
         'members': '334327',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'reactjs',
         'members': '334282',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'stevenuniverse',
@@ -8199,12 +8199,12 @@ export const subreddits = [
     {
         'subreddit': 'electricians',
         'members': '333756',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'streetphotography',
         'members': '332791',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HermitCraft',
@@ -8219,17 +8219,17 @@ export const subreddits = [
     {
         'subreddit': 'furry',
         'members': '332418',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LadyBoners',
         'members': '332333',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'legaladviceofftopic',
         'members': '332102',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'teefies',
@@ -8244,12 +8244,12 @@ export const subreddits = [
     {
         'subreddit': 'sportsbook',
         'members': '331296',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'garageporn',
         'members': '331282',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EliteDangerous',
@@ -8259,17 +8259,17 @@ export const subreddits = [
     {
         'subreddit': 'motivation',
         'members': '330543',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whatsthisbird',
         'members': '330491',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dontstarve',
         'members': '330491',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'computerscience',
@@ -8279,12 +8279,12 @@ export const subreddits = [
     {
         'subreddit': 'MaleFashionMarket',
         'members': '329974',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MagicEye',
         'members': '329784',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HadesTheGame',
@@ -8304,12 +8304,12 @@ export const subreddits = [
     {
         'subreddit': 'CanadianInvestor',
         'members': '329115',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'seinfeld',
         'members': '329057',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fakealbumcovers',
@@ -8319,7 +8319,7 @@ export const subreddits = [
     {
         'subreddit': 'MomForAMinute',
         'members': '328811',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IndianGaming',
@@ -8329,22 +8329,22 @@ export const subreddits = [
     {
         'subreddit': 'astrology',
         'members': '328253',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StonerEngineering',
         'members': '327605',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Accounting',
         'members': '327515',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ableton',
         'members': '327393',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'snapchat',
@@ -8359,7 +8359,7 @@ export const subreddits = [
     {
         'subreddit': 'LawSchool',
         'members': '325441',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImaginaryArchitecture',
@@ -8374,7 +8374,7 @@ export const subreddits = [
     {
         'subreddit': 'Unity3D',
         'members': '325191',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wowthissubexists',
@@ -8404,12 +8404,12 @@ export const subreddits = [
     {
         'subreddit': 'trailrunning',
         'members': '323749',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'absolutelynotmeirl',
         'members': '323587',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'runescape',
@@ -8419,7 +8419,7 @@ export const subreddits = [
     {
         'subreddit': 'indiameme',
         'members': '322985',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'chelseafc',
@@ -8429,7 +8429,7 @@ export const subreddits = [
     {
         'subreddit': 'BobsBurgers',
         'members': '322650',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'osugame',
@@ -8439,12 +8439,12 @@ export const subreddits = [
     {
         'subreddit': 'lonely',
         'members': '322191',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GRAMBADDIES',
         'members': '321959',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TopMindsOfReddit',
@@ -8459,7 +8459,7 @@ export const subreddits = [
     {
         'subreddit': 'bujo',
         'members': '320965',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BreadStapledToTrees',
@@ -8489,7 +8489,7 @@ export const subreddits = [
     {
         'subreddit': 'SpaceXLounge',
         'members': '319084',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'religiousfruitcake',
@@ -8524,7 +8524,7 @@ export const subreddits = [
     {
         'subreddit': 'Paintings',
         'members': '317953',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Rainmeter',
@@ -8534,22 +8534,22 @@ export const subreddits = [
     {
         'subreddit': 'sidehustle',
         'members': '317033',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fashionporn',
         'members': '316623',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MURICA',
         'members': '316531',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WouldYouRather',
         'members': '316478',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DesignerReps',
@@ -8564,12 +8564,12 @@ export const subreddits = [
     {
         'subreddit': 'Denver',
         'members': '315834',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rnb',
         'members': '315770',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'portugal',
@@ -8579,27 +8579,27 @@ export const subreddits = [
     {
         'subreddit': 'cocktails',
         'members': '315227',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'knives',
         'members': '314875',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'billieeilish',
         'members': '314712',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FullScorpion',
         'members': '314525',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GymMotivation',
         'members': '313540',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GrandTheftAutoV',
@@ -8614,7 +8614,7 @@ export const subreddits = [
     {
         'subreddit': 'chile',
         'members': '312771',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'emulation',
@@ -8624,37 +8624,37 @@ export const subreddits = [
     {
         'subreddit': 'Sat',
         'members': '312168',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sandiego',
         'members': '311831',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BMW',
         'members': '311741',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AskEngineers',
         'members': '311562',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DesirePath',
         'members': '311279',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'occult',
         'members': '311255',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'curledfeetsies',
         'members': '311066',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Competitiveoverwatch',
@@ -8669,12 +8669,12 @@ export const subreddits = [
     {
         'subreddit': 'FossilPorn',
         'members': '310815',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'YAlit',
         'members': '310772',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'danganronpa',
@@ -8684,7 +8684,7 @@ export const subreddits = [
     {
         'subreddit': 'BadChoicesGoodStories',
         'members': '310418',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Idiotswithguns',
@@ -8699,12 +8699,12 @@ export const subreddits = [
     {
         'subreddit': 'glitch_art',
         'members': '310102',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'homeowners',
         'members': '310066',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'piano',
@@ -8714,7 +8714,7 @@ export const subreddits = [
     {
         'subreddit': 'NeckbeardNests',
         'members': '309698',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'splatoon',
@@ -8724,22 +8724,22 @@ export const subreddits = [
     {
         'subreddit': 'dankinindia',
         'members': '309533',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'futbol',
         'members': '309518',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'washingtondc',
         'members': '309388',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Colorado',
         'members': '309228',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'unitedstatesofindia',
@@ -8749,17 +8749,17 @@ export const subreddits = [
     {
         'subreddit': 'footballmanagergames',
         'members': '308530',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'firstworldproblems',
         'members': '308456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'passive_income',
         'members': '308256',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Grimdank',
@@ -8769,9 +8769,9 @@ export const subreddits = [
     {
         'subreddit': 'fireemblem',
         'members': '308024',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
-    { 'subreddit': 'SupermodelCats', 'members': '308015', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'SupermodelCats', 'members': '308015', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'spain',
         'members': '307912',
@@ -8780,27 +8780,27 @@ export const subreddits = [
     {
         'subreddit': 'PetTheDamnDog',
         'members': '307692',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IndiaInvestments',
         'members': '307559',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AddisonRae',
         'members': '307220',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TrashTaste',
         'members': '306166',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sousvide',
         'members': '306085',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LatinoPeopleTwitter',
@@ -8825,7 +8825,7 @@ export const subreddits = [
     {
         'subreddit': 'Connecticut',
         'members': '304685',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MTB',
@@ -8835,22 +8835,22 @@ export const subreddits = [
     {
         'subreddit': 'Scotland',
         'members': '304411',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'memesITA',
         'members': '304345',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cycling',
         'members': '304023',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FreckledGirls',
         'members': '303780',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lostarkgame',
@@ -8860,12 +8860,12 @@ export const subreddits = [
     {
         'subreddit': 'BDSMAdvice',
         'members': '303676',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'orangecounty',
         'members': '303636',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'InsanePeopleQuora',
@@ -8875,7 +8875,7 @@ export const subreddits = [
     {
         'subreddit': 'me_irlgbt',
         'members': '302816',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GlobalTalk',
@@ -8885,7 +8885,7 @@ export const subreddits = [
     {
         'subreddit': 'NationalPark',
         'members': '302710',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'slavelabour',
@@ -8895,27 +8895,27 @@ export const subreddits = [
     {
         'subreddit': 'TeamfightTactics',
         'members': '301920',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Bumble',
         'members': '301873',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'polyamory',
         'members': '301814',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lewronggeneration',
         'members': '301718',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Humanoidencounters',
         'members': '301451',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IndieGaming',
@@ -8930,7 +8930,7 @@ export const subreddits = [
     {
         'subreddit': 'GamingLeaksAndRumours',
         'members': '300951',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'JordanPeterson',
@@ -8950,12 +8950,12 @@ export const subreddits = [
     {
         'subreddit': 'airsoft',
         'members': '300303',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DessertPorn',
         'members': '300299',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Overwatch_Memes',
@@ -8970,7 +8970,7 @@ export const subreddits = [
     {
         'subreddit': 'forhire',
         'members': '299606',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WiggleButts',
@@ -8985,7 +8985,7 @@ export const subreddits = [
     {
         'subreddit': 'playark',
         'members': '298978',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ac_newhorizons',
@@ -9000,7 +9000,7 @@ export const subreddits = [
     {
         'subreddit': 'BollywoodRealism',
         'members': '298695',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Sneks',
@@ -9020,7 +9020,7 @@ export const subreddits = [
     {
         'subreddit': 'Awww',
         'members': '297963',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KendrickLamar',
@@ -9035,27 +9035,27 @@ export const subreddits = [
     {
         'subreddit': 'LMDShow',
         'members': '297308',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'APStudents',
         'members': '297148',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Carpentry',
         'members': '297073',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'programminghorror',
         'members': '296893',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bi_irl',
         'members': '296776',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Portland',
@@ -9070,7 +9070,7 @@ export const subreddits = [
     {
         'subreddit': 'MAAU',
         'members': '295493',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MusicForConcentration',
@@ -9080,22 +9080,22 @@ export const subreddits = [
     {
         'subreddit': 'drunk',
         'members': '294836',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BoringCompany',
         'members': '294575',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'grandorder',
         'members': '294502',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'typography',
         'members': '294456',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tarot',
@@ -9105,7 +9105,7 @@ export const subreddits = [
     {
         'subreddit': 'fullmoviesonyoutube',
         'members': '294379',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'egg_irl',
@@ -9115,12 +9115,12 @@ export const subreddits = [
     {
         'subreddit': 'TankPorn',
         'members': '293710',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'linguistics',
         'members': '293706',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GreenBayPackers',
@@ -9135,22 +9135,22 @@ export const subreddits = [
     {
         'subreddit': 'TalesFromTheCustomer',
         'members': '293171',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Monterrey',
         'members': '292813',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'confidence',
         'members': '292802',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'iiiiiiitttttttttttt',
         'members': '292453',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Gunners',
@@ -9160,7 +9160,7 @@ export const subreddits = [
     {
         'subreddit': 'CongratsLikeImFive',
         'members': '292191',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Calligraphy',
@@ -9175,12 +9175,12 @@ export const subreddits = [
     {
         'subreddit': 'PetTheDamnCat',
         'members': '292081',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Warhammer',
         'members': '291980',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wasletztepreis',
@@ -9190,7 +9190,7 @@ export const subreddits = [
     {
         'subreddit': 'tolkienfans',
         'members': '291783',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bertstrips',
@@ -9205,7 +9205,7 @@ export const subreddits = [
     {
         'subreddit': 'bleach',
         'members': '291447',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'badhistory',
@@ -9220,7 +9220,7 @@ export const subreddits = [
     {
         'subreddit': 'brushybrushy',
         'members': '290788',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Konosuba',
@@ -9240,7 +9240,7 @@ export const subreddits = [
     {
         'subreddit': 'criticalblunder',
         'members': '289690',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dyinglight',
@@ -9250,12 +9250,12 @@ export const subreddits = [
     {
         'subreddit': 'miniminter',
         'members': '288887',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PeopleBeingJerks',
         'members': '288656',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CallOfDutyMobile',
@@ -9270,42 +9270,42 @@ export const subreddits = [
     {
         'subreddit': 'fixedbytheduet',
         'members': '288135',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tonightsdinner',
         'members': '288068',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MadeMeCry',
         'members': '288048',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FreeKarma4You',
         'members': '288012',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TooMeIrlForMeIrl',
         'members': '287554',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'urbandesign',
         'members': '287464',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ArcherFX',
         'members': '287368',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'techsupportmacgyver',
         'members': '287127',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fragrance',
@@ -9320,22 +9320,22 @@ export const subreddits = [
     {
         'subreddit': 'Naturalhair',
         'members': '286832',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Ornithology',
         'members': '286744',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'askwomenadvice',
         'members': '286719',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'memexico',
         'members': '286461',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lingling40hrs',
@@ -9345,17 +9345,17 @@ export const subreddits = [
     {
         'subreddit': 'bulletjournal',
         'members': '286166',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StarWarsEU',
         'members': '285870',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WWE',
         'members': '285773',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OUTFITS',
@@ -9365,7 +9365,7 @@ export const subreddits = [
     {
         'subreddit': 'Rabbits',
         'members': '285462',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Monero',
@@ -9375,7 +9375,7 @@ export const subreddits = [
     {
         'subreddit': 'SeattleWA',
         'members': '285137',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Psychedelics',
@@ -9385,17 +9385,17 @@ export const subreddits = [
     {
         'subreddit': 'moderatepolitics',
         'members': '284811',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'minecraftseeds',
         'members': '284729',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RandomKindness',
         'members': '284670',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cursedvideos',
@@ -9405,7 +9405,7 @@ export const subreddits = [
     {
         'subreddit': 'java',
         'members': '284476',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'family',
@@ -9415,7 +9415,7 @@ export const subreddits = [
     {
         'subreddit': 'pornfree',
         'members': '284213',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'xqcow',
@@ -9435,7 +9435,7 @@ export const subreddits = [
     {
         'subreddit': 'learnmachinelearning',
         'members': '283703',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NewTubers',
@@ -9450,7 +9450,7 @@ export const subreddits = [
     {
         'subreddit': 'networking',
         'members': '283288',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'VeganFoodPorn',
@@ -9460,7 +9460,7 @@ export const subreddits = [
     {
         'subreddit': 'japanesestreetwear',
         'members': '282405',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PutAnEggOnIt',
@@ -9470,17 +9470,17 @@ export const subreddits = [
     {
         'subreddit': 'MemeVideos',
         'members': '282213',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'musicproduction',
         'members': '281865',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Forex',
         'members': '281824',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KingdomHearts',
@@ -9490,27 +9490,27 @@ export const subreddits = [
     {
         'subreddit': 'MexicoCity',
         'members': '281226',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Calgary',
         'members': '280803',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'delusionalcraigslist',
         'members': '280664',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'notlikeothergirls',
         'members': '280517',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'makinghiphop',
         'members': '280269',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LiveFromNewYork',
@@ -9520,12 +9520,12 @@ export const subreddits = [
     {
         'subreddit': 'Norway',
         'members': '279627',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SkyPorn',
         'members': '279583',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FreeGamesOnSteam',
@@ -9535,7 +9535,7 @@ export const subreddits = [
     {
         'subreddit': 'JustBootThings',
         'members': '279304',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Witcher3',
@@ -9550,7 +9550,7 @@ export const subreddits = [
     {
         'subreddit': 'mechmarket',
         'members': '278655',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'motogp',
@@ -9565,7 +9565,7 @@ export const subreddits = [
     {
         'subreddit': 'FragReddit',
         'members': '278321',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rugbyunion',
@@ -9585,17 +9585,17 @@ export const subreddits = [
     {
         'subreddit': 'Switzerland',
         'members': '277750',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Colombia',
         'members': '277722',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'newworldgame',
         'members': '277670',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Amoledbackgrounds',
@@ -9605,37 +9605,37 @@ export const subreddits = [
     {
         'subreddit': 'simracing',
         'members': '277499',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ACTrade',
         'members': '276946',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'goldenretrievers',
         'members': '276899',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'linuxmasterrace',
         'members': '276818',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MoldyMemes',
         'members': '276771',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MushroomGrowers',
         'members': '276415',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'graphicnovels',
         'members': '276195',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MemePiece',
@@ -9655,12 +9655,12 @@ export const subreddits = [
     {
         'subreddit': 'Technoblade',
         'members': '275768',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'skamtebord',
         'members': '275593',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AstralProjection',
@@ -9670,12 +9670,12 @@ export const subreddits = [
     {
         'subreddit': 'HeavySeas',
         'members': '275413',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NFTsMarketplace',
         'members': '274878',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BritishTV',
@@ -9685,24 +9685,24 @@ export const subreddits = [
     {
         'subreddit': 'leaves',
         'members': '274450',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Blackops4',
         'members': '273880',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'characterdrawing',
         'members': '273758',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'samsung',
         'members': '273749',
         'icon': 'https://a.thumbs.redditmedia.com/Bg2otiOTBDMpB24PDUtY2C3NYnd67WJWV47EOUS7yb0.png'
     },
-    { 'subreddit': 'Fishing_Gear', 'members': '273115', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'Fishing_Gear', 'members': '273115', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'euphoria',
         'members': '272595',
@@ -9726,7 +9726,7 @@ export const subreddits = [
     {
         'subreddit': 'ar15',
         'members': '271833',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'btd6',
@@ -9736,7 +9736,7 @@ export const subreddits = [
     {
         'subreddit': 'Chadtopia',
         'members': '271762',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'learnmath',
@@ -9746,7 +9746,7 @@ export const subreddits = [
     {
         'subreddit': 'GTAorRussia',
         'members': '271482',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'czech',
@@ -9761,22 +9761,22 @@ export const subreddits = [
     {
         'subreddit': 'cableporn',
         'members': '271143',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beyonce',
         'members': '270880',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rant',
         'members': '270530',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'projectcar',
         'members': '270493',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'vexillologycirclejerk',
@@ -9786,17 +9786,17 @@ export const subreddits = [
     {
         'subreddit': 'PlantedTank',
         'members': '270389',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Iamactuallyverybadass',
         'members': '270112',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'answers',
         'members': '270110',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CatSlaps',
@@ -9806,7 +9806,7 @@ export const subreddits = [
     {
         'subreddit': 'Bonsai',
         'members': '270046',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'creativewriting',
@@ -9821,7 +9821,7 @@ export const subreddits = [
     {
         'subreddit': 'EntitledPeople',
         'members': '269931',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cowboybebop',
@@ -9831,7 +9831,7 @@ export const subreddits = [
     {
         'subreddit': 'Lustig',
         'members': '269402',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'windows',
@@ -9846,27 +9846,27 @@ export const subreddits = [
     {
         'subreddit': 'Costco',
         'members': '268516',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'onlyfansadvice',
         'members': '268345',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'handmade',
         'members': '268147',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Supplements',
         'members': '268013',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fakedisordercringe',
         'members': '267967',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'onguardforthee',
@@ -9886,7 +9886,7 @@ export const subreddits = [
     {
         'subreddit': 'thanksimcured',
         'members': '267209',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '49ers',
@@ -9896,7 +9896,7 @@ export const subreddits = [
     {
         'subreddit': 'Spanish',
         'members': '266830',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'overclocking',
@@ -9911,7 +9911,7 @@ export const subreddits = [
     {
         'subreddit': 'flyfishing',
         'members': '266342',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Pokemonart',
@@ -9921,7 +9921,7 @@ export const subreddits = [
     {
         'subreddit': 'askphilosophy',
         'members': '266173',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'beholdthemasterrace',
@@ -9931,37 +9931,37 @@ export const subreddits = [
     {
         'subreddit': 'Marijuana',
         'members': '265998',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'GirlsInFlarePants',
         'members': '265658',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'exmormon',
         'members': '265226',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HomeNetworking',
         'members': '265032',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'meatcrayon',
         'members': '264778',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fantasybaseball',
         'members': '264739',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'greebles',
         'members': '264720',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MagicArena',
@@ -9971,17 +9971,17 @@ export const subreddits = [
     {
         'subreddit': 'leangains',
         'members': '264188',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'amiugly',
         'members': '263824',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tylerthecreator',
         'members': '263810',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'arabfunny',
@@ -9991,17 +9991,17 @@ export const subreddits = [
     {
         'subreddit': 'trapmuzik',
         'members': '263585',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MeetPeople',
         'members': '263296',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Watchexchange',
         'members': '263175',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'eagles',
@@ -10016,7 +10016,7 @@ export const subreddits = [
     {
         'subreddit': 'ottawa',
         'members': '262842',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nbadiscussion',
@@ -10031,17 +10031,17 @@ export const subreddits = [
     {
         'subreddit': 'printSF',
         'members': '262359',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rally',
         'members': '262273',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Notion',
         'members': '262242',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'asmr',
@@ -10051,7 +10051,7 @@ export const subreddits = [
     {
         'subreddit': 'ProperAnimalNames',
         'members': '261760',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Instagram',
@@ -10061,12 +10061,12 @@ export const subreddits = [
     {
         'subreddit': 'dndmaps',
         'members': '261401',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'QAnonCasualties',
         'members': '261247',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'chicagobulls',
@@ -10076,17 +10076,17 @@ export const subreddits = [
     {
         'subreddit': 'malepolish',
         'members': '260901',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'WhatAWeeb',
         'members': '260584',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'orslokx',
         'members': '260448',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'belgium',
@@ -10096,7 +10096,7 @@ export const subreddits = [
     {
         'subreddit': 'Animewallpaper',
         'members': '260177',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'German',
@@ -10116,22 +10116,22 @@ export const subreddits = [
     {
         'subreddit': 'Indiana',
         'members': '259776',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'boomershumor',
         'members': '259730',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'apexuniversity',
         'members': '259694',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EntrepreneurRideAlong',
         'members': '259656',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MandelaEffect',
@@ -10141,7 +10141,7 @@ export const subreddits = [
     {
         'subreddit': 'famiL',
         'members': '259221',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'puppy101',
@@ -10151,7 +10151,7 @@ export const subreddits = [
     {
         'subreddit': 'Bushcraft',
         'members': '258989',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ArtFundamentals',
@@ -10161,12 +10161,12 @@ export const subreddits = [
     {
         'subreddit': 'MinecraftCommands',
         'members': '258888',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hungary',
         'members': '258811',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'asktransgender',
@@ -10176,47 +10176,47 @@ export const subreddits = [
     {
         'subreddit': 'discordVideos',
         'members': '258537',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'montreal',
         'members': '258445',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'crossdressing',
         'members': '258403',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HFY',
         'members': '258402',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'futureporn',
         'members': '258361',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'logodesign',
         'members': '258242',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'repurposedbuildings',
         'members': '258045',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'depression_memes',
         'members': '257893',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'audiodrama',
         'members': '257436',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ecommerce',
@@ -10226,17 +10226,17 @@ export const subreddits = [
     {
         'subreddit': 'whatcarshouldIbuy',
         'members': '257125',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'devops',
         'members': '257036',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'scriptedasiangifs',
         'members': '256984',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'afkarena',
@@ -10256,12 +10256,12 @@ export const subreddits = [
     {
         'subreddit': 'FastWorkers',
         'members': '256445',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Tomorrowland',
         'members': '256443',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Vaporwave',
@@ -10271,17 +10271,17 @@ export const subreddits = [
     {
         'subreddit': 'gaymers',
         'members': '256332',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Feminism',
         'members': '256186',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'leanfire',
         'members': '256073',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'britishcolumbia',
@@ -10291,7 +10291,7 @@ export const subreddits = [
     {
         'subreddit': 'steamdeals',
         'members': '255693',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Eminem',
@@ -10301,7 +10301,7 @@ export const subreddits = [
     {
         'subreddit': 'FractalPorn',
         'members': '255480',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Sekiro',
@@ -10311,7 +10311,7 @@ export const subreddits = [
     {
         'subreddit': 'DeepRockGalactic',
         'members': '255223',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Anarchism',
@@ -10321,7 +10321,7 @@ export const subreddits = [
     {
         'subreddit': 'F1Porn',
         'members': '255190',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NonPoliticalTwitter',
@@ -10331,7 +10331,7 @@ export const subreddits = [
     {
         'subreddit': 'MusicBattlestations',
         'members': '254975',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HIMYM',
@@ -10341,17 +10341,17 @@ export const subreddits = [
     {
         'subreddit': 'cinematography',
         'members': '254958',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ProtectAndServe',
         'members': '254923',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'pickuplines',
         'members': '254916',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ios',
@@ -10366,32 +10366,32 @@ export const subreddits = [
     {
         'subreddit': 'fixit',
         'members': '254335',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RepTime',
         'members': '254171',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Freefood',
         'members': '254139',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'longboarding',
         'members': '253978',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'satisfying',
         'members': '253945',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'keming',
         'members': '253846',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tommyinnit',
@@ -10401,7 +10401,7 @@ export const subreddits = [
     {
         'subreddit': 'TopGear',
         'members': '253777',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BitcoinMarkets',
@@ -10421,7 +10421,7 @@ export const subreddits = [
     {
         'subreddit': 'AntiJokes',
         'members': '253188',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'phoenix',
@@ -10441,12 +10441,12 @@ export const subreddits = [
     {
         'subreddit': 'fountainpens',
         'members': '252326',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImaginaryTechnology',
         'members': '252279',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'minnesota',
@@ -10456,7 +10456,7 @@ export const subreddits = [
     {
         'subreddit': 'Flipping',
         'members': '251873',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AvatarMemes',
@@ -10481,12 +10481,12 @@ export const subreddits = [
     {
         'subreddit': 'MacOS',
         'members': '251289',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TIGHTPUSSY',
         'members': '251048',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AFL',
@@ -10496,12 +10496,12 @@ export const subreddits = [
     {
         'subreddit': 'Finanzen',
         'members': '250881',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'guitarlessons',
         'members': '250831',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '90dayfianceuncensored',
@@ -10511,12 +10511,12 @@ export const subreddits = [
     {
         'subreddit': 'shittytattoos',
         'members': '250576',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Jazz',
         'members': '250530',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'futebol',
@@ -10526,7 +10526,7 @@ export const subreddits = [
     {
         'subreddit': 'GlitchInTheMatrix',
         'members': '250264',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KimetsuNoYaiba',
@@ -10536,12 +10536,12 @@ export const subreddits = [
     {
         'subreddit': 'bigdickproblems',
         'members': '250120',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Blacksmith',
         'members': '249872',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mountandblade',
@@ -10556,7 +10556,7 @@ export const subreddits = [
     {
         'subreddit': 'Mcat',
         'members': '249417',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Hue',
@@ -10566,12 +10566,12 @@ export const subreddits = [
     {
         'subreddit': 'cookingtonight',
         'members': '248902',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PleX',
         'members': '248799',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     // {
     //     'subreddit': 'TikTok_Tits',
@@ -10581,7 +10581,7 @@ export const subreddits = [
     {
         'subreddit': 'Fire',
         'members': '248696',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'paris',
@@ -10591,17 +10591,17 @@ export const subreddits = [
     {
         'subreddit': 'lawofattraction',
         'members': '248541',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tipofmyjoystick',
         'members': '248433',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AutumnPorn',
         'members': '248395',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'survivinginfidelity',
@@ -10611,7 +10611,7 @@ export const subreddits = [
     {
         'subreddit': 'unclebens',
         'members': '247963',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gorillaz',
@@ -10621,17 +10621,17 @@ export const subreddits = [
     {
         'subreddit': 'Permaculture',
         'members': '247642',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Assistance',
         'members': '247473',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'weedstocks',
         'members': '247439',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UnearthedArcana',
@@ -10641,17 +10641,17 @@ export const subreddits = [
     {
         'subreddit': 'Punny',
         'members': '247052',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StudentLoans',
         'members': '247029',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'centuryhomes',
         'members': '247005',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whatintarnation',
@@ -10666,7 +10666,7 @@ export const subreddits = [
     {
         'subreddit': 'titanfolk',
         'members': '246254',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'starwarsspeculation',
@@ -10676,7 +10676,7 @@ export const subreddits = [
     {
         'subreddit': 'FragileWhiteRedditor',
         'members': '245969',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Quebec',
@@ -10691,7 +10691,7 @@ export const subreddits = [
     {
         'subreddit': 'AnimalCrossingNewHor',
         'members': '245379',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'darknet',
@@ -10711,7 +10711,7 @@ export const subreddits = [
     {
         'subreddit': 'christmas',
         'members': '245112',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'florida',
@@ -10726,7 +10726,7 @@ export const subreddits = [
     {
         'subreddit': 'finedining',
         'members': '244366',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SpidermanPS4',
@@ -10736,7 +10736,7 @@ export const subreddits = [
     {
         'subreddit': 'awakened',
         'members': '244169',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'starbucks',
@@ -10761,7 +10761,7 @@ export const subreddits = [
     {
         'subreddit': 'TrueAskReddit',
         'members': '243103',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BlackClover',
@@ -10771,7 +10771,7 @@ export const subreddits = [
     {
         'subreddit': 'phclassifieds',
         'members': '242982',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'alexandradaddario',
@@ -10781,17 +10781,17 @@ export const subreddits = [
     {
         'subreddit': 'autism',
         'members': '242787',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'linux_gaming',
         'members': '242404',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wowthanksimcured',
         'members': '242058',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KoreanHotties',
@@ -10811,7 +10811,7 @@ export const subreddits = [
     {
         'subreddit': 'badtattoos',
         'members': '241441',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gif',
@@ -10821,22 +10821,22 @@ export const subreddits = [
     {
         'subreddit': 'OkCupid',
         'members': '240817',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheGoodPlace',
         'members': '240744',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Missing411',
         'members': '240637',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'woosh',
         'members': '240402',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PUBG',
@@ -10851,17 +10851,17 @@ export const subreddits = [
     {
         'subreddit': 'FuckNestle',
         'members': '239421',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Wellworn',
         'members': '239282',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FondantHate',
         'members': '239034',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'twice',
@@ -10871,12 +10871,12 @@ export const subreddits = [
     {
         'subreddit': 'ImaginaryCharacters',
         'members': '238828',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Kerala',
         'members': '238715',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DDLC',
@@ -10886,37 +10886,37 @@ export const subreddits = [
     {
         'subreddit': 'BollywoodFashion',
         'members': '238585',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Wallstreetsilver',
         'members': '238435',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NewParents',
         'members': '238397',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'InclusiveOr',
         'members': '238366',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Warzone',
         'members': '238290',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cpp',
         'members': '238061',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BreakUps',
         'members': '238025',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Psychic',
@@ -10926,12 +10926,12 @@ export const subreddits = [
     {
         'subreddit': 'winterporn',
         'members': '237415',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'porramauricio',
         'members': '237406',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'AmericanHorrorStory',
@@ -10971,12 +10971,12 @@ export const subreddits = [
     {
         'subreddit': 'MakeUpAddictionUK',
         'members': '236024',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Brogress',
         'members': '235889',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ghibli',
@@ -10986,12 +10986,12 @@ export const subreddits = [
     {
         'subreddit': 'CICO',
         'members': '235536',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DestinyFashion',
         'members': '235520',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'JonWinsTheThrone',
@@ -11001,7 +11001,7 @@ export const subreddits = [
     {
         'subreddit': 'projectzomboid',
         'members': '235236',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'metalgearsolid',
@@ -11011,7 +11011,7 @@ export const subreddits = [
     {
         'subreddit': 'Bellapoarch',
         'members': '235134',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'howyoudoin',
@@ -11031,7 +11031,7 @@ export const subreddits = [
     {
         'subreddit': 'ConanExiles',
         'members': '234167',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'NonCredibleDefense',
@@ -11051,7 +11051,7 @@ export const subreddits = [
     {
         'subreddit': 'IncreasinglyVerbose',
         'members': '232776',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'dankruto',
@@ -11061,7 +11061,7 @@ export const subreddits = [
     {
         'subreddit': 'MoldlyInteresting',
         'members': '232526',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'communism',
@@ -11071,12 +11071,12 @@ export const subreddits = [
     {
         'subreddit': 'LegalAdviceEurope',
         'members': '232386',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TOR',
         'members': '232213',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Avengers',
@@ -11091,17 +11091,17 @@ export const subreddits = [
     {
         'subreddit': 'HuskyTantrums',
         'members': '231753',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lfg',
         'members': '231592',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '1500isplenty',
         'members': '231569',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FairytaleasFuck',
@@ -11131,17 +11131,17 @@ export const subreddits = [
     {
         'subreddit': 'progmetal',
         'members': '230836',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Firearms',
         'members': '230824',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Mosses',
         'members': '230791',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DragonballLegends',
@@ -11161,7 +11161,7 @@ export const subreddits = [
     {
         'subreddit': 'poker',
         'members': '230415',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Duklock',
@@ -11171,27 +11171,27 @@ export const subreddits = [
     {
         'subreddit': 'RDR2',
         'members': '230004',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'mspaint',
         'members': '229850',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'flying',
         'members': '229495',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'StandUpComedy',
         'members': '229313',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'discgolf',
         'members': '229115',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'The10thDentist',
@@ -11201,7 +11201,7 @@ export const subreddits = [
     {
         'subreddit': 'GIMP',
         'members': '229086',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SatisfactoryGame',
@@ -11211,7 +11211,7 @@ export const subreddits = [
     {
         'subreddit': 'aws',
         'members': '228623',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'trailerparkboys',
@@ -11221,17 +11221,17 @@ export const subreddits = [
     {
         'subreddit': 'blursed_videos',
         'members': '228151',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'selfhosted',
         'members': '228144',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ElonJetTracker',
         'members': '228056',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'nova',
@@ -11246,7 +11246,7 @@ export const subreddits = [
     {
         'subreddit': 'archlinux',
         'members': '227936',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'manchester',
@@ -11256,12 +11256,12 @@ export const subreddits = [
     {
         'subreddit': 'Crypto_Currency_News',
         'members': '227667',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'talesfromcallcenters',
         'members': '227519',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'steelers',
@@ -11276,12 +11276,12 @@ export const subreddits = [
     {
         'subreddit': 'workout',
         'members': '226959',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'RoastMyCar',
         'members': '226849',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'blackdesertonline',
@@ -11296,22 +11296,22 @@ export const subreddits = [
     {
         'subreddit': 'KneadyCats',
         'members': '226436',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gamecollecting',
         'members': '226407',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'alberta',
         'members': '226246',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '2meirl42meirl4meirl',
         'members': '226215',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'funkopop',
@@ -11321,12 +11321,12 @@ export const subreddits = [
     {
         'subreddit': 'okmatewanker',
         'members': '226067',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'geography',
         'members': '226058',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'node',
@@ -11336,12 +11336,12 @@ export const subreddits = [
     {
         'subreddit': 'okbuddychicanery',
         'members': '225867',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'islam',
         'members': '225832',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'KylieJenner',
@@ -11356,32 +11356,32 @@ export const subreddits = [
     {
         'subreddit': 'khajiithaswares',
         'members': '225642',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CoinBase',
         'members': '225623',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'botw',
         'members': '225590',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheBullWins',
         'members': '225473',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ObscureMedia',
         'members': '225282',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'churchporn',
         'members': '225237',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wholesomejojo',
@@ -11396,22 +11396,22 @@ export const subreddits = [
     {
         'subreddit': 'Lovecraft',
         'members': '225076',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'secretcompartments',
         'members': '224936',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'amibeingdetained',
         'members': '224890',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'classiccars',
         'members': '224759',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MrRobot',
@@ -11421,7 +11421,7 @@ export const subreddits = [
     {
         'subreddit': 'LoveIslandTV',
         'members': '224358',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sales',
@@ -11431,12 +11431,12 @@ export const subreddits = [
     {
         'subreddit': 'nflmemes',
         'members': '224230',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TargetedShirts',
         'members': '224178',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'hiphop',
@@ -11446,12 +11446,12 @@ export const subreddits = [
     {
         'subreddit': 'VietNam',
         'members': '223879',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Roms',
         'members': '223861',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PokemonTCG',
@@ -11471,12 +11471,12 @@ export const subreddits = [
     {
         'subreddit': 'Pikabu',
         'members': '223611',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LinkedInLunatics',
         'members': '223399',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'haikyuu',
@@ -11491,37 +11491,37 @@ export const subreddits = [
     {
         'subreddit': 'pelletgrills',
         'members': '223198',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Bass',
         'members': '223049',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Genshin_Memepact',
         'members': '222831',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MensLib',
         'members': '222736',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'electricvehicles',
         'members': '222565',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'linuxquestions',
         'members': '222401',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'namenerds',
         'members': '222393',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FitAndNatural',
@@ -11531,7 +11531,7 @@ export const subreddits = [
     {
         'subreddit': 'Hacking_Tutorials',
         'members': '222054',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PhonesAreBad',
@@ -11546,7 +11546,7 @@ export const subreddits = [
     {
         'subreddit': 'GunPorn',
         'members': '221741',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'consoles',
@@ -11556,12 +11556,12 @@ export const subreddits = [
     {
         'subreddit': 'DreamWasTaken',
         'members': '221307',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MMORPG',
         'members': '221273',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'moviescirclejerk',
@@ -11571,42 +11571,42 @@ export const subreddits = [
     {
         'subreddit': 'massachusetts',
         'members': '220703',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'smallstreetbets',
         'members': '220670',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Bogleheads',
         'members': '220645',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'BrokenBabes',
         'members': '220418',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Infographics',
         'members': '220279',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Pets',
         'members': '220243',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UpvotedBecauseBoobs',
         'members': '220215',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'VolleyballGirls',
         'members': '220168',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'altcoin',
@@ -11626,7 +11626,7 @@ export const subreddits = [
     {
         'subreddit': 'ladyladyboners',
         'members': '219381',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'rust',
@@ -11636,7 +11636,7 @@ export const subreddits = [
     {
         'subreddit': 'learnjavascript',
         'members': '219041',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'redditmobile',
@@ -11646,12 +11646,12 @@ export const subreddits = [
     {
         'subreddit': 'facebookwins',
         'members': '218295',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'interesting',
         'members': '218121',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'modelmakers',
@@ -11666,7 +11666,7 @@ export const subreddits = [
     {
         'subreddit': 'smoobypost',
         'members': '217915',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'awwnime',
@@ -11678,7 +11678,7 @@ export const subreddits = [
         'members': '217592',
         'icon': 'https://b.thumbs.redditmedia.com/IbN-2CEWt3bM4hNdSQKiwFBMRXelUT10LfW5MovWSZU.png'
     },
-    { 'subreddit': 'Indiangirlsontinder', 'members': '217512', 'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png' },
+    { 'subreddit': 'Indiangirlsontinder', 'members': '217512', 'icon': 'https://img.icons8.com/fluency/512/reddit.png' },
     {
         'subreddit': 'sffpc',
         'members': '217380',
@@ -11692,12 +11692,12 @@ export const subreddits = [
     {
         'subreddit': 'gamingpc',
         'members': '216954',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'bitchimabus',
         'members': '216886',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'leafs',
@@ -11707,12 +11707,12 @@ export const subreddits = [
     {
         'subreddit': 'FloridaCoronavirus',
         'members': '216815',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'IrrationalMadness',
         'members': '216813',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ArianaGrande',
@@ -11722,12 +11722,12 @@ export const subreddits = [
     {
         'subreddit': 'footballhighlights',
         'members': '216749',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'csharp',
         'members': '216655',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'greece',
@@ -11737,7 +11737,7 @@ export const subreddits = [
     {
         'subreddit': 'consulting',
         'members': '216409',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DankMemesFromSite19',
@@ -11747,22 +11747,22 @@ export const subreddits = [
     {
         'subreddit': 'ThickFit',
         'members': '216285',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TwoRedditorsOneCup',
         'members': '216240',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'acrylicpainting',
         'members': '215970',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'tacticalgear',
         'members': '215892',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MCPE',
@@ -11772,7 +11772,7 @@ export const subreddits = [
     {
         'subreddit': 'neutralnews',
         'members': '215818',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImaginaryWesteros',
@@ -11782,17 +11782,17 @@ export const subreddits = [
     {
         'subreddit': 'BPD',
         'members': '215590',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'swedishproblems',
         'members': '215526',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'SydneySweeney',
         'members': '215506',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'homeassistant',
@@ -11802,27 +11802,27 @@ export const subreddits = [
     {
         'subreddit': 'SEO',
         'members': '215264',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'kendalljenner',
         'members': '215187',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'punk',
         'members': '214929',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'etymology',
         'members': '214873',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'berlin',
         'members': '214846',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wholesomeyuri',
@@ -11832,17 +11832,17 @@ export const subreddits = [
     {
         'subreddit': 'buildapcforme',
         'members': '214591',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'antiassholedesign',
         'members': '214557',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ModelsGoneMild',
         'members': '214447',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DumpsterDiving',
@@ -11852,12 +11852,12 @@ export const subreddits = [
     {
         'subreddit': 'fnv',
         'members': '214295',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'screenshots',
         'members': '214286',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Dashcam',
@@ -11867,7 +11867,7 @@ export const subreddits = [
     {
         'subreddit': 'Edmonton',
         'members': '214103',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gachagaming',
@@ -11882,12 +11882,12 @@ export const subreddits = [
     {
         'subreddit': '3Dmodeling',
         'members': '213742',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ProCreate',
         'members': '213649',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Supernatural',
@@ -11897,12 +11897,12 @@ export const subreddits = [
     {
         'subreddit': 'LightNovels',
         'members': '213411',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fastfood',
         'members': '213271',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'swtor',
@@ -11912,7 +11912,7 @@ export const subreddits = [
     {
         'subreddit': 'youtubers',
         'members': '213106',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'farcry',
@@ -11922,12 +11922,12 @@ export const subreddits = [
     {
         'subreddit': 'socialmedia',
         'members': '212757',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Woodcarving',
         'members': '212725',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CreepyWikipedia',
@@ -11947,12 +11947,12 @@ export const subreddits = [
     {
         'subreddit': 'spicy',
         'members': '212208',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PowerShell',
         'members': '212183',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'EmilyRatajkowski',
@@ -11967,7 +11967,7 @@ export const subreddits = [
     {
         'subreddit': 'spiderbro',
         'members': '211896',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'HalfLife',
@@ -11977,22 +11977,22 @@ export const subreddits = [
     {
         'subreddit': 'DrawForMe',
         'members': '211842',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Youtooz',
         'members': '211788',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'cocaine',
         'members': '211627',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'natureporn',
         'members': '211545',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'kindle',
@@ -12012,7 +12012,7 @@ export const subreddits = [
     {
         'subreddit': 'diablo3',
         'members': '211208',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'evangelionmemes',
@@ -12022,12 +12022,12 @@ export const subreddits = [
     {
         'subreddit': 'Frisson',
         'members': '210457',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'LesbianActually',
         'members': '209945',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'wisconsin',
@@ -12037,12 +12037,12 @@ export const subreddits = [
     {
         'subreddit': 'gaybrosgonemild',
         'members': '209382',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Gunpla',
         'members': '209337',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sololeveling',
@@ -12062,7 +12062,7 @@ export const subreddits = [
     {
         'subreddit': 'RandomThoughts',
         'members': '208325',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'androiddev',
@@ -12077,17 +12077,17 @@ export const subreddits = [
     {
         'subreddit': 'croatia',
         'members': '208242',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'weddingplanning',
         'members': '208074',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'diamondpainting',
         'members': '208030',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'norge',
@@ -12097,7 +12097,7 @@ export const subreddits = [
     {
         'subreddit': 'Construction',
         'members': '207922',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ImaginaryMindscapes',
@@ -12107,17 +12107,17 @@ export const subreddits = [
     {
         'subreddit': 'HailCorporate',
         'members': '207649',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Giraffesdontexist',
         'members': '207622',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'distressingmemes',
         'members': '207581',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ShinyPokemon',
@@ -12142,22 +12142,22 @@ export const subreddits = [
     {
         'subreddit': 'TILI',
         'members': '207160',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'lululemon',
         'members': '207130',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Dogberg',
         'members': '207118',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'law',
         'members': '206922',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'burgers',
@@ -12177,12 +12177,12 @@ export const subreddits = [
     {
         'subreddit': 'HouseplantsUK',
         'members': '206333',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sploot',
         'members': '206221',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'polls',
@@ -12197,22 +12197,22 @@ export const subreddits = [
     {
         'subreddit': 'jeuxvideo',
         'members': '205733',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'fuckHOA',
         'members': '205732',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'opendirectories',
         'members': '205502',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'naturalbodybuilding',
         'members': '205490',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'orangetheory',
@@ -12232,47 +12232,47 @@ export const subreddits = [
     {
         'subreddit': 'AlternativeHistory',
         'members': '204788',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'linux4noobs',
         'members': '204711',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'whatsthatbook',
         'members': '204631',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'PizzaCrimes',
         'members': '204507',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'scrungycats',
         'members': '204417',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'Whatisthis',
         'members': '204126',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'videography',
         'members': '204073',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sportsbetting',
         'members': '203860',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'FifaCareers',
         'members': '203758',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ghostoftsushima',
@@ -12287,12 +12287,12 @@ export const subreddits = [
     {
         'subreddit': 'amazon',
         'members': '203389',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'travisscott',
         'members': '203343',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'F1Technical',
@@ -12302,17 +12302,17 @@ export const subreddits = [
     {
         'subreddit': 'CPTSD',
         'members': '203250',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'OCPoetry',
         'members': '203210',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'sneakerreps',
         'members': '203192',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'MobileLegendsGame',
@@ -12327,7 +12327,7 @@ export const subreddits = [
     {
         'subreddit': 'nosurf',
         'members': '202923',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': '40kLore',
@@ -12342,7 +12342,7 @@ export const subreddits = [
     {
         'subreddit': 'Frontend',
         'members': '202619',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'duolingo',
@@ -12362,12 +12362,12 @@ export const subreddits = [
     {
         'subreddit': 'GalGadot',
         'members': '202212',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DivorcedBirds',
         'members': '202188',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'TheExpanse',
@@ -12382,12 +12382,12 @@ export const subreddits = [
     {
         'subreddit': 'Kikpals',
         'members': '201949',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'ACT',
         'members': '201937',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'UnexpectedlyWholesome',
@@ -12402,7 +12402,7 @@ export const subreddits = [
     {
         'subreddit': 'maryland',
         'members': '201751',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'kurzgesagt',
@@ -12417,22 +12417,22 @@ export const subreddits = [
     {
         'subreddit': 'gamedesign',
         'members': '201402',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'iphonewallpapers',
         'members': '201265',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DivinityOriginalSin',
         'members': '201211',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'chaoticgood',
         'members': '200979',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'CanadaPolitics',
@@ -12442,7 +12442,7 @@ export const subreddits = [
     {
         'subreddit': 'feminineboys',
         'members': '200817',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'DeathStranding',
@@ -12457,12 +12457,12 @@ export const subreddits = [
     {
         'subreddit': 'Chennai',
         'members': '200588',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'VintageFashion',
         'members': '200552',
-        'icon': 'https://img.icons8.com/fluency-systems-regular/512/reddit.png'
+        'icon': 'https://img.icons8.com/fluency/512/reddit.png'
     },
     {
         'subreddit': 'gnometalk',

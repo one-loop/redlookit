@@ -60,8 +60,9 @@
     --new-msg: #0F6CBD;
     --new-msg-hover: #0F548C;
     /* --menu-selector-button: #f3f2f1; */
-    --menu-selector-button: #fafafa;
-    --menu-selector-button-focus: #fafafa;
+    /* --menu-selector-button: #fafafa; */
+    --menu-selector-button: #f0f0f0;
+    --menu-selector-button-focus: #f0f0f0;
     --setting-button-hover: #e1dfdd;
     --post-link-hover: #e6e7ff;
     --menu-buttons-hover: #0C3B5E;
@@ -656,6 +657,11 @@ button {
     color: #a2a2a2;
 }
 
+.post-detail-info a {
+    color: #a2a2a2 !important;
+    text-decoration: underline !important;
+}
+
 .gnome {
     width: 50px;
     height: 50px;
@@ -785,6 +791,7 @@ button .menu {
     margin-left: 180px;
     transition: 0.16s ease-in;
     height: 32px;
+    backdrop-filter: blur(2px);
 }
 
 .light .search {
@@ -856,6 +863,18 @@ button .menu {
     overflow: hidden;
 }
 
+.md-spoiler-text {
+    background-color: var(--post-color) !important;
+    cursor: pointer;
+}
+
+.collapses button:active, .subreddit.button:active, .collapses button.selected:active, .subreddit.button.selected:active {
+    background-color: var(--outline);
+}
+
+.collapses button.selected, .subreddit.button.selected {
+    background-color: var(--menu-selector-button-focus);
+}
 
 nav span button {
     display: inline-block;
@@ -864,6 +883,7 @@ nav span button {
     border: none;
     width: 48px;
     height: 48px;
+    backdrop-filter: blur(2px);
 }
 
 nav span button:hover {
@@ -920,8 +940,9 @@ header {
 
 .inbox-button, .favorites-buttons button {
     padding-left: 9px;
-    padding-right: 19px;
-    width: auto;
+    /* padding-right: 19px; */
+    /* width: auto; */
+    width: 227px;
 }
 
 .toolbar.icons .ms-icon {
@@ -1396,7 +1417,8 @@ aside.menu-selector {
 }
 
 .menu-selector button {
-    background-color: var(--menu-selector-button);
+    /* background-color: var(--menu-selector-button); */
+    background-color: var(--background-color);
     color: var(--text-color);
     min-height: 40px;
     text-align: left;
@@ -1412,11 +1434,10 @@ aside.menu-selector {
     /* margin: 0px 20px 0px 5px; */
 }
 
-.menu-selector button:focus {
+/* .menu-selector button:focus {
     background-color: var(--menu-selector-button-focus);
-    /* color: var(--pink); */
     color: var(--post-color)
-}
+} */
 
 .favorites {
     /* padding: 15px 75px 15px 55px; */
@@ -1432,7 +1453,7 @@ aside.menu-selector {
 
 .favorites-buttons > button {
     display: block;
-    width: 100% !important;
+    /* width: 100% !important; */
     border-radius: 4px;
 }
 
@@ -1453,15 +1474,16 @@ aside.menu-selector {
 }
 
 .subreddits-section button {
-    width: 100%;
+    /* width: 100%; */
     padding-left: 55px;
-    background-color: var(--menu-selector-button);
+    background-color: var(--background-color);
     color: var(--text-color);
     height: 40px;
     text-align: left;
     /* padding-left: 55px; */
     border: none;
     border-radius: 4px;
+    width: 227px;
 }
 
 .subreddits-section button:hover {
@@ -1480,10 +1502,9 @@ aside.menu-selector {
     content: url(https://img.icons8.com/fluency-systems-regular/256/808080/ok--v1.png)
 }
 
-.subreddits-section button:focus {
+/* .subreddits-section button:focus {
     background-color: var(--menu-selector-button-focus);
-    /* color: var(--pink); */
-}
+} */
 
 .meet-now {
     width: 120px;
@@ -1802,8 +1823,9 @@ h4.settings {
     --new-msg: #0F6CBD;
     --new-msg-hover: #0F548C;
     /* --menu-selector-button: #f3f2f1; */
-    --menu-selector-button: #fafafa;
-    --menu-selector-button-focus: #fafafa;
+    /* --menu-selector-button: #fafafa; */
+    --menu-selector-button: #f0f0f0;
+    --menu-selector-button-focus: #f0f0f0;
     --setting-button-hover: #e1dfdd;
     --post-link-hover: #e6e7ff;
     --menu-buttons-hover: #0C3B5E;
@@ -1820,13 +1842,21 @@ h4.settings {
 }
 
 .theme1 {
-    --navbar-color: #000;
+    --navbar-color: #0F6CBD;
     /* --searchbar-unselected: #333;
     --searchbar-selected: #333; */
     --new-msg: #62aaff;
     --new-msg-hover: #a4d4ff;
     --placeholder: #adadad;
     --text-color-1: #fff;
+}
+
+.theme1 .navbar {
+    background-color: #000;
+}
+
+.light.theme1 .navbar {
+    background-color: #f0f0f0;
 }
 
 .dark.theme1 nav span button:hover {
@@ -1841,6 +1871,10 @@ h4.settings {
     color: var(--new-msg);
 }
 
+.theme1 nav span button {
+    background-color: transparent;
+}
+
 .light.theme1 nav span button:hover {
     background-color:#fff !important;
 }
@@ -1851,17 +1885,16 @@ h4.settings {
 }
 
 .light.theme1 {
-    --navbar-color: #f0f0f0;
     --new-msg: #106cbd;
     --new-msg-hover: #a4d4ff;
     --placeholder: #adadad;
 }
 
+/* -------------------- */
+
 .theme-button.theme2 {
     background-color: #9969c9;
 }
-
-/* -------------------- */
 
 .theme2 {
     --navbar-color: #9969c9;
@@ -2422,7 +2455,7 @@ h4.settings {
     --placeholder: #005669;
 }
 
-.dark.theme19 nav span button, .light.theme12 nav span button {
+.dark.theme19 nav span button, .light.theme19 nav span button {
     background: rgba(47,161,189,0.6);
 }
 
@@ -2448,6 +2481,152 @@ body.theme19 {
     background-repeat: no-repeat;
     background-size: contain;
     animation: corgis 90s linear infinite;
+}
+
+/* -------------------- */
+
+.theme-button.theme20 {
+    /*compress and crop gif*/
+    /* background-color: var(--background-color);
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/5a4e0c67086875.5b30e171c7ffd.gif);
+    background-size: 80px; */
+    background-color: #f8f8f8;
+    background-image: url(https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme20 .navbar {
+    /*compress and crop gif*/
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-RIGHT.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-LEFT.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-LEFT.gif?raw=true), 
+                url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/f1-honda-RIGHT.gif?raw=true);
+    animation: corgis 30s linear infinite reverse;
+    background-repeat: no-repeat;
+    background-size: 140px;
+    /* background-position: 0px 173px; */
+    height: 100%;
+    /* position: relative; */
+    width: 100%;
+}
+
+.theme20 {
+    --navbar-color: #f8f8f8;
+    --new-msg: #e75959;
+    --new-msg-hover: #f95951;
+    /* --placeholder: #ffb400; */
+    --placeholder: #ff8000;
+}
+
+.light.theme20 {
+    --navbar-color: #f0f0f0;
+    /* --navbar-color: #333; */
+    --placeholder: #333;
+}
+
+.theme20 .logo {
+    color: black;
+}
+
+.dark.theme20 nav span button {
+    background: rgba(0, 122, 193,.8);
+}
+
+.light.theme20 nav span button {
+    background: rgba(0, 122, 193,.8);
+}
+
+.light.theme20 nav span button:hover {
+    background: #D77700;
+}
+
+.dark.theme20 nav span button:hover {
+    background: #ffb952;
+}
+
+
+/* -------------------- */
+.theme-button.theme21 {
+    /*compress and crop gif*/
+    /* background-color: var(--background-color);
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/5a4e0c67086875.5b30e171c7ffd.gif);
+    background-size: 80px; */
+    background-color: #bdddee;
+    /* background-image: url(https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg); */
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/appa-right.gif?raw=true);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.theme21 .navbar {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/appa-left.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/appa-right.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/appa-right.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/appa-left.gif?raw=true);
+    animation: ponies 90s linear infinite;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: 80px; */
+    /* height: 100%; */
+    /* background-position: 130px -17px; */
+    /* width: 100%; */
+}
+
+.theme21 {
+    --navbar-color: #bdddee;
+    --new-msg: #7c9fa1;
+    --new-msg-hover: #95d6d9;
+    --placeholder: #9cc5c7;
+}
+
+.theme21 nav span button {
+    color: black;
+    background-color: #bdddee85;
+    backdrop-filter: blur(2px);
+}
+
+.theme21 .logo {
+    color: black;
+}
+
+/* -------------------- */
+
+.theme-button.theme22 {
+    /*compress and crop gif*/
+    /* background-color: var(--background-color);
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/5a4e0c67086875.5b30e171c7ffd.gif);
+    background-size: 80px; */
+    background-color: #113161;
+    /* background-image: url(https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg); */
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/nyan-cat-right.gif?raw=true);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.theme22 .navbar {
+    background-image: url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/nyan-cat-left.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/nyan-cat-right.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/nyan-cat-right.gif?raw=true), url(https://github.com/one-loop/redlookit/blob/gh-pages/assets/nyan-cat-left.gif?raw=true);
+    animation: ponies 90s linear infinite;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: 80px; */
+    /* height: 100%; */
+    /* background-position: 130px -17px; */
+    /* width: 100%; */
+}
+
+.theme22 {
+    --navbar-color: #113161;
+    --new-msg: #E99CEA;
+    --new-msg-hover: #d8b8d9;
+    --placeholder: #E99CEA;
+}
+
+.theme22 nav span button {
+    background-color: #123161c2;
 }
 
 
@@ -2647,9 +2826,20 @@ body.theme19 {
 }
 
 .settings-header {
+    /* display: flex;
+    flex-direction: row;
+    width: 200px; */
     display: flex;
     flex-direction: row;
-    width: 200px;
+    align-items: center;
+    /* justify-content: center; */
+    width: 293px;
+    height: 70px;
+    position: fixed;
+    background-color: var(--background-color);
+    margin-bottom: 50px;
+    /* position: relative; */
+    top: 48px;
 }
 
 .close-settings {
@@ -2675,8 +2865,9 @@ body.theme19 {
 .display-density-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 7px;
+    gap: 13px;
     width: fit-content;
+    margin-bottom: 30px;
 }
 
 .display-density-button {

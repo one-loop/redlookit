@@ -134,7 +134,7 @@ crossorigin="anonymous"></script>
                 <i class="ms-Icon ms-font-s ms-Icon--ChromeClose" style="color: var(--text-color)"></i>
             </button>
         </div>
-        <h6>Theme</h6>
+        <h6 style="margin-top: 50px">Theme</h6>
         <div class="theme-grid-container">
             <button class="theme-button defaultTheme selected"></button>
             <button class="theme-button theme1"></button>
@@ -150,12 +150,16 @@ crossorigin="anonymous"></script>
             <button class="theme-button theme9"></button>
             <button class="theme-button theme10"></button>
             <button class="theme-button theme11"></button>
-            <button class="theme-button theme12"></button>
-            <button class="theme-button theme13"></button>
-            <button class="theme-button theme14"></button>
-            <button class="theme-button theme15"></button>
+            <button class="theme-button theme12" title="Artwork from Google Colab"></button>
+            <button class="theme-button theme13" title="Artwork from Google Colab"></button>
+            <button class="theme-button theme14" title="Artwork from Google Colab"></button>
+            <button class="theme-button theme15" title="Artwork from Rooster Dragon"></button>
             <button class="theme-button theme16"></button>
             <button class="theme-button theme19"></button>
+            <button class="theme-button theme20" title="Artwork from Dylan Nowak"></button>
+            <button class="theme-button theme21" title="Artwork from Cas van de Pol"></button>
+            <button class="theme-button theme22"></button>
+
         </div>
         <h6 style="margin-top: 30px">Appearance</h6>
         <div class="form-check form-switch">
@@ -169,6 +173,10 @@ crossorigin="anonymous"></script>
         <div class="form-check form-switch">
             <label for="show-long-emails" title="(looks more inconspicuous if turned on)">Long Email Address</label>
             <input class="form-check-input" type="checkbox" id="show-long-emails" checked>
+        </div>
+        <div class="form-check form-switch">
+            <label for="hide-media" title="(looks more inconspicuous if turned on)">Hide Media</label>
+            <input class="form-check-input" type="checkbox" id="hide-media">
         </div>
         <h6 style="margin-top: 30px">Display Density</h6>
         <div class="display-density-container">
@@ -214,6 +222,17 @@ crossorigin="anonymous"></script>
                 <span>Compact</span>                                      
             </button>
         </div>
+        <h6 style="margin-top: 30px">Set Page Title</h6>
+        <form class="page-title-input-form" style="margin-bottom: 30px">
+        <input value="Email - John Smith - Outlook" class="page-title-input-box" style="
+            width: 278px;
+            border-radius: 4px;
+            padding: 5px 10px;
+            background-color: var(--background-color-2);
+            outline: none;
+            border: 2px solid var(--navbar-color);
+            color: var(--placeholder)">
+        </form>
     </div>
 
     <div class="profile-panel">
@@ -578,7 +597,7 @@ crossorigin="anonymous"></script>
                         <i class="ms-Icon ms-Icon--ChevronDownMed" aria-hidden="true"></i>Favourites
                     </button>
                     <section class="favorites-buttons collapses">
-                        <button class="inbox-button" title="r/popular">
+                        <button class="inbox-button selected" title="r/popular">
                             <!-- <i class="ms-Icon ms-Icon--Inbox" style="margin: 0 20px 0 8px" aria-hidden="true"></i> -->
                             <!-- <img class="fluent-icon" src="https://img.icons8.com/fluency-systems-regular/256/null/inbox.png"> -->
                             <svg class="fluent-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

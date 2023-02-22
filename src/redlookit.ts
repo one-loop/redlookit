@@ -295,7 +295,7 @@ function displayPosts(responses: Post[], subreddit, subredditInformation: Subred
         subredditInfoHeading.classList.add('subreddit-info-heading');
         favoriteIcon.id = subreddit;
         if (localStorage.getItem('savedSubreddits')) {
-            if (localStorage.getItem('savedSubreddits').toLowerCase().includes(subreddit.toLowerCase())) {
+            if (localStorage.getItem('savedSubreddits').toLowerCase().split(',').includes(subreddit.toLowerCase())) {
                 // console.log(`r/${subreddit} in SAVED DATA: ${localStorage.getItem('savedSubreddits')}`)
                 favoriteIcon.innerHTML = '<svg width="16" height="16" class="favorite-icon favorited" viewBox="0 0 176 168" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M89.7935 6.93173L111.277 50.4619C113.025 54.0036 116.404 56.4584 120.312 57.0264L168.351 64.0068C169.991 64.2451 170.646 66.2611 169.459 67.4182L134.698 101.302C131.87 104.058 130.579 108.031 131.247 111.923L139.453 159.767C139.733 161.401 138.018 162.647 136.551 161.876L93.5841 139.287C90.0882 137.449 85.9118 137.449 82.4159 139.287L39.4491 161.876C37.9818 162.647 36.267 161.401 36.5472 159.768L44.7531 111.923C45.4208 108.031 44.1302 104.059 41.302 101.302L6.54106 67.4182C5.35402 66.2611 6.00905 64.2451 7.64948 64.0068L55.6879 57.0264C59.5964 56.4584 62.9752 54.0036 64.7231 50.4619L86.2065 6.93174C86.9402 5.44523 89.0599 5.44525 89.7935 6.93173Z"/></svg>'
             } else {
@@ -595,7 +595,7 @@ topButton.addEventListener('click', function() {
 let themeNames=['defaultTheme', 'theme1', 'theme2', 'theme3', 'theme4', 'theme5', 
                 'theme6', 'theme7', 'theme8', 'theme9', 'theme10', 'theme11', 
                 'theme12', 'theme13', 'theme14', 'theme15', 'theme16', 'theme17',
-                'theme18', 'theme19']
+                'theme18', 'theme19', 'theme20', 'theme21', 'theme22']
 
 
 let themes = document.querySelector('.theme-grid-container') as HTMLElement;
@@ -762,7 +762,9 @@ function showPostFromData(response: ApiObj) {
         let image = document.createElement('img');
         image.src = response.data[0].data.children[0].data.url_overridden_by_dest;
         image.classList.add('post-image');
-        postSection.append(image);
+        if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
+            postSection.append(image);
+        }
     } 
     if (response.data[0].data.children[0].data.selftext !== '' && !response.data[0].data.children[0].data.selftext.includes('preview')) {
         const selftext = document.createElement('div');
@@ -797,15 +799,24 @@ function showPostFromData(response: ApiObj) {
         const source = document.createElement('source');
         source.src = response.data[0].data.children[0].data.secure_media.reddit_video.fallback_url;
         video.appendChild(source);
-        postSection.append(video);
+        if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
+            postSection.append(video);
+        }
     }
     
     const postDetails = getPostDetails(response)
     postSection.append(...postDetails)
-    postSection.append(document.createElement('hr'))
+    postSection.append(document.createElement('hr'));
 
     displayComments(comments, { post: response.data[0].data.children[0].data.permalink });
 }
+
+document.body.addEventListener('keydown', (event) => {
+    // console.log(event.key)
+    if (event.key === 'Escape') {
+        clearPostSection();
+    }
+})
 
 function getPostDetails(response: any) {
     let upvotes = document.createElement('span');
@@ -813,8 +824,9 @@ function getPostDetails(response: any) {
     upvotes.append(`${response.data[0].data.children[0].data.ups.toLocaleString()}`);
     upvotes.innerHTML += '<svg width="15px" height="15px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
     upvotes.classList.add('post-detail-info')
-    let subreddit = document.createElement('span');
-    subreddit.classList.add('post-detail-info')
+    let subreddit = document.createElement('a');
+    subreddit.classList.add('post-detail-info');
+    subreddit.href = `#/${response.data[0].data.children[0].data.subreddit_name_prefixed}`;
     subreddit.append(response.data[0].data.children[0].data.subreddit_name_prefixed);
     let numComments = document.createElement('span');
     numComments.append(`${response.data[0].data.children[0].data.num_comments.toLocaleString()} Comments`);
@@ -1301,6 +1313,83 @@ function showLongAddress() {
     }    
 }
 
+const checkbox4: HTMLInputElement = strictQuerySelector('#hide-media');
+checkbox4.addEventListener('change', function() {
+    const body = strictQuerySelector('body');
+    if (checkbox4.checked) {
+        localStorage.setItem('hideMedia', 'true');
+        if (document.querySelector('.post-image')) {
+            (document.querySelector('.post-image') as HTMLElement).style.display = 'none';
+        } else if (document.querySelector('.post-video')) {
+            (document.querySelector('.post-video') as HTMLElement).style.display = 'noen';
+        }
+    } else {
+        localStorage.setItem('hideMedia', 'false');
+        if (document.querySelector('.post-image')) {
+            (document.querySelector('.post-image') as HTMLElement).style.display = 'block';
+        } else if (document.querySelector('.post-video')) {
+            (document.querySelector('.post-video') as HTMLElement).style.display = 'block';
+        }
+    }
+})
+
+function hideMedia() {
+    if (localStorage.getItem('hideMedia') == 'true') {
+        checkbox4.checked = true;
+        if (document.querySelector('.post-image')) {
+            (document.querySelector('.post-image') as HTMLElement).style.visibility = 'hidden';
+        } else if (document.querySelector('.post-video')) {
+            (document.querySelector('.post-video') as HTMLElement).style.visibility = 'hidden';
+        }
+    } else if (localStorage.getItem('hideMedia') == 'false') {
+        checkbox4.checked = false;
+        if (document.querySelector('.post-image')) {
+            (document.querySelector('.post-image') as HTMLElement).style.visibility = 'visible';
+        } else if (document.querySelector('.post-video')) {
+            (document.querySelector('.post-video') as HTMLElement).style.visibility = 'visible';
+        }
+    }
+}
+
+let spoilerTexts = document.querySelectorAll('span.md-spoiler-text') as NodeListOf<HTMLElement>;
+if (spoilerTexts) {
+    for (let spoilerText of spoilerTexts) {
+        spoilerText.addEventListener('click', function () {
+            // spoilerText.classList.remove('md-spoiler-text');
+            spoilerText.classList.add('hello');
+
+            // console.log('spoiler text clicked');
+        });
+    }
+}
+
+let sidebarButtons = document.querySelectorAll('.collapses button, .subreddit.button') as NodeListOf<HTMLElement>;
+for (let sidebarButton of sidebarButtons) {
+    sidebarButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        console.log('clicked');
+        for (let allsidebarButton of sidebarButtons) {
+            allsidebarButton.classList.remove('selected');
+        }
+        sidebarButton.classList.add('selected');
+    })
+}
+
+let pageTitleInputForm = document.querySelector('.page-title-input-form') as HTMLInputElement;
+let pageTitleInputBox = document.querySelector('.page-title-input-box') as HTMLInputElement;
+
+pageTitleInputForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    localStorage.setItem('pageTitle', pageTitleInputBox.value);
+    document.title = pageTitleInputBox.value;
+})
+
+function setPageTitle() {
+    if (localStorage.getItem('pageTitle')) {
+        document.title = localStorage.getItem('pageTitle');
+    }
+}
+
 window.addEventListener("hashchange", () => {
     clearPost();
     const permalink = permalinkFromURLAnchor();
@@ -1368,13 +1457,22 @@ function displaySearchResults(results) {
     searchResults.innerHTML = '';
 
     for (let result of results) {
-        searchResults.innerHTML += `<a href="#/r/${result.subreddit}" class="search-result-link"><div class="search-result-item"><img src="${result.icon}" class="search-subreddit-icon" alt="'Search Subreddit' icon"><div class="search-result-item-info"><div class="search-result-subreddit-name">r/${result.subreddit}</div><div class="search-result-subreddit-info">Community • ${numberFormatter(result.members)} members</div></div><button class="add-subreddit-button" id="${result.subreddit}">+</button></div></a>`
+        searchResults.innerHTML += `
+            <a href="#/r/${result.subreddit}" class="search-result-link">
+                <div class="search-result-item">
+                    <img src="${result.icon}" class="search-subreddit-icon"/>
+                    <div class="search-result-item-info">
+                        <div class="search-result-subreddit-name">r/${result.subreddit}</div>
+                        <div class="search-result-subreddit-info">Community • ${numberFormatter(result.members)} members</div>
+                    </div>
+                </div>
+            </a>`
         // console.log(searchResultItem)
         let searchResultLinks = document.querySelectorAll('.search-result-link');
 
         for (let searchResultLink of searchResultLinks) {
             searchResultLink.addEventListener('click', function() {
-                console.log('clicked');
+                console.log('outer button clicked');
                 hideSearchResults();
                 // inputBox.value = '';
                 // let yourSubredditsSection = document.querySelector('.your-subreddits')
@@ -1382,6 +1480,14 @@ function displaySearchResults(results) {
             })
         }
     }
+}
+
+let addSubreddit = document.querySelector('.add-subreddit-button') as HTMLElement;
+if (addSubreddit) {
+    addSubreddit.addEventListener('click', (event) => {
+        console.log('inner button clicked');
+        event.stopPropagation();
+    })
 }
 
 
@@ -1400,6 +1506,8 @@ showSubredditDetails();
 showLongAddress();
 applySavedTheme();
 setDisplayDensity();
+hideMedia();
+setPageTitle();
 
 // Everything set up.
 // We start actually doing things now
