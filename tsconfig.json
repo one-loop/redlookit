@@ -3,12 +3,15 @@
     "allowJs": true,
     "preserveConstEnums": true,
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": false,
-    "allowUnusedLabels": false,
-    "strictNullChecks": false,
+    "strict": false,
     "sourceMap": true,
     "module": "es6",
     "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ES2021"
+    ]
   },
   "files": [
     "src/redlookit.ts",

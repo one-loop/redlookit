@@ -6,7 +6,7 @@ Thanks for the immense support from reddit! This project became the most popular
 I'll continue to add new features. Feel free to contribute if you can, there's still so many features to add and things to tweak and improve
 
 ## 📌 How to use?
-1. Go to https://one-loop.github.io/redlookit/
+1. Go to https://yarillo4.github.io/redlookit
 2. You will automatically get the posts from /popular after a second or two in the main area.
 3. If you want to view posts from a specific subreddit, type the name of the subreddit in the search bar and hit enter. Then click on the subreddit button under the "your subreddits" section in the sidebar which will get the posts from that subreddit and display it in the email area
 4. Clicking on a post will expand it to the right where you can read comments
@@ -24,13 +24,16 @@ PS: If you have a better name, please let me know 🙏
 - [x] Responsive layout (somewhat)
 - [x] View image posts
 - [x] View video posts
-- [x] View comments
+- [x] Comment trees
+- [x] URL navigation & share-ability
+- [x] Support for all reddit markdown formatting
+- [x] Ability to "Load more comments" for comment trees that were cut short by reddit
 - [x] Collapsable side menu
 - [x] Light mode
 - [x] Help getting users
 - [x] View comment reply tree
 - [x] View more replies
-- [x] Added gnomes on r/gnometalk (thanks Yarillo4)
+- [x] Support for gnomes
 - [x] Outlook Profile Pictures
 - [x] Link routing
 - [x] Save added subreddits to local storage
