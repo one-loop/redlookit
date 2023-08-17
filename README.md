@@ -1,4 +1,8 @@
 # 📪 Reddit Mailbox
+```diff
+- Update: As of 10 Aug 2023, Reddit has finally blocked all third party apps from accessing their API freely, so this site no longer works
+```
+
 **Update: As of 10 Aug 2023, Reddit has finally blocked all third party apps from accessing their API freely, so this site no longer works**
 Browse reddit while looking like you're reading your email
 
