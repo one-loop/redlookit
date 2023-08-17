@@ -1,4 +1,5 @@
 # 📪 Reddit Mailbox
+**Update: As of 10 Aug 2023, Reddit has finally blocked all third party apps from accessing their API freely, so this site no longer works**
 Browse reddit while looking like you're reading your email
 
 Thanks for the immense support from reddit! This project became the most popular post on r/coding of 2022 in a day (somehow?!) We've also received over 100,000 views to the site in one day!
