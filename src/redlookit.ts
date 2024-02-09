@@ -27,7 +27,7 @@ function strictQuerySelector<T extends Element>(selector: string): T {
 }
 
 // const redditBaseURL: string = "https://www.reddit.com";
-const redditBaseURL: string = "https://api.reddit.com";
+const redditBaseURL: string = "https://www.reddit.com";
 const postsList: HTMLElement = strictQuerySelector("#posts");
 const postSection: HTMLElement = strictQuerySelector('section.reddit-post');
 let colors = ['#c24332', '#2e303f', '#63948c', '#ebe6d1', '#517c63', '#4c525f', '#371d31', '#f95950', '#023246', '#2e77ae', '#0d2137', '#ff8e2b'];
