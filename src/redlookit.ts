@@ -547,7 +547,6 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
 }
 
 function displayComments(commentsData, {post}: {post: Permalink}) {
-    console.log(commentsData);
     postSection.classList.add('post-selected');
     postSection.classList.remove('deselected');
 
