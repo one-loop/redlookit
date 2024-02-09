@@ -166,6 +166,10 @@ interface URLAnchorFlags {
 }
 function setURLAnchor(permalink: Permalink, flags: URLAnchorFlags = {pushState:true}): void {
     const url = removeTrailingSlash(new URL(document.URL));
+    if (url.protocol == "file:///" || ["localhost", "127.0.0.1", "[::1]"].find((v) => v == url.hostname) ) {
+        // Can't pushState something local anymore because of browser security
+        return;
+    }
     const newurl = new URL(`${url.protocol}//${url.hostname}${url.pathname}#${permalink}`);
     if (flags.pushState) {
         window.history.pushState({}, '', newurl);
