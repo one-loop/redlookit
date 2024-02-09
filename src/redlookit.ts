@@ -451,9 +451,14 @@ function unFavoriteSubreddit(subreddit) {
     // console.log(localStorage.getItem('savedSubreddits'));
 }
 
-type CommentBuilderOptions = {indent: number, ppBuffer: HTMLImageElement[], post: Permalink};
+type CommentBuilderOptions = {
+    indent: number, 
+    ppBuffer: HTMLImageElement[], 
+    post: Permalink,
+    commentsEncounteredSoFar: Set<string>    
+};
 
-function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],  {post, indent=0, ppBuffer=[]}: CommentBuilderOptions) {
+function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],  {post, indent=0, ppBuffer=[], commentsEncounteredSoFar=new Set()}: CommentBuilderOptions) {
     if (listing.length === 0) {
         return;
     }
@@ -463,6 +468,8 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
         if (redditObj.kind === "t1") {
             // kind being t1 assures us listing[0] is a SnooComment
             const comment: SnooComment = redditObj as SnooComment;
+            commentsEncounteredSoFar.add(comment.data.id);
+            
             const commentElement = document.createElement("div");
             if (indent > 0) {
                 commentElement.classList.add('replied-comment');
@@ -478,7 +485,8 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
                 displayCommentsRecursive(commentElement, comment.data.replies.data.children, {
                     indent: indent + 10, 
                     ppBuffer: ppBuffer,
-                    post: post
+                    post: post,
+                    commentsEncounteredSoFar
                 });
             }
 
@@ -533,10 +541,15 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
                             return Promise.reject(e);
                         }
 
+                        replies.children = replies.children.filter((v) => {
+                            return !commentsEncounteredSoFar.has(v.data.id)
+                        })
+
                         displayCommentsRecursive(parentElement, replies.children, {
                             indent: indent + 10,
                             ppBuffer: ppBuffer,
-                            post: post
+                            post: post,
+                            commentsEncounteredSoFar
                         });
                         return Promise.resolve();
                     });
@@ -551,7 +564,7 @@ function displayComments(commentsData, {post}: {post: Permalink}) {
     postSection.classList.remove('deselected');
 
     const stableInTimeFaceBuffer = facesSideLoader.getFaces().slice(0); // Stable-in-time copy of the full array
-    displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post});
+    displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post, commentsEncounteredSoFar: new Set()});
 }
 
 let sortButton = document.querySelector('.post-header-button.sort') as HTMLElement;
