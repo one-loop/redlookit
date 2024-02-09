@@ -1,6 +1,6 @@
 import "../styles/redlookit.css"
 import "./@types/reddit-types.ts"
-import {HumanFacesSideLoader} from "./faces_sideloader"
+import {HumanFacesSideLoader} from "./facesSideloader"
 import {Random, UUID, UUIDFormat} from "./random";
 import {subreddits} from "./subredditList";
 
