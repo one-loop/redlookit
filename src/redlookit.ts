@@ -40,15 +40,9 @@ menuButton!.addEventListener('click', () => {
 })
 
 const facesSideLoader = new HumanFacesSideLoader(0);
-facesSideLoader.checkIsAPIOnline(1000).then( (online) => {
-    if (online) {
-        for (let i = 0; i < 200; i++) {
-            facesSideLoader.sideLoad().catch();
-        }
-    } else {
-        console.error("The neural network for the profile pictures seems to be down :(");
-    }
-})
+for (let i = 0; i < 200; i++) {
+    facesSideLoader.sideLoad().catch();
+}
 
 const rng = new Random();
 

@@ -1,6 +1,6 @@
 // To avoid risks of misunderstandings, we make it already explicit in the types that the code expects milliseconds.
 type Milliseconds = number;
-const API_URL = "https://thispersondoesnotexist.com/image"
+const API_URL = "https://thispersondoesnotexist.com"
 
 // TimedTask
 // \brief Wait a number of milliseconds then executes a task
