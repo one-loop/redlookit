@@ -109,12 +109,16 @@ function showSubreddit(subreddit: string) {
 
     axios.get(`${redditBaseURL}/r/${subreddit}.json?limit=75`)
         .then((posts: Listing<Post>) => {
-            console.log(posts);
             const responseData = posts.data.data.children;
             axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
                 .then((response2: any) => {
-                    const subredditInformation = response2.data;
-                    displayPosts(responseData, subreddit, subredditInformation);
+                    if (response2 && response2.data.kind === "t5") {
+                        const subredditInformation = response2.data.data as SubredditDetails;
+                        displayPosts(responseData, subreddit, subredditInformation);
+                    } else {
+                        displayPosts(responseData, subreddit);
+                    }
+                    
                 })
                 .catch((e: Error) => {
                     displayPosts(responseData, subreddit);
@@ -1387,7 +1391,6 @@ let sidebarButtons = document.querySelectorAll('.collapses button, .subreddit.bu
 for (let sidebarButton of sidebarButtons) {
     sidebarButton.addEventListener('click', (event) => {
         event.stopPropagation();
-        console.log('clicked');
         for (let allsidebarButton of sidebarButtons) {
             allsidebarButton.classList.remove('selected');
         }
