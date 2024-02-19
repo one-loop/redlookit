@@ -1,6 +1,6 @@
 import "../styles/redlookit.css"
 import "./@types/reddit-types.ts"
-import {HumanFacesSideLoader} from "./faces_sideloader"
+import {HumanFacesSideLoader} from "./facesSideloader"
 import {Random, UUID, UUIDFormat} from "./random";
 import {subreddits} from "./subredditList";
 
@@ -27,7 +27,7 @@ function strictQuerySelector<T extends Element>(selector: string): T {
 }
 
 // const redditBaseURL: string = "https://www.reddit.com";
-const redditBaseURL: string = "https://api.reddit.com";
+const redditBaseURL: string = "https://www.reddit.com";
 const postsList: HTMLElement = strictQuerySelector("#posts");
 const postSection: HTMLElement = strictQuerySelector('section.reddit-post');
 let colors = ['#c24332', '#2e303f', '#63948c', '#ebe6d1', '#517c63', '#4c525f', '#371d31', '#f95950', '#023246', '#2e77ae', '#0d2137', '#ff8e2b'];
@@ -40,15 +40,9 @@ menuButton!.addEventListener('click', () => {
 })
 
 const facesSideLoader = new HumanFacesSideLoader(0);
-facesSideLoader.checkIsAPIOnline(1000).then( (online) => {
-    if (online) {
-        for (let i = 0; i < 200; i++) {
-            facesSideLoader.sideLoad().catch();
-        }
-    } else {
-        console.error("The neural network for the profile pictures seems to be down :(");
-    }
-})
+for (let i = 0; i < 200; i++) {
+    facesSideLoader.sideLoad().catch();
+}
 
 const rng = new Random();
 
@@ -115,12 +109,16 @@ function showSubreddit(subreddit: string) {
 
     axios.get(`${redditBaseURL}/r/${subreddit}.json?limit=75`)
         .then((posts: Listing<Post>) => {
-            console.log(posts);
             const responseData = posts.data.data.children;
             axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
                 .then((response2: any) => {
-                    const subredditInformation = response2.data;
-                    displayPosts(responseData, subreddit, subredditInformation);
+                    if (response2 && response2.data.kind === "t5") {
+                        const subredditInformation = response2.data.data as SubredditDetails;
+                        displayPosts(responseData, subreddit, subredditInformation);
+                    } else {
+                        displayPosts(responseData, subreddit);
+                    }
+                    
                 })
                 .catch((e: Error) => {
                     displayPosts(responseData, subreddit);
@@ -172,6 +170,10 @@ interface URLAnchorFlags {
 }
 function setURLAnchor(permalink: Permalink, flags: URLAnchorFlags = {pushState:true}): void {
     const url = removeTrailingSlash(new URL(document.URL));
+    if (url.protocol == "file:///" || ["localhost", "127.0.0.1", "[::1]"].find((v) => v == url.hostname) ) {
+        // Can't pushState something local anymore because of browser security
+        return;
+    }
     const newurl = new URL(`${url.protocol}//${url.hostname}${url.pathname}#${permalink}`);
     if (flags.pushState) {
         window.history.pushState({}, '', newurl);
@@ -453,9 +455,14 @@ function unFavoriteSubreddit(subreddit) {
     // console.log(localStorage.getItem('savedSubreddits'));
 }
 
-type CommentBuilderOptions = {indent: number, ppBuffer: HTMLImageElement[], post: Permalink};
+type CommentBuilderOptions = {
+    indent: number, 
+    ppBuffer: HTMLImageElement[], 
+    post: Permalink,
+    commentsEncounteredSoFar: Set<string>    
+};
 
-function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],  {post, indent=0, ppBuffer=[]}: CommentBuilderOptions) {
+function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],  {post, indent=0, ppBuffer=[], commentsEncounteredSoFar=new Set()}: CommentBuilderOptions) {
     if (listing.length === 0) {
         return;
     }
@@ -465,6 +472,8 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
         if (redditObj.kind === "t1") {
             // kind being t1 assures us listing[0] is a SnooComment
             const comment: SnooComment = redditObj as SnooComment;
+            commentsEncounteredSoFar.add(comment.data.id);
+            
             const commentElement = document.createElement("div");
             if (indent > 0) {
                 commentElement.classList.add('replied-comment');
@@ -480,7 +489,8 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
                 displayCommentsRecursive(commentElement, comment.data.replies.data.children, {
                     indent: indent + 10, 
                     ppBuffer: ppBuffer,
-                    post: post
+                    post: post,
+                    commentsEncounteredSoFar
                 });
             }
 
@@ -535,10 +545,15 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
                             return Promise.reject(e);
                         }
 
+                        replies.children = replies.children.filter((v) => {
+                            return !commentsEncounteredSoFar.has(v.data.id)
+                        })
+
                         displayCommentsRecursive(parentElement, replies.children, {
                             indent: indent + 10,
                             ppBuffer: ppBuffer,
-                            post: post
+                            post: post,
+                            commentsEncounteredSoFar
                         });
                         return Promise.resolve();
                     });
@@ -549,12 +564,11 @@ function displayCommentsRecursive(parentElement: HTMLElement, listing: ApiObj[],
 }
 
 function displayComments(commentsData, {post}: {post: Permalink}) {
-    console.log(commentsData);
     postSection.classList.add('post-selected');
     postSection.classList.remove('deselected');
 
     const stableInTimeFaceBuffer = facesSideLoader.getFaces().slice(0); // Stable-in-time copy of the full array
-    displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post});
+    displayCommentsRecursive(postSection, commentsData, { indent: 0, ppBuffer: stableInTimeFaceBuffer, post: post, commentsEncounteredSoFar: new Set()});
 }
 
 let sortButton = document.querySelector('.post-header-button.sort') as HTMLElement;
@@ -1377,7 +1391,6 @@ let sidebarButtons = document.querySelectorAll('.collapses button, .subreddit.bu
 for (let sidebarButton of sidebarButtons) {
     sidebarButton.addEventListener('click', (event) => {
         event.stopPropagation();
-        console.log('clicked');
         for (let allsidebarButton of sidebarButtons) {
             allsidebarButton.classList.remove('selected');
         }

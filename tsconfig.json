@@ -17,7 +17,7 @@
     "src/redlookit.ts",
     "src/subredditList.ts",
     "src/random.ts",
-    "src/faces_sideloader.ts",
+    "src/facesSideloader.ts",
     "src/@types/reddit-types.ts"
   ]
 }
