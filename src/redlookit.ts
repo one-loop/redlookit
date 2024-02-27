@@ -118,7 +118,6 @@ function showSubreddit(subreddit: string) {
                     } else {
                         displayPosts(responseData, subreddit);
                     }
-                    
                 })
                 .catch((e: Error) => {
                     displayPosts(responseData, subreddit);
@@ -805,7 +804,13 @@ function showPostFromData(response: ApiObj) {
         thumbnail.onerror = () => {
             thumbnail.src = 'https://img.icons8.com/3d-fluency/512/news.png';
         };
-        link.href = response.data[0].data.children[0].data.url_overridden_by_dest;
+
+        // URLs can be local to the reddit post (ie. /r/test/1b14ok7 instead of http://reddit.com/r/...)
+        // Instead of trying to parse URLs (which is notoriously hard) to detect that and do string manipulation,
+        // let's just use the URL() class that's built into the browser.
+        let postLink = new URL(response.data[0].data.children[0].data.url_overridden_by_dest, redditBaseURL);
+        link.href = postLink.href
+
         link.innerText = titleText;
         link.target = "_blank";
         link.classList.add('post-link');
