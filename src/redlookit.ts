@@ -4,9 +4,6 @@ import {HumanFacesSideLoader} from "./facesSideloader"
 import {Random, UUID, UUIDFormat} from "./random";
 import {subreddits} from "./subredditList";
 
-
-declare var axios: any
-
 function isDebugMode(): boolean {
     // Won't support ipv6 loopback
     const url = new URL(document.URL);
@@ -101,47 +98,39 @@ function showRedditPageOrDefault(permalink: Permalink | null) {
 
 }
 
-function showSubreddit(subreddit: string) {
+async function showSubreddit(subreddit: string) {
     clearPostsList();
     let section = document.createElement('section');
     section.classList.add('post')
     strictQuerySelector('.post-header-button.sort').id = subreddit;
 
-    axios.get(`${redditBaseURL}/r/${subreddit}.json?limit=75`)
-        .then((posts: Listing<Post>) => {
-            const responseData = posts.data.data.children;
-            axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
-                .then((response2: any) => {
-                    if (response2 && response2.data.kind === "t5") {
-                        const subredditInformation = response2.data.data as SubredditDetails;
-                        displayPosts(responseData, subreddit, subredditInformation);
-                    } else {
-                        displayPosts(responseData, subreddit);
-                    }
-                })
-                .catch((e: Error) => {
-                    displayPosts(responseData, subreddit);
-                    console.error(e);
-                })
-        })
-        .catch((e: Error) => {
-            console.error(e);
-        })
+    try {
+        const posts: Listing<Post> = await fetchData<Listing<Post>>(`${redditBaseURL}/r/${subreddit}.json?limit=75`);
+        const responseData = posts.data.children;
+
+        try {
+            const subredditData = await fetchData<ApiObj>(`${redditBaseURL}/r/${subreddit}/about.json`);
+            const subredditInformation = subredditData.data as SubredditDetails;
+            displayPosts(responseData, subreddit, subredditInformation);
+        } catch (e) {
+            displayPosts(responseData, subreddit);
+        }
+    } catch (e) {
+        console.error(e);
+    }
 }
 
-function showPost(permalink: Permalink) {
+async function showPost(permalink: Permalink) {
     const baseurl = removeTrailingSlash(new URL(`${redditBaseURL}${permalink}`));
     const url = `${baseurl}/.json?limit=75`;
-    return axios.get(url).then((response: ApiObj) => {
-        try {
-            clearPostSection();
-            showPostFromData(response);
-        } catch (e: unknown) {
-            console.error(e)
-        }
-    }).catch((e: unknown) => {
-        console.error(e)
-    });
+    try {
+        const postData: ApiObj = await fetchData<ApiObj>(url);
+        clearPostSection();
+        console.log("showPost", postData);
+        showPostFromData(postData);
+    } catch (e) {
+        console.error(e);
+    }
 }
 
 function permalinkFromURLAnchor(): Permalink | null {
@@ -729,6 +718,15 @@ sortTopAll.addEventListener('click', async function() {
     return fetchAndDisplaySub({tab:'top', sortType: 'all', subreddit: sortButton.id})
 })
 
+async function fetchData<T>(url: string): Promise<T> {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error('Network response was not ok' + response.statusText);
+    }
+    const data: T = await response.json();
+    return data;
+}
+
 interface subredditQuery {
     sortType: null | "all" | "hour" | "day" | "week" | "month" | "year"
     tab: "hot" | "new" | "rising" | "controversial" | "top" | "gilded"
@@ -739,24 +737,17 @@ async function fetchAndDisplaySub({sortType=null, tab="hot", subreddit}: subredd
     sortMenu.style.display = 'none';
     sortTopMenu.style.display = 'none';
     sortButton.classList.remove('opened');
-    axios.get(`${redditBaseURL}/r/${subreddit}/${tab}/.json?t=${sortType}`)
-        .then(function (response1) {
-            const responseData = response1.data.data.children;
-            axios.get(`${redditBaseURL}/r/${subreddit}/about.json`)
-                .then(function(response2) {
-                    const subredditInformation = response2.data;
-                    console.log("Response from about.json: ", subredditInformation);
-                    displayPosts(responseData, sortButton.id, subredditInformation);
-                    // console.log(`displayed ${sortType} posts for`, subreddit)
-                })
-                .catch((e: Error) => {
-                    displayPosts(responseData, sortButton.id);
-                    console.error(e);
-                })
-        })
-        .catch((e: Error) => {
-            console.error(e);
-        })
+    const posts = await fetchData<Listing<Post>>(`${redditBaseURL}/r/${subreddit}/${tab}/.json?t=${sortType}`);
+    const responseData = posts.data.children;
+
+    try {
+        const subredditInformation: SubredditDetails = await fetchData<SubredditDetails>(`${redditBaseURL}/r/${subreddit}/about.json`);
+        console.log("Response from about.json: ", subredditInformation);
+        displayPosts(responseData, sortButton.id, subredditInformation);
+    } catch (e) {
+        displayPosts(responseData, sortButton.id);
+        console.error(e);
+    }
 }
 
 function showPostFromData(response: ApiObj) {
@@ -768,49 +759,43 @@ function showPostFromData(response: ApiObj) {
         console.error(e);
     }
     
-    const comments = response.data[1].data.children;
+    const comments = response[1].data.children;
     const author = document.createElement('span');
-    author.append(`Posted by u/${response.data[0].data.children[0].data.author}`);
+    author.append(`Posted by u/${response[0].data.children[0].data.author}`);
     author.classList.add('post-author')
     postSection.append(author);
     const title = document.createElement('h4')
     const titleLink = document.createElement('a');
     title.appendChild(titleLink);
-    const titleText = response.data[0].data.children[0].data.title
-    titleLink.href = `${redditBaseURL}${response.data[0].data.children[0].data.permalink}`;
+    const titleText = response[0].data.children[0].data.title
+    titleLink.href = `${redditBaseURL}${response[0].data.children[0].data.permalink}`;
     titleLink.append(titleText);
     title.classList.add('post-section-title');
     postSection.append(title);
-    if (response.data[0].data.children[0].data.post_hint === 'image') {
+    if (response[0].data.children[0].data.post_hint === 'image') {
         let image = document.createElement('img');
-        image.src = response.data[0].data.children[0].data.url_overridden_by_dest;
+        image.src = response[0].data.children[0].data.url_overridden_by_dest;
         image.classList.add('post-image');
         if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
             postSection.append(image);
         }
     } 
-    if (response.data[0].data.children[0].data.selftext !== '' && !response.data[0].data.children[0].data.selftext.includes('preview')) {
+    if (response[0].data.children[0].data.selftext !== '' && !response[0].data.children[0].data.selftext.includes('preview')) {
         const selftext = document.createElement('div');
-        selftext.innerHTML = decodeHtml(response.data[0].data.children[0].data.selftext_html);
+        selftext.innerHTML = decodeHtml(response[0].data.children[0].data.selftext_html);
         selftext.classList.add("usertext");
         postSection.append(selftext);
     }
-    if (!response.data[0].data.children[0].data.is_self && !response.data[0].data.children[0].data.is_reddit_media_domain) {
+    if (!response[0].data.children[0].data.is_self && !response[0].data.children[0].data.is_reddit_media_domain) {
         const div = document.createElement('div');
         const thumbnail = document.createElement('img');
         const link = document.createElement('a');
 
-        thumbnail.src = response.data[0].data.children[0].data.thumbnail;
+        thumbnail.src = response[0].data.children[0].data.thumbnail;
         thumbnail.onerror = () => {
             thumbnail.src = 'https://img.icons8.com/3d-fluency/512/news.png';
         };
-
-        // URLs can be local to the reddit post (ie. /r/test/1b14ok7 instead of http://reddit.com/r/...)
-        // Instead of trying to parse URLs (which is notoriously hard) to detect that and do string manipulation,
-        // let's just use the URL() class that's built into the browser.
-        let postLink = new URL(response.data[0].data.children[0].data.url_overridden_by_dest, redditBaseURL);
-        link.href = postLink.href
-
+        link.href = response[0].data.children[0].data.url_overridden_by_dest;
         link.innerText = titleText;
         link.target = "_blank";
         link.classList.add('post-link');
@@ -820,13 +805,13 @@ function showPostFromData(response: ApiObj) {
         postSection.append(div);
     }
 
-    const redditVideo = response?.data[0]?.data?.children[0]?.data?.secure_media?.reddit_video;
+    const redditVideo = response[0]?.data?.children[0]?.data?.secure_media?.reddit_video;
     if (redditVideo !== undefined && redditVideo !== "null") {
         const video = document.createElement('video');
         video.classList.add('post-video');
         video.setAttribute('controls', '')
         const source = document.createElement('source');
-        source.src = response.data[0].data.children[0].data.secure_media.reddit_video.fallback_url;
+        source.src = response[0].data.children[0].data.secure_media.reddit_video.fallback_url;
         video.appendChild(source);
         if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
             postSection.append(video);
@@ -837,7 +822,7 @@ function showPostFromData(response: ApiObj) {
     postSection.append(...postDetails)
     postSection.append(document.createElement('hr'));
 
-    displayComments(comments, { post: response.data[0].data.children[0].data.permalink });
+    displayComments(comments, { post: response[0].data.children[0].data.permalink });
 }
 
 document.body.addEventListener('keydown', (event) => {
@@ -850,18 +835,18 @@ document.body.addEventListener('keydown', (event) => {
 function getPostDetails(response: any) {
     let upvotes = document.createElement('span');
     upvotes.innerHTML = '<svg width="15px" height="15px" style="margin-right: 5px;" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
-    upvotes.append(`${response.data[0].data.children[0].data.ups.toLocaleString()}`);
+    upvotes.append(`${response[0].data.children[0].data.ups.toLocaleString()}`);
     upvotes.innerHTML += '<svg width="15px" height="15px" style="transform: rotate(180deg); margin-left: 5px" viewBox="0 0 94 97" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.1395 48.8394C84.9395 46.0394 60.4728 18.0061 48.6395 4.33939C46.6395 3.53939 45.1395 4.33939 44.6395 4.83939L4.63948 49.3394C2.1394 53.3394 7.63948 52.8394 9.63948 52.8394H29.1395V88.8394C29.1395 92.0394 32.1395 93.1727 33.6395 93.3394H58.1395C63.3395 93.3394 64.3062 90.3394 64.1395 88.8394V52.3394H87.1395C88.8061 52.0061 91.3395 51.6394 88.1395 48.8394Z" stroke="#818384" stroke-width="7"/></svg>'
     upvotes.classList.add('post-detail-info')
     let subreddit = document.createElement('a');
     subreddit.classList.add('post-detail-info');
-    subreddit.href = `#/${response.data[0].data.children[0].data.subreddit_name_prefixed}`;
-    subreddit.append(response.data[0].data.children[0].data.subreddit_name_prefixed);
+    subreddit.href = `#/${response[0].data.children[0].data.subreddit_name_prefixed}`;
+    subreddit.append(response[0].data.children[0].data.subreddit_name_prefixed);
     let numComments = document.createElement('span');
-    numComments.append(`${response.data[0].data.children[0].data.num_comments.toLocaleString()} Comments`);
+    numComments.append(`${response[0].data.children[0].data.num_comments.toLocaleString()} Comments`);
     numComments.classList.add('post-detail-info')
     let author = document.createElement('span');
-    author.append(`Posted by u/${response.data[0].data.children[0].data.author}`);
+    author.append(`Posted by u/${response[0].data.children[0].data.author}`);
     author.classList.add('post-detail-info')
     return [upvotes, subreddit, numComments, author];
 }
