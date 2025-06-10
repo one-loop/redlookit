@@ -750,6 +750,15 @@ async function fetchAndDisplaySub({sortType=null, tab="hot", subreddit}: subredd
     }
 }
 
+function isImage(post: Post) {
+    if (post.data.post_hint === 'image' || post.data.domain === "i.redd.it") {
+        return true;
+    }
+
+    const url = new URL(post.data.url_overridden_by_dest);
+    return url.host === "i.redd.it";
+}
+
 function showPostFromData(response: ApiObj) {
     try {
         // reset scroll position when user clicks on a new post
@@ -759,7 +768,9 @@ function showPostFromData(response: ApiObj) {
         console.error(e);
     }
     
-    const comments = response[1].data.children;
+    const comments: SnooComment[] = response[1].data.children;
+    const post: Post = response[0].data.children[0];
+
     const author = document.createElement('span');
     author.append(`Posted by u/${response[0].data.children[0].data.author}`);
     author.classList.add('post-author')
@@ -767,35 +778,35 @@ function showPostFromData(response: ApiObj) {
     const title = document.createElement('h4')
     const titleLink = document.createElement('a');
     title.appendChild(titleLink);
-    const titleText = response[0].data.children[0].data.title
-    titleLink.href = `${redditBaseURL}${response[0].data.children[0].data.permalink}`;
+    const titleText = post.data.title
+    titleLink.href = `${redditBaseURL}${post.data.permalink}`;
     titleLink.append(titleText);
     title.classList.add('post-section-title');
     postSection.append(title);
-    if (response[0].data.children[0].data.post_hint === 'image') {
+    if (isImage(post)) {
         let image = document.createElement('img');
-        image.src = response[0].data.children[0].data.url_overridden_by_dest;
+        image.src = post.data.url_overridden_by_dest;
         image.classList.add('post-image');
         if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
             postSection.append(image);
         }
     } 
-    if (response[0].data.children[0].data.selftext !== '' && !response[0].data.children[0].data.selftext.includes('preview')) {
+    if (post.data.selftext !== '' && !post.data.selftext.includes('preview')) {
         const selftext = document.createElement('div');
-        selftext.innerHTML = decodeHtml(response[0].data.children[0].data.selftext_html);
+        selftext.innerHTML = decodeHtml(post.data.selftext_html);
         selftext.classList.add("usertext");
         postSection.append(selftext);
     }
-    if (!response[0].data.children[0].data.is_self && !response[0].data.children[0].data.is_reddit_media_domain) {
+    if (!post.data.is_self && !post.data.is_reddit_media_domain) {
         const div = document.createElement('div');
         const thumbnail = document.createElement('img');
         const link = document.createElement('a');
 
-        thumbnail.src = response[0].data.children[0].data.thumbnail;
+        thumbnail.src = post.data.thumbnail;
         thumbnail.onerror = () => {
             thumbnail.src = 'https://img.icons8.com/3d-fluency/512/news.png';
         };
-        link.href = response[0].data.children[0].data.url_overridden_by_dest;
+        link.href = post.data.url_overridden_by_dest;
         link.innerText = titleText;
         link.target = "_blank";
         link.classList.add('post-link');
@@ -805,13 +816,13 @@ function showPostFromData(response: ApiObj) {
         postSection.append(div);
     }
 
-    const redditVideo = response[0]?.data?.children[0]?.data?.secure_media?.reddit_video;
-    if (redditVideo !== undefined && redditVideo !== "null") {
+    const redditVideo = post.data?.secure_media?.reddit_video;
+    if (redditVideo !== undefined) {
         const video = document.createElement('video');
         video.classList.add('post-video');
         video.setAttribute('controls', '')
         const source = document.createElement('source');
-        source.src = response[0].data.children[0].data.secure_media.reddit_video.fallback_url;
+        source.src = post.data.secure_media.reddit_video.fallback_url;
         video.appendChild(source);
         if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
             postSection.append(video);
@@ -822,7 +833,7 @@ function showPostFromData(response: ApiObj) {
     postSection.append(...postDetails)
     postSection.append(document.createElement('hr'));
 
-    displayComments(comments, { post: response[0].data.children[0].data.permalink });
+    displayComments(comments, { post: post.data.permalink });
 }
 
 document.body.addEventListener('keydown', (event) => {
