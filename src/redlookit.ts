@@ -755,8 +755,12 @@ function isImage(post: Post) {
         return true;
     }
 
-    const url = new URL(post.data.url_overridden_by_dest);
-    return url.host === "i.redd.it";
+    if (post.data.url_overridden_by_dest !== undefined) {
+        const url = new URL(post.data.url_overridden_by_dest);
+        return url.host === "i.redd.it";
+    }
+
+    return false;
 }
 
 function showPostFromData(response: ApiObj) {
