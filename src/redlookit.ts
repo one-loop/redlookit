@@ -777,6 +777,26 @@ function createImage(src: string) {
     return image
 }
 
+function embedRedditImages(html: string): string {
+    const virtualElement = document.createElement("div");
+    virtualElement.innerHTML = html;
+
+    const linksInside = virtualElement.querySelectorAll<HTMLAnchorElement>("a")
+    for (const link of linksInside) {
+        if (link !== null && link.href !== "") {
+            const url = new URL(link.href)
+            if (url.host == "preview.redd.it") {
+                const img = createImage(link.href)
+                if (img) {
+                    link.replaceWith(img);
+                }
+            }
+        }
+    }
+
+    return virtualElement.innerHTML;
+}
+
 function showPostFromData(response: ApiObj) {
     try {
         // reset scroll position when user clicks on a new post
@@ -806,28 +826,10 @@ function showPostFromData(response: ApiObj) {
         postSection.append(image);
     } 
     else if (isSelfPost(post)) {
+        const selfpostHtml = embedRedditImages(decodeHTML(post.data.selftext_html));
         const selftext = document.createElement('div');
-        const selfpostHtml = decodeHtml(post.data.selftext_html);
         selftext.innerHTML = selfpostHtml;
         selftext.classList.add("usertext");
-
-        /*
-            Some posts like https://www.reddit.com/r/RimWorld/comments/1l80vhz/adios_idiots/
-            are just a link to preview.redd.it
-            On new.reddit.com, this gets embedded for some reason, so we do the same naively.
-        */
-        const linksInside = selftext.querySelectorAll<HTMLAnchorElement>("a")
-        for (const linkInside of linksInside) {
-            if (linkInside !== null && linkInside.href !== "") {
-                const url = new URL(linkInside.href)
-                if (url.host == "preview.redd.it") {
-                    const img = createImage(linkInside.href)
-                    if (img) {
-                        linkInside.replaceWith(img);
-                    }
-                }
-            }            
-        }
 
         postSection.append(selftext);
     } 
@@ -1102,14 +1104,14 @@ async function createComment(commentData: SnooComment, options: CreateCommentOpt
 
     const commentText = document.createElement('div');
     commentText.classList.add("comment");
-    commentText.insertAdjacentHTML('beforeend', decodeHtml(commentData.data.body_html));
+    commentText.insertAdjacentHTML('beforeend', embedRedditImages(decodeHTML(commentData.data.body_html)));
 
     options.domNode.prepend(author, commentText);
     return options.domNode
 }
 
 type SerializedHTML = string;
-function decodeHtml(html: SerializedHTML): SerializedHTML {
+function decodeHTML(html: SerializedHTML): SerializedHTML {
     const txt = document.createElement("textarea");
     txt.innerHTML = html;
     return txt.value;
