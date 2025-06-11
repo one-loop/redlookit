@@ -763,6 +763,20 @@ function isImage(post: Post) {
     return false;
 }
 
+function isSelfPost(post: Post) {
+    return post.data.is_self;
+}
+
+function createImage(src: string) {
+    if (localStorage.getItem('hideMedia') !== null && localStorage.getItem('hideMedia') == 'true') {
+        return;
+    }
+    let image = document.createElement('img');
+    image.src = src;
+    image.classList.add('post-image');
+    return image
+}
+
 function showPostFromData(response: ApiObj) {
     try {
         // reset scroll position when user clicks on a new post
@@ -788,20 +802,36 @@ function showPostFromData(response: ApiObj) {
     title.classList.add('post-section-title');
     postSection.append(title);
     if (isImage(post)) {
-        let image = document.createElement('img');
-        image.src = post.data.url_overridden_by_dest;
-        image.classList.add('post-image');
-        if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
-            postSection.append(image);
-        }
+        const image = createImage(post.data.url_overridden_by_dest);
+        postSection.append(image);
     } 
-    if (post.data.selftext !== '' && !post.data.selftext.includes('preview')) {
+    else if (isSelfPost(post)) {
         const selftext = document.createElement('div');
-        selftext.innerHTML = decodeHtml(post.data.selftext_html);
+        const selfpostHtml = decodeHtml(post.data.selftext_html);
+        selftext.innerHTML = selfpostHtml;
         selftext.classList.add("usertext");
+
+        /*
+            Some posts like https://www.reddit.com/r/RimWorld/comments/1l80vhz/adios_idiots/
+            are just a link to preview.redd.it
+            On new.reddit.com, this gets embedded for some reason, so we do the same naively.
+        */
+        const linksInside = selftext.querySelectorAll<HTMLAnchorElement>("a")
+        for (const linkInside of linksInside) {
+            if (linkInside !== null && linkInside.href !== "") {
+                const url = new URL(linkInside.href)
+                if (url.host == "preview.redd.it") {
+                    const img = createImage(linkInside.href)
+                    if (img) {
+                        linkInside.replaceWith(img);
+                    }
+                }
+            }            
+        }
+
         postSection.append(selftext);
-    }
-    if (!post.data.is_self && !post.data.is_reddit_media_domain) {
+    } 
+    else {
         const div = document.createElement('div');
         const thumbnail = document.createElement('img');
         const link = document.createElement('a');
