@@ -7,7 +7,7 @@ import {subreddits} from "./subredditList";
 function isDebugMode(): boolean {
     // Won't support ipv6 loopback
     const url = new URL(document.URL);
-    return url.protocol === "file:" || url.host === "localhost" || url.host === "127.0.0.1";
+    return url.protocol === "file:" || url.hostname === "localhost" || url.hostname === "127.0.0.1";
 }
 
 function assert(condition: boolean, msg: string = "Assertion failed"): asserts condition {
@@ -1572,13 +1572,13 @@ setPageTitle();
 // Everything set up.
 // We start actually doing things now
 
-// if (isDebugMode()) {
-//     // Remove loading screen
-//     const loadingScreen = document.getElementById("loadingScreen");
-//     if (loadingScreen) {
-//         loadingScreen.style.display = "none";
-//     }
-// }
+if (isDebugMode()) {
+    // Remove loading screen
+    const loadingScreen = document.getElementById("loadingScreen");
+    if (loadingScreen) {
+        loadingScreen.style.display = "none";
+    }
+}
 
 const permalink = permalinkFromURLAnchor();
 showRedditPageOrDefault(permalink);
