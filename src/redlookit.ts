@@ -750,7 +750,15 @@ async function fetchAndDisplaySub({sortType=null, tab="hot", subreddit}: subredd
     }
 }
 
+function isCrosspost(post: Post) {
+    return (typeof post.data.crosspost_parent_list === "object") && post.data.crosspost_parent_list.length > 0;
+}
+
 function isImage(post: Post) {
+    if (isCrosspost(post)) {
+        return false;
+    }
+
     if (post.data.post_hint === 'image' || post.data.domain === "i.redd.it") {
         return true;
     }
@@ -821,7 +829,34 @@ function showPostFromData(response: ApiObj) {
     titleLink.append(titleText);
     title.classList.add('post-section-title');
     postSection.append(title);
-    if (isImage(post)) {
+    console.log(post);
+    if (isCrosspost(post)) {
+        const container = document.createElement('div');
+        const row = document.createElement('div');
+        container.appendChild(row);
+        const thumbnail = document.createElement('img');
+        row.append(thumbnail);
+        const link = document.createElement('a');
+        row.append(link);
+
+        thumbnail.src = post.data.preview?.images[0].source.url || post.data.thumbnail;
+        thumbnail.onerror = () => {
+            thumbnail.src = 'https://img.icons8.com/3d-fluency/512/news.png';
+        };
+        const crosspost: PostData | undefined = (post.data.crosspost_parent_list || [])[0];
+        link.href = crosspost?.permalink || post.data.url_overridden_by_dest;
+        link.innerText = crosspost?.title;
+        link.target = "_blank";
+        link.classList.add('post-link');
+        container.classList.add('post-link-container')
+        row.classList.add('post-link-container-row')
+        const image = createImage(crosspost.url_overridden_by_dest);
+        if (image) {
+            container.append(image);
+        }
+        postSection.append(container);
+    }
+    else if (isImage(post)) {
         const image = createImage(post.data.url_overridden_by_dest);
         postSection.append(image);
     } 
@@ -834,7 +869,9 @@ function showPostFromData(response: ApiObj) {
         postSection.append(selftext);
     } 
     else {
-        const div = document.createElement('div');
+        const container = document.createElement('div');
+        const row = document.createElement('div');
+        container.append(row)
         const thumbnail = document.createElement('img');
         const link = document.createElement('a');
 
@@ -846,10 +883,11 @@ function showPostFromData(response: ApiObj) {
         link.innerText = titleText;
         link.target = "_blank";
         link.classList.add('post-link');
-        div.append(thumbnail);
-        div.append(link);
-        div.classList.add('post-link-container')
-        postSection.append(div);
+        row.append(thumbnail);
+        row.append(link);
+        row.classList.add('post-link-container-row')
+        container.classList.add('post-link-container')
+        postSection.append(container);
     }
 
     const redditVideo = post.data?.secure_media?.reddit_video;
