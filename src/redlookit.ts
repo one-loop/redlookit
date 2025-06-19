@@ -126,7 +126,6 @@ async function showPost(permalink: Permalink) {
     try {
         const postData: ApiObj = await fetchData<ApiObj>(url);
         clearPostSection();
-        console.log("showPost", postData);
         showPostFromData(postData);
     } catch (e) {
         console.error(e);
@@ -775,6 +774,10 @@ function isSelfPost(post: Post) {
     return post.data.is_self;
 }
 
+function hasSelfText(post: Post) {
+    return typeof post.data.selftext == "string" && post.data.selftext !== "";
+}
+
 function createImage(src: string) {
     if (localStorage.getItem('hideMedia') !== null && localStorage.getItem('hideMedia') == 'true') {
         return;
@@ -829,9 +832,13 @@ function showPostFromData(response: ApiObj) {
     titleLink.append(titleText);
     title.classList.add('post-section-title');
     postSection.append(title);
-    console.log(post);
+
+    const container = document.createElement('div');
+    container.classList.add('post-contents')
+    postSection.append(container);
+
     if (isCrosspost(post)) {
-        const container = document.createElement('div');
+        if (isDebugMode()) console.log("Post is crosspost");
         const row = document.createElement('div');
         container.appendChild(row);
         const thumbnail = document.createElement('img');
@@ -854,22 +861,17 @@ function showPostFromData(response: ApiObj) {
         if (image) {
             container.append(image);
         }
-        postSection.append(container);
     }
     else if (isImage(post)) {
+        if (isDebugMode()) console.log("Post is image");
         const image = createImage(post.data.url_overridden_by_dest);
-        postSection.append(image);
+        container.append(image);
     } 
     else if (isSelfPost(post)) {
-        const selfpostHtml = embedRedditImages(decodeHTML(post.data.selftext_html));
-        const selftext = document.createElement('div');
-        selftext.innerHTML = selfpostHtml;
-        selftext.classList.add("usertext");
-
-        postSection.append(selftext);
+        if (isDebugMode()) console.log("Post is self post");
     } 
     else {
-        const container = document.createElement('div');
+        if (isDebugMode()) console.log("Post is something else");
         const row = document.createElement('div');
         container.append(row)
         const thumbnail = document.createElement('img');
@@ -887,11 +889,21 @@ function showPostFromData(response: ApiObj) {
         row.append(link);
         row.classList.add('post-link-container-row')
         container.classList.add('post-link-container')
-        postSection.append(container);
+    }
+
+    if (hasSelfText(post)) {
+        if (isDebugMode()) console.log("Post has self text");
+        const selfpostHtml = embedRedditImages(decodeHTML(post.data.selftext_html));
+        const selftext = document.createElement('div');
+        selftext.innerHTML = selfpostHtml;
+        selftext.classList.add("usertext");
+    
+        container.append(selftext);
     }
 
     const redditVideo = post.data?.secure_media?.reddit_video;
     if (redditVideo !== undefined) {
+        if (isDebugMode()) console.log("Post has video");
         const video = document.createElement('video');
         video.classList.add('post-video');
         video.setAttribute('controls', '')
@@ -899,7 +911,7 @@ function showPostFromData(response: ApiObj) {
         source.src = post.data.secure_media.reddit_video.fallback_url;
         video.appendChild(source);
         if (localStorage.getItem('hideMedia') == 'false' || localStorage.getItem('hideMedia') == null) {
-            postSection.append(video);
+            container.append(video);
         }
     }
     
