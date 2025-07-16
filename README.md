@@ -72,9 +72,15 @@ PS: If you have a better name, please let me know 🙏
 - [x] Add subreddit link to posts
 - [x] Update search bar icons to community icons
 - [x] Resizeable post area
-- [ ] Sorting Comments
-- [ ] Default comment sorting option
+- [x] Sorting Comments
+- [ ] Default Comment Sorting Option in Settings
 - [ ] Infinite Scroll
+- [ ] Keyboard Shortcut Panel
+- [ ] Redesign Settings Panel
+- [ ] Help/Info Panel
+- [ ] Collapsible Comment Threads
+- [ ] Better Mobile Responsive Layout
+- [ ] Log in Authentication
 
 ## 🚀 Local Development Setup
 
