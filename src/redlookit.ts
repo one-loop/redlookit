@@ -839,7 +839,6 @@ function showPostFromData(response: ApiObj, permalink?: Permalink, currentSort: 
     });
     sortSelect.value = currentSort;
     sortSelect.title = "Sort comments by";
-    sortSelect.style.margin = "10px 0";
     sortSelect.addEventListener("change", () => {
         if (permalink) {
             showPost(permalink, sortSelect.value);
