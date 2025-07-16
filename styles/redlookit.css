@@ -676,7 +676,7 @@ button {
 .comment-sort-dropdown {
     color: #a2a2a2;
     appearance: base-select;
-    background: #333333;
+    background: var(--background-color-2);
     border: none;
     padding: 2px 10px;
     border-radius: 4px;
