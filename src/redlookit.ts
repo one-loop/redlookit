@@ -120,13 +120,13 @@ async function showSubreddit(subreddit: string) {
     }
 }
 
-async function showPost(permalink: Permalink) {
+async function showPost(permalink: Permalink, sort: string = "top") {
     const baseurl = removeTrailingSlash(new URL(`${redditBaseURL}${permalink}`));
-    const url = `${baseurl}/.json?limit=75`;
+    const url = `${baseurl}/.json?limit=75&sort=${sort}`;
     try {
         const postData: ApiObj = await fetchData<ApiObj>(url);
         clearPostSection();
-        showPostFromData(postData);
+        showPostFromData(postData, permalink, sort);
     } catch (e) {
         console.error(e);
     }
@@ -808,7 +808,7 @@ function embedRedditImages(html: string): string {
     return virtualElement.innerHTML;
 }
 
-function showPostFromData(response: ApiObj) {
+function showPostFromData(response: ApiObj, permalink?: Permalink, currentSort: string = "top") {
     try {
         // reset scroll position when user clicks on a new post
         let redditPost: HTMLElement = strictQuerySelector('.reddit-post');
@@ -820,10 +820,38 @@ function showPostFromData(response: ApiObj) {
     const comments: SnooComment[] = response[1].data.children;
     const post: Post = response[0].data.children[0];
 
+    // --- Comment Sort Dropdown ---
+    const sortOptions = [
+        { value: "top", label: "Top" },
+        { value: "best", label: "Best" },
+        { value: "new", label: "New" },
+        { value: "controversial", label: "Controversial" },
+        { value: "old", label: "Old" }
+    ];
+    const sortSelect = document.createElement("select");
+    // sortSelect.className = "comment-sort-dropdown";
+    sortSelect.className = "post-detail-info comment-sort-dropdown";
+    sortOptions.forEach(opt => {
+        const option = document.createElement("option");
+        option.value = opt.value;
+        option.textContent = opt.label;
+        sortSelect.appendChild(option);
+    });
+    sortSelect.value = currentSort;
+    sortSelect.title = "Sort comments by";
+    sortSelect.style.margin = "10px 0";
+    sortSelect.addEventListener("change", () => {
+        if (permalink) {
+            showPost(permalink, sortSelect.value);
+        }
+    });
+    // --- End Dropdown ---
+
     const author = document.createElement('span');
     author.append(`Posted by u/${response[0].data.children[0].data.author}`);
     author.classList.add('post-author')
     postSection.append(author);
+    postSection.appendChild(sortSelect);
     const title = document.createElement('h4')
     const titleLink = document.createElement('a');
     title.appendChild(titleLink);
@@ -837,32 +865,7 @@ function showPostFromData(response: ApiObj) {
     container.classList.add('post-contents')
     postSection.append(container);
 
-    if (isCrosspost(post)) {
-        if (isDebugMode()) console.log("Post is crosspost");
-        const row = document.createElement('div');
-        container.appendChild(row);
-        const thumbnail = document.createElement('img');
-        row.append(thumbnail);
-        const link = document.createElement('a');
-        row.append(link);
-
-        thumbnail.src = post.data.preview?.images[0].source.url || post.data.thumbnail;
-        thumbnail.onerror = () => {
-            thumbnail.src = 'https://img.icons8.com/3d-fluency/512/news.png';
-        };
-        const crosspost: PostData | undefined = (post.data.crosspost_parent_list || [])[0];
-        link.href = crosspost?.permalink || post.data.url_overridden_by_dest;
-        link.innerText = crosspost?.title;
-        link.target = "_blank";
-        link.classList.add('post-link');
-        container.classList.add('post-link-container')
-        row.classList.add('post-link-container-row')
-        const image = createImage(crosspost.url_overridden_by_dest);
-        if (image) {
-            container.append(image);
-        }
-    }
-    else if (isImage(post)) {
+    if (isImage(post)) {
         if (isDebugMode()) console.log("Post is image");
         const image = createImage(post.data.url_overridden_by_dest);
         container.append(image);
@@ -917,6 +920,7 @@ function showPostFromData(response: ApiObj) {
     
     const postDetails = getPostDetails(response)
     postSection.append(...postDetails)
+    postSection.appendChild(sortSelect);
     postSection.append(document.createElement('hr'));
 
     displayComments(comments, { post: post.data.permalink });
@@ -945,7 +949,10 @@ function getPostDetails(response: any) {
     let author = document.createElement('span');
     author.append(`Posted by u/${response[0].data.children[0].data.author}`);
     author.classList.add('post-detail-info')
-    return [upvotes, subreddit, numComments, author];
+    let sortButton = document.createElement('span');
+    sortButton.append('Sort By:');
+    sortButton.classList.add('post-detail-info')
+    return [upvotes, subreddit, numComments, author, sortButton];
 }
 
 async function generateGnomePic(): Promise<HTMLImageElement> {
