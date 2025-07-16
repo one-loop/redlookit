@@ -1322,26 +1322,42 @@ for (let coll of collapsible) {
     });
 }
 
-const BORDER_SIZE = 4;
+const BORDER_SIZE = 8;
 const panel: HTMLElement = strictQuerySelector(".post-sidebar");
 
-let m_pos: number;
-function resize(e: MouseEvent){
-  const dx = m_pos - e.x;
-  m_pos = e.x;
-  panel.style.width = `${(parseInt(getComputedStyle(panel, '').width) + dx)}px`;
-}
+// Add a visible resize handle to the right edge
+let resizeHandle = document.createElement('div');
+resizeHandle.className = 'resize-handle';
+panel.appendChild(resizeHandle);
 
-panel.addEventListener("mousedown", function(e: MouseEvent){
-  if (e.offsetX < BORDER_SIZE) {
-    m_pos = e.x;
-    document.addEventListener("mousemove", resize, false);
-  }
-}, false);
+let isResizing = false;
+let startX = 0;
+let startWidth = 0;
+const MIN_WIDTH = 300;
+const MAX_WIDTH = 600;
 
-document.addEventListener("mouseup", function(){
-    document.removeEventListener("mousemove", resize, false);
-}, false);
+resizeHandle.addEventListener('mousedown', function(e: MouseEvent) {
+    isResizing = true;
+    startX = e.clientX;
+    startWidth = panel.offsetWidth;
+    document.body.style.cursor = 'ew-resize';
+    e.preventDefault();
+});
+
+document.addEventListener('mousemove', function(e: MouseEvent) {
+    if (!isResizing) return;
+    let newWidth = startWidth + (e.clientX - startX);
+    if (newWidth < MIN_WIDTH) newWidth = MIN_WIDTH;
+    if (newWidth > MAX_WIDTH) newWidth = MAX_WIDTH;
+    panel.style.width = newWidth + 'px';
+});
+
+document.addEventListener('mouseup', function() {
+    if (isResizing) {
+        isResizing = false;
+        document.body.style.cursor = '';
+    }
+});
 
 let settingsButton: HTMLElement = strictQuerySelector('.settings-button');
 let settingsPanel: HTMLElement = strictQuerySelector('.settings-panel');

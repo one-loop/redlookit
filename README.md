@@ -71,10 +71,38 @@ PS: If you have a better name, please let me know 🙏
 - [x] Clear post when esc pressed
 - [x] Add subreddit link to posts
 - [x] Update search bar icons to community icons
-- [ ] Resizeable post area
+- [x] Resizeable post area
 - [ ] Sorting Comments
 - [ ] Default comment sorting option
 - [ ] Infinite Scroll
+
+## 🚀 Local Development Setup
+
+### 1. Clone repository
+```
+git clone https://github.com/one-loop/redlookit.git
+```
+
+### 2. Install prerequisites
+```
+npm install
+```
+
+### 3. Run the app in development
+```
+npm run dev
+```
+
+### 4. Build the app for production
+```
+npm run build
+```
+
+### 5. To preview the app (after build or in development)
+```
+npx serve public
+```
+Then visit [http://localhost:3000/public](http://localhost:3000/public) in your browser.
 
 ## 💙 Contributing
 Feel free to fork this repo and push any changes or features you add. This is my first big project, and I'm a total beginner, so I'll gladly accept help from anyone 😃
