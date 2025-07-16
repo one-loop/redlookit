@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="https://outlook.office.com/mail/favicon.ico">
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
@@ -678,14 +677,14 @@
                         <span>
                             <button class="post-header-button sort" style="font-size: 14px;display: flex;align-items: center;justify-content: center;gap: 8px;" id="popular">
                                 <!-- <img class="sort-icon" src="https://img.icons8.com/fluency-systems-regular/256/ffffff/sort-amount-up.png" width="20" height="20"> -->
-                                <svg width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="22" height="9" viewBox="0 0 22 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.5 0.5H14.5" stroke="var(--post-color)" stroke-linecap="round"></path>
-                                    <path d="M0.5 4.5H10.5" stroke="var(--post-color)" stroke-linecap="round"></path>
-                                    <path d="M0.5 8.5H6.5" stroke="var(--post-color)" stroke-linecap="round"></path>
-                                    <line x1="17.5001" y1="0.5" x2="17.5001" y2="8.5" stroke="var(--post-color)" stroke-linecap="round"></line>
-                                    <path d="M17.5001 8.5L20.3001 5.1" stroke="var(--post-color)" stroke-linecap="round"></path>
-                                    <path d="M17.5001 8.5L14.7001 5.09996" stroke="var(--post-color)" stroke-linecap="round"></path>
-                                </svg>                              
+                                    <path d="M2.5 4.5H12.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M4.5 8.5H10.5" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <line x1="18.5" y1="8.5" x2="18.5" y2="0.5" stroke="var(--post-color)" stroke-linecap="round"></line>
+                                    <path d="M18.5 0.5L15.7 3.89999" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                    <path d="M18.5 0.5L21.3 3.90004" stroke="var(--post-color)" stroke-linecap="round"></path>
+                                </svg>                                    
                                 Sort</button>
                             <div class="sort-menu">
                                 <button class="sort-button hot">Hot</button>
@@ -738,14 +737,9 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-        $(window).on("load", function(){
-            setTimeout(function() {
-                $("#loadingScreen").fadeOut("fast");
-            }, 2000)
-        });
-        // setTimeout(function() {
-        //     $("#loadingScreen").fadeOut("fast");
-        // }, 2500)
+        setTimeout(function() {
+            $("#loadingScreen").fadeOut("fast");
+        }, 2500)
     </script>
     <script src="js/bundle.min.js"></script>
 </body>
