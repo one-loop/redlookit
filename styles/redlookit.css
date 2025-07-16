@@ -203,7 +203,7 @@ button {
 }
 
 .reddit-post a {
-    word-break: break-all;
+    word-break: break-word;
 }
 
 @media (min-width: 700px) {
@@ -497,14 +497,12 @@ button {
     border: 1px solid var(--border-color-2);
     padding: 6px 12px;
     min-height: 42px;
-    margin-bottom: 20px;
+    margin: 1px 0px 20px 0px;
 }
-
 
 .post-link-container {
     display: flex;
-    flex-direction: row;
-    text-decoration: none;
+    flex-direction: column;
     padding: 15px 15px;
     /* width: 98%; */
     background-color: var(--background-color-2);
@@ -517,14 +515,20 @@ button {
     margin-bottom: 20px;
 }
 
-.post-link-container>img {
+.post-link-container-row {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.post-link-container-row>img {
     width: 75px;
     height: 75px;
     border-radius: 3px;
     margin-right: 15px;
 }
 
-.post-link-container>a {
+.post-link-container-row>a {
     /* text-decoration: none; */
     font-size: 16px;
     font-weight: bold;
@@ -533,7 +537,7 @@ button {
     text-decoration: none;
 }
 
-.post-link-container>a::after {
+.post-link-container-row>a::after {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -544,16 +548,16 @@ button {
 
 }
 
-/* .post-link-container>a:hover {
+/* .post-link-container-row>a:hover {
     text-decoration: none;
     color: white;
 } */
 
-/* .post-link-container>a{
+/* .post-link-container-row>a{
     position: relative;
 }
   
-.post-link-container>a::before{
+.post-link-container-row>a::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -566,14 +570,14 @@ button {
 }
   
 @media (hover: hover) and (pointer: fine) {
-    .post-link-container>a:hover::before{
+    .post-link-container-row>a:hover::before{
         left: 0;
         right: auto;
         width: 100%;
     }
 }
 
-.post-link-container:hover {
+.post-link-container-row:hover {
     background-color: var(--post-link-hover);
     cursor: pointer;
 } */
