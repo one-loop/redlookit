@@ -1133,10 +1133,20 @@ header {
     margin-top: 8px;
     
     width: 350px;
+    position: relative;
     /* resize: horizontal; */
 }
 
 .post-sidebar:after {
+    cursor: ew-resize;
+}
+
+.resize-handle {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    height: 100%;
+    width: 10px;
     cursor: ew-resize;
 }
 
