@@ -285,7 +285,7 @@ function displayPosts(responses: Post[], subreddit, subredditInformation: Subred
     user_is_muted: false,
     user_is_subscriber: false
 }) {
-    if (subreddit !== 'popular' && (localStorage.getItem('showSubDetails') == 'true' || localStorage.getItem('showSubDetails') == null)) {
+    if (subreddit !== 'popular' && (localStorage.getItem('showSubDetails') == null || localStorage.getItem('showSubDetails') == 'true')) {
         // let postSectionDiv = document.querySelector('.post-sidebar');
         subredditInfoContainer.style.display = 'flex';
         headerButtons.style.borderRadius = "0";
@@ -736,15 +736,17 @@ async function fetchAndDisplaySub({sortType=null, tab="hot", subreddit}: subredd
     sortMenu.style.display = 'none';
     sortTopMenu.style.display = 'none';
     sortButton.classList.remove('opened');
-    const posts = await fetchData<Listing<Post>>(`${redditBaseURL}/r/${subreddit}/${tab}/.json?t=${sortType}`);
+    const posts = await fetchData<Listing<Post>>(`${redditBaseURL}/r/${subreddit}/${tab}/.json${sortType ? `?t=${sortType}` : ''}`);
     const responseData = posts.data.children;
 
     try {
-        const subredditInformation: SubredditDetails = await fetchData<SubredditDetails>(`${redditBaseURL}/r/${subreddit}/about.json`);
-        console.log("Response from about.json: ", subredditInformation);
-        displayPosts(responseData, sortButton.id, subredditInformation);
+        // Always fetch subreddit details
+        const subredditData = await fetchData<ApiObj>(`${redditBaseURL}/r/${subreddit}/about.json`);
+        const subredditInformation = subredditData.data as SubredditDetails;
+        displayPosts(responseData, subreddit, subredditInformation);
     } catch (e) {
-        displayPosts(responseData, sortButton.id);
+        // If fetching subreddit details fails, still display posts (with fallback info)
+        displayPosts(responseData, subreddit);
         console.error(e);
     }
 }
@@ -1346,7 +1348,7 @@ resizeHandle.addEventListener('mousedown', function(e: MouseEvent) {
     isResizing = true;
     startX = e.clientX;
     startWidth = panel.offsetWidth;
-    document.body.style.cursor = 'ew-resize';
+    document.body.style.cursor = 'col-resize';
     e.preventDefault();
 });
 
@@ -1469,6 +1471,9 @@ checkbox4.addEventListener('change', function() {
 function hideMedia() {
     if (localStorage.getItem('hideMedia') == 'true') {
         checkbox4.checked = true;
+        if (document.querySelector('.reddit-post img')) {
+            (document.querySelector('.reddit-post img') as HTMLElement).style.visibility = 'hidden';
+        }
         if (document.querySelector('.post-image')) {
             (document.querySelector('.post-image') as HTMLElement).style.visibility = 'hidden';
         } else if (document.querySelector('.post-video')) {
@@ -1476,6 +1481,9 @@ function hideMedia() {
         }
     } else if (localStorage.getItem('hideMedia') == 'false') {
         checkbox4.checked = false;
+        if (document.querySelector('.reddit-post img')) {
+            (document.querySelector('.reddit-post img') as HTMLElement).style.visibility = 'visible';
+        }
         if (document.querySelector('.post-image')) {
             (document.querySelector('.post-image') as HTMLElement).style.visibility = 'visible';
         } else if (document.querySelector('.post-video')) {

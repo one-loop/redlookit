@@ -299,9 +299,6 @@ button {
         width: 100vw;
     }
 
-    .favorite-icon {
-        left: calc(100vw - 50px)
-    }
 
     .settings-panel, .check-icon, .settings-button {
         display: none !important;
@@ -629,14 +626,15 @@ button {
     text-overflow: ellipsis;
     overflow: hidden;
     position: relative;
-    max-width: 210px;
+    width: 100%;
+    padding-right: 50px;
 }
 
 .favorite-icon {
     position: absolute;
     margin-top: 2px;
     margin-left: 8px;
-    left: 280px;
+    right: 20px !important;
     fill: none;
     stroke: var(--new-msg);
     cursor: pointer;
